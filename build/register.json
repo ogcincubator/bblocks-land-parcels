@@ -1,8 +1,7 @@
 {
-  "name": "My OGC Building Blocks repository",
-  "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
-  "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
-  "modified": "2024-03-06T14:58:40.289028",
+  "name": "Land parcels",
+  "abstract": "This repository contains building blocks for land parcels.\n",
+  "modified": "2024-03-06T16:19:31.279499",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"3ab474f97c60e5422b1204350317b546bf781d3d",
@@ -20,120 +19,83 @@
   ],
   "bblocks": [
     {
-      "itemIdentifier": "ogc.bbr.template.mySchema",
-      "$schema": "metaschema.yaml",
-      "name": "My Schema",
-      "abstract": "An example schema defining the set of properties of any type of object.",
+      "itemIdentifier": "ogc.land-parcels.compound-name",
+      "name": "Compound name",
+      "abstract": "A multiple part name, consisting of a set of strings with functional roles that can be combined into single string using a template.",
       "status": "under-development",
-      "dateTimeAddition": "2023-04-05T00:00:00Z",
+      "dateTimeAddition": "2024-06-03T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-register",
+      "version": "0.1",
+      "dateOfLastChange": "2024-03-06",
+      "shaclRules": {},
+      "schema": {
+        "application/yaml": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/compound-name/schema.yaml",
+        "application/json": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/compound-name/schema.json"
+      },
+      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/_sources/compound-name/schema.yaml",
+      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/_sources/compound-name/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-land-parcels/blob/master/build/tests/land-parcels/compound-name/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/generateddocs/markdown/land-parcels/compound-name/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/generateddocs/json-full/land-parcels/compound-name/index.json"
+        },
+        "slate": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/generateddocs/slate-build/land-parcels/compound-name/"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/bblock/ogc.land-parcels.compound-name"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.land-parcels.parcel",
+      "name": "Land Parcel",
+      "abstract": "",
+      "status": "under-development",
+      "dateTimeAddition": "2024-06-03T00:00:00Z",
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
       "dateOfLastChange": "2024-03-06",
       "link": "https://github.com/opengeospatial/bblock-template",
-      "sources": [
-        {
-          "title": "Sample source document",
-          "link": "https://example.com/sources/1"
-        }
-      ],
-      "maturity": "mature",
-      "scope": "unstable",
-      "tags": [
-        "templates"
-      ],
-      "shaclRules": {
-        "ogc.bbr.template.mySchema": [
-          "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/_sources/mySchema/rules.shacl"
-        ]
-      },
-      "ldContext": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/bbr/template/mySchema/context.jsonld",
-      "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/bbr/template/mySchema/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/bbr/template/mySchema/schema.json"
-      },
-      "sourceLdContext": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/_sources/mySchema/context.jsonld",
-      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/_sources/mySchema/schema.yaml",
-      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/_sources/mySchema/",
-      "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-land-parcels/blob/master/build/tests/bbr/template/mySchema/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/generateddocs/markdown/bbr/template/mySchema/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/generateddocs/json-full/bbr/template/mySchema/index.json"
-        },
-        "slate": {
-          "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/generateddocs/slate-build/bbr/template/mySchema/"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/bblock/ogc.bbr.template.mySchema"
-        }
-      }
-    },
-    {
-      "itemIdentifier": "ogc.bbr.template.myFeature",
-      "name": "Custom Feature",
-      "abstract": "This examples shows a simple customisation for OGC API Feature schemas",
-      "status": "under-development",
-      "dateTimeAddition": "2023-05-19T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-building-block-examples",
-      "version": "1.0",
-      "dateOfLastChange": "2024-03-06",
-      "sources": [
-        {
-          "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
-          "link": "https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7"
-        }
-      ],
-      "maturity": "development",
-      "scope": "unstable",
+      "shaclRules": {},
       "dependsOn": [
-        "ogc.bbr.template.mySchema",
-        "ogc.geo.features.feature"
+        "ogc.land-parcels.compound-name",
+        "ogc.ogc-utils.iri-or-curie"
       ],
-      "tags": [
-        "feature",
-        "examples"
-      ],
-      "group": "Examples",
-      "highlighted": true,
-      "shaclRules": {
-        "ogc.bbr.template.mySchema": [
-          "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/_sources/mySchema/rules.shacl"
-        ]
-      },
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/bbr/template/myFeature/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/bbr/template/myFeature/schema.json"
+        "application/yaml": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema.yaml",
+        "application/json": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema.json"
       },
-      "ldContext": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/bbr/template/myFeature/context.jsonld",
-      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/_sources/myFeature/schema.yaml",
-      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/_sources/myFeature/",
+      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/_sources/parcel/schema.yaml",
+      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/_sources/parcel/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-land-parcels/blob/master/build/tests/bbr/template/myFeature/",
+      "testOutputs": "https://github.com/ogcincubator/bblocks-land-parcels/blob/master/build/tests/land-parcels/parcel/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/generateddocs/markdown/bbr/template/myFeature/index.md"
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/generateddocs/markdown/land-parcels/parcel/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/generateddocs/json-full/bbr/template/myFeature/index.json"
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/generateddocs/json-full/land-parcels/parcel/index.json"
         },
         "slate": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/generateddocs/slate-build/bbr/template/myFeature/"
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/generateddocs/slate-build/land-parcels/parcel/"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/bblock/ogc.bbr.template.myFeature"
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/bblock/ogc.land-parcels.parcel"
         }
       }
     }

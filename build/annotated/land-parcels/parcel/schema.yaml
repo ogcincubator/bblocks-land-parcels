@@ -1,0 +1,77 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+type: object
+$defs:
+  coderef:
+    $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml
+  coderefList:
+    type: array
+    items:
+      $ref: '#/$defs/coderef'
+  dateTime:
+    type: string
+    format: date-time
+    pattern: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})?$
+properties:
+  appellation:
+    $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/compound-name/schema.yaml
+  parcelType:
+    $ref: '#/$defs/coderef'
+  parcelState:
+    $ref: '#/$defs/coderef'
+  address:
+    type: object
+  parcelPurpose:
+    $ref: '#/$defs/coderef'
+  area:
+    type: number
+  floor:
+    type: string
+  zmin:
+    type: number
+  zmax:
+    type: number
+  interests:
+    type: array
+    additionalProperties: false
+    items:
+      properties:
+        interestLink:
+          $ref: '#/$defs/coderef'
+        interestName:
+          type: string
+        interestType:
+          $ref: '#/$defs/coderef'
+        dateInForce:
+          $ref: '#/$defs/dateTime'
+        dateExpires:
+          $ref: '#/$defs/dateTime'
+        statuteLink:
+          $ref: '#/$defs/coderef'
+        statuteName:
+          type: string
+        benefitedPartyName:
+          type: string
+        benefitedPartyLink:
+          $ref: '#/$defs/coderef'
+        originalSurveyLink:
+          $ref: '#/$defs/coderef'
+        referencedParcel:
+          $ref: '#/$defs/coderef'
+        burdenedParcels:
+          $ref: '#/$defs/coderefList'
+        benefitedParcels:
+          $ref: '#/$defs/coderefList'
+        description:
+          type: string
+        entitlementPortion:
+          type: string
+        liabilityPortion:
+          type: string
+      required:
+      - interestLink
+      - interestType
+    required:
+    - appellation
+    - parcelType
+    - parcelState
+    - parcelPurpose

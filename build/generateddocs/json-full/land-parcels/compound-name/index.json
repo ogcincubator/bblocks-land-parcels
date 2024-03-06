@@ -1,0 +1,38 @@
+
+
+{
+  "itemIdentifier": "ogc.land-parcels.compound-name",
+  "name": "Compound name",
+  "abstract": "A multiple part name, consisting of a set of strings with functional roles that can be combined into single string using a template.",
+  "status": "under-development",
+  "dateTimeAddition": "2024-06-03T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-register",
+  "version": "0.1",
+  "dateOfLastChange": "2024-03-06",
+  "shaclRules": {},
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/compound-name/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/compound-name/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/_sources/compound-name/schema.yaml",
+  "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/_sources/compound-name/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-land-parcels/blob/master/build/tests/land-parcels/compound-name/",
+  "examples": [
+    {
+      "title": "Example Compound Name",
+      "content": "A name with a label, but also a set of parts with roles that can be validated against content rules.",
+      "snippets": [
+        {
+          "language": "json",
+          "code": "{\n    \"id\": \"CompoundNameExample\",\n    \"type\": \"CompoundName\",\n    \"label\": \"IS II - DP 3333\",\n    \"comment\": \"note: label may be absent or subject to rules regarding presence of parts\",\n    \"hasPart\": [\n        {\n            \"type\": \"Source\",\n            \"label\": \"DP 3333\"\n        },\n        {\n            \"type\": \"Stamp\",\n            \"label\": \"IS II\"\n        }\n    ]\n}",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/tests/land-parcels/compound-name/example_1_1.json"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Compound Name\nproperties:\n  label:\n    anyOf:\n    - type: 'null'\n    - type: string\n  template:\n    type: string\n  hasPart:\n    type: array\n    items:\n      type: object\n      properties:\n        label:\n          type: string\n        type:\n          type: string\n      required:\n      - label\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-land-parcels",
+  "gitPath": "_sources/compound-name"
+}

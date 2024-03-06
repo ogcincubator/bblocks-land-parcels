@@ -7,89 +7,69 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/ogc.bbr.template.myFeature> a skos:Concept,
+<https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/ogc.land-parcels.parcel> a skos:Concept,
         dcat:Dataset,
         bblocks:Schema ;
-    rdfs:label "Custom Feature" ;
-    dct:abstract "This examples shows a simple customisation for OGC API Feature schemas" ;
-    dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
+    rdfs:label "Land Parcel" ;
+    dct:abstract "" ;
+    dct:created "2024-06-03T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/generateddocs/slate-build/bbr/template/myFeature/" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/generateddocs/json-full/bbr/template/myFeature/index.json" ],
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/bblock/ogc.land-parcels.parcel" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/generateddocs/markdown/bbr/template/myFeature/index.md" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/bblock/ogc.bbr.template.myFeature" ] ;
-    dct:hasVersion "1.0" ;
-    dct:modified "2024-03-06"^^xsd:date ;
-    dct:source <https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7> ;
-    skos:inScheme <https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/> ;
-    dcat:keyword "examples",
-        "feature" ;
-    bblocks:dependsOn <https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/ogc.bbr.template.mySchema>,
-        <https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/ogc.geo.features.feature> ;
-    bblocks:hasJsonLdContext <https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/bbr/template/myFeature/context.jsonld> ;
-    bblocks:hasSchema <https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/bbr/template/myFeature/schema.json>,
-        <https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/bbr/template/myFeature/schema.yaml> ;
-    bblocks:hasShaclRule <https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/_sources/mySchema/rules.shacl> ;
-    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
-    bblocks:status <http://www.opengis.net/def/status/under-development> .
-
-<https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7> rdfs:label "OGC API - Features, Part 1, 7.16.2: Feature Response" .
-
-<https://example.com/sources/1> rdfs:label "Sample source document" .
-
-<https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/ogc.bbr.template.mySchema> a skos:Concept,
-        dcat:Dataset,
-        bblocks:Schema ;
-    rdfs:label "My Schema" ;
-    dct:abstract "An example schema defining the set of properties of any type of object." ;
-    dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/generateddocs/markdown/bbr/template/mySchema/index.md" ],
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/generateddocs/markdown/land-parcels/parcel/index.md" ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/generateddocs/json-full/bbr/template/mySchema/index.json" ],
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/generateddocs/json-full/land-parcels/parcel/index.json" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/bblock/ogc.bbr.template.mySchema" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/generateddocs/slate-build/bbr/template/mySchema/" ] ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/generateddocs/slate-build/land-parcels/parcel/" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2024-03-06"^^xsd:date ;
-    dct:source <https://example.com/sources/1> ;
     skos:inScheme <https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/> ;
-    dcat:keyword "templates" ;
-    bblocks:hasJsonLdContext <https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/bbr/template/mySchema/context.jsonld> ;
-    bblocks:hasSchema <https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/bbr/template/mySchema/schema.json>,
-        <https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/bbr/template/mySchema/schema.yaml> ;
-    bblocks:hasShaclRule <https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/_sources/mySchema/rules.shacl> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/_sources/mySchema/context.jsonld> ;
-    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:dependsOn <https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/ogc.land-parcels.compound-name>,
+        <https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/ogc.ogc-utils.iri-or-curie> ;
+    bblocks:hasSchema <https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema.json>,
+        <https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema.yaml> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/ogc.land-parcels.compound-name> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "Compound name" ;
+    dct:abstract "A multiple part name, consisting of a set of strings with functional roles that can be combined into single string using a template." ;
+    dct:created "2024-06-03T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/generateddocs/json-full/land-parcels/compound-name/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/generateddocs/slate-build/land-parcels/compound-name/" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/generateddocs/markdown/land-parcels/compound-name/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/bblock/ogc.land-parcels.compound-name" ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2024-03-06"^^xsd:date ;
+    skos:inScheme <https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/> ;
+    bblocks:hasSchema <https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/compound-name/schema.json>,
+        <https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/compound-name/schema.yaml> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
 <https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/> a skos:ConceptScheme,
         dcat:Catalog ;
-    rdfs:label "Building Blocks - My OGC Building Blocks repository" ;
-    dct:abstract """This is an example text for the abstract. It should be short and to the point.
-A "Tell me more" link will appear if there is an additional description with a longer explanation.
+    rdfs:label "Building Blocks - Land parcels" ;
+    dct:abstract """This repository contains building blocks for land parcels.
 """ ;
-    dct:description """The description can be longer. Both **the abstract** *and the description* support Markdown,
-including [links](https://google.es).
-""" ;
-    skos:prefLabel "Building Blocks - My OGC Building Blocks repository" ;
+    skos:prefLabel "Building Blocks - Land parcels" ;
     bblocks:hasValidationReport <https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/tests/report.html> ;
     bblocks:imports <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-03-06T14:58:42.844578"^^xsd:dateTime ;
-    prov:startedAtTime "2024-03-06T14:58:42.787186"^^xsd:dateTime ;
+    prov:endedAtTime "2024-03-06T16:19:32.078038"^^xsd:dateTime ;
+    prov:startedAtTime "2024-03-06T16:19:31.963659"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/yaml" ;
-            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
-        [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:9f1fbeba8ee90296295a0fb37d197f212b456185" ;
-            rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/register.json> ] ;
+            dct:hasVersion "git:9bacce8e93c7f68f2d7ea7898723ab6098d54bb2" ;
+            rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/register.json> ],
+        [ a prov:Entity ;
+            dct:format "application/yaml" ;
+            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;

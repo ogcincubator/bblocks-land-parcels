@@ -1,0 +1,25 @@
+x-defs:
+  ogc.land-parcels.compound-name:
+    description: Compound Name
+    properties:
+      label:
+        anyOf:
+        - nullable: true
+        - type: string
+      template:
+        type: string
+      hasPart:
+        type: array
+        items:
+          type: object
+          properties:
+            label:
+              type: string
+            type:
+              type: string
+          required:
+          - label
+    x-schema-version: https://json-schema.org/draft/2020-12/schema
+    x-schema-source: https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/compound-name/schema-oas3.0.yaml
+allOf:
+- $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/compound-name/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.compound-name

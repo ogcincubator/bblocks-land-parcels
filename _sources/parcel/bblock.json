@@ -1,0 +1,11 @@
+{
+  "name": "Land Parcel",
+  "abstract": "",
+  "status": "under-development",
+  "dateTimeAddition": "2024-06-03T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-register",
+  "version": "0.1",
+  "dateOfLastChange": "2024-03-06",
+  "link": "https://github.com/opengeospatial/bblock-template"
+}

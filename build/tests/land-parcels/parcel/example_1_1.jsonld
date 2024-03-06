@@ -1,0 +1,117 @@
+{
+  "id": "primaryparcels",
+  "type": "FeatureCollection",
+  "featureType": "PrimaryParcel",
+  "properties": null,
+  "features": [
+    {
+      "type": "Feature",
+      "id": "8446454",
+      "geometry": null,
+      "topology": {
+        "type": "Polygon",
+        "references": [
+          [
+            "l535242",
+            "l535759",
+            "l985190",
+            "l952702",
+            "l965727",
+            "l589282"
+          ]
+        ]
+      },
+      "properties": {
+        "appellation": {
+          "label": "Lot 1 DP 572532",
+          "hasPart": [
+            {
+              "type": "PlanType",
+              "label": "DP"
+            },
+            {
+              "type": "PlanIdentifier",
+              "label": "572532"
+            },
+            {
+              "type": "ParcelType",
+              "label": "Lot"
+            },
+            {
+              "type": "ParcelIdentifier",
+              "label": "1"
+            }
+          ]
+        },
+        "area": 484,
+        "parcelType": "nz-parcel-type:fee-simple-title",
+        "parcelPurpose": "nz-parcel-purpose:fst",
+        "parcelState": "nz-parcel-state:created",
+        "class": "nz-parcel-class:allotment",
+        "interests": [
+          {
+            "interestLink": "1040074",
+            "interestType": "nz-interest-type:fh"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "8446455",
+      "geometry": null,
+      "topology": {
+        "type": "Polygon",
+        "references": [
+          [
+            "l746686",
+            "l999724",
+            "l591175",
+            "l435861",
+            "l874826",
+            "l952702",
+            "l985190",
+            "l535759",
+            "l535242",
+            "l329256"
+          ]
+        ]
+      },
+      "properties": {
+        "appellation": {
+          "label": "Lot 2 DP 572532",
+          "hasPart": [
+            {
+              "type": "PlanType",
+              "label": "DP"
+            },
+            {
+              "type": "PlanIdentifier",
+              "label": "572532"
+            },
+            {
+              "type": "ParcelType",
+              "label": "Lot"
+            },
+            {
+              "type": "ParcelIdentifier",
+              "label": "2"
+            }
+          ]
+        },
+        "area": 1196,
+        "parcelType": "nz-parcel-type:fee-simple-title",
+        "parcelPurpose": "nz-parcel-purpose:fst",
+        "parcelState": "nz-parcel-state:created",
+        "class": "nz-parcel-class:allotment",
+        "interests": [
+          {
+            "interestLink": "1040075",
+            "interestType": "nz-interest-type:fh"
+          }
+        ]
+      }
+    }
+  ],
+  "@context": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/context.jsonld"
+}

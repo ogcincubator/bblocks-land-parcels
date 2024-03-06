@@ -294,7 +294,7 @@
     </script>
   </head>
 
-  <body class="land-parcels land-parcels_parcel land-parcels_parcel_index" data-languages="[]">
+  <body class="land-parcels land-parcels_parcel land-parcels_parcel_index" data-languages="[&quot;json&quot;,&quot;jsonld&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -303,6 +303,10 @@
     </a>
     <div class="toc-wrapper">
       <img src="../../images/logo-4d9dfd05.svg" class="logo" alt="" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="json">JSON</a>
+              <a href="#" data-language-name="jsonld">JSON-LD</a>
+        </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
         </div>
@@ -334,6 +338,9 @@
             <a href="#json-schema" class="toc-h1 toc-link" data-title="JSON Schema">JSON Schema</a>
           </li>
           <li>
+            <a href="#json-ld-context" class="toc-h1 toc-link" data-title="JSON-LD Context">JSON-LD Context</a>
+          </li>
+          <li>
             <a href="#for-developers" class="toc-h1 toc-link" data-title="For developers">For developers</a>
           </li>
       </ul>
@@ -352,8 +359,8 @@
     <a href="http://www.opengis.net/def/status/under-development" target="_blank" data-rainbow-uri>Under development</a>
 </p>
 
-<aside class="success">
-This building block is <strong><a href="https://github.com/ogcincubator/bblocks-land-parcels/blob/master/build/tests/land-parcels/parcel/" target="_blank">valid</a></strong>
+<aside class="warning">
+Validation for this building block has <strong><a href="https://github.com/ogcincubator/bblocks-land-parcels/blob/master/build/tests/land-parcels/parcel/" target="_blank">failed</a></strong>
 </aside>
 <h1 id='description'>Description</h1><h2 id='my-schema'>My Schema</h2>
 <p>Defines a set of properties that may be used in <strong>any</strong> JSON schema.</p>
@@ -485,6 +492,129 @@ This building block is <strong><a href="https://github.com/ogcincubator/bblocks-
     <a target="_blank" href="https://ogcincubator.github.io/bblocks-land-parcels/build/tests/land-parcels/parcel/example_1_1.json">Open in new window</a>
     <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Fbblocks-land-parcels%2Fbuild%2Ftests%2Fland-parcels%2Fparcel%2Fexample_1_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
+<div class="highlight"><pre class="highlight json tab-jsonld"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"primaryparcels"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FeatureCollection"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"featureType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PrimaryParcel"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"features"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Feature"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8446454"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"geometry"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"topology"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Polygon"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"references"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">[</span><span class="w">
+            </span><span class="s2">"l535242"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"l535759"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"l985190"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"l952702"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"l965727"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"l589282"</span><span class="w">
+          </span><span class="p">]</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"appellation"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lot 1 DP 572532"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"hasPart"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PlanType"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DP"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PlanIdentifier"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"572532"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ParcelType"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lot"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ParcelIdentifier"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"area"</span><span class="p">:</span><span class="w"> </span><span class="mi">484</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"parcelType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nz-parcel-type:fee-simple-title"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"parcelPurpose"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nz-parcel-purpose:fst"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"parcelState"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nz-parcel-state:created"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"class"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nz-parcel-class:allotment"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"interests"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"interestLink"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1040074"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"interestType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nz-interest-type:fh"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Feature"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8446455"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"geometry"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"topology"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Polygon"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"references"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">[</span><span class="w">
+            </span><span class="s2">"l746686"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"l999724"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"l591175"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"l435861"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"l874826"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"l952702"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"l985190"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"l535759"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"l535242"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"l329256"</span><span class="w">
+          </span><span class="p">]</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"appellation"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lot 2 DP 572532"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"hasPart"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PlanType"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DP"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PlanIdentifier"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"572532"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ParcelType"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lot"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ParcelIdentifier"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"area"</span><span class="p">:</span><span class="w"> </span><span class="mi">1196</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"parcelType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nz-parcel-type:fee-simple-title"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"parcelPurpose"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nz-parcel-purpose:fst"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"parcelState"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nz-parcel-state:created"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"class"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nz-parcel-class:allotment"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"interests"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"interestLink"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1040075"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"interestType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nz-interest-type:fh"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"@context"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/context.jsonld"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote class="lang-specific jsonld">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/bblocks-land-parcels/build/tests/land-parcels/parcel/example_1_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Fbblocks-land-parcels%2Fbuild%2Ftests%2Fland-parcels%2Fparcel%2Fexample_1_1.jsonld">View on JSON-LD Playground</a>
+</blockquote>
 <h2 id='secondary-parcel'>Secondary parcel</h2><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"covenants"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FeatureCollection"</span><span class="p">,</span><span class="w">
@@ -564,6 +694,87 @@ This building block is <strong><a href="https://github.com/ogcincubator/bblocks-
   <p class="example-links">
     <a target="_blank" href="https://ogcincubator.github.io/bblocks-land-parcels/build/tests/land-parcels/parcel/example_2_1.json">Open in new window</a>
     <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Fbblocks-land-parcels%2Fbuild%2Ftests%2Fland-parcels%2Fparcel%2Fexample_2_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-jsonld"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"covenants"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FeatureCollection"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"featureType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SecondaryParcel"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"features"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Feature"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8446456"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"featureType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SecondaryParcel"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"geometry"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"topology"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Polygon"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"references"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">[</span><span class="w">
+            </span><span class="s2">"l999724"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"l591175"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"l369793"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"l435861"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"l345344"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"l685716"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"l832940"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"l715872"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"l641327"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"l852048"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"l949729"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"l951515"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"l761760"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"l580762"</span><span class="w">
+          </span><span class="p">]</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"appellation"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Area Z DP 572532"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"hasPart"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PlanType"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DP"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PlanIdentifier"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"572532"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ParcelType"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Area"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ParcelIdentifier"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Z"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"area"</span><span class="p">:</span><span class="w"> </span><span class="mi">1196</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"parcelType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nz-parcel-type:covenant-land"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"parcelPurpose"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nz-parcel-purpose:c-l"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"parcelState"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nz-parcel-state:created"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"interests"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"interestLink"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1040075"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"interestType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nz-interest-type:fh"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"burdened"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"x-comment"</span><span class="p">:</span><span class="w"> </span><span class="s2">"References the parcel ID of the burdened primary parcel."</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"references"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="s2">"8446455"</span><span class="w">
+          </span><span class="p">]</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"@context"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/context.jsonld"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote class="lang-specific jsonld">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/bblocks-land-parcels/build/tests/land-parcels/parcel/example_2_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Fbblocks-land-parcels%2Fbuild%2Ftests%2Fland-parcels%2Fparcel%2Fexample_2_1.jsonld">View on JSON-LD Playground</a>
 </blockquote>
 <h1 id='json-schema'>JSON Schema</h1><div class="highlight"><pre class="highlight yaml tab-yaml--schema"><code><span class="na">$schema</span><span class="pi">:</span> <span class="s">https://json-schema.org/draft/2020-12/schema</span>
 <span class="na">type</span><span class="pi">:</span> <span class="s">object</span>
@@ -654,6 +865,28 @@ This building block is <strong><a href="https://github.com/ogcincubator/bblocks-
 <li>YAML version: <a href="https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema.yaml" target="_blank">https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema.yaml</a></li>
 <li>JSON version: <a href="https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema.json" target="_blank">https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema.json</a></li>
 </ul>
+<h1 id='json-ld-context'>JSON-LD Context</h1><div class="highlight"><pre class="highlight json tab-json--ldContext"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"@context"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rdfs:label"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"hasPart"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"@context"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@type"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dct:hasPart"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dct:title"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"dct"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://purl.org/dc/terms/"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"rdfs"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.w3.org/2000/01/rdf-schema#"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"@version"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.1</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p><a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Fbblocks-land-parcels%2Fbuild%2Fannotated%2Fland-parcels%2Fparcel%2Fcontext.jsonld">View on JSON-LD Playground</a></p>
+</blockquote>
+
+<p>You can find the full JSON-LD context here:
+<a href="https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/context.jsonld" target="_blank">https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/context.jsonld</a></p>
 <h1 id='for-developers'>For developers</h1>
 <p>The source code for this Building Block can be found in the following repository:</p>
 
@@ -665,6 +898,10 @@ This building block is <strong><a href="https://github.com/ogcincubator/bblocks-
 
       </div>
       <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="json">JSON</a>
+                <a href="#" data-language-name="jsonld">JSON-LD</a>
+          </div>
       </div>
     </div>
   </body>

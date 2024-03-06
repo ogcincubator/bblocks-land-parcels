@@ -2,8 +2,8 @@
   "title": "Validation report for ogc.land-parcels.parcel - Land Parcel",
   "bblockName": "Land Parcel",
   "bblockId": "ogc.land-parcels.parcel",
-  "generated": "2024-03-06T16:21:03.847354+00:00",
-  "result": true,
+  "generated": "2024-03-06T17:11:35.079670+00:00",
+  "result": false,
   "items": [
     {
       "source": {
@@ -14,7 +14,7 @@
         "snippetIndex": 1,
         "language": "json"
       },
-      "result": true,
+      "result": false,
       "sections": [
         {
           "name": "GENERAL",
@@ -28,6 +28,25 @@
             {
               "isError": false,
               "message": "Using example_1_1.json from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_1_1.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_1_1.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": true,
+              "filename": "example_1_1.ttl",
+              "size": 0,
+              "isError": true,
+              "message": "**Empty** output Turtle example_1_1.ttl created"
             }
           ]
         },
@@ -74,7 +93,7 @@
         "snippetIndex": 1,
         "language": "json"
       },
-      "result": true,
+      "result": false,
       "sections": [
         {
           "name": "GENERAL",
@@ -88,6 +107,25 @@
             {
               "isError": false,
               "message": "Using example_2_1.json from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_2_1.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_2_1.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": true,
+              "filename": "example_2_1.ttl",
+              "size": 0,
+              "isError": true,
+              "message": "**Empty** output Turtle example_2_1.ttl created"
             }
           ]
         },
@@ -129,7 +167,7 @@
   "globalErrors": {},
   "counts": {
     "total": 2,
-    "passed": 2,
-    "failed": 0
+    "passed": 0,
+    "failed": 2
   }
 }

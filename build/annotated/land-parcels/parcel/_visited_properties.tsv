@@ -1,0 +1,32 @@
+path	@id
+/appellation	
+/appellation/label	http://www.w3.org/2000/01/rdf-schema#label
+/appellation/template	
+/appellation/hasPart	http://purl.org/dc/terms/hasPart
+/appellation/hasPart/label	http://www.w3.org/2000/01/rdf-schema#label
+/appellation/hasPart/type	@type
+/parcelType	
+/parcelState	
+/address	
+/parcelPurpose	
+/area	
+/floor	
+/zmin	
+/zmax	
+/interests	
+/interests/interestLink	
+/interests/interestName	
+/interests/interestType	
+/interests/dateInForce	
+/interests/dateExpires	
+/interests/statuteLink	
+/interests/statuteName	
+/interests/benefitedPartyName	
+/interests/benefitedPartyLink	
+/interests/originalSurveyLink	
+/interests/referencedParcel	
+/interests/burdenedParcels	
+/interests/benefitedParcels	
+/interests/description	
+/interests/entitlementPortion	
+/interests/liabilityPortion	

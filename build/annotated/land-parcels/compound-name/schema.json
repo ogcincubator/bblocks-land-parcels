@@ -10,7 +10,8 @@
         {
           "type": "string"
         }
-      ]
+      ],
+      "x-jsonld-id": "http://www.w3.org/2000/01/rdf-schema#label"
     },
     "template": {
       "type": "string"
@@ -21,16 +22,26 @@
         "type": "object",
         "properties": {
           "label": {
-            "type": "string"
+            "type": "string",
+            "x-jsonld-id": "http://www.w3.org/2000/01/rdf-schema#label"
           },
           "type": {
-            "type": "string"
+            "type": "string",
+            "x-jsonld-id": "@type"
           }
         },
         "required": [
           "label"
         ]
-      }
+      },
+      "x-jsonld-id": "http://purl.org/dc/terms/hasPart"
     }
+  },
+  "x-jsonld-extra-terms": {
+    "name": "http://purl.org/dc/terms/title"
+  },
+  "x-jsonld-prefixes": {
+    "dct": "http://purl.org/dc/terms/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   }
 }

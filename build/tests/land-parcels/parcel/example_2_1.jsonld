@@ -1,0 +1,75 @@
+{
+  "id": "covenants",
+  "type": "FeatureCollection",
+  "featureType": "SecondaryParcel",
+  "properties": null,
+  "features": [
+    {
+      "type": "Feature",
+      "id": "8446456",
+      "featureType": "SecondaryParcel",
+      "geometry": null,
+      "topology": {
+        "type": "Polygon",
+        "references": [
+          [
+            "l999724",
+            "l591175",
+            "l369793",
+            "l435861",
+            "l345344",
+            "l685716",
+            "l832940",
+            "l715872",
+            "l641327",
+            "l852048",
+            "l949729",
+            "l951515",
+            "l761760",
+            "l580762"
+          ]
+        ]
+      },
+      "properties": {
+        "appellation": {
+          "label": "Area Z DP 572532",
+          "hasPart": [
+            {
+              "type": "PlanType",
+              "label": "DP"
+            },
+            {
+              "type": "PlanIdentifier",
+              "label": "572532"
+            },
+            {
+              "type": "ParcelType",
+              "label": "Area"
+            },
+            {
+              "type": "ParcelIdentifier",
+              "label": "Z"
+            }
+          ]
+        },
+        "area": 1196,
+        "parcelType": "nz-parcel-type:covenant-land",
+        "parcelPurpose": "nz-parcel-purpose:c-l",
+        "parcelState": "nz-parcel-state:created",
+        "interests": [
+          {
+            "interestLink": "1040075",
+            "interestType": "nz-interest-type:fh"
+          }
+        ],
+        "burdened": {
+          "x-comment": "References the parcel ID of the burdened primary parcel.",
+          "references": [
+            "8446455"
+          ]
+        }
+      }
+    }
+  ],
+  "@context": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/context.jsonld"
+}

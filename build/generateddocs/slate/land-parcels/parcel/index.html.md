@@ -1,6 +1,9 @@
 ---
 title: Land Parcel (Schema)
 
+language_tabs:
+  - json: JSON
+  - jsonld: JSON-LD
 
 toc_footers:
   - Version 0.1
@@ -25,8 +28,8 @@ meta:
     <a href="http://www.opengis.net/def/status/under-development" target="_blank" data-rainbow-uri>Under development</a>
 </p>
 
-<aside class="success">
-This building block is <strong><a href="https://github.com/ogcincubator/bblocks-land-parcels/blob/master/build/tests/land-parcels/parcel/" target="_blank">valid</a></strong>
+<aside class="warning">
+Validation for this building block has <strong><a href="https://github.com/ogcincubator/bblocks-land-parcels/blob/master/build/tests/land-parcels/parcel/" target="_blank">failed</a></strong>
 </aside>
 
 # Description
@@ -171,6 +174,136 @@ The numeric properties "b" and "c" have an example SHACL rule that if c is prese
 
 
 
+
+```jsonld
+{
+  "id": "primaryparcels",
+  "type": "FeatureCollection",
+  "featureType": "PrimaryParcel",
+  "properties": null,
+  "features": [
+    {
+      "type": "Feature",
+      "id": "8446454",
+      "geometry": null,
+      "topology": {
+        "type": "Polygon",
+        "references": [
+          [
+            "l535242",
+            "l535759",
+            "l985190",
+            "l952702",
+            "l965727",
+            "l589282"
+          ]
+        ]
+      },
+      "properties": {
+        "appellation": {
+          "label": "Lot 1 DP 572532",
+          "hasPart": [
+            {
+              "type": "PlanType",
+              "label": "DP"
+            },
+            {
+              "type": "PlanIdentifier",
+              "label": "572532"
+            },
+            {
+              "type": "ParcelType",
+              "label": "Lot"
+            },
+            {
+              "type": "ParcelIdentifier",
+              "label": "1"
+            }
+          ]
+        },
+        "area": 484,
+        "parcelType": "nz-parcel-type:fee-simple-title",
+        "parcelPurpose": "nz-parcel-purpose:fst",
+        "parcelState": "nz-parcel-state:created",
+        "class": "nz-parcel-class:allotment",
+        "interests": [
+          {
+            "interestLink": "1040074",
+            "interestType": "nz-interest-type:fh"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "8446455",
+      "geometry": null,
+      "topology": {
+        "type": "Polygon",
+        "references": [
+          [
+            "l746686",
+            "l999724",
+            "l591175",
+            "l435861",
+            "l874826",
+            "l952702",
+            "l985190",
+            "l535759",
+            "l535242",
+            "l329256"
+          ]
+        ]
+      },
+      "properties": {
+        "appellation": {
+          "label": "Lot 2 DP 572532",
+          "hasPart": [
+            {
+              "type": "PlanType",
+              "label": "DP"
+            },
+            {
+              "type": "PlanIdentifier",
+              "label": "572532"
+            },
+            {
+              "type": "ParcelType",
+              "label": "Lot"
+            },
+            {
+              "type": "ParcelIdentifier",
+              "label": "2"
+            }
+          ]
+        },
+        "area": 1196,
+        "parcelType": "nz-parcel-type:fee-simple-title",
+        "parcelPurpose": "nz-parcel-purpose:fst",
+        "parcelState": "nz-parcel-state:created",
+        "class": "nz-parcel-class:allotment",
+        "interests": [
+          {
+            "interestLink": "1040075",
+            "interestType": "nz-interest-type:fh"
+          }
+        ]
+      }
+    }
+  ],
+  "@context": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/context.jsonld"
+}
+```
+
+<blockquote class="lang-specific jsonld">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/bblocks-land-parcels/build/tests/land-parcels/parcel/example_1_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Fbblocks-land-parcels%2Fbuild%2Ftests%2Fland-parcels%2Fparcel%2Fexample_1_1.jsonld">View on JSON-LD Playground</a>
+</blockquote>
+
+
+
+
 ## Secondary parcel
 
 
@@ -257,6 +390,94 @@ The numeric properties "b" and "c" have an example SHACL rule that if c is prese
     <a target="_blank" href="https://ogcincubator.github.io/bblocks-land-parcels/build/tests/land-parcels/parcel/example_2_1.json">Open in new window</a>
     <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Fbblocks-land-parcels%2Fbuild%2Ftests%2Fland-parcels%2Fparcel%2Fexample_2_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
+
+
+
+
+```jsonld
+{
+  "id": "covenants",
+  "type": "FeatureCollection",
+  "featureType": "SecondaryParcel",
+  "properties": null,
+  "features": [
+    {
+      "type": "Feature",
+      "id": "8446456",
+      "featureType": "SecondaryParcel",
+      "geometry": null,
+      "topology": {
+        "type": "Polygon",
+        "references": [
+          [
+            "l999724",
+            "l591175",
+            "l369793",
+            "l435861",
+            "l345344",
+            "l685716",
+            "l832940",
+            "l715872",
+            "l641327",
+            "l852048",
+            "l949729",
+            "l951515",
+            "l761760",
+            "l580762"
+          ]
+        ]
+      },
+      "properties": {
+        "appellation": {
+          "label": "Area Z DP 572532",
+          "hasPart": [
+            {
+              "type": "PlanType",
+              "label": "DP"
+            },
+            {
+              "type": "PlanIdentifier",
+              "label": "572532"
+            },
+            {
+              "type": "ParcelType",
+              "label": "Area"
+            },
+            {
+              "type": "ParcelIdentifier",
+              "label": "Z"
+            }
+          ]
+        },
+        "area": 1196,
+        "parcelType": "nz-parcel-type:covenant-land",
+        "parcelPurpose": "nz-parcel-purpose:c-l",
+        "parcelState": "nz-parcel-state:created",
+        "interests": [
+          {
+            "interestLink": "1040075",
+            "interestType": "nz-interest-type:fh"
+          }
+        ],
+        "burdened": {
+          "x-comment": "References the parcel ID of the burdened primary parcel.",
+          "references": [
+            "8446455"
+          ]
+        }
+      }
+    }
+  ],
+  "@context": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/context.jsonld"
+}
+```
+
+<blockquote class="lang-specific jsonld">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/bblocks-land-parcels/build/tests/land-parcels/parcel/example_2_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Fbblocks-land-parcels%2Fbuild%2Ftests%2Fland-parcels%2Fparcel%2Fexample_2_1.jsonld">View on JSON-LD Playground</a>
+</blockquote>
+
 
 
 
@@ -349,6 +570,32 @@ Links to the schema:
 
 * YAML version: <a href="https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema.yaml" target="_blank">https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema.yaml</a>
 * JSON version: <a href="https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema.json" target="_blank">https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema.json</a>
+
+
+# JSON-LD Context
+
+```json--ldContext
+{
+  "@context": {
+    "label": "rdfs:label",
+    "hasPart": {
+      "@context": {
+        "type": "@type"
+      },
+      "@id": "dct:hasPart"
+    },
+    "name": "dct:title",
+    "dct": "http://purl.org/dc/terms/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@version": 1.1
+  }
+}
+```
+
+> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Fbblocks-land-parcels%2Fbuild%2Fannotated%2Fland-parcels%2Fparcel%2Fcontext.jsonld">View on JSON-LD Playground</a>
+
+You can find the full JSON-LD context here:
+<a href="https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/context.jsonld" target="_blank">https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/context.jsonld</a>
 
 # For developers
 

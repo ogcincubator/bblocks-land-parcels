@@ -88,6 +88,7 @@ x-defs:
         anyOf:
         - nullable: true
         - type: string
+        x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label
       template:
         type: string
       hasPart:
@@ -97,10 +98,18 @@ x-defs:
           properties:
             label:
               type: string
+              x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label
             type:
               type: string
+              x-jsonld-id: '@type'
           required:
           - label
+        x-jsonld-id: http://purl.org/dc/terms/hasPart
+    x-jsonld-extra-terms:
+      name: http://purl.org/dc/terms/title
+    x-jsonld-prefixes:
+      dct: http://purl.org/dc/terms/
+      rdfs: http://www.w3.org/2000/01/rdf-schema#
     x-schema-version: https://json-schema.org/draft/2020-12/schema
     x-schema-source: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/schema.yaml
 allOf:

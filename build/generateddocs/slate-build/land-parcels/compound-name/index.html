@@ -294,7 +294,7 @@
     </script>
   </head>
 
-  <body class="land-parcels land-parcels_compound-name land-parcels_compound-name_index" data-languages="[]">
+  <body class="land-parcels land-parcels_compound-name land-parcels_compound-name_index" data-languages="[&quot;json&quot;,&quot;jsonld&quot;,&quot;turtle&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -303,6 +303,11 @@
     </a>
     <div class="toc-wrapper">
       <img src="../../images/logo-4d9dfd05.svg" class="logo" alt="" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="json">JSON</a>
+              <a href="#" data-language-name="jsonld">JSON-LD</a>
+              <a href="#" data-language-name="turtle">RDF/Turtle</a>
+        </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
         </div>
@@ -321,6 +326,9 @@
           </li>
           <li>
             <a href="#json-schema" class="toc-h1 toc-link" data-title="JSON Schema">JSON Schema</a>
+          </li>
+          <li>
+            <a href="#json-ld-context" class="toc-h1 toc-link" data-title="JSON-LD Context">JSON-LD Context</a>
           </li>
           <li>
             <a href="#for-developers" class="toc-h1 toc-link" data-title="For developers">For developers</a>
@@ -368,6 +376,44 @@ This building block is <strong><a href="https://github.com/ogcincubator/bblocks-
     <a target="_blank" href="https://ogcincubator.github.io/bblocks-land-parcels/build/tests/land-parcels/compound-name/example_1_1.json">Open in new window</a>
     <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Fbblocks-land-parcels%2Fbuild%2Ftests%2Fland-parcels%2Fcompound-name%2Fexample_1_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
+<div class="highlight"><pre class="highlight json tab-jsonld"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CompoundNameExample"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CompoundName"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IS II - DP 3333"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"comment"</span><span class="p">:</span><span class="w"> </span><span class="s2">"note: label may be absent or subject to rules regarding presence of parts"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"hasPart"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Source"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DP 3333"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Stamp"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IS II"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"@context"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/context.jsonld"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote class="lang-specific jsonld">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/bblocks-land-parcels/build/tests/land-parcels/compound-name/example_1_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Fbblocks-land-parcels%2Fbuild%2Ftests%2Fland-parcels%2Fcompound-name%2Fexample_1_1.jsonld">View on JSON-LD Playground</a>
+</blockquote>
+<div class="highlight"><pre class="highlight turtle tab-turtle"><code><span class="kd">@prefix</span><span class="w"> </span><span class="nn">dct:</span><span class="w"> </span><span class="nl">&lt;http://purl.org/dc/terms/&gt;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span><span class="kd">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w">
+
+</span><span class="p">[]</span><span class="w"> </span><span class="nn">rdfs:</span><span class="n">label</span><span class="w"> </span><span class="s">"IS II - DP 3333"</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="nn">dct:</span><span class="n">hasPart</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="k">a</span><span class="w"> </span><span class="nl">&lt;file:///github/workspace/Source&gt;</span><span class="w"> </span><span class="p">;</span><span class="w">
+            </span><span class="nn">rdfs:</span><span class="n">label</span><span class="w"> </span><span class="s">"DP 3333"</span><span class="w"> </span><span class="p">],</span><span class="w">
+        </span><span class="p">[</span><span class="w"> </span><span class="k">a</span><span class="w"> </span><span class="nl">&lt;file:///github/workspace/Stamp&gt;</span><span class="w"> </span><span class="p">;</span><span class="w">
+            </span><span class="nn">rdfs:</span><span class="n">label</span><span class="w"> </span><span class="s">"IS II"</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">.</span><span class="w">
+
+
+</span></code></pre></div>
+<blockquote class="lang-specific turtle">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/bblocks-land-parcels/build/tests/land-parcels/compound-name/example_1_1.ttl">Open in new window</a>
+</blockquote>
 
 <p>A name with a label, but also a set of parts with roles that can be validated against content rules.</p>
 <h1 id='json-schema'>JSON Schema</h1><div class="highlight"><pre class="highlight yaml tab-yaml--schema"><code><span class="na">$schema</span><span class="pi">:</span> <span class="s">https://json-schema.org/draft/2020-12/schema</span>
@@ -377,6 +423,7 @@ This building block is <strong><a href="https://github.com/ogcincubator/bblocks-
     <span class="na">anyOf</span><span class="pi">:</span>
     <span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s1">'</span><span class="s">null'</span>
     <span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+    <span class="na">x-jsonld-id</span><span class="pi">:</span> <span class="s">http://www.w3.org/2000/01/rdf-schema#label</span>
   <span class="na">template</span><span class="pi">:</span>
     <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
   <span class="na">hasPart</span><span class="pi">:</span>
@@ -386,10 +433,18 @@ This building block is <strong><a href="https://github.com/ogcincubator/bblocks-
       <span class="na">properties</span><span class="pi">:</span>
         <span class="na">label</span><span class="pi">:</span>
           <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+          <span class="na">x-jsonld-id</span><span class="pi">:</span> <span class="s">http://www.w3.org/2000/01/rdf-schema#label</span>
         <span class="na">type</span><span class="pi">:</span>
           <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+          <span class="na">x-jsonld-id</span><span class="pi">:</span> <span class="s1">'</span><span class="s">@type'</span>
       <span class="na">required</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s">label</span>
+    <span class="na">x-jsonld-id</span><span class="pi">:</span> <span class="s">http://purl.org/dc/terms/hasPart</span>
+<span class="na">x-jsonld-extra-terms</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">http://purl.org/dc/terms/title</span>
+<span class="na">x-jsonld-prefixes</span><span class="pi">:</span>
+  <span class="na">dct</span><span class="pi">:</span> <span class="s">http://purl.org/dc/terms/</span>
+  <span class="na">rdfs</span><span class="pi">:</span> <span class="s">http://www.w3.org/2000/01/rdf-schema#</span>
 
 </code></pre></div>
 <blockquote>
@@ -402,6 +457,28 @@ This building block is <strong><a href="https://github.com/ogcincubator/bblocks-
 <li>YAML version: <a href="https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/schema.yaml" target="_blank">https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/schema.yaml</a></li>
 <li>JSON version: <a href="https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/schema.json" target="_blank">https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/schema.json</a></li>
 </ul>
+<h1 id='json-ld-context'>JSON-LD Context</h1><div class="highlight"><pre class="highlight json tab-json--ldContext"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"@context"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rdfs:label"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"hasPart"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"@context"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@type"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dct:hasPart"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dct:title"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"dct"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://purl.org/dc/terms/"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"rdfs"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.w3.org/2000/01/rdf-schema#"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"@version"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.1</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p><a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Fbblocks-land-parcels%2Fbuild%2Fannotated%2Fland-parcels%2Fcompound-name%2Fcontext.jsonld">View on JSON-LD Playground</a></p>
+</blockquote>
+
+<p>You can find the full JSON-LD context here:
+<a href="https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/context.jsonld" target="_blank">https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/context.jsonld</a></p>
 <h1 id='for-developers'>For developers</h1>
 <p>The source code for this Building Block can be found in the following repository:</p>
 
@@ -413,6 +490,11 @@ This building block is <strong><a href="https://github.com/ogcincubator/bblocks-
 
       </div>
       <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="json">JSON</a>
+                <a href="#" data-language-name="jsonld">JSON-LD</a>
+                <a href="#" data-language-name="turtle">RDF/Turtle</a>
+          </div>
       </div>
     </div>
   </body>

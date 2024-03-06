@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "label": "rdfs:label",
+    "hasPart": {
+      "@context": {
+        "type": "@type"
+      },
+      "@id": "dct:hasPart"
+    },
+    "name": "dct:title",
+    "dct": "http://purl.org/dc/terms/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@version": 1.1
+  }
+}

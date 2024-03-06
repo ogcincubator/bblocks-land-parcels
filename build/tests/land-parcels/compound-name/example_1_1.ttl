@@ -1,0 +1,9 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+[] rdfs:label "IS II - DP 3333" ;
+    dct:hasPart [ a <file:///github/workspace/Source> ;
+            rdfs:label "DP 3333" ],
+        [ a <file:///github/workspace/Stamp> ;
+            rdfs:label "IS II" ] .
+

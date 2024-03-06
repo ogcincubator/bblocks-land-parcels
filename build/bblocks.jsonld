@@ -105,7 +105,7 @@
   ],
   "name": "Building Blocks - Land parcels",
   "abstract": "This repository contains building blocks for land parcels.\n",
-  "modified": "2024-03-06T16:21:03.068856",
+  "modified": "2024-03-06T17:11:34.221809",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"3ab474f97c60e5422b1204350317b546bf781d3d",
@@ -138,10 +138,12 @@
       "version": "0.1",
       "dateOfLastChange": "2024-03-06",
       "shaclRules": {},
+      "ldContext": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/context.jsonld",
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/schema.yaml",
         "application/json": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/schema.json"
       },
+      "sourceLdContext": "https://ogcincubator.github.io/bblocks-land-parcels/_sources/compound-name/context.jsonld",
       "sourceSchema": "https://ogcincubator.github.io/bblocks-land-parcels/_sources/compound-name/schema.yaml",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-land-parcels/_sources/compound-name/",
       "validationPassed": true,
@@ -183,16 +185,17 @@
       "link": "https://github.com/opengeospatial/bblock-template",
       "shaclRules": {},
       "dependsOn": [
-        "ogc.land-parcels.compound-name",
-        "ogc.ogc-utils.iri-or-curie"
+        "ogc.ogc-utils.iri-or-curie",
+        "ogc.land-parcels.compound-name"
       ],
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema.yaml",
         "application/json": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema.json"
       },
+      "ldContext": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/context.jsonld",
       "sourceSchema": "https://ogcincubator.github.io/bblocks-land-parcels/_sources/parcel/schema.yaml",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-land-parcels/_sources/parcel/",
-      "validationPassed": true,
+      "validationPassed": false,
       "testOutputs": "https://github.com/ogcincubator/bblocks-land-parcels/blob/master/build/tests/land-parcels/parcel/",
       "documentation": {
         "markdown": {

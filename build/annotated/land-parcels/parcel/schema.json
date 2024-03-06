@@ -19,7 +19,7 @@
   },
   "properties": {
     "appellation": {
-      "$ref": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/compound-name/schema.json"
+      "$ref": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/schema.json"
     },
     "parcelType": {
       "$ref": "#/$defs/coderef"

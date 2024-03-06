@@ -35,12 +35,12 @@
         }
       },
       "x-schema-version": "https://json-schema.org/draft/2020-12/schema",
-      "x-schema-source": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/compound-name/schema-oas3.0.json"
+      "x-schema-source": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/schema-oas3.0.json"
     }
   },
   "allOf": [
     {
-      "$ref": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/compound-name/schema-oas3.0.json#/x-defs/ogc.land-parcels.compound-name"
+      "$ref": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/schema-oas3.0.json#/x-defs/ogc.land-parcels.compound-name"
     }
   ]
 }

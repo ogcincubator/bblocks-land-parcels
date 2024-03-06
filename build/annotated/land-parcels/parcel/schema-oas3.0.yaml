@@ -3,26 +3,26 @@ x-defs:
     type: object
     $defs:
       coderef:
-        $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie
+        $ref: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie
       coderefList:
         type: array
         items:
-          $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/coderef
+          $ref: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/coderef
       dateTime:
         type: string
         format: date-time
         pattern: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})?$
     properties:
       appellation:
-        $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/raw.githubusercontent.com_ogcincubator_bblocks-land-parcels_master_build_annotated_land-parcels_compound-name_schema.yaml
+        $ref: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogcincubator.github.io_bblocks-land-parcels_build_annotated_land-parcels_compound-name_schema.yaml
       parcelType:
-        $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/coderef
+        $ref: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/coderef
       parcelState:
-        $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/coderef
+        $ref: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/coderef
       address:
         type: object
       parcelPurpose:
-        $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/coderef
+        $ref: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/coderef
       area:
         type: number
       floor:
@@ -37,31 +37,31 @@ x-defs:
         items:
           properties:
             interestLink:
-              $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/coderef
+              $ref: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/coderef
             interestName:
               type: string
             interestType:
-              $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/coderef
+              $ref: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/coderef
             dateInForce:
-              $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/dateTime
+              $ref: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/dateTime
             dateExpires:
-              $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/dateTime
+              $ref: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/dateTime
             statuteLink:
-              $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/coderef
+              $ref: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/coderef
             statuteName:
               type: string
             benefitedPartyName:
               type: string
             benefitedPartyLink:
-              $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/coderef
+              $ref: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/coderef
             originalSurveyLink:
-              $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/coderef
+              $ref: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/coderef
             referencedParcel:
-              $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/coderef
+              $ref: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/coderef
             burdenedParcels:
-              $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/coderefList
+              $ref: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/coderefList
             benefitedParcels:
-              $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/coderefList
+              $ref: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel/$defs/coderefList
             description:
               type: string
             entitlementPortion:
@@ -77,11 +77,11 @@ x-defs:
         - parcelState
         - parcelPurpose
     x-schema-version: https://json-schema.org/draft/2020-12/schema
-    x-schema-source: https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.yaml
+    x-schema-source: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.yaml
   ogc.ogc-utils.iri-or-curie:
     x-schema-version: https://json-schema.org/draft/2020-12/schema
     x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml
-  raw.githubusercontent.com_ogcincubator_bblocks-land-parcels_master_build_annotated_land-parcels_compound-name_schema.yaml:
+  ogcincubator.github.io_bblocks-land-parcels_build_annotated_land-parcels_compound-name_schema.yaml:
     description: Compound Name
     properties:
       label:
@@ -102,6 +102,6 @@ x-defs:
           required:
           - label
     x-schema-version: https://json-schema.org/draft/2020-12/schema
-    x-schema-source: https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/compound-name/schema.yaml
+    x-schema-source: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/schema.yaml
 allOf:
-- $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel
+- $ref: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.parcel

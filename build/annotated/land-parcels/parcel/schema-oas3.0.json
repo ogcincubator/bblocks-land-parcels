@@ -4,12 +4,12 @@
       "type": "object",
       "$defs": {
         "coderef": {
-          "$ref": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.ogc-utils.iri-or-curie"
+          "$ref": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.ogc-utils.iri-or-curie"
         },
         "coderefList": {
           "type": "array",
           "items": {
-            "$ref": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/coderef"
+            "$ref": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/coderef"
           }
         },
         "dateTime": {
@@ -20,19 +20,19 @@
       },
       "properties": {
         "appellation": {
-          "$ref": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/raw.githubusercontent.com_ogcincubator_bblocks-land-parcels_master_build_annotated_land-parcels_compound-name_schema.json"
+          "$ref": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogcincubator.github.io_bblocks-land-parcels_build_annotated_land-parcels_compound-name_schema.json"
         },
         "parcelType": {
-          "$ref": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/coderef"
+          "$ref": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/coderef"
         },
         "parcelState": {
-          "$ref": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/coderef"
+          "$ref": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/coderef"
         },
         "address": {
           "type": "object"
         },
         "parcelPurpose": {
-          "$ref": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/coderef"
+          "$ref": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/coderef"
         },
         "area": {
           "type": "number"
@@ -52,22 +52,22 @@
           "items": {
             "properties": {
               "interestLink": {
-                "$ref": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/coderef"
+                "$ref": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/coderef"
               },
               "interestName": {
                 "type": "string"
               },
               "interestType": {
-                "$ref": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/coderef"
+                "$ref": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/coderef"
               },
               "dateInForce": {
-                "$ref": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/dateTime"
+                "$ref": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/dateTime"
               },
               "dateExpires": {
-                "$ref": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/dateTime"
+                "$ref": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/dateTime"
               },
               "statuteLink": {
-                "$ref": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/coderef"
+                "$ref": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/coderef"
               },
               "statuteName": {
                 "type": "string"
@@ -76,19 +76,19 @@
                 "type": "string"
               },
               "benefitedPartyLink": {
-                "$ref": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/coderef"
+                "$ref": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/coderef"
               },
               "originalSurveyLink": {
-                "$ref": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/coderef"
+                "$ref": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/coderef"
               },
               "referencedParcel": {
-                "$ref": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/coderef"
+                "$ref": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/coderef"
               },
               "burdenedParcels": {
-                "$ref": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/coderefList"
+                "$ref": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/coderefList"
               },
               "benefitedParcels": {
-                "$ref": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/coderefList"
+                "$ref": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel/$defs/coderefList"
               },
               "description": {
                 "type": "string"
@@ -114,13 +114,13 @@
         }
       },
       "x-schema-version": "https://json-schema.org/draft/2020-12/schema",
-      "x-schema-source": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.json"
+      "x-schema-source": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.json"
     },
     "ogc.ogc-utils.iri-or-curie": {
       "x-schema-version": "https://json-schema.org/draft/2020-12/schema",
       "x-schema-source": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.json"
     },
-    "raw.githubusercontent.com_ogcincubator_bblocks-land-parcels_master_build_annotated_land-parcels_compound-name_schema.json": {
+    "ogcincubator.github.io_bblocks-land-parcels_build_annotated_land-parcels_compound-name_schema.json": {
       "description": "Compound Name",
       "properties": {
         "label": {
@@ -155,12 +155,12 @@
         }
       },
       "x-schema-version": "https://json-schema.org/draft/2020-12/schema",
-      "x-schema-source": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/compound-name/schema.json"
+      "x-schema-source": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/schema.json"
     }
   },
   "allOf": [
     {
-      "$ref": "https://raw.githubusercontent.com/ogcincubator/bblocks-land-parcels/master/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel"
+      "$ref": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema-oas3.0.json#/x-defs/ogc.land-parcels.parcel"
     }
   ]
 }

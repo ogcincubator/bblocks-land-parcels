@@ -1,5 +1,5 @@
 Validation report for ogc.land-parcels.parcel - Land Parcel
-Generated 2024-03-06T17:11:35.059273+00:00
+Generated 2024-04-29T23:54:07.823346+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting

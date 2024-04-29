@@ -1,5 +1,5 @@
 x-defs:
-  ogc.land-parcels.compound-name:
+  _github_workspace_build_annotated_land-parcels_compound-name_schema.yaml:
     description: Compound Name
     properties:
       label:
@@ -31,4 +31,4 @@ x-defs:
     x-schema-version: https://json-schema.org/draft/2020-12/schema
     x-schema-source: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/schema-oas3.0.yaml
 allOf:
-- $ref: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/schema-oas3.0.yaml#/x-defs/ogc.land-parcels.compound-name
+- $ref: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/schema-oas3.0.yaml#/x-defs/_github_workspace_build_annotated_land-parcels_compound-name_schema.yaml

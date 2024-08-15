@@ -13,16 +13,14 @@
     rdfs:label "Land Parcel" ;
     dct:abstract "" ;
     dct:created "2024-06-03T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-land-parcels/build/generateddocs/markdown/land-parcels/parcel/index.md" ],
+        [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-land-parcels/build/generateddocs/json-full/land-parcels/parcel/index.json" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-land-parcels/bblock/ogc.land-parcels.parcel" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-land-parcels/build/generateddocs/slate-build/land-parcels/parcel/" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-land-parcels/build/generateddocs/markdown/land-parcels/parcel/index.md" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-land-parcels/bblock/ogc.land-parcels.parcel" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-04-29"^^xsd:date ;
+    dct:modified "2024-03-06"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-land-parcels/> ;
     bblocks:dependsOn <https://ogcincubator.github.io/ogc.land-parcels.compound-name>,
         <https://ogcincubator.github.io/ogc.ogc-utils.iri-or-curie> ;
@@ -37,16 +35,14 @@
     rdfs:label "Compound name" ;
     dct:abstract "A multiple part name, consisting of a set of strings with functional roles that can be combined into single string using a template." ;
     dct:created "2024-06-03T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-land-parcels/build/generateddocs/json-full/land-parcels/compound-name/index.json" ],
+        [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-land-parcels/build/generateddocs/markdown/land-parcels/compound-name/index.md" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-land-parcels/bblock/ogc.land-parcels.compound-name" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-land-parcels/build/generateddocs/slate-build/land-parcels/compound-name/" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-land-parcels/build/generateddocs/json-full/land-parcels/compound-name/index.json" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-land-parcels/bblock/ogc.land-parcels.compound-name" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-04-29"^^xsd:date ;
+    dct:modified "2024-03-06"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-land-parcels/> ;
     bblocks:hasJsonLdContext <https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/context.jsonld> ;
     bblocks:hasSchema <https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/schema.json>,
@@ -64,18 +60,18 @@
     bblocks:imports <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-04-29T23:54:07.897255"^^xsd:dateTime ;
-    prov:startedAtTime "2024-04-29T23:54:07.838637"^^xsd:dateTime ;
+    prov:endedAtTime "2024-08-15T07:15:05.313997"^^xsd:dateTime ;
+    prov:startedAtTime "2024-08-15T07:15:05.257547"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/yaml" ;
             rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
         [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:7283268625b20113913cfee218828d5de6413338" ;
+            dct:hasVersion "git:1e5f42d95327587aa2b081a1799d4b0b5f44c934" ;
             rdfs:seeAlso <https://ogcincubator.github.io/bblocks-land-parcels/build/register.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.3.44" ;
+            dct:hasVersion "0.3.50" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] .
 

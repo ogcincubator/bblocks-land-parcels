@@ -9,12 +9,12 @@
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2024-04-29",
+  "dateOfLastChange": "2024-03-06",
   "link": "https://github.com/opengeospatial/bblock-template",
   "shaclRules": {},
   "dependsOn": [
-    "ogc.land-parcels.compound-name",
-    "ogc.ogc-utils.iri-or-curie"
+    "ogc.ogc-utils.iri-or-curie",
+    "ogc.land-parcels.compound-name"
   ],
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema.yaml",

@@ -1,4 +1,5 @@
 {
+  "@context": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/context.jsonld",
   "id": "covenants",
   "type": "FeatureCollection",
   "featureType": "SecondaryParcel",
@@ -70,6 +71,5 @@
         }
       }
     }
-  ],
-  "@context": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/context.jsonld"
+  ]
 }

@@ -10,7 +10,7 @@
   "register": "ogc-building-block-register",
   "version": "0.1",
   "dateOfLastChange": "2024-03-06",
-  "shaclRules": {},
+  "shaclShapes": {},
   "ldContext": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/context.jsonld",
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/schema.yaml",
@@ -18,6 +18,7 @@
   },
   "sourceSchema": "https://ogcincubator.github.io/bblocks-land-parcels/_sources/compound-name/schema.yaml",
   "sourceLdContext": "https://ogcincubator.github.io/bblocks-land-parcels/_sources/compound-name/context.jsonld",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/resolvedProperties.json",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-land-parcels/_sources/compound-name/",
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/bblocks-land-parcels/blob/master/build/tests/land-parcels/compound-name/",
@@ -33,7 +34,7 @@
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"id\": \"CompoundNameExample\",\n  \"type\": \"CompoundName\",\n  \"label\": \"IS II - DP 3333\",\n  \"comment\": \"note: label may be absent or subject to rules regarding presence of parts\",\n  \"hasPart\": [\n    {\n      \"type\": \"Source\",\n      \"label\": \"DP 3333\"\n    },\n    {\n      \"type\": \"Stamp\",\n      \"label\": \"IS II\"\n    }\n  ],\n  \"@context\": \"https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/context.jsonld\"\n}",
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/context.jsonld\",\n  \"id\": \"CompoundNameExample\",\n  \"type\": \"CompoundName\",\n  \"label\": \"IS II - DP 3333\",\n  \"comment\": \"note: label may be absent or subject to rules regarding presence of parts\",\n  \"hasPart\": [\n    {\n      \"type\": \"Source\",\n      \"label\": \"DP 3333\"\n    },\n    {\n      \"type\": \"Stamp\",\n      \"label\": \"IS II\"\n    }\n  ]\n}",
           "url": "https://ogcincubator.github.io/bblocks-land-parcels/build/tests/land-parcels/compound-name/example_1_1.jsonld"
         },
         {

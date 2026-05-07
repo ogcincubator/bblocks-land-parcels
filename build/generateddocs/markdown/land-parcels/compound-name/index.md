@@ -34,6 +34,7 @@ A name with a label, but also a set of parts with roles that can be validated ag
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/context.jsonld",
   "id": "CompoundNameExample",
   "type": "CompoundName",
   "label": "IS II - DP 3333",
@@ -47,8 +48,7 @@ A name with a label, but also a set of parts with roles that can be validated ag
       "type": "Stamp",
       "label": "IS II"
     }
-  ],
-  "@context": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/context.jsonld"
+  ]
 }
 ```
 
@@ -112,6 +112,7 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
+    "name": "dct:title",
     "label": "rdfs:label",
     "hasPart": {
       "@context": {
@@ -119,7 +120,6 @@ Links to the schema:
       },
       "@id": "dct:hasPart"
     },
-    "name": "dct:title",
     "dct": "http://purl.org/dc/terms/",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "@version": 1.1

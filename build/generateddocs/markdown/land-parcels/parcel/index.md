@@ -142,6 +142,7 @@ The numeric properties "b" and "c" have an example SHACL rule that if c is prese
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/context.jsonld",
   "id": "primaryparcels",
   "type": "FeatureCollection",
   "featureType": "PrimaryParcel",
@@ -255,8 +256,7 @@ The numeric properties "b" and "c" have an example SHACL rule that if c is prese
         ]
       }
     }
-  ],
-  "@context": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/context.jsonld"
+  ]
 }
 ```
 
@@ -349,6 +349,7 @@ The numeric properties "b" and "c" have an example SHACL rule that if c is prese
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/context.jsonld",
   "id": "covenants",
   "type": "FeatureCollection",
   "featureType": "SecondaryParcel",
@@ -420,8 +421,7 @@ The numeric properties "b" and "c" have an example SHACL rule that if c is prese
         }
       }
     }
-  ],
-  "@context": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/context.jsonld"
+  ]
 }
 ```
 
@@ -525,13 +525,6 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
-    "label": "rdfs:label",
-    "hasPart": {
-      "@context": {
-        "type": "@type"
-      },
-      "@id": "dct:hasPart"
-    },
     "name": "dct:title",
     "dct": "http://purl.org/dc/terms/",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",

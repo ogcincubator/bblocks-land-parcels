@@ -1,32 +1,32 @@
-path	@id
-/appellation	
-/appellation/label	http://www.w3.org/2000/01/rdf-schema#label
-/appellation/template	
-/appellation/hasPart	http://purl.org/dc/terms/hasPart
-/appellation/hasPart/label	http://www.w3.org/2000/01/rdf-schema#label
-/appellation/hasPart/type	@type
-/parcelType	
-/parcelState	
-/address	
-/parcelPurpose	
-/area	
-/floor	
-/zmin	
-/zmax	
-/interests	
-/interests/interestLink	
-/interests/interestName	
-/interests/interestType	
-/interests/dateInForce	
-/interests/dateExpires	
-/interests/statuteLink	
-/interests/statuteName	
-/interests/benefitedPartyName	
-/interests/benefitedPartyLink	
-/interests/originalSurveyLink	
-/interests/referencedParcel	
-/interests/burdenedParcels	
-/interests/benefitedParcels	
-/interests/description	
-/interests/entitlementPortion	
-/interests/liabilityPortion	
+path	@id	schema
+/appellation		/github/workspace/build/annotated/land-parcels/parcel/schema.yaml
+/appellation/label	http://www.w3.org/2000/01/rdf-schema#label	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/schema.yaml
+/appellation/template		https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/schema.yaml
+/appellation/hasPart	http://purl.org/dc/terms/hasPart	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/schema.yaml
+/appellation/hasPart/label	http://www.w3.org/2000/01/rdf-schema#label	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/schema.yaml
+/appellation/hasPart/type	@type	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/schema.yaml
+/parcelType		/github/workspace/build/annotated/land-parcels/parcel/schema.yaml
+/parcelState		/github/workspace/build/annotated/land-parcels/parcel/schema.yaml
+/address		/github/workspace/build/annotated/land-parcels/parcel/schema.yaml
+/parcelPurpose		/github/workspace/build/annotated/land-parcels/parcel/schema.yaml
+/area		/github/workspace/build/annotated/land-parcels/parcel/schema.yaml
+/floor		/github/workspace/build/annotated/land-parcels/parcel/schema.yaml
+/zmin		/github/workspace/build/annotated/land-parcels/parcel/schema.yaml
+/zmax		/github/workspace/build/annotated/land-parcels/parcel/schema.yaml
+/interests		/github/workspace/build/annotated/land-parcels/parcel/schema.yaml
+/interests/interestLink		/github/workspace/build/annotated/land-parcels/parcel/schema.yaml
+/interests/interestName		/github/workspace/build/annotated/land-parcels/parcel/schema.yaml
+/interests/interestType		/github/workspace/build/annotated/land-parcels/parcel/schema.yaml
+/interests/dateInForce		/github/workspace/build/annotated/land-parcels/parcel/schema.yaml
+/interests/dateExpires		/github/workspace/build/annotated/land-parcels/parcel/schema.yaml
+/interests/statuteLink		/github/workspace/build/annotated/land-parcels/parcel/schema.yaml
+/interests/statuteName		/github/workspace/build/annotated/land-parcels/parcel/schema.yaml
+/interests/benefitedPartyName		/github/workspace/build/annotated/land-parcels/parcel/schema.yaml
+/interests/benefitedPartyLink		/github/workspace/build/annotated/land-parcels/parcel/schema.yaml
+/interests/originalSurveyLink		/github/workspace/build/annotated/land-parcels/parcel/schema.yaml
+/interests/referencedParcel		/github/workspace/build/annotated/land-parcels/parcel/schema.yaml
+/interests/burdenedParcels		/github/workspace/build/annotated/land-parcels/parcel/schema.yaml
+/interests/benefitedParcels		/github/workspace/build/annotated/land-parcels/parcel/schema.yaml
+/interests/description		/github/workspace/build/annotated/land-parcels/parcel/schema.yaml
+/interests/entitlementPortion		/github/workspace/build/annotated/land-parcels/parcel/schema.yaml
+/interests/liabilityPortion		/github/workspace/build/annotated/land-parcels/parcel/schema.yaml

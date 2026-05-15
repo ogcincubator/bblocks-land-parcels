@@ -3,6 +3,10 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<file:///github/workspace/covenants> a geojson:FeatureCollection,
+        parcel:SecondaryParcel ;
+    geojson:features <file:///github/workspace/8446456> .
+
 <file:///github/workspace/8446456> a geojson:Feature,
         parcel:SecondaryParcel ;
     geojson:topology [ a geojson:Polygon ;

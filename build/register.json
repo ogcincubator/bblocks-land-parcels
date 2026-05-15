@@ -1,12 +1,12 @@
 {
   "name": "Land parcels",
   "abstract": "This repository contains building blocks for land parcels.\n",
-  "modified": "2026-05-07T06:23:52.304990",
+  "modified": "2026-05-15T07:19:35.391493",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"e7a962626cb1b8416eac2178e4b7326d31314fcd",
-      "shortCommitId": "\"e7a962",
-      "date": "2026-04-28T10:25:15+00:00\""
+      "commitId": "\"6b01f188cc614cc2e65f4bf86a2623f98f101dfd",
+      "shortCommitId": "\"6b01f1",
+      "date": "2026-05-12T22:31:51+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/bblocks-land-parcels",
@@ -16,7 +16,8 @@
   "validationReport": "https://ogcincubator.github.io/bblocks-land-parcels/build/tests/report.html",
   "validationReportJson": "https://ogcincubator.github.io/bblocks-land-parcels/build/tests/report.json",
   "imports": [
-    "https://opengeospatial.github.io/bblocks/register.json"
+    "https://opengeospatial.github.io/bblocks/register.json",
+    "https://surroundaustralia.github.io/topo-feature/build/register.json"
   ],
   "bblocks": [
     {
@@ -28,7 +29,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2024-03-06",
+      "dateOfLastChange": "2026-05-15",
       "shaclShapes": {},
       "ldContext": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/compound-name/context.jsonld",
       "schema": {
@@ -59,28 +60,47 @@
     {
       "itemIdentifier": "ogc.land-parcels.parcel",
       "name": "Land Parcel",
+      "highlighted": true,
       "abstract": "",
       "status": "under-development",
       "dateTimeAddition": "2024-06-03T00:00:00Z",
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2024-03-06",
+      "dateOfLastChange": "2026-05-15",
       "link": "https://github.com/opengeospatial/bblock-template",
-      "shaclShapes": {},
+      "shaclShapes": {
+        "ogc.geo.features.feature": [
+          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+        ],
+        "ogc.geo.topo.features.topo-feature": [
+          "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+        ],
+        "ogc.geo.topo.features.topo-feature-collection": [
+          "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+        ],
+        "ogc.geo.features.featureCollection": [
+          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
+        ]
+      },
       "dependsOn": [
+        "ogc.land-parcels.compound-name",
+        "ogc.geo.json-fg.feature-lenient",
         "ogc.ogc-utils.iri-or-curie",
-        "ogc.land-parcels.compound-name"
+        "ogc.geo.topo.features.topo-feature"
       ],
+      "ldContext": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/context.jsonld",
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema.yaml",
         "application/json": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema.json"
       },
       "sourceSchema": "https://ogcincubator.github.io/bblocks-land-parcels/_sources/parcel/schema.yaml",
-      "ldContext": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/context.jsonld",
+      "sourceLdContext": "https://ogcincubator.github.io/bblocks-land-parcels/_sources/parcel/context.jsonld",
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-land-parcels/_sources/parcel/",
-      "validationPassed": false,
+      "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-land-parcels/blob/master/build/tests/land-parcels/parcel/",
       "documentation": {
         "json-full": {
@@ -94,6 +114,64 @@
         "bblocks-viewer": {
           "mediatype": "text/html",
           "url": "https://ogcincubator.github.io/bblocks-land-parcels/bblock/ogc.land-parcels.parcel"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.land-parcels.parcelCollection",
+      "name": "Land Parcel Collection",
+      "highlighted": true,
+      "abstract": "A set of parcels and supporting features defining extent via topology",
+      "status": "under-development",
+      "dateTimeAddition": "2024-06-03T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-register",
+      "version": "0.1",
+      "dateOfLastChange": "2026-05-15",
+      "link": "https://github.com/opengeospatial/bblock-template",
+      "shaclShapes": {
+        "ogc.geo.topo.features.topo-feature-collection": [
+          "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+        ],
+        "ogc.geo.features.featureCollection": [
+          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
+        ],
+        "ogc.geo.features.feature": [
+          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+        ],
+        "ogc.geo.topo.features.topo-feature": [
+          "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+        ]
+      },
+      "dependsOn": [
+        "ogc.geo.topo.features.topo-feature-collection",
+        "ogc.land-parcels.parcel",
+        "ogc.geo.json-fg.featureCollection-lenient"
+      ],
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcelCollection/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcelCollection/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-land-parcels/_sources/parcelCollection/schema.yaml",
+      "ldContext": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcelCollection/context.jsonld",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcelCollection/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-land-parcels/_sources/parcelCollection/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-land-parcels/blob/master/build/tests/land-parcels/parcelCollection/",
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-land-parcels/build/generateddocs/json-full/land-parcels/parcelCollection/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-land-parcels/build/generateddocs/markdown/land-parcels/parcelCollection/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-land-parcels/bblock/ogc.land-parcels.parcelCollection"
         }
       }
     }

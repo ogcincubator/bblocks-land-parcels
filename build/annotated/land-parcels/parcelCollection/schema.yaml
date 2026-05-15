@@ -1,0 +1,11 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+type: object
+allOf:
+- ref: bblocks://ogc.geo.json-fg.featureCollection-lenient
+- anyOf:
+  - $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml
+  - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.yaml
+- properties:
+    features:
+      items:
+        $ref: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/land-parcels/parcel/schema.yaml

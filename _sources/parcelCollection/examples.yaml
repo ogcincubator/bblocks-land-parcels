@@ -1,0 +1,9 @@
+- title: Primary parcel
+  snippets:
+    - language: json
+      ref: examples/parcel1.json
+
+- title: Secondary parcel
+  snippets:
+    - language: json
+      ref: examples/parcel2.json

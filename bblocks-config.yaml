@@ -11,3 +11,4 @@ identifier-prefix: ogc.land-parcels.
 # List of imports ("default" is an alias for the main OGC Building Blocks Register)
 imports:
   - default
+  - https://surroundaustralia.github.io/topo-feature

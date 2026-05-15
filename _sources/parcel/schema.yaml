@@ -11,67 +11,77 @@ $defs:
     type: string
     format: date-time
     pattern: "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?(?:Z|[+-]\\d{2}:\\d{2})?$"
-properties:
-  appellation:
-    $ref: bblocks://ogc.land-parcels.compound-name
-  parcelType:
-    $ref: "#/$defs/coderef"
-  parcelState:
-    $ref: "#/$defs/coderef"
-  address:
-    type: object
-  parcelPurpose:
-    $ref: "#/$defs/coderef"
-  area:
-    type: number
-  floor:
-    type: string
-  zmin:
-    type: number
-  zmax:
-    type: number
-  interests:
-    type: array
-    additionalProperties: false
-    items:
-      properties:
-        interestLink:
-          $ref: "#/$defs/coderef"
-        interestName:
-          type: string
-        interestType:
-          $ref: "#/$defs/coderef"
-        dateInForce:
-          $ref: "#/$defs/dateTime"
-        dateExpires:
-          $ref: "#/$defs/dateTime"
-        statuteLink:
-          $ref: "#/$defs/coderef"
-        statuteName:
-          type: string
-        benefitedPartyName:
-          type: string
-        benefitedPartyLink:
-          $ref: "#/$defs/coderef"
-        originalSurveyLink:
-          $ref: "#/$defs/coderef"
-        referencedParcel:
-          $ref: "#/$defs/coderef"
-        burdenedParcels:
-          $ref: "#/$defs/coderefList"
-        benefitedParcels:
-          $ref: "#/$defs/coderefList"
-        description:
-          type: string
-        entitlementPortion:
-          type: string
-        liabilityPortion:
-          type: string
+  parcelProperties:
+    $anchor: parcelProperties
+    appellation:
+      $ref: bblocks://ogc.land-parcels.compound-name
+    parcelType:
+      $ref: "#/$defs/coderef"
+    parcelState:
+      $ref: "#/$defs/coderef"
+    address:
+      type: object
+    parcelPurpose:
+      $ref: "#/$defs/coderef"
+    area:
+      type: number
+    floor:
+      type: string
+    zmin:
+      type: number
+    zmax:
+      type: number
+    interests:
+      type: array
+      additionalProperties: false
+      items:
+        properties:
+          interestLink:
+            $ref: "#/$defs/coderef"
+          interestName:
+            type: string
+          interestType:
+            $ref: "#/$defs/coderef"
+          dateInForce:
+            $ref: "#/$defs/dateTime"
+          dateExpires:
+            $ref: "#/$defs/dateTime"
+          statuteLink:
+            $ref: "#/$defs/coderef"
+          statuteName:
+            type: string
+          benefitedPartyName:
+            type: string
+          benefitedPartyLink:
+            $ref: "#/$defs/coderef"
+          originalSurveyLink:
+            $ref: "#/$defs/coderef"
+          referencedParcel:
+            $ref: "#/$defs/coderef"
+          burdenedParcels:
+            $ref: "#/$defs/coderefList"
+          benefitedParcels:
+            $ref: "#/$defs/coderefList"
+          description:
+            type: string
+          entitlementPortion:
+            type: string
+          liabilityPortion:
+            type: string
+        required:
+          - interestLink
+          - interestType
       required:
-        - interestLink
-        - interestType
-    required:
-      - appellation
-      - parcelType
-      - parcelState
-      - parcelPurpose
+        - appellation
+        - parcelType
+        - parcelState
+        - parcelPurpose
+allOf:
+  - anyOf:
+    # a single parcel  polygons defined topologically by reference
+    - $ref: bblocks://ogc.geo.topo.features.topo-feature
+    # Or simply features with geometry
+    - $ref: bblocks://ogc.geo.json-fg.feature-lenient
+  - properties:
+      properties:
+        $ref: "#parcelProperties"

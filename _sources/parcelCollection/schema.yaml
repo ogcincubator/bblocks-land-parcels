@@ -1,0 +1,13 @@
+"$schema": https://json-schema.org/draft/2020-12/schema
+type: object
+allOf:
+  - ref: bblocks://ogc.geo.json-fg.featureCollection-lenient
+  - anyOf:
+    # a set of parcels can be a set of topo features with polygons defined topologically by reference
+      - $ref: bblocks://ogc.geo.topo.features.topo-feature-collection
+    # Or simply features with geometry
+      - $ref: bblocks://ogc.geo.json-fg.featureCollection-lenient
+  - properties:
+      features:
+        items:
+          $ref: bblocks://ogc.land-parcels.parcel

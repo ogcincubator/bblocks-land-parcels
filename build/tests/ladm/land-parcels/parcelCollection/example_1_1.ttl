@@ -1,0 +1,33 @@
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix parcel: <https://w3id.org/ogc/ladm/parcels/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<file:///github/workspace/primaryparcels> a geojson:FeatureCollection,
+        parcel:PrimaryParcel ;
+    geojson:features <file:///github/workspace/8446454>,
+        <file:///github/workspace/8446455> .
+
+<file:///github/workspace/8446454> a geojson:Feature ;
+    geojson:topology [ a geojson:Polygon ;
+            topo:relatedFeatures ( ( <file:///github/workspace/l535242> <file:///github/workspace/l535759> <file:///github/workspace/l985190> <file:///github/workspace/l952702> <file:///github/workspace/l965727> <file:///github/workspace/l589282> ) ) ] ;
+    parcel:appellation [ ] ;
+    parcel:interest [ parcel:interestLink <file:///github/workspace/1040074> ;
+            parcel:interestType <nz-interest-type:fh> ] ;
+    parcel:purpose <nz-parcel-purpose:fst> ;
+    parcel:state <nz-parcel-state:created> ;
+    parcel:surfaceArea 484 ;
+    parcel:type <nz-parcel-type:fee-simple-title> .
+
+<file:///github/workspace/8446455> a geojson:Feature ;
+    geojson:topology [ a geojson:Polygon ;
+            topo:relatedFeatures ( ( <file:///github/workspace/l746686> <file:///github/workspace/l999724> <file:///github/workspace/l591175> <file:///github/workspace/l435861> <file:///github/workspace/l874826> <file:///github/workspace/l952702> <file:///github/workspace/l985190> <file:///github/workspace/l535759> <file:///github/workspace/l535242> <file:///github/workspace/l329256> ) ) ] ;
+    parcel:appellation [ ] ;
+    parcel:interest [ parcel:interestLink <file:///github/workspace/1040075> ;
+            parcel:interestType <nz-interest-type:fh> ] ;
+    parcel:purpose <nz-parcel-purpose:fst> ;
+    parcel:state <nz-parcel-state:created> ;
+    parcel:surfaceArea 1196 ;
+    parcel:type <nz-parcel-type:fee-simple-title> .
+

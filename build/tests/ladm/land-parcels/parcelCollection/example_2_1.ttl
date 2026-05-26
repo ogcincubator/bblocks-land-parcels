@@ -1,0 +1,22 @@
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix parcel: <https://w3id.org/ogc/ladm/parcels/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<file:///github/workspace/covenants> a geojson:FeatureCollection,
+        parcel:SecondaryParcel ;
+    geojson:features <file:///github/workspace/8446456> .
+
+<file:///github/workspace/8446456> a geojson:Feature,
+        parcel:SecondaryParcel ;
+    geojson:topology [ a geojson:Polygon ;
+            topo:relatedFeatures ( ( <file:///github/workspace/l999724> <file:///github/workspace/l591175> <file:///github/workspace/l369793> <file:///github/workspace/l435861> <file:///github/workspace/l345344> <file:///github/workspace/l685716> <file:///github/workspace/l832940> <file:///github/workspace/l715872> <file:///github/workspace/l641327> <file:///github/workspace/l852048> <file:///github/workspace/l949729> <file:///github/workspace/l951515> <file:///github/workspace/l761760> <file:///github/workspace/l580762> ) ) ] ;
+    parcel:appellation [ ] ;
+    parcel:interest [ parcel:interestLink <file:///github/workspace/1040075> ;
+            parcel:interestType <nz-interest-type:fh> ] ;
+    parcel:purpose <nz-parcel-purpose:c-l> ;
+    parcel:state <nz-parcel-state:created> ;
+    parcel:surfaceArea 1196 ;
+    parcel:type <nz-parcel-type:covenant-land> .
+

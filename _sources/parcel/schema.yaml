@@ -14,7 +14,7 @@ $defs:
   parcelProperties:
     $anchor: parcelProperties
     appellation:
-      $ref: bblocks://ogc.land-parcels.compound-name
+      $ref: bblocks://ogc.ladm.land-parcels.compound-name
     parcelType:
       $ref: "#/$defs/coderef"
     parcelState:

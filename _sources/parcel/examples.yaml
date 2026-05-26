@@ -7,3 +7,12 @@
   snippets:
     - language: json
       ref: examples/parcel2.json
+
+- title: ContainingParcelRef
+  content: |
+    Has a relationship from a parcel to a "ParentParcel" - with an explicit semantic relationship and a topolgy constraint relationship.
+    
+    Note, the topology constraint "within" for a 3D Parcel, referencing a Parent Parcel defined in 2 or 2.5D implies within a virtual extruded volume defined by the footprint of the Parent Parcel.
+  snippets:
+    - language: json
+      ref: examples/parcel-relationship.json

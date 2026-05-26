@@ -1,11 +1,12 @@
 {
   "name": "Land Parcel",
   "highlighted": true,
-  "abstract": "",
+  "abstract": "A parcel of land, corresponds to LA_SpatialUnit from LADM (ISO 19162)",
   "status": "under-development",
   "dateTimeAddition": "2024-06-03T00:00:00Z",
   "itemClass": "schema",
-  "register": "ogc-building-block-register",
+  "dependsOn": [ "ogc.ladm.land-parcels.ontology"],
+  "register": "ogcincubator",
   "version": "0.1",
   "dateOfLastChange": "2024-03-06",
   "link": "https://github.com/opengeospatial/bblock-template"

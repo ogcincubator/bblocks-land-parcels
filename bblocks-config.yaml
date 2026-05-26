@@ -3,10 +3,14 @@ name: Land parcels
 
 # Short abstract for this collection (optional)
 abstract: |
-  This repository contains building blocks for land parcels.
+  This repository contains a JSON schema model for land parcels, semantically annotated and aligned with LADM conceptual model.
+  
+  These schemas use a generalised 3D topology model to provide explicit definition of parcels required for survey record keeping. 
+  
+  The topology model supports transformations to well known geometry formats which may be used to visualise and validated geometry representations of  Parcel objects in 2 or 3D.
 
 # Customize the following prefix (will be prepended to the path of the building blocks):
-identifier-prefix: ogc.land-parcels.
+identifier-prefix: ogc.ladm.land-parcels.
 
 # List of imports ("default" is an alias for the main OGC Building Blocks Register)
 imports:

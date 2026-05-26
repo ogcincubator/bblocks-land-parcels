@@ -1,7 +1,7 @@
 {
   "name": "Land Parcel Collection",
   "highlighted": true,
-  "abstract": "A set of parcels and supporting features defining extent via topology",
+  "abstract": "corresponds to LA_SpatialUnitGroup from LADM (ISO 19162)",
   "status": "under-development",
   "dateTimeAddition": "2024-06-03T00:00:00Z",
   "itemClass": "schema",

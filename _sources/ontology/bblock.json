@@ -1,0 +1,19 @@
+{
+  "name": "Land Parcels Ontology",
+  "highlighted": true,
+  "abstract": "Terms and definitions for the Land Parcels model.  This is aligned with LADM semantics and terminology and could be evolved or mapped to an authoritative LADM ontology component as required/",
+  "status": "under-development",
+  "dateTimeAddition": "2023-09-18T00:00:00Z",
+  "itemClass": "model",
+  "register": "ogc-incubator",
+  "version": "0.1",
+  "dateOfLastChange": "2023-09-18",
+  "dependsOn": [
+  ],
+  "sources": [
+  ],
+  "scope": "dev",
+  "tags": [
+    "OSPD"
+  ]
+}

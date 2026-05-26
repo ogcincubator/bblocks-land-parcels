@@ -1,0 +1,22 @@
+transforms:
+
+  - id: Points-n-Edges
+    description: GeoJSON points and Edges
+    type: python
+    inputs:
+      mediaTypes: [ application/json ]
+    outputs:
+      mediaTypes: [ application/geo+json ]
+    metadata:
+      mode: edges,points
+    code: |
+      # In a python transform
+      import json
+      print("Getting converter")
+      # Get a callable for another building block's transform
+      convert = get_transformer('ogc.geo.topo.features.topo-feature-multi-collection', 'Points-n-Edges')
+      print("load JSON")
+      data = json.loads(input_data)
+      print("converting")
+      result_str = convert(json.dumps(data))
+      output_data = result_str

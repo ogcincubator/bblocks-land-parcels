@@ -10,4 +10,6 @@ allOf:
   - properties:
       features:
         items:
-          $ref: bblocks://ogc.land-parcels.parcel
+          anyOf:
+            - $ref: bblocks://ogc.ladm.land-parcels.parcel
+            - $ref: bblocks://ogc.geo.topo.features.topo-feature

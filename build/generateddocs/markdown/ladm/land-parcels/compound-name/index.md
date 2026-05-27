@@ -58,10 +58,10 @@ A name with a label, but also a set of parts with roles that can be validated ag
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 [] rdfs:label "IS II - DP 3333" ;
-    dct:hasPart [ a <file:///github/workspace/Stamp> ;
-            rdfs:label "IS II" ],
-        [ a <file:///github/workspace/Source> ;
-            rdfs:label "DP 3333" ] .
+    dct:hasPart [ a <file:///github/workspace/Source> ;
+            rdfs:label "DP 3333" ],
+        [ a <file:///github/workspace/Stamp> ;
+            rdfs:label "IS II" ] .
 
 
 ```

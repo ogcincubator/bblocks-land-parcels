@@ -1,5 +1,5 @@
 Validation report for ogc.ladm.land-parcels.compound-name - Compound name
-Generated 2026-05-26T02:30:59.683602+00:00
+Generated 2026-05-27T06:46:40.024903+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting

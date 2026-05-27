@@ -28,15 +28,14 @@
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-land-parcels/bblock/ogc.ladm.land-parcels.parcelCollection> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2026-05-26"^^xsd:date ;
+    dct:modified "2024-03-06"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-land-parcels/> ;
     skos:prefLabel "Land Parcel Collection" ;
     skos:topConceptOf <https://ogcincubator.github.io/bblocks-land-parcels/> ;
-    prof:hasResource [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
-            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
-            prof:hasRole role:validation ],
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcelCollection/context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.geo.topo.features.topo-feature-collection> ;
@@ -49,6 +48,10 @@
             prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl> ;
             prof:hasRole role:validation ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcelCollection/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcelCollection/schema.json> ;
             prof:hasRole role:schema ],
@@ -58,14 +61,11 @@
             prof:hasArtifact <https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl>,
                 <https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl> ;
             prof:hasRole role:validation ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcelCollection/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcelCollection/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
+            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
+            prof:hasRole role:validation ] ;
     bblocks:dependsOn <bblocks://ogc.geo.json-fg.featureCollection-lenient>,
         <bblocks://ogc.geo.topo.features.topo-feature>,
         <bblocks://ogc.geo.topo.features.topo-feature-collection>,
@@ -75,18 +75,18 @@
 
 <https://ogcincubator.github.io/bblocks-land-parcels/build/bblocks.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    prov:wasAttributedTo _:Nd753a9238b284a90a2594a06f9d82fdb ;
+    prov:wasAttributedTo _:N87e0e182f6754d43b30b9e93d1541ce4 ;
     prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2026-05-26T02:31:06.778516"^^xsd:dateTime ;
-            prov:startedAtTime "2026-05-26T02:31:06.672586"^^xsd:dateTime ;
+            prov:endedAtTime "2026-05-27T06:46:56.018292"^^xsd:dateTime ;
+            prov:startedAtTime "2026-05-27T06:46:55.834116"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
-                    dct:format "application/yaml" ;
-                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
-                [ a prov:Entity ;
                     dct:format "application/json" ;
-                    dct:hasVersion "git:0ae162f6a1b45870ba89cb702e1573dfbd7c5bc6" ;
-                    rdfs:seeAlso <https://ogcincubator.github.io/bblocks-land-parcels/build/register.json> ] ;
-            prov:wasAssociatedWith _:Nd753a9238b284a90a2594a06f9d82fdb ] .
+                    dct:hasVersion "git:63ff58af5fcd5a4683a5ce4a9c40717811c8a1b7" ;
+                    rdfs:seeAlso <https://ogcincubator.github.io/bblocks-land-parcels/build/register.json> ],
+                [ a prov:Entity ;
+                    dct:format "application/yaml" ;
+                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
+            prov:wasAssociatedWith _:N87e0e182f6754d43b30b9e93d1541ce4 ] .
 
 <bblocks://ogc.ladm.land-parcels.compound-name> a skos:Concept,
         dcat:Dataset,
@@ -97,27 +97,27 @@
     dct:created "2024-06-03T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-land-parcels/build/generateddocs/json-full/ladm/land-parcels/compound-name/index.json> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-land-parcels/build/generateddocs/markdown/ladm/land-parcels/compound-name/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-land-parcels/bblock/ogc.ladm.land-parcels.compound-name> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-land-parcels/bblock/ogc.ladm.land-parcels.compound-name> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-land-parcels/build/generateddocs/markdown/ladm/land-parcels/compound-name/index.md> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2026-05-26"^^xsd:date ;
+    dct:modified "2024-03-06"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-land-parcels/> ;
     skos:prefLabel "Compound name" ;
     skos:topConceptOf <https://ogcincubator.github.io/bblocks-land-parcels/> ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/compound-name/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/compound-name/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/compound-name/schema.json> ;
-            prof:hasRole role:schema ] ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/compound-name/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/bblocks-land-parcels/_sources/compound-name/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
@@ -136,7 +136,7 @@
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-land-parcels/build/generateddocs/json-full/ladm/land-parcels/ontology/index.json> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2026-05-26"^^xsd:date ;
+    dct:modified "2023-09-18"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-land-parcels/> ;
     skos:prefLabel "Land Parcels Ontology" ;
     skos:topConceptOf <https://ogcincubator.github.io/bblocks-land-parcels/> ;
@@ -152,27 +152,21 @@
     rdfs:label "Land Parcel" ;
     dct:abstract "A parcel of land, corresponds to LA_SpatialUnit from LADM (ISO 19162)"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-06-03T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-land-parcels/build/generateddocs/markdown/ladm/land-parcels/parcel/index.md> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-land-parcels/bblock/ogc.ladm.land-parcels.parcel> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-land-parcels/build/generateddocs/markdown/ladm/land-parcels/parcel/index.md> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-land-parcels/build/generateddocs/json-full/ladm/land-parcels/parcel/index.json> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2026-05-26"^^xsd:date ;
+    dct:modified "2024-03-06"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-land-parcels/> ;
     skos:prefLabel "Land Parcel" ;
     skos:topConceptOf <https://ogcincubator.github.io/bblocks-land-parcels/> ;
     prof:hasResource [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
-            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.geo.topo.features.topo-feature> ;
-            prof:hasArtifact <https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl>,
-                <https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl> ;
+            rdfs:seeAlso <bblocks://ogc.geo.features.featureCollection> ;
+            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl> ;
             prof:hasRole role:validation ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
@@ -180,23 +174,29 @@
             prof:hasRole role:schema ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.geo.topo.features.topo-feature-collection> ;
+            rdfs:seeAlso <bblocks://ogc.geo.topo.features.topo-feature> ;
             prof:hasArtifact <https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl>,
                 <https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl> ;
             prof:hasRole role:validation ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.geo.features.featureCollection> ;
-            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl> ;
+            rdfs:seeAlso <bblocks://ogc.geo.topo.features.topo-feature-collection> ;
+            prof:hasArtifact <https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl>,
+                <https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl> ;
             prof:hasRole role:validation ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.json> ;
+            prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/context.jsonld> ;
             prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.json> ;
-            prof:hasRole role:schema ] ;
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
+            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
+            prof:hasRole role:validation ] ;
     bblocks:dependsOn <bblocks://ogc.geo.json-fg.feature-lenient>,
         <bblocks://ogc.geo.topo.features.topo-feature>,
         <bblocks://ogc.ladm.land-parcels.compound-name>,
@@ -216,7 +216,7 @@ These schemas use a generalised 3D topology model to provide explicit definition
 
 The topology model supports transformations to well known geometry formats which may be used to visualise and validated geometry representations of  Parcel objects in 2 or 3D.
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:modified "2026-05-26T02:30:56.227824"^^xsd:dateTime ;
+    dct:modified "2026-05-27T06:46:35.867056"^^xsd:dateTime ;
     owl:imports <https://opengeospatial.github.io/bblocks/register.json>,
         <https://surroundaustralia.github.io/topo-feature/build/register.json> ;
     skos:hasTopConcept <bblocks://ogc.ladm.land-parcels.compound-name>,
@@ -224,22 +224,22 @@ The topology model supports transformations to well known geometry formats which
         <bblocks://ogc.ladm.land-parcels.parcel>,
         <bblocks://ogc.ladm.land-parcels.parcelCollection> ;
     skos:prefLabel "Building Blocks - Land parcels" ;
-    prof:hasResource [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
-            dct:type "application/ld+json" ;
+    prof:hasResource [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
+            dct:type "text/turtle" ;
             ns1:relation <http://www.iana.org/assignments/relation/self> ;
-            ns2:hasTarget <https://ogcincubator.github.io/bblocks-land-parcels/build/bblocks.jsonld> ],
+            ns2:hasTarget <https://ogcincubator.github.io/bblocks-land-parcels/build/bblocks.ttl> ],
         [ rdfs:label "This Building Blocks Register in JSON format" ;
             dct:type "application/json" ;
             ns1:relation <http://www.iana.org/assignments/relation/self> ;
             ns2:hasTarget <https://ogcincubator.github.io/bblocks-land-parcels/build/register.json> ],
-        [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
-            dct:type "text/turtle" ;
+        [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
+            dct:type "application/ld+json" ;
             ns1:relation <http://www.iana.org/assignments/relation/self> ;
-            ns2:hasTarget <https://ogcincubator.github.io/bblocks-land-parcels/build/bblocks.ttl> ] ;
+            ns2:hasTarget <https://ogcincubator.github.io/bblocks-land-parcels/build/bblocks.jsonld> ] ;
     foaf:homepage <https://ogcincubator.github.io/bblocks-land-parcels/> ;
     bblocks:hasValidationReport <https://ogcincubator.github.io/bblocks-land-parcels/build/tests/report.html> .
 
-_:Nd753a9238b284a90a2594a06f9d82fdb a prov:Agent,
+_:N87e0e182f6754d43b30b9e93d1541ce4 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.5.29" ;

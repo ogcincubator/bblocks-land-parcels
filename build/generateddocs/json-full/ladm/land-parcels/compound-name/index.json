@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2026-05-26",
+  "dateOfLastChange": "2024-03-06",
   "shaclShapes": {},
   "ldContext": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/compound-name/context.jsonld",
   "schema": {
@@ -40,7 +40,7 @@
         {
           "language": "ttl",
           "url": "https://ogcincubator.github.io/bblocks-land-parcels/build/tests/ladm/land-parcels/compound-name/example_1_1.ttl",
-          "code": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n[] rdfs:label \"IS II - DP 3333\" ;\n    dct:hasPart [ a <file:///github/workspace/Stamp> ;\n            rdfs:label \"IS II\" ],\n        [ a <file:///github/workspace/Source> ;\n            rdfs:label \"DP 3333\" ] .\n\n"
+          "code": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n[] rdfs:label \"IS II - DP 3333\" ;\n    dct:hasPart [ a <file:///github/workspace/Source> ;\n            rdfs:label \"DP 3333\" ],\n        [ a <file:///github/workspace/Stamp> ;\n            rdfs:label \"IS II\" ] .\n\n"
         }
       ]
     }

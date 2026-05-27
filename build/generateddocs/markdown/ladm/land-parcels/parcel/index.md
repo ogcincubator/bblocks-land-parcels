@@ -471,11 +471,11 @@ Note, the topology constraint "within" for a 3D Parcel, referencing a Parent Par
 
 <file:///github/workspace/8446454> a geojson:Feature ;
     geojson:topology [ a geojson:Polygon ;
-            topo:relatedFeatures ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;
+            topo:relatedFeatures ( ( <file:///github/workspace/l535242> <file:///github/workspace/l535759> <file:///github/workspace/l985190> <file:///github/workspace/l952702> <file:///github/workspace/l965727> <file:///github/workspace/l589282> ) ),
+                ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;
                         prof:hasRole topo:within,
                             parcel:containingParentParcel ;
-                        oa:hasTarget <myParcels:1234> ] ),
-                ( ( <file:///github/workspace/l535242> <file:///github/workspace/l535759> <file:///github/workspace/l985190> <file:///github/workspace/l952702> <file:///github/workspace/l965727> <file:///github/workspace/l589282> ) ) ] ;
+                        oa:hasTarget <myParcels:1234> ] ) ] ;
     parcel:appellation [ ] ;
     parcel:interest [ parcel:interestLink <file:///github/workspace/1040074> ;
             parcel:interestType <nz-interest-type:fh> ] ;

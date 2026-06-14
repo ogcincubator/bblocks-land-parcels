@@ -136,10 +136,104 @@
       "@type": "@id",
       "@id": "geojson:topology"
     },
-    "name": "rdfs:label",
+    "Face": "topo:Face",
+    "Ring": "topo:Ring",
+    "Shell": "topo:Shell",
+    "Solid": "topo:Solid",
+    "faces": {
+      "@id": "topo:faces",
+      "@container": "@list"
+    },
+    "rings": {
+      "@id": "topo:rings",
+      "@container": "@list"
+    },
+    "shells": {
+      "@id": "topo:shells",
+      "@container": "@list"
+    },
+    "solids": {
+      "@id": "topo:shells",
+      "@container": "@list"
+    },
+    "points": {
+      "@context": {
+        "links": {
+          "@context": {
+            "href": {
+              "@type": "@id",
+              "@id": "oa:hasTarget"
+            },
+            "rel": {
+              "@context": {
+                "@base": "http://www.iana.org/assignments/relation/"
+              },
+              "@id": "http://www.iana.org/assignments/relation",
+              "@type": "@id"
+            },
+            "type": "dct:type",
+            "hreflang": "dct:language",
+            "title": "rdfs:label",
+            "length": "dct:extent"
+          },
+          "@id": "rdfs:seeAlso"
+        },
+        "featureType": "geojson:collectionFeatureType"
+      },
+      "@id": "topo:points",
+      "@container": "@list"
+    },
+    "edges": {
+      "@context": {
+        "links": {
+          "@context": {
+            "href": {
+              "@type": "@id",
+              "@id": "oa:hasTarget"
+            },
+            "rel": {
+              "@context": {
+                "@base": "http://www.iana.org/assignments/relation/"
+              },
+              "@id": "http://www.iana.org/assignments/relation",
+              "@type": "@id"
+            },
+            "type": "dct:type",
+            "hreflang": "dct:language",
+            "title": "rdfs:label",
+            "length": "dct:extent"
+          },
+          "@id": "rdfs:seeAlso"
+        },
+        "featureType": "geojson:collectionFeatureType"
+      },
+      "@id": "topo:edges",
+      "@container": "@list"
+    },
+    "appellation": "parcel:appellation",
+    "parcelType": {
+      "@id": "parcel:type",
+      "@type": "@id"
+    },
+    "parcelState": {
+      "@id": "parcel:state",
+      "@type": "@id"
+    },
     "address": "sdo:address",
-    "bearingRotation": "container:bearingRotation",
-    "points": "container:points",
+    "parcelPurpose": {
+      "@id": "parcel:purpose",
+      "@type": "@id"
+    },
+    "area": "parcel:surfaceArea",
+    "floor": "parcel:floor",
+    "zmin": "parcel:zmin",
+    "zmax": "parcel:zmax",
+    "interests": {
+      "@id": "parcel:interest",
+      "@container": "@set"
+    },
+    "name": "rdfs:label",
+    "bearingRotation": "parcel:bearingRotation",
     "parcels": "parcel:parcels",
     "PrimaryParcel": {
       "@id": "parcel:PrimaryParcel",
@@ -149,74 +243,11 @@
       "@id": "parcel:SecondaryParcel",
       "@type": "@id"
     },
-    "appellation": "parcel:appellation",
-    "parcelType": {
-      "@id": "parcel:type",
-      "@type": "@id"
-    },
-    "parcelPurpose": {
-      "@id": "parcel:purpose",
-      "@type": "@id"
-    },
     "parcelQualityClass": {
       "@id": "parcel:qualityClass",
       "@type": "@id"
     },
-    "area": "parcel:surfaceArea",
-    "floor": "parcel:floor",
-    "zmin": "parcel:zmin",
-    "zmax": "parcel:zmax",
     "terrainIntersectionCurve": "parcel:terrainIntersectionCurve",
-    "interests": {
-      "@id": "parcel:interest",
-      "@container": "@set",
-      "@context": {
-        "interestLink": {
-          "@type": "@id",
-          "@id": "parcel:interestLink"
-        },
-        "interestName": "parcel:interestName",
-        "interestType": {
-          "@type": "@id",
-          "@id": "parcel:interestType"
-        },
-        "dateInForce": "parcel:interestDateInForce",
-        "dateExpires": "parcel:interestDateExpires",
-        "statuteLink": {
-          "@type": "@id",
-          "@id": "parcel:statuteLink"
-        },
-        "statuteName": "parcel:statuteName",
-        "benefitedPartyLink": {
-          "@type": "@id",
-          "@id": "parcel:benefitedPartyLink"
-        },
-        "benefitedPartyName": "parcel:benefitedPartyName",
-        "referencedParcel": {
-          "@type": "@id",
-          "@id": "parcel:referencedParcel"
-        },
-        "originalSurveyLink": {
-          "@type": "@id",
-          "@id": "parcel:originalSurveyLink"
-        },
-        "burdenedParcels": {
-          "@id": "parcel:burdened",
-          "@container": "@set"
-        },
-        "benefitedParcels": {
-          "@id": "parcel:benefited",
-          "@container": "@set"
-        },
-        "entitlementPortion": "parcel:entitlementPortion",
-        "liabilityPortion": "parcel:liabilityPortion",
-        "description": "parcel:interestDescription"
-      }
-    },
-    "parcelState": {
-      "@id": "parcel:state",
-      "@type": "@id"
-    },
     "Arc": "geojson:Arc",
     "ArcWithCenter": "geojson:ArcWithCenter",
     "ArcByChord": "geojson:ArcByChord",
@@ -229,22 +260,6 @@
     "ref": "topo:ref",
     "orientation": "topo:orientation",
     "Edge": "topo:Edge",
-    "Face": "topo:Face",
-    "Ring": "topo:Ring",
-    "Shell": "topo:Shell",
-    "Solid": "topo:Solid",
-    "rings": {
-      "@id": "topo:rings",
-      "@container": "@list"
-    },
-    "shells": {
-      "@id": "topo:shells",
-      "@container": "@list"
-    },
-    "faces": {
-      "@id": "topo:faces",
-      "@container": "@list"
-    },
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",

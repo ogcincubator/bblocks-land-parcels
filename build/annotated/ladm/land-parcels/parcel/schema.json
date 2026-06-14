@@ -16,101 +16,120 @@
       "format": "date-time",
       "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?(?:Z|[+-]\\d{2}:\\d{2})?$"
     },
+    "interest": {
+      "$anchor": "interest",
+      "properties": {
+        "interestLink": {
+          "$ref": "#/$defs/coderef"
+        },
+        "interestName": {
+          "type": "string"
+        },
+        "interestType": {
+          "$ref": "#/$defs/coderef"
+        },
+        "dateInForce": {
+          "$ref": "#/$defs/dateTime"
+        },
+        "dateExpires": {
+          "$ref": "#/$defs/dateTime"
+        },
+        "statuteLink": {
+          "$ref": "#/$defs/coderef"
+        },
+        "statuteName": {
+          "type": "string"
+        },
+        "benefitedPartyName": {
+          "type": "string"
+        },
+        "benefitedPartyLink": {
+          "$ref": "#/$defs/coderef"
+        },
+        "originalSurveyLink": {
+          "$ref": "#/$defs/coderef"
+        },
+        "referencedParcel": {
+          "$ref": "#/$defs/coderef"
+        },
+        "burdenedParcels": {
+          "$ref": "#/$defs/coderefList"
+        },
+        "benefitedParcels": {
+          "$ref": "#/$defs/coderefList"
+        },
+        "description": {
+          "type": "string"
+        },
+        "entitlementPortion": {
+          "type": "string"
+        },
+        "liabilityPortion": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "interestLink",
+        "interestType"
+      ]
+    },
     "parcelProperties": {
       "$anchor": "parcelProperties",
-      "appellation": {
-        "$ref": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/compound-name/schema.json"
-      },
-      "parcelType": {
-        "$ref": "#/$defs/coderef"
-      },
-      "parcelState": {
-        "$ref": "#/$defs/coderef"
-      },
-      "address": {
-        "type": "object"
-      },
-      "parcelPurpose": {
-        "$ref": "#/$defs/coderef"
-      },
-      "area": {
-        "type": "number"
-      },
-      "floor": {
-        "type": "string"
-      },
-      "zmin": {
-        "type": "number"
-      },
-      "zmax": {
-        "type": "number"
-      },
-      "interests": {
-        "type": "array",
-        "additionalProperties": false,
-        "items": {
-          "properties": {
-            "interestLink": {
-              "$ref": "#/$defs/coderef"
-            },
-            "interestName": {
-              "type": "string"
-            },
-            "interestType": {
-              "$ref": "#/$defs/coderef"
-            },
-            "dateInForce": {
-              "$ref": "#/$defs/dateTime"
-            },
-            "dateExpires": {
-              "$ref": "#/$defs/dateTime"
-            },
-            "statuteLink": {
-              "$ref": "#/$defs/coderef"
-            },
-            "statuteName": {
-              "type": "string"
-            },
-            "benefitedPartyName": {
-              "type": "string"
-            },
-            "benefitedPartyLink": {
-              "$ref": "#/$defs/coderef"
-            },
-            "originalSurveyLink": {
-              "$ref": "#/$defs/coderef"
-            },
-            "referencedParcel": {
-              "$ref": "#/$defs/coderef"
-            },
-            "burdenedParcels": {
-              "$ref": "#/$defs/coderefList"
-            },
-            "benefitedParcels": {
-              "$ref": "#/$defs/coderefList"
-            },
-            "description": {
-              "type": "string"
-            },
-            "entitlementPortion": {
-              "type": "string"
-            },
-            "liabilityPortion": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "interestLink",
-            "interestType"
-          ]
+      "properties": {
+        "appellation": {
+          "$ref": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/compoundName/schema.json",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/appellation"
         },
-        "required": [
-          "appellation",
-          "parcelType",
-          "parcelState",
-          "parcelPurpose"
-        ]
-      }
+        "parcelType": {
+          "$ref": "#/$defs/coderef",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/type",
+          "x-jsonld-type": "@id"
+        },
+        "parcelState": {
+          "$ref": "#/$defs/coderef",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/state",
+          "x-jsonld-type": "@id"
+        },
+        "address": {
+          "type": "object",
+          "x-jsonld-id": "https://schema.org/address"
+        },
+        "parcelPurpose": {
+          "$ref": "#/$defs/coderef",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/purpose",
+          "x-jsonld-type": "@id"
+        },
+        "area": {
+          "type": "number",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/surfaceArea"
+        },
+        "floor": {
+          "type": "string",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/floor"
+        },
+        "zmin": {
+          "type": "number",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/zmin"
+        },
+        "zmax": {
+          "type": "number",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/zmax"
+        },
+        "interests": {
+          "type": "array",
+          "items": {
+            "$ref": "#interest"
+          },
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/interest",
+          "x-jsonld-container": "@set"
+        }
+      },
+      "required": [
+        "appellation",
+        "parcelType",
+        "parcelState",
+        "parcelPurpose"
+      ]
     }
   },
   "allOf": [
@@ -120,6 +139,9 @@
           "$ref": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.json"
         },
         {
+          "$ref": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.json"
+        },
+        {
           "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.json"
         }
       ]
@@ -127,18 +149,15 @@
     {
       "properties": {
         "properties": {
-          "$ref": "#parcelProperties",
-          "x-jsonld-id": "@nest"
+          "$ref": "#parcelProperties"
         }
       }
     }
   ],
   "x-jsonld-extra-terms": {
-    "featureType": "@type",
     "name": "rdfs:label",
     "address": "https://schema.org/address",
-    "bearingRotation": "container:bearingRotation",
-    "points": "container:points",
+    "bearingRotation": "https://w3id.org/ogc/ladm/parcels/bearingRotation",
     "parcels": "https://w3id.org/ogc/ladm/parcels/parcels",
     "PrimaryParcel": {
       "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/PrimaryParcel",

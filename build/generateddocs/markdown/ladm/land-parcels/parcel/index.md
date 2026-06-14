@@ -57,14 +57,14 @@ LADM ....
       ]
     },
     "area": 484,
-    "parcelType": "nz-parcel-type:fee-simple-title",
-    "parcelPurpose": "nz-parcel-purpose:fst",
-    "parcelState": "nz-parcel-state:created",
-    "class": "nz-parcel-class:allotment",
+    "parcelType": "eg-parcel-type:fee-simple-title",
+    "parcelPurpose": "eg-parcel-purpose:fst",
+    "parcelState": "eg-parcel-state:created",
+    "class": "eg-parcel-class:allotment",
     "interests": [
       {
         "interestLink": "1040074",
-        "interestType": "nz-interest-type:fh"
+        "interestType": "eg-interest-type:fh"
       }
     ]
   }
@@ -74,7 +74,14 @@ LADM ....
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/context.jsonld",
+  "@context": [
+    {
+      "eg-parcel-purpose": "https://w3id.org/ogc/ladm/vocabs/eg/parcel-purpose/",
+      "eg-parcel-type": "https://w3id.org/ogc/ladm/vocabs/eg/parcel-type/",
+      "eg-parcel-state": "https://w3id.org/ogc/ladm/vocabs/eg/parcel-state/"
+    },
+    "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/context.jsonld"
+  ],
   "type": "Feature",
   "id": "8446454",
   "geometry": null,
@@ -114,14 +121,14 @@ LADM ....
       ]
     },
     "area": 484,
-    "parcelType": "nz-parcel-type:fee-simple-title",
-    "parcelPurpose": "nz-parcel-purpose:fst",
-    "parcelState": "nz-parcel-state:created",
-    "class": "nz-parcel-class:allotment",
+    "parcelType": "eg-parcel-type:fee-simple-title",
+    "parcelPurpose": "eg-parcel-purpose:fst",
+    "parcelState": "eg-parcel-state:created",
+    "class": "eg-parcel-class:allotment",
     "interests": [
       {
         "interestLink": "1040074",
-        "interestType": "nz-interest-type:fh"
+        "interestType": "eg-interest-type:fh"
       }
     ]
   }
@@ -130,22 +137,24 @@ LADM ....
 
 #### ttl
 ```ttl
+@prefix eg-parcel-purpose: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-purpose/> .
+@prefix eg-parcel-state: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-state/> .
+@prefix eg-parcel-type: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-type/> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix parcel: <https://w3id.org/ogc/ladm/parcels/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix topo: <https://purl.org/geojson/topo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<file:///github/workspace/8446454> a geojson:Feature ;
+<http://www.example.com/features/8446454> a geojson:Feature ;
     geojson:topology [ a geojson:Polygon ;
-            topo:relatedFeatures ( ( <file:///github/workspace/l535242> <file:///github/workspace/l535759> <file:///github/workspace/l985190> <file:///github/workspace/l952702> <file:///github/workspace/l965727> <file:///github/workspace/l589282> ) ) ] ;
+            topo:relatedFeatures ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ) ] ;
     parcel:appellation [ ] ;
-    parcel:interest [ parcel:interestLink <file:///github/workspace/1040074> ;
-            parcel:interestType <nz-interest-type:fh> ] ;
-    parcel:purpose <nz-parcel-purpose:fst> ;
-    parcel:state <nz-parcel-state:created> ;
+    parcel:interest [ ] ;
+    parcel:purpose eg-parcel-purpose:fst ;
+    parcel:state eg-parcel-state:created ;
     parcel:surfaceArea 484 ;
-    parcel:type <nz-parcel-type:fee-simple-title> .
+    parcel:type eg-parcel-type:fee-simple-title .
 
 
 ```
@@ -203,13 +212,13 @@ LADM ....
       ]
     },
     "area": 1196,
-    "parcelType": "nz-parcel-type:covenant-land",
-    "parcelPurpose": "nz-parcel-purpose:c-l",
-    "parcelState": "nz-parcel-state:created",
+    "parcelType": "eg-parcel-type:covenant-land",
+    "parcelPurpose": "eg-parcel-purpose:c-l",
+    "parcelState": "eg-parcel-state:created",
     "interests": [
       {
         "interestLink": "1040075",
-        "interestType": "nz-interest-type:fh"
+        "interestType": "eg-interest-type:fh"
       }
     ],
     "burdened": {
@@ -226,7 +235,14 @@ LADM ....
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/context.jsonld",
+  "@context": [
+    {
+      "eg-parcel-purpose": "https://w3id.org/ogc/ladm/vocabs/eg/parcel-purpose/",
+      "eg-parcel-type": "https://w3id.org/ogc/ladm/vocabs/eg/parcel-type/",
+      "eg-parcel-state": "https://w3id.org/ogc/ladm/vocabs/eg/parcel-state/"
+    },
+    "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/context.jsonld"
+  ],
   "type": "Feature",
   "id": "8446456",
   "featureType": "SecondaryParcel",
@@ -275,13 +291,13 @@ LADM ....
       ]
     },
     "area": 1196,
-    "parcelType": "nz-parcel-type:covenant-land",
-    "parcelPurpose": "nz-parcel-purpose:c-l",
-    "parcelState": "nz-parcel-state:created",
+    "parcelType": "eg-parcel-type:covenant-land",
+    "parcelPurpose": "eg-parcel-purpose:c-l",
+    "parcelState": "eg-parcel-state:created",
     "interests": [
       {
         "interestLink": "1040075",
-        "interestType": "nz-interest-type:fh"
+        "interestType": "eg-interest-type:fh"
       }
     ],
     "burdened": {
@@ -296,23 +312,25 @@ LADM ....
 
 #### ttl
 ```ttl
+@prefix eg-parcel-purpose: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-purpose/> .
+@prefix eg-parcel-state: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-state/> .
+@prefix eg-parcel-type: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-type/> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix parcel: <https://w3id.org/ogc/ladm/parcels/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix topo: <https://purl.org/geojson/topo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<file:///github/workspace/8446456> a geojson:Feature,
+<http://www.example.com/features/8446456> a geojson:Feature,
         parcel:SecondaryParcel ;
     geojson:topology [ a geojson:Polygon ;
-            topo:relatedFeatures ( ( <file:///github/workspace/l999724> <file:///github/workspace/l591175> <file:///github/workspace/l369793> <file:///github/workspace/l435861> <file:///github/workspace/l345344> <file:///github/workspace/l685716> <file:///github/workspace/l832940> <file:///github/workspace/l715872> <file:///github/workspace/l641327> <file:///github/workspace/l852048> <file:///github/workspace/l949729> <file:///github/workspace/l951515> <file:///github/workspace/l761760> <file:///github/workspace/l580762> ) ) ] ;
+            topo:relatedFeatures ( ( <http://www.example.com/features/l999724> <http://www.example.com/features/l591175> <http://www.example.com/features/l369793> <http://www.example.com/features/l435861> <http://www.example.com/features/l345344> <http://www.example.com/features/l685716> <http://www.example.com/features/l832940> <http://www.example.com/features/l715872> <http://www.example.com/features/l641327> <http://www.example.com/features/l852048> <http://www.example.com/features/l949729> <http://www.example.com/features/l951515> <http://www.example.com/features/l761760> <http://www.example.com/features/l580762> ) ) ] ;
     parcel:appellation [ ] ;
-    parcel:interest [ parcel:interestLink <file:///github/workspace/1040075> ;
-            parcel:interestType <nz-interest-type:fh> ] ;
-    parcel:purpose <nz-parcel-purpose:c-l> ;
-    parcel:state <nz-parcel-state:created> ;
+    parcel:interest [ ] ;
+    parcel:purpose eg-parcel-purpose:c-l ;
+    parcel:state eg-parcel-state:created ;
     parcel:surfaceArea 1196 ;
-    parcel:type <nz-parcel-type:covenant-land> .
+    parcel:type eg-parcel-type:covenant-land .
 
 
 ```
@@ -376,14 +394,14 @@ Note, the topology constraint "within" for a 3D Parcel, referencing a Parent Par
       ]
     },
     "area": 484,
-    "parcelType": "nz-parcel-type:fee-simple-title",
-    "parcelPurpose": "nz-parcel-purpose:fst",
-    "parcelState": "nz-parcel-state:created",
-    "class": "nz-parcel-class:allotment",
+    "parcelType": "eg-parcel-type:fee-simple-title",
+    "parcelPurpose": "eg-parcel-purpose:fst",
+    "parcelState": "eg-parcel-state:created",
+    "class": "eg-parcel-class:allotment",
     "interests": [
       {
         "interestLink": "1040074",
-        "interestType": "nz-interest-type:fh"
+        "interestType": "eg-interest-type:fh"
       }
     ]
   }
@@ -393,7 +411,14 @@ Note, the topology constraint "within" for a 3D Parcel, referencing a Parent Par
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/context.jsonld",
+  "@context": [
+    {
+      "eg-parcel-purpose": "https://w3id.org/ogc/ladm/vocabs/eg/parcel-purpose/",
+      "eg-parcel-type": "https://w3id.org/ogc/ladm/vocabs/eg/parcel-type/",
+      "eg-parcel-state": "https://w3id.org/ogc/ladm/vocabs/eg/parcel-state/"
+    },
+    "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/context.jsonld"
+  ],
   "type": "Feature",
   "id": "8446454",
   "geometry": null,
@@ -444,14 +469,14 @@ Note, the topology constraint "within" for a 3D Parcel, referencing a Parent Par
       ]
     },
     "area": 484,
-    "parcelType": "nz-parcel-type:fee-simple-title",
-    "parcelPurpose": "nz-parcel-purpose:fst",
-    "parcelState": "nz-parcel-state:created",
-    "class": "nz-parcel-class:allotment",
+    "parcelType": "eg-parcel-type:fee-simple-title",
+    "parcelPurpose": "eg-parcel-purpose:fst",
+    "parcelState": "eg-parcel-state:created",
+    "class": "eg-parcel-class:allotment",
     "interests": [
       {
         "interestLink": "1040074",
-        "interestType": "nz-interest-type:fh"
+        "interestType": "eg-interest-type:fh"
       }
     ]
   }
@@ -460,6 +485,9 @@ Note, the topology constraint "within" for a 3D Parcel, referencing a Parent Par
 
 #### ttl
 ```ttl
+@prefix eg-parcel-purpose: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-purpose/> .
+@prefix eg-parcel-state: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-state/> .
+@prefix eg-parcel-type: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-type/> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix ns1: <http://www.iana.org/assignments/> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
@@ -469,20 +497,19 @@ Note, the topology constraint "within" for a 3D Parcel, referencing a Parent Par
 @prefix topo: <https://purl.org/geojson/topo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<file:///github/workspace/8446454> a geojson:Feature ;
+<http://www.example.com/features/8446454> a geojson:Feature ;
     geojson:topology [ a geojson:Polygon ;
-            topo:relatedFeatures ( ( <file:///github/workspace/l535242> <file:///github/workspace/l535759> <file:///github/workspace/l985190> <file:///github/workspace/l952702> <file:///github/workspace/l965727> <file:///github/workspace/l589282> ) ),
+            topo:relatedFeatures ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ),
                 ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;
                         prof:hasRole topo:within,
                             parcel:containingParentParcel ;
                         oa:hasTarget <myParcels:1234> ] ) ] ;
     parcel:appellation [ ] ;
-    parcel:interest [ parcel:interestLink <file:///github/workspace/1040074> ;
-            parcel:interestType <nz-interest-type:fh> ] ;
-    parcel:purpose <nz-parcel-purpose:fst> ;
-    parcel:state <nz-parcel-state:created> ;
+    parcel:interest [ ] ;
+    parcel:purpose eg-parcel-purpose:fst ;
+    parcel:state eg-parcel-state:created ;
     parcel:surfaceArea 484 ;
-    parcel:type <nz-parcel-type:fee-simple-title> .
+    parcel:type eg-parcel-type:fee-simple-title .
 
 
 ```
@@ -503,85 +530,100 @@ $defs:
     type: string
     format: date-time
     pattern: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})?$
+  interest:
+    $anchor: interest
+    properties:
+      interestLink:
+        $ref: '#/$defs/coderef'
+      interestName:
+        type: string
+      interestType:
+        $ref: '#/$defs/coderef'
+      dateInForce:
+        $ref: '#/$defs/dateTime'
+      dateExpires:
+        $ref: '#/$defs/dateTime'
+      statuteLink:
+        $ref: '#/$defs/coderef'
+      statuteName:
+        type: string
+      benefitedPartyName:
+        type: string
+      benefitedPartyLink:
+        $ref: '#/$defs/coderef'
+      originalSurveyLink:
+        $ref: '#/$defs/coderef'
+      referencedParcel:
+        $ref: '#/$defs/coderef'
+      burdenedParcels:
+        $ref: '#/$defs/coderefList'
+      benefitedParcels:
+        $ref: '#/$defs/coderefList'
+      description:
+        type: string
+      entitlementPortion:
+        type: string
+      liabilityPortion:
+        type: string
+    required:
+    - interestLink
+    - interestType
   parcelProperties:
     $anchor: parcelProperties
-    appellation:
-      $ref: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/compound-name/schema.yaml
-    parcelType:
-      $ref: '#/$defs/coderef'
-    parcelState:
-      $ref: '#/$defs/coderef'
-    address:
-      type: object
-    parcelPurpose:
-      $ref: '#/$defs/coderef'
-    area:
-      type: number
-    floor:
-      type: string
-    zmin:
-      type: number
-    zmax:
-      type: number
-    interests:
-      type: array
-      additionalProperties: false
-      items:
-        properties:
-          interestLink:
-            $ref: '#/$defs/coderef'
-          interestName:
-            type: string
-          interestType:
-            $ref: '#/$defs/coderef'
-          dateInForce:
-            $ref: '#/$defs/dateTime'
-          dateExpires:
-            $ref: '#/$defs/dateTime'
-          statuteLink:
-            $ref: '#/$defs/coderef'
-          statuteName:
-            type: string
-          benefitedPartyName:
-            type: string
-          benefitedPartyLink:
-            $ref: '#/$defs/coderef'
-          originalSurveyLink:
-            $ref: '#/$defs/coderef'
-          referencedParcel:
-            $ref: '#/$defs/coderef'
-          burdenedParcels:
-            $ref: '#/$defs/coderefList'
-          benefitedParcels:
-            $ref: '#/$defs/coderefList'
-          description:
-            type: string
-          entitlementPortion:
-            type: string
-          liabilityPortion:
-            type: string
-        required:
-        - interestLink
-        - interestType
-      required:
-      - appellation
-      - parcelType
-      - parcelState
-      - parcelPurpose
+    properties:
+      appellation:
+        $ref: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/compoundName/schema.yaml
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/appellation
+      parcelType:
+        $ref: '#/$defs/coderef'
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/type
+        x-jsonld-type: '@id'
+      parcelState:
+        $ref: '#/$defs/coderef'
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/state
+        x-jsonld-type: '@id'
+      address:
+        type: object
+        x-jsonld-id: https://schema.org/address
+      parcelPurpose:
+        $ref: '#/$defs/coderef'
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/purpose
+        x-jsonld-type: '@id'
+      area:
+        type: number
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/surfaceArea
+      floor:
+        type: string
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/floor
+      zmin:
+        type: number
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/zmin
+      zmax:
+        type: number
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/zmax
+      interests:
+        type: array
+        items:
+          $ref: '#interest'
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/interest
+        x-jsonld-container: '@set'
+    required:
+    - appellation
+    - parcelType
+    - parcelState
+    - parcelPurpose
 allOf:
 - anyOf:
   - $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml
+  - $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml
   - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.yaml
 - properties:
     properties:
       $ref: '#parcelProperties'
-      x-jsonld-id: '@nest'
 x-jsonld-extra-terms:
-  featureType: '@type'
   name: rdfs:label
   address: https://schema.org/address
-  bearingRotation: container:bearingRotation
-  points: container:points
+  bearingRotation: https://w3id.org/ogc/ladm/parcels/bearingRotation
   parcels: https://w3id.org/ogc/ladm/parcels/parcels
   PrimaryParcel:
     x-jsonld-id: https://w3id.org/ogc/ladm/parcels/PrimaryParcel
@@ -796,10 +838,104 @@ Links to the schema:
       "@type": "@id",
       "@id": "geojson:topology"
     },
-    "name": "rdfs:label",
+    "Face": "topo:Face",
+    "Ring": "topo:Ring",
+    "Shell": "topo:Shell",
+    "Solid": "topo:Solid",
+    "faces": {
+      "@id": "topo:faces",
+      "@container": "@list"
+    },
+    "rings": {
+      "@id": "topo:rings",
+      "@container": "@list"
+    },
+    "shells": {
+      "@id": "topo:shells",
+      "@container": "@list"
+    },
+    "solids": {
+      "@id": "topo:shells",
+      "@container": "@list"
+    },
+    "points": {
+      "@context": {
+        "links": {
+          "@context": {
+            "href": {
+              "@type": "@id",
+              "@id": "oa:hasTarget"
+            },
+            "rel": {
+              "@context": {
+                "@base": "http://www.iana.org/assignments/relation/"
+              },
+              "@id": "http://www.iana.org/assignments/relation",
+              "@type": "@id"
+            },
+            "type": "dct:type",
+            "hreflang": "dct:language",
+            "title": "rdfs:label",
+            "length": "dct:extent"
+          },
+          "@id": "rdfs:seeAlso"
+        },
+        "featureType": "geojson:collectionFeatureType"
+      },
+      "@id": "topo:points",
+      "@container": "@list"
+    },
+    "edges": {
+      "@context": {
+        "links": {
+          "@context": {
+            "href": {
+              "@type": "@id",
+              "@id": "oa:hasTarget"
+            },
+            "rel": {
+              "@context": {
+                "@base": "http://www.iana.org/assignments/relation/"
+              },
+              "@id": "http://www.iana.org/assignments/relation",
+              "@type": "@id"
+            },
+            "type": "dct:type",
+            "hreflang": "dct:language",
+            "title": "rdfs:label",
+            "length": "dct:extent"
+          },
+          "@id": "rdfs:seeAlso"
+        },
+        "featureType": "geojson:collectionFeatureType"
+      },
+      "@id": "topo:edges",
+      "@container": "@list"
+    },
+    "appellation": "parcel:appellation",
+    "parcelType": {
+      "@id": "parcel:type",
+      "@type": "@id"
+    },
+    "parcelState": {
+      "@id": "parcel:state",
+      "@type": "@id"
+    },
     "address": "sdo:address",
-    "bearingRotation": "container:bearingRotation",
-    "points": "container:points",
+    "parcelPurpose": {
+      "@id": "parcel:purpose",
+      "@type": "@id"
+    },
+    "area": "parcel:surfaceArea",
+    "floor": "parcel:floor",
+    "zmin": "parcel:zmin",
+    "zmax": "parcel:zmax",
+    "interests": {
+      "@id": "parcel:interest",
+      "@container": "@set"
+    },
+    "name": "rdfs:label",
+    "bearingRotation": "parcel:bearingRotation",
     "parcels": "parcel:parcels",
     "PrimaryParcel": {
       "@id": "parcel:PrimaryParcel",
@@ -809,74 +945,11 @@ Links to the schema:
       "@id": "parcel:SecondaryParcel",
       "@type": "@id"
     },
-    "appellation": "parcel:appellation",
-    "parcelType": {
-      "@id": "parcel:type",
-      "@type": "@id"
-    },
-    "parcelPurpose": {
-      "@id": "parcel:purpose",
-      "@type": "@id"
-    },
     "parcelQualityClass": {
       "@id": "parcel:qualityClass",
       "@type": "@id"
     },
-    "area": "parcel:surfaceArea",
-    "floor": "parcel:floor",
-    "zmin": "parcel:zmin",
-    "zmax": "parcel:zmax",
     "terrainIntersectionCurve": "parcel:terrainIntersectionCurve",
-    "interests": {
-      "@id": "parcel:interest",
-      "@container": "@set",
-      "@context": {
-        "interestLink": {
-          "@type": "@id",
-          "@id": "parcel:interestLink"
-        },
-        "interestName": "parcel:interestName",
-        "interestType": {
-          "@type": "@id",
-          "@id": "parcel:interestType"
-        },
-        "dateInForce": "parcel:interestDateInForce",
-        "dateExpires": "parcel:interestDateExpires",
-        "statuteLink": {
-          "@type": "@id",
-          "@id": "parcel:statuteLink"
-        },
-        "statuteName": "parcel:statuteName",
-        "benefitedPartyLink": {
-          "@type": "@id",
-          "@id": "parcel:benefitedPartyLink"
-        },
-        "benefitedPartyName": "parcel:benefitedPartyName",
-        "referencedParcel": {
-          "@type": "@id",
-          "@id": "parcel:referencedParcel"
-        },
-        "originalSurveyLink": {
-          "@type": "@id",
-          "@id": "parcel:originalSurveyLink"
-        },
-        "burdenedParcels": {
-          "@id": "parcel:burdened",
-          "@container": "@set"
-        },
-        "benefitedParcels": {
-          "@id": "parcel:benefited",
-          "@container": "@set"
-        },
-        "entitlementPortion": "parcel:entitlementPortion",
-        "liabilityPortion": "parcel:liabilityPortion",
-        "description": "parcel:interestDescription"
-      }
-    },
-    "parcelState": {
-      "@id": "parcel:state",
-      "@type": "@id"
-    },
     "Arc": "geojson:Arc",
     "ArcWithCenter": "geojson:ArcWithCenter",
     "ArcByChord": "geojson:ArcByChord",
@@ -889,22 +962,6 @@ Links to the schema:
     "ref": "topo:ref",
     "orientation": "topo:orientation",
     "Edge": "topo:Edge",
-    "Face": "topo:Face",
-    "Ring": "topo:Ring",
-    "Shell": "topo:Shell",
-    "Solid": "topo:Solid",
-    "rings": {
-      "@id": "topo:rings",
-      "@container": "@list"
-    },
-    "shells": {
-      "@id": "topo:shells",
-      "@container": "@list"
-    },
-    "faces": {
-      "@id": "topo:faces",
-      "@container": "@list"
-    },
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",

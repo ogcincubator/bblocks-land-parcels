@@ -47,13 +47,13 @@
       ]
     },
     "area": 1196,
-    "parcelType": "nz-parcel-type:covenant-land",
-    "parcelPurpose": "nz-parcel-purpose:c-l",
-    "parcelState": "nz-parcel-state:created",
+    "parcelType": "eg-parcel-type:covenant-land",
+    "parcelPurpose": "eg-parcel-purpose:c-l",
+    "parcelState": "eg-parcel-state:created",
     "interests": [
       {
         "interestLink": "1040075",
-        "interestType": "nz-interest-type:fh"
+        "interestType": "eg-interest-type:fh"
       }
     ],
     "burdened": {

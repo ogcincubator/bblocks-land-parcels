@@ -1,3 +1,6 @@
+@prefix eg-parcel-purpose: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-purpose/> .
+@prefix eg-parcel-state: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-state/> .
+@prefix eg-parcel-type: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-type/> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix ns1: <http://www.iana.org/assignments/> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
@@ -7,18 +10,17 @@
 @prefix topo: <https://purl.org/geojson/topo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<file:///github/workspace/8446454> a geojson:Feature ;
+<http://www.example.com/features/8446454> a geojson:Feature ;
     geojson:topology [ a geojson:Polygon ;
-            topo:relatedFeatures ( ( <file:///github/workspace/l535242> <file:///github/workspace/l535759> <file:///github/workspace/l985190> <file:///github/workspace/l952702> <file:///github/workspace/l965727> <file:///github/workspace/l589282> ) ),
+            topo:relatedFeatures ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ),
                 ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;
                         prof:hasRole topo:within,
                             parcel:containingParentParcel ;
                         oa:hasTarget <myParcels:1234> ] ) ] ;
     parcel:appellation [ ] ;
-    parcel:interest [ parcel:interestLink <file:///github/workspace/1040074> ;
-            parcel:interestType <nz-interest-type:fh> ] ;
-    parcel:purpose <nz-parcel-purpose:fst> ;
-    parcel:state <nz-parcel-state:created> ;
+    parcel:interest [ ] ;
+    parcel:purpose eg-parcel-purpose:fst ;
+    parcel:state eg-parcel-state:created ;
     parcel:surfaceArea 484 ;
-    parcel:type <nz-parcel-type:fee-simple-title> .
+    parcel:type eg-parcel-type:fee-simple-title .
 

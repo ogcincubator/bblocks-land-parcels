@@ -1,14 +1,28 @@
 Validation report for ogc.ladm.land-parcels.parcel - Land Parcel
-Generated 2026-06-14T20:55:45.037789+00:00
+Generated 2026-06-14T20:55:41.334243+00:00
+=== General ===
+Test was expected to fail and it did.
+=== End General ===
+
 === Files ===
-Using examples/parcel2.json from examples
+Using purpose-code-fail.json from test resources
 JSON-LD context is present - uplifting
-Output JSON-LD example_2_1.jsonld created
-Output Turtle example_2_1.ttl created
+Output JSON-LD purpose-code-fail.jsonld created
+Output Turtle purpose-code-fail.ttl created
 === End Files ===
 
 === JSON Schema ===
-Validation passed
+
+** Validation error **
+ValidationError: 'Cant remember' is not valid under any of the given schemas
+
+Failed validating 'anyOf' in schema['allOf'][1]['properties']['properties']['properties']['parcelPurpose']:
+    {'anyOf': [{'$ref': '#/$defs/IRI'},
+               {'$ref': '#/$defs/CURIE'},
+               {'$ref': '#/$defs/LocalPart'}]}
+
+On instance['properties']['parcelPurpose']:
+    'Cant remember'
 === End JSON Schema ===
 
 === SHACL ===
@@ -36,7 +50,7 @@ Validation result for https://surroundaustralia.github.io/topo-feature/_sources/
 Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
  - Shape toporules:testTopoDirectedReferencesExist: *none*
  - Shape toporules:testTopoLinesReferencePoints: *none*
- - Shape toporules:testTopoReferencesExist: <http://www.example.com/features/8446456>/geojson:topology
+ - Shape toporules:testTopoReferencesExist: <file:///github/workspace/8446454>/geojson:topology
  - Shape toporules:testTopoEdgesReferencePoints: *none*
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
@@ -47,7 +61,7 @@ Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/fea
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:GeometryShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:FeatureShape: <http://www.example.com/features/8446456>
+ - Shape geojson:FeatureShape: <file:///github/workspace/8446454>
  - Shape geojson:LinkShape: *none*
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:

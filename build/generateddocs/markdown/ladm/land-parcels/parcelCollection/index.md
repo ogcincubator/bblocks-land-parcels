@@ -67,14 +67,14 @@ Individual features may optionally contain geometric coordinates for visualisati
           ]
         },
         "area": 484,
-        "parcelType": "nz-parcel-type:fee-simple-title",
-        "parcelPurpose": "nz-parcel-purpose:fst",
-        "parcelState": "nz-parcel-state:created",
-        "class": "nz-parcel-class:allotment",
+        "parcelType": "eg-parcel-type:fee-simple-title",
+        "parcelPurpose": "eg-parcel-purpose:fst",
+        "parcelState": "eg-parcel-state:created",
+        "class": "eg-parcel-class:allotment",
         "interests": [
           {
             "interestLink": "1040074",
-            "interestType": "nz-interest-type:fh"
+            "interestType": "eg-interest-type:fh"
           }
         ]
       }
@@ -123,14 +123,14 @@ Individual features may optionally contain geometric coordinates for visualisati
           ]
         },
         "area": 1196,
-        "parcelType": "nz-parcel-type:fee-simple-title",
-        "parcelPurpose": "nz-parcel-purpose:fst",
-        "parcelState": "nz-parcel-state:created",
-        "class": "nz-parcel-class:allotment",
+        "parcelType": "eg-parcel-type:fee-simple-title",
+        "parcelPurpose": "eg-parcel-purpose:fst",
+        "parcelState": "eg-parcel-state:created",
+        "class": "eg-parcel-class:allotment",
         "interests": [
           {
             "interestLink": "1040075",
-            "interestType": "nz-interest-type:fh"
+            "interestType": "eg-interest-type:fh"
           }
         ]
       }
@@ -142,7 +142,14 @@ Individual features may optionally contain geometric coordinates for visualisati
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcelCollection/context.jsonld",
+  "@context": [
+    {
+      "eg-parcel-purpose": "https://w3id.org/ogc/ladm/vocabs/eg/parcel-purpose",
+      "eg-parcel-type": "https://w3id.org/ogc/ladm/vocabs/eg/parcel-type",
+      "eg-parcel-state": "https://w3id.org/ogc/ladm/vocabs/eg/parcel-state"
+    },
+    "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcelCollection/context.jsonld"
+  ],
   "id": "primaryparcels",
   "type": "FeatureCollection",
   "featureType": "PrimaryParcel",
@@ -188,14 +195,14 @@ Individual features may optionally contain geometric coordinates for visualisati
           ]
         },
         "area": 484,
-        "parcelType": "nz-parcel-type:fee-simple-title",
-        "parcelPurpose": "nz-parcel-purpose:fst",
-        "parcelState": "nz-parcel-state:created",
-        "class": "nz-parcel-class:allotment",
+        "parcelType": "eg-parcel-type:fee-simple-title",
+        "parcelPurpose": "eg-parcel-purpose:fst",
+        "parcelState": "eg-parcel-state:created",
+        "class": "eg-parcel-class:allotment",
         "interests": [
           {
             "interestLink": "1040074",
-            "interestType": "nz-interest-type:fh"
+            "interestType": "eg-interest-type:fh"
           }
         ]
       }
@@ -244,14 +251,14 @@ Individual features may optionally contain geometric coordinates for visualisati
           ]
         },
         "area": 1196,
-        "parcelType": "nz-parcel-type:fee-simple-title",
-        "parcelPurpose": "nz-parcel-purpose:fst",
-        "parcelState": "nz-parcel-state:created",
-        "class": "nz-parcel-class:allotment",
+        "parcelType": "eg-parcel-type:fee-simple-title",
+        "parcelPurpose": "eg-parcel-purpose:fst",
+        "parcelState": "eg-parcel-state:created",
+        "class": "eg-parcel-class:allotment",
         "interests": [
           {
             "interestLink": "1040075",
-            "interestType": "nz-interest-type:fh"
+            "interestType": "eg-interest-type:fh"
           }
         ]
       }
@@ -268,32 +275,32 @@ Individual features may optionally contain geometric coordinates for visualisati
 @prefix topo: <https://purl.org/geojson/topo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<file:///github/workspace/primaryparcels> a geojson:FeatureCollection,
+<http://www.example.com/features/primaryparcels> a geojson:FeatureCollection,
         parcel:PrimaryParcel ;
-    geojson:features <file:///github/workspace/8446454>,
-        <file:///github/workspace/8446455> .
+    geojson:features <http://www.example.com/features/8446454>,
+        <http://www.example.com/features/8446455> .
 
-<file:///github/workspace/8446454> a geojson:Feature ;
+<http://www.example.com/features/8446454> a geojson:Feature ;
     geojson:topology [ a geojson:Polygon ;
-            topo:relatedFeatures ( ( <file:///github/workspace/l535242> <file:///github/workspace/l535759> <file:///github/workspace/l985190> <file:///github/workspace/l952702> <file:///github/workspace/l965727> <file:///github/workspace/l589282> ) ) ] ;
+            topo:relatedFeatures ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ) ] ;
     parcel:appellation [ ] ;
-    parcel:interest [ parcel:interestLink <file:///github/workspace/1040074> ;
-            parcel:interestType <nz-interest-type:fh> ] ;
-    parcel:purpose <nz-parcel-purpose:fst> ;
-    parcel:state <nz-parcel-state:created> ;
+    parcel:interest [ parcel:interestLink <http://www.example.com/features/1040074> ;
+            parcel:interestType <eg-interest-type:fh> ] ;
+    parcel:purpose <eg-parcel-purpose:fst> ;
+    parcel:state <eg-parcel-state:created> ;
     parcel:surfaceArea 484 ;
-    parcel:type <nz-parcel-type:fee-simple-title> .
+    parcel:type <eg-parcel-type:fee-simple-title> .
 
-<file:///github/workspace/8446455> a geojson:Feature ;
+<http://www.example.com/features/8446455> a geojson:Feature ;
     geojson:topology [ a geojson:Polygon ;
-            topo:relatedFeatures ( ( <file:///github/workspace/l746686> <file:///github/workspace/l999724> <file:///github/workspace/l591175> <file:///github/workspace/l435861> <file:///github/workspace/l874826> <file:///github/workspace/l952702> <file:///github/workspace/l985190> <file:///github/workspace/l535759> <file:///github/workspace/l535242> <file:///github/workspace/l329256> ) ) ] ;
+            topo:relatedFeatures ( ( <http://www.example.com/features/l746686> <http://www.example.com/features/l999724> <http://www.example.com/features/l591175> <http://www.example.com/features/l435861> <http://www.example.com/features/l874826> <http://www.example.com/features/l952702> <http://www.example.com/features/l985190> <http://www.example.com/features/l535759> <http://www.example.com/features/l535242> <http://www.example.com/features/l329256> ) ) ] ;
     parcel:appellation [ ] ;
-    parcel:interest [ parcel:interestLink <file:///github/workspace/1040075> ;
-            parcel:interestType <nz-interest-type:fh> ] ;
-    parcel:purpose <nz-parcel-purpose:fst> ;
-    parcel:state <nz-parcel-state:created> ;
+    parcel:interest [ parcel:interestLink <http://www.example.com/features/1040075> ;
+            parcel:interestType <eg-interest-type:fh> ] ;
+    parcel:purpose <eg-parcel-purpose:fst> ;
+    parcel:state <eg-parcel-state:created> ;
     parcel:surfaceArea 1196 ;
-    parcel:type <nz-parcel-type:fee-simple-title> .
+    parcel:type <eg-parcel-type:fee-simple-title> .
 
 
 ```
@@ -357,13 +364,13 @@ Individual features may optionally contain geometric coordinates for visualisati
           ]
         },
         "area": 1196,
-        "parcelType": "nz-parcel-type:covenant-land",
-        "parcelPurpose": "nz-parcel-purpose:c-l",
-        "parcelState": "nz-parcel-state:created",
+        "parcelType": "eg-parcel-type:covenant-land",
+        "parcelPurpose": "eg-parcel-purpose:c-l",
+        "parcelState": "eg-parcel-state:created",
         "interests": [
           {
             "interestLink": "1040075",
-            "interestType": "nz-interest-type:fh"
+            "interestType": "eg-interest-type:fh"
           }
         ],
         "burdened": {
@@ -381,7 +388,14 @@ Individual features may optionally contain geometric coordinates for visualisati
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcelCollection/context.jsonld",
+  "@context": [
+    {
+      "eg-parcel-purpose": "https://w3id.org/ogc/ladm/vocabs/eg/parcel-purpose",
+      "eg-parcel-type": "https://w3id.org/ogc/ladm/vocabs/eg/parcel-type",
+      "eg-parcel-state": "https://w3id.org/ogc/ladm/vocabs/eg/parcel-state"
+    },
+    "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcelCollection/context.jsonld"
+  ],
   "id": "covenants",
   "type": "FeatureCollection",
   "featureType": "SecondaryParcel",
@@ -436,13 +450,13 @@ Individual features may optionally contain geometric coordinates for visualisati
           ]
         },
         "area": 1196,
-        "parcelType": "nz-parcel-type:covenant-land",
-        "parcelPurpose": "nz-parcel-purpose:c-l",
-        "parcelState": "nz-parcel-state:created",
+        "parcelType": "eg-parcel-type:covenant-land",
+        "parcelPurpose": "eg-parcel-purpose:c-l",
+        "parcelState": "eg-parcel-state:created",
         "interests": [
           {
             "interestLink": "1040075",
-            "interestType": "nz-interest-type:fh"
+            "interestType": "eg-interest-type:fh"
           }
         ],
         "burdened": {
@@ -465,21 +479,21 @@ Individual features may optionally contain geometric coordinates for visualisati
 @prefix topo: <https://purl.org/geojson/topo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<file:///github/workspace/covenants> a geojson:FeatureCollection,
+<http://www.example.com/features/covenants> a geojson:FeatureCollection,
         parcel:SecondaryParcel ;
-    geojson:features <file:///github/workspace/8446456> .
+    geojson:features <http://www.example.com/features/8446456> .
 
-<file:///github/workspace/8446456> a geojson:Feature,
+<http://www.example.com/features/8446456> a geojson:Feature,
         parcel:SecondaryParcel ;
     geojson:topology [ a geojson:Polygon ;
-            topo:relatedFeatures ( ( <file:///github/workspace/l999724> <file:///github/workspace/l591175> <file:///github/workspace/l369793> <file:///github/workspace/l435861> <file:///github/workspace/l345344> <file:///github/workspace/l685716> <file:///github/workspace/l832940> <file:///github/workspace/l715872> <file:///github/workspace/l641327> <file:///github/workspace/l852048> <file:///github/workspace/l949729> <file:///github/workspace/l951515> <file:///github/workspace/l761760> <file:///github/workspace/l580762> ) ) ] ;
+            topo:relatedFeatures ( ( <http://www.example.com/features/l999724> <http://www.example.com/features/l591175> <http://www.example.com/features/l369793> <http://www.example.com/features/l435861> <http://www.example.com/features/l345344> <http://www.example.com/features/l685716> <http://www.example.com/features/l832940> <http://www.example.com/features/l715872> <http://www.example.com/features/l641327> <http://www.example.com/features/l852048> <http://www.example.com/features/l949729> <http://www.example.com/features/l951515> <http://www.example.com/features/l761760> <http://www.example.com/features/l580762> ) ) ] ;
     parcel:appellation [ ] ;
-    parcel:interest [ parcel:interestLink <file:///github/workspace/1040075> ;
-            parcel:interestType <nz-interest-type:fh> ] ;
-    parcel:purpose <nz-parcel-purpose:c-l> ;
-    parcel:state <nz-parcel-state:created> ;
+    parcel:interest [ parcel:interestLink <http://www.example.com/features/1040075> ;
+            parcel:interestType <eg-interest-type:fh> ] ;
+    parcel:purpose <eg-parcel-purpose:c-l> ;
+    parcel:state <eg-parcel-state:created> ;
     parcel:surfaceArea 1196 ;
-    parcel:type <nz-parcel-type:covenant-land> .
+    parcel:type <eg-parcel-type:covenant-land> .
 
 
 ```
@@ -650,10 +664,83 @@ Links to the schema:
       "@type": "@id",
       "@id": "geojson:topology"
     },
+    "Face": "topo:Face",
+    "Ring": "topo:Ring",
+    "Shell": "topo:Shell",
+    "Solid": "topo:Solid",
+    "faces": {
+      "@id": "topo:faces",
+      "@container": "@list"
+    },
+    "rings": {
+      "@id": "topo:rings",
+      "@container": "@list"
+    },
+    "shells": {
+      "@id": "topo:shells",
+      "@container": "@list"
+    },
+    "solids": {
+      "@id": "topo:shells",
+      "@container": "@list"
+    },
+    "points": {
+      "@context": {
+        "links": {
+          "@context": {
+            "href": {
+              "@type": "@id",
+              "@id": "oa:hasTarget"
+            },
+            "rel": {
+              "@context": {
+                "@base": "http://www.iana.org/assignments/relation/"
+              },
+              "@id": "http://www.iana.org/assignments/relation",
+              "@type": "@id"
+            },
+            "type": "dct:type",
+            "hreflang": "dct:language",
+            "title": "rdfs:label",
+            "length": "dct:extent"
+          },
+          "@id": "rdfs:seeAlso"
+        },
+        "featureType": "geojson:collectionFeatureType"
+      },
+      "@id": "topo:points",
+      "@container": "@list"
+    },
+    "edges": {
+      "@context": {
+        "links": {
+          "@context": {
+            "href": {
+              "@type": "@id",
+              "@id": "oa:hasTarget"
+            },
+            "rel": {
+              "@context": {
+                "@base": "http://www.iana.org/assignments/relation/"
+              },
+              "@id": "http://www.iana.org/assignments/relation",
+              "@type": "@id"
+            },
+            "type": "dct:type",
+            "hreflang": "dct:language",
+            "title": "rdfs:label",
+            "length": "dct:extent"
+          },
+          "@id": "rdfs:seeAlso"
+        },
+        "featureType": "geojson:collectionFeatureType"
+      },
+      "@id": "topo:edges",
+      "@container": "@list"
+    },
     "name": "rdfs:label",
     "address": "sdo:address",
-    "bearingRotation": "container:bearingRotation",
-    "points": "container:points",
+    "bearingRotation": "parcel:bearingRotation",
     "parcels": "parcel:parcels",
     "PrimaryParcel": {
       "@id": "parcel:PrimaryParcel",
@@ -743,22 +830,6 @@ Links to the schema:
     "ref": "topo:ref",
     "orientation": "topo:orientation",
     "Edge": "topo:Edge",
-    "Face": "topo:Face",
-    "Ring": "topo:Ring",
-    "Shell": "topo:Shell",
-    "Solid": "topo:Solid",
-    "rings": {
-      "@id": "topo:rings",
-      "@container": "@list"
-    },
-    "shells": {
-      "@id": "topo:shells",
-      "@container": "@list"
-    },
-    "faces": {
-      "@id": "topo:faces",
-      "@container": "@list"
-    },
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "geojson": "https://purl.org/geojson/vocab#",
     "oa": "http://www.w3.org/ns/oa#",

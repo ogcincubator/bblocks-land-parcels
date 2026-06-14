@@ -1,0 +1,32 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Compound Name
+anyOf:
+- required:
+  - label
+- required:
+  - hasPart
+additionalProperties: true
+properties:
+  label:
+    anyOf:
+    - type: 'null'
+    - type: string
+  template:
+    type: string
+  hasPart:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      properties:
+        label:
+          type: string
+        ref:
+          $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml
+        type:
+          $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml
+      anyOf:
+      - required:
+        - label
+      - required:
+        - ref

@@ -9,17 +9,17 @@ The topology model supports transformations to well known geometry formats which
 
 ## Building Blocks
 
-### `ogc.ladm.land-parcels.compound-name` — Compound name
-
-**Type:** schema
-
-A multiple part name, consisting of a set of strings with functional roles that can be combined into single string using a template.
-
 ### `ogc.ladm.land-parcels.ontology` — Land Parcels Ontology
 
 **Type:** model
 
 Terms and definitions for the Land Parcels model.  This is aligned with LADM semantics and terminology and could be evolved or mapped to an authoritative LADM ontology component as required/
+
+### `ogc.ladm.land-parcels.compoundName` — Compound Name
+
+**Type:** schema
+
+A multiple part name, consisting of a set of strings with functional roles that can be combined into single string using a template.
 
 ### `ogc.ladm.land-parcels.parcel` — Land Parcel
 

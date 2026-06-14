@@ -1,6 +1,0 @@
-path	@id	schema
-/label	http://www.w3.org/2000/01/rdf-schema#label	/github/workspace/build/annotated/ladm/land-parcels/compound-name/schema.yaml
-/template		/github/workspace/build/annotated/ladm/land-parcels/compound-name/schema.yaml
-/hasPart	http://purl.org/dc/terms/hasPart	/github/workspace/build/annotated/ladm/land-parcels/compound-name/schema.yaml
-/hasPart/label	http://www.w3.org/2000/01/rdf-schema#label	/github/workspace/build/annotated/ladm/land-parcels/compound-name/schema.yaml
-/hasPart/type	@type	/github/workspace/build/annotated/ladm/land-parcels/compound-name/schema.yaml

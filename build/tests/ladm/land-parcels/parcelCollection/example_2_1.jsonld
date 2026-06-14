@@ -1,5 +1,12 @@
 {
-  "@context": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcelCollection/context.jsonld",
+  "@context": [
+    {
+      "eg-parcel-purpose": "https://w3id.org/ogc/ladm/vocabs/eg/parcel-purpose",
+      "eg-parcel-type": "https://w3id.org/ogc/ladm/vocabs/eg/parcel-type",
+      "eg-parcel-state": "https://w3id.org/ogc/ladm/vocabs/eg/parcel-state"
+    },
+    "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcelCollection/context.jsonld"
+  ],
   "id": "covenants",
   "type": "FeatureCollection",
   "featureType": "SecondaryParcel",
@@ -54,13 +61,13 @@
           ]
         },
         "area": 1196,
-        "parcelType": "nz-parcel-type:covenant-land",
-        "parcelPurpose": "nz-parcel-purpose:c-l",
-        "parcelState": "nz-parcel-state:created",
+        "parcelType": "eg-parcel-type:covenant-land",
+        "parcelPurpose": "eg-parcel-purpose:c-l",
+        "parcelState": "eg-parcel-state:created",
         "interests": [
           {
             "interestLink": "1040075",
-            "interestType": "nz-interest-type:fh"
+            "interestType": "eg-interest-type:fh"
           }
         ],
         "burdened": {

@@ -1,6 +1,7 @@
 {
   "type": "Feature",
   "id": "8446454",
+  "comment": "checks the embedded appellation schema is correctly applied",
   "geometry": null,
   "topology": {
     "type": "Polygon",
@@ -13,17 +14,6 @@
         "l965727",
         "l589282"
       ]
-    ],
-    "relationships": [
-      {
-        "rel": "topology",
-        "href": "myParcels:1234",
-        "targetFeatureType": "parcel:PrimaryParcel",
-        "role": [
-          "topo:within",
-          "parcel:containingParentParcel"
-        ]
-      }
     ]
   },
   "properties": {
@@ -32,7 +22,7 @@
       "hasPart": [
         {
           "type": "PlanType",
-          "label": "DP"
+          "name": "DP"
         },
         {
           "type": "PlanIdentifier",
@@ -54,10 +44,6 @@
     "parcelState": "eg-parcel-state:created",
     "class": "eg-parcel-class:allotment",
     "interests": [
-      {
-        "interestLink": "1040074",
-        "interestType": "eg-interest-type:fh"
-      }
     ]
   }
 }

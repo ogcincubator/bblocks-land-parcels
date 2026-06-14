@@ -1,22 +1,18 @@
-# baseURI: https://linked.data.gov.au/def/csdm/parcels
-# imports: https://linked.data.gov.au/def/csdm/commonpatterns
-# imports: https://linked.data.gov.au/def/csdm/geometry
+# baseURI: https://w3id.org/ogc/ladm/parcels/
 
-@prefix :                 <https://linked.data.gov.au/def/csdm/parcels/> .
-@prefix com:              <https://linked.data.gov.au/def/csdm/commonpatterns/> .
+
+@prefix :                 <https://w3id.org/ogc/ladm/parcels/> .
+@prefix com:              <https://w3id.org/ogc/utils/label/> .
 @prefix foaf:             <http://xmlns.com/foaf/0.1/> .
 @prefix geo:              <http://www.opengis.net/ont/geosparql#> .
 @prefix geometry:         <https://linked.data.gov.au/def/csdm/geometry/> .
 @prefix gml:              <http://www.opengis.net/ont/gml#> .
-@prefix ont:              <https://linked.data.gov.au/def/csdm/parcels> .
-@prefix ontologyprojects: <http://teamwork.topbraidlive.org/ontologyprojects#> .
+@prefix ont:              <https://w3id.org/ogc/ladm/parcels> .
 @prefix owl:              <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:              <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:             <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema:           <https://schema.org/> .
 @prefix sh:               <http://www.w3.org/ns/shacl#> .
 @prefix skos:             <http://www.w3.org/2004/02/skos/core#> .
-@prefix teamwork:         <http://topbraid.org/teamwork#> .
 @prefix xsd:              <http://www.w3.org/2001/XMLSchema#> .
 @prefix sdo:              <https://schema.org/> .
 
@@ -37,7 +33,7 @@ ont:
     a                owl:Class ;
     rdfs:isDefinedBy ont: ;
     skos:prefLabel   "Appellation"@en ;
-    rdfs:subClassOf  :ParcelModel ;
+    
     skos:definition  "The legal description for a specific piece of land." ;
     skos:example     """
     examples:Lot1_Appellation
@@ -89,7 +85,7 @@ ont:
     a                owl:Class ;
     rdfs:isDefinedBy ont: ;
     skos:prefLabel   " Interest In Land"@en ;
-    rdfs:subClassOf  :ParcelModel ;
+    
     skos:definition  "An Interest In Land is ownership or security towards real property." ;
     skos:editorialNote
                      "This is from LandInfra  - Easement is just one example here but it may be worth making explicit as it is the touch point with the LandInfra scope." ;
@@ -100,25 +96,25 @@ ont:
     rdfs:isDefinedBy ont: ;
     skos:prefLabel   "Cadastral Parcel"@en ;
     rdfs:subClassOf  geometry:3DSpatialUnit ;
-    rdfs:subClassOf  :ParcelModel ;
+    
     skos:definition  "A single or multi area, or solid, above, or below the surface of the earth as specified through legislated process. The extent of a cadastral parcel can be described by a surface or solid and topological relationships with other parcels." ;
     sh:property      :Parcel-parcelType ;
     foaf:depiction   <https://surroundbitbucket.bitbucket.io/3d-cadastre/spec/CadastralParcel.png> ;
-    schema:image     [ a              schema:ImageObject ;
+    sdo:image     [ a              sdo:ImageObject ;
                        sh:order       0 ;
-                       schema:caption "Diagram for Cadastral Parcel." ;
-                       schema:contentUrl
+                       sdo:caption "Diagram for Cadastral Parcel." ;
+                       sdo:contentUrl
                                       "https://icsm-au.github.io/3d-csdm-design/2022/spec_files/CadastralParcel.png"^^xsd:anyURI ; ] ;
-    schema:image     [ a              schema:ImageObject ;
+    sdo:image     [ a              sdo:ImageObject ;
                        sh:order       1 ;
-                       schema:caption "Diagram for Cadastral Parcel." ;
-                       schema:contentUrl
+                       sdo:caption "Diagram for Cadastral Parcel." ;
+                       sdo:contentUrl
                                       "https://icsm-au.github.io/3d-csdm-design/2022/spec_files/cadastralparcelexample.png"^^xsd:anyURI ; ] ;
-    schema:image     [ a        schema:ImageObject ;
+    sdo:image     [ a        sdo:ImageObject ;
                        sh:order 2 ;
-                       schema:caption
+                       sdo:caption
                                 "A Cadastral Parcel defined by a boundary line in 2D. The default geometry of this as a 3D unit is not specified, but may be derived from the boundary as an Extruded Surface using implicit or explicit limits. The boundary property is a sub-property of hasGeometry - so an application could infer the boundary as an available geometry.." ;
-                       schema:contentUrl
+                       sdo:contentUrl
                                 "https://icsm-au.github.io/3d-csdm-design/2022/spec_files/blue_box.png"^^xsd:anyURI ; ] ;
 .
 
@@ -149,16 +145,10 @@ sdo:address
     rdfs:isDefinedBy ont: ;
     skos:prefLabel   "Parcel Aggregate"@en ;
     rdfs:subClassOf  geometry:3DSpatialUnit ;
-    rdfs:subClassOf  :ParcelModel ;
+    
     skos:definition  "A parcel aggregate is a collection of parcels whose collective extent may be described as a spatial unit." ;
     skos:editorialNote
                      "This superclass supports alignment with the LandInfra concept of a LandPropertyUnit without assuming that this is the only requirement to aggregate parcels." ;
-.
-
-:ParcelModel
-    a               owl:Class ;
-    skos:prefLabel  "Parcel Module Component"@en ;
-    rdfs:subClassOf owl:Thing ;
 .
 
 :ParcelState

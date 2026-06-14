@@ -44,14 +44,14 @@
           ]
         },
         "area": 484,
-        "parcelType": "nz-parcel-type:fee-simple-title",
-        "parcelPurpose": "nz-parcel-purpose:fst",
-        "parcelState": "nz-parcel-state:created",
-        "class": "nz-parcel-class:allotment",
+        "parcelType": "eg-parcel-type:fee-simple-title",
+        "parcelPurpose": "eg-parcel-purpose:fst",
+        "parcelState": "eg-parcel-state:created",
+        "class": "eg-parcel-class:allotment",
         "interests": [
           {
             "interestLink": "1040074",
-            "interestType": "nz-interest-type:fh"
+            "interestType": "eg-interest-type:fh"
           }
         ]
       }
@@ -100,14 +100,14 @@
           ]
         },
         "area": 1196,
-        "parcelType": "nz-parcel-type:fee-simple-title",
-        "parcelPurpose": "nz-parcel-purpose:fst",
-        "parcelState": "nz-parcel-state:created",
-        "class": "nz-parcel-class:allotment",
+        "parcelType": "eg-parcel-type:fee-simple-title",
+        "parcelPurpose": "eg-parcel-purpose:fst",
+        "parcelState": "eg-parcel-state:created",
+        "class": "eg-parcel-class:allotment",
         "interests": [
           {
             "interestLink": "1040075",
-            "interestType": "nz-interest-type:fh"
+            "interestType": "eg-interest-type:fh"
           }
         ]
       }

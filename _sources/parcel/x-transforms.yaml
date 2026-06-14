@@ -19,4 +19,4 @@ transforms:
       data = json.loads(input_data)
       print("converting")
       result_str = convert(json.dumps(data))
-      output_data = result_str
+      #output_data = result_str

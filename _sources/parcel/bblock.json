@@ -6,6 +6,7 @@
   "dateTimeAddition": "2024-06-03T00:00:00Z",
   "itemClass": "schema",
   "dependsOn": [ "ogc.ladm.land-parcels.ontology"],
+  "shaclClosures": ["examples/topoobjects.ttl"] ,
   "register": "ogcincubator",
   "version": "0.1",
   "dateOfLastChange": "2024-03-06",

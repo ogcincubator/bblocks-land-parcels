@@ -1,18 +1,29 @@
-- title: Primary parcel
-  snippets:
-    - language: json
-      ref: examples/parcel1.json
+prefixes:
+  eg-parcel-purpose: https://w3id.org/ogc/ladm/vocabs/eg/parcel-purpose/
+  eg-parcel-type: https://w3id.org/ogc/ladm/vocabs/eg/parcel-type/
+  eg-parcel-state: https://w3id.org/ogc/ladm/vocabs/eg/parcel-state/
 
-- title: Secondary parcel
-  snippets:
-    - language: json
-      ref: examples/parcel2.json
+examples:
+  - title: Primary parcel
+    base-output-filename: parcel2
+    snippets:
+      - language: json
+        ref: examples/parcel1.json
+        base-uri: http://www.example.com/features/
 
-- title: ContainingParcelRef
-  content: |
-    Has a relationship from a parcel to a "ParentParcel" - with an explicit semantic relationship and a topolgy constraint relationship.
-    
-    Note, the topology constraint "within" for a 3D Parcel, referencing a Parent Parcel defined in 2 or 2.5D implies within a virtual extruded volume defined by the footprint of the Parent Parcel.
-  snippets:
-    - language: json
-      ref: examples/parcel-relationship.json
+  - title: Secondary parcel
+    snippets:
+      - language: json
+        ref: examples/parcel2.json
+        base-uri: http://www.example.com/features/
+
+  - title: ContainingParcelRef
+    base-output-filename: parcel-relationship
+    content: |
+      Has a relationship from a parcel to a "ParentParcel" - with an explicit semantic relationship and a topolgy constraint relationship.
+      
+      Note, the topology constraint "within" for a 3D Parcel, referencing a Parent Parcel defined in 2 or 2.5D implies within a virtual extruded volume defined by the footprint of the Parent Parcel.
+    snippets:
+      - language: json
+        ref: examples/parcel-relationship.json
+        base-uri: http://www.example.com/features/

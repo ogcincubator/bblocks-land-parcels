@@ -2,14 +2,9 @@
   "@context": {
     "sdo": "https://schema.org/",
     "parcel": "https://w3id.org/ogc/ladm/parcels/",
-    "featureType": "@type",
     "name": "rdfs:label",
     "address": "sdo:address",
-    "bearingRotation": "container:bearingRotation",
-    "properties": "@nest",
-    "points": {
-      "@id": "container:points"
-    },
+    "bearingRotation": "parcel:bearingRotation",
     "parcels": {
       "@id": "parcel:parcels"
     },

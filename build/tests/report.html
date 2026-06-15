@@ -64,7 +64,7 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2026-06-14T20:55:49.542885+00:00</small>
+            <small class="datetime">Generated at 2026-06-15T09:38:12.226588+00:00</small>
                 <p class="summary fw-semibold text-success">
                     Number of passing building blocks: 4 / 4 (100%)
                 </p>
@@ -141,10 +141,27 @@
                                                                 
                                                                     
                                                                     <div class="font-monospace entry-message section-files ">Using examples/strings.json from examples</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                 
                                                                     
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/compoundName/rules.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/compoundName/rules.shacl:
+ - Shape _:ndb1c3150e7a74a71a922ee4908cf8101b1: *none*
+</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -172,10 +189,27 @@
                                                                 
                                                                     
                                                                     <div class="font-monospace entry-message section-files ">Using examples/coderefs.json from examples</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD example_2_1.jsonld created</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_2_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                 
                                                                     
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/compoundName/rules.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/compoundName/rules.shacl:
+ - Shape _:ndb1c3150e7a74a71a922ee4908cf8101b1: *none*
+</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -247,9 +281,12 @@
 Failed validating &#x27;additionalProperties&#x27; in schema[&#x27;allOf&#x27;][1][&#x27;properties&#x27;][&#x27;properties&#x27;][&#x27;properties&#x27;][&#x27;appellation&#x27;][&#x27;properties&#x27;][&#x27;hasPart&#x27;][&#x27;items&#x27;]:
     {&#x27;additionalProperties&#x27;: False,
      &#x27;anyOf&#x27;: [{&#x27;required&#x27;: [&#x27;label&#x27;]}, {&#x27;required&#x27;: [&#x27;ref&#x27;]}],
-     &#x27;properties&#x27;: {&#x27;label&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;},
-                    &#x27;ref&#x27;: {&#x27;$ref&#x27;: &#x27;https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml&#x27;},
-                    &#x27;type&#x27;: {&#x27;$ref&#x27;: &#x27;https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml&#x27;}},
+     &#x27;properties&#x27;: {&#x27;label&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;,
+                              &#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/2000/01/rdf-schema#label&#x27;},
+                    &#x27;ref&#x27;: {&#x27;$ref&#x27;: &#x27;https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml&#x27;,
+                            &#x27;x-jsonld-id&#x27;: &#x27;https://w3id.org/ogc/utils/label/namePartRef&#x27;},
+                    &#x27;type&#x27;: {&#x27;$ref&#x27;: &#x27;https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml&#x27;,
+                             &#x27;x-jsonld-id&#x27;: &#x27;https://w3id.org/ogc/utils/label/namePartType&#x27;}},
      &#x27;type&#x27;: &#x27;object&#x27;}
 
 On instance[&#x27;properties&#x27;][&#x27;appellation&#x27;][&#x27;hasPart&#x27;][0]:
@@ -260,23 +297,14 @@ On instance[&#x27;properties&#x27;][&#x27;appellation&#x27;][&#x27;hasPart&#x27;
                                                                     <div class="font-monospace entry-message section-shacl ">Using building block SHACL closures:
  - examples/topoobjects.ttl</div>
                                                                     
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/compoundName/rules.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/compoundName/rules.shacl:
- - Shape _:n2fdb6c1c8c684ad2b03a551f3fe44e5eb1: *none*
-</div>
-                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:nd6d1fb4ff4104ca0a170b87ad3b84baeb3: *none*
- - Shape _:nd6d1fb4ff4104ca0a170b87ad3b84baeb1: *none*
+ - Shape _:na559856128454835a06d184de1ba692eb1: *none*
+ - Shape _:na559856128454835a06d184de1ba692eb3: *none*
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
@@ -285,10 +313,10 @@ On instance[&#x27;properties&#x27;][&#x27;appellation&#x27;][&#x27;hasPart&#x27;
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape toporules:testTopoDirectedReferencesExist: *none*
  - Shape toporules:testTopoLinesReferencePoints: *none*
- - Shape toporules:testTopoReferencesExist: &lt;file:///github/workspace/8446454&gt;/geojson:topology
  - Shape toporules:testTopoEdgesReferencePoints: *none*
+ - Shape toporules:testTopoDirectedReferencesExist: *none*
+ - Shape toporules:testTopoReferencesExist: &lt;file:///github/workspace/8446454&gt;/geojson:topology
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
@@ -297,10 +325,10 @@ On instance[&#x27;properties&#x27;][&#x27;appellation&#x27;][&#x27;hasPart&#x27;
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:GeometryShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:FeatureShape: &lt;file:///github/workspace/8446454&gt;
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
 </div>
                                                                     
@@ -310,12 +338,21 @@ On instance[&#x27;properties&#x27;][&#x27;appellation&#x27;][&#x27;hasPart&#x27;
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
- - Shape geojson:GeometryShape: *none*
  - Shape geojson:FeatureShape: *none*
+ - Shape geojson:GeometryShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureCollectionShape: *none*
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:FeatureCollectionShape: *none*
+</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/compoundName/rules.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/compoundName/rules.shacl:
+ - Shape _:n075365734bd04a2ca561eac7c12fb1e8b1: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -373,23 +410,14 @@ On instance[&#x27;properties&#x27;][&#x27;parcelPurpose&#x27;]:
                                                                     <div class="font-monospace entry-message section-shacl ">Using building block SHACL closures:
  - examples/topoobjects.ttl</div>
                                                                     
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/compoundName/rules.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/compoundName/rules.shacl:
- - Shape _:n2fdb6c1c8c684ad2b03a551f3fe44e5eb1: *none*
-</div>
-                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:nd6d1fb4ff4104ca0a170b87ad3b84baeb3: *none*
- - Shape _:nd6d1fb4ff4104ca0a170b87ad3b84baeb1: *none*
+ - Shape _:na559856128454835a06d184de1ba692eb1: *none*
+ - Shape _:na559856128454835a06d184de1ba692eb3: *none*
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
@@ -398,10 +426,10 @@ On instance[&#x27;properties&#x27;][&#x27;parcelPurpose&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape toporules:testTopoDirectedReferencesExist: *none*
  - Shape toporules:testTopoLinesReferencePoints: *none*
- - Shape toporules:testTopoReferencesExist: &lt;file:///github/workspace/8446454&gt;/geojson:topology
  - Shape toporules:testTopoEdgesReferencePoints: *none*
+ - Shape toporules:testTopoDirectedReferencesExist: *none*
+ - Shape toporules:testTopoReferencesExist: &lt;file:///github/workspace/8446454&gt;/geojson:topology
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
@@ -410,10 +438,10 @@ On instance[&#x27;properties&#x27;][&#x27;parcelPurpose&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:GeometryShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:FeatureShape: &lt;file:///github/workspace/8446454&gt;
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
 </div>
                                                                     
@@ -423,12 +451,21 @@ On instance[&#x27;properties&#x27;][&#x27;parcelPurpose&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
- - Shape geojson:GeometryShape: *none*
  - Shape geojson:FeatureShape: *none*
+ - Shape geojson:GeometryShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureCollectionShape: *none*
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:FeatureCollectionShape: *none*
+</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/compoundName/rules.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/compoundName/rules.shacl:
+ - Shape _:n075365734bd04a2ca561eac7c12fb1e8b1: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -473,23 +510,14 @@ On instance[&#x27;properties&#x27;][&#x27;parcelPurpose&#x27;]:
                                                                     <div class="font-monospace entry-message section-shacl ">Using building block SHACL closures:
  - examples/topoobjects.ttl</div>
                                                                     
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/compoundName/rules.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/compoundName/rules.shacl:
- - Shape _:n2fdb6c1c8c684ad2b03a551f3fe44e5eb1: *none*
-</div>
-                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:nd6d1fb4ff4104ca0a170b87ad3b84baeb3: *none*
- - Shape _:nd6d1fb4ff4104ca0a170b87ad3b84baeb1: *none*
+ - Shape _:na559856128454835a06d184de1ba692eb1: *none*
+ - Shape _:na559856128454835a06d184de1ba692eb3: *none*
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
@@ -498,10 +526,10 @@ On instance[&#x27;properties&#x27;][&#x27;parcelPurpose&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape toporules:testTopoDirectedReferencesExist: *none*
  - Shape toporules:testTopoLinesReferencePoints: *none*
- - Shape toporules:testTopoReferencesExist: &lt;http://www.example.com/features/8446454&gt;/geojson:topology
  - Shape toporules:testTopoEdgesReferencePoints: *none*
+ - Shape toporules:testTopoDirectedReferencesExist: *none*
+ - Shape toporules:testTopoReferencesExist: &lt;http://www.example.com/features/8446454&gt;/geojson:topology
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
@@ -510,10 +538,10 @@ On instance[&#x27;properties&#x27;][&#x27;parcelPurpose&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:GeometryShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:FeatureShape: &lt;http://www.example.com/features/8446454&gt;
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
 </div>
                                                                     
@@ -523,12 +551,21 @@ On instance[&#x27;properties&#x27;][&#x27;parcelPurpose&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
- - Shape geojson:GeometryShape: *none*
  - Shape geojson:FeatureShape: *none*
+ - Shape geojson:GeometryShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureCollectionShape: *none*
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:FeatureCollectionShape: *none*
+</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/compoundName/rules.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/compoundName/rules.shacl:
+ - Shape _:n075365734bd04a2ca561eac7c12fb1e8b1: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -573,23 +610,14 @@ On instance[&#x27;properties&#x27;][&#x27;parcelPurpose&#x27;]:
                                                                     <div class="font-monospace entry-message section-shacl ">Using building block SHACL closures:
  - examples/topoobjects.ttl</div>
                                                                     
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/compoundName/rules.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/compoundName/rules.shacl:
- - Shape _:n2fdb6c1c8c684ad2b03a551f3fe44e5eb1: *none*
-</div>
-                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:nd6d1fb4ff4104ca0a170b87ad3b84baeb3: *none*
- - Shape _:nd6d1fb4ff4104ca0a170b87ad3b84baeb1: *none*
+ - Shape _:na559856128454835a06d184de1ba692eb1: *none*
+ - Shape _:na559856128454835a06d184de1ba692eb3: *none*
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
@@ -598,10 +626,10 @@ On instance[&#x27;properties&#x27;][&#x27;parcelPurpose&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape toporules:testTopoDirectedReferencesExist: *none*
  - Shape toporules:testTopoLinesReferencePoints: *none*
- - Shape toporules:testTopoReferencesExist: &lt;http://www.example.com/features/8446456&gt;/geojson:topology
  - Shape toporules:testTopoEdgesReferencePoints: *none*
+ - Shape toporules:testTopoDirectedReferencesExist: *none*
+ - Shape toporules:testTopoReferencesExist: &lt;http://www.example.com/features/8446456&gt;/geojson:topology
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
@@ -610,10 +638,10 @@ On instance[&#x27;properties&#x27;][&#x27;parcelPurpose&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:GeometryShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:FeatureShape: &lt;http://www.example.com/features/8446456&gt;
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
 </div>
                                                                     
@@ -623,12 +651,21 @@ On instance[&#x27;properties&#x27;][&#x27;parcelPurpose&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
- - Shape geojson:GeometryShape: *none*
  - Shape geojson:FeatureShape: *none*
+ - Shape geojson:GeometryShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureCollectionShape: *none*
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:FeatureCollectionShape: *none*
+</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/compoundName/rules.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/compoundName/rules.shacl:
+ - Shape _:n075365734bd04a2ca561eac7c12fb1e8b1: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -673,23 +710,14 @@ On instance[&#x27;properties&#x27;][&#x27;parcelPurpose&#x27;]:
                                                                     <div class="font-monospace entry-message section-shacl ">Using building block SHACL closures:
  - examples/topoobjects.ttl</div>
                                                                     
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/compoundName/rules.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/compoundName/rules.shacl:
- - Shape _:n2fdb6c1c8c684ad2b03a551f3fe44e5eb1: *none*
-</div>
-                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:nd6d1fb4ff4104ca0a170b87ad3b84baeb3: *none*
- - Shape _:nd6d1fb4ff4104ca0a170b87ad3b84baeb1: *none*
+ - Shape _:na559856128454835a06d184de1ba692eb1: *none*
+ - Shape _:na559856128454835a06d184de1ba692eb3: *none*
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
@@ -698,10 +726,10 @@ On instance[&#x27;properties&#x27;][&#x27;parcelPurpose&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape toporules:testTopoDirectedReferencesExist: *none*
  - Shape toporules:testTopoLinesReferencePoints: *none*
- - Shape toporules:testTopoReferencesExist: &lt;http://www.example.com/features/8446454&gt;/geojson:topology
  - Shape toporules:testTopoEdgesReferencePoints: *none*
+ - Shape toporules:testTopoDirectedReferencesExist: *none*
+ - Shape toporules:testTopoReferencesExist: &lt;http://www.example.com/features/8446454&gt;/geojson:topology
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
@@ -710,10 +738,10 @@ On instance[&#x27;properties&#x27;][&#x27;parcelPurpose&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:GeometryShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:FeatureShape: &lt;http://www.example.com/features/8446454&gt;
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
 </div>
                                                                     
@@ -723,12 +751,21 @@ On instance[&#x27;properties&#x27;][&#x27;parcelPurpose&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
- - Shape geojson:GeometryShape: *none*
  - Shape geojson:FeatureShape: *none*
+ - Shape geojson:GeometryShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureCollectionShape: *none*
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:FeatureCollectionShape: *none*
+</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/compoundName/rules.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/compoundName/rules.shacl:
+ - Shape _:n075365734bd04a2ca561eac7c12fb1e8b1: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -801,9 +838,9 @@ On instance[&#x27;properties&#x27;][&#x27;parcelPurpose&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:FeatureShape: &lt;http://www.example.com/features/8446454&gt;,&lt;http://www.example.com/features/8446455&gt;
  - Shape geojson:GeometryShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:FeatureShape: &lt;http://www.example.com/features/8446455&gt;,&lt;http://www.example.com/features/8446454&gt;
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
 </div>
@@ -814,21 +851,12 @@ On instance[&#x27;properties&#x27;][&#x27;parcelPurpose&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:GeometryShape: *none*
- - Shape geojson:FeatureShape: *none*
- - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureShape: *none*
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:FeatureCollectionShape: &lt;http://www.example.com/features/primaryparcels&gt;
-</div>
-                                                                    
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/compoundName/rules.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/compoundName/rules.shacl:
- - Shape _:n05b643542f0b47c79e91dc3b89a4eeb4b1: *none*
+ - Shape geojson:LinkShape: *none*
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
@@ -837,8 +865,8 @@ On instance[&#x27;properties&#x27;][&#x27;parcelPurpose&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:nc96db51e454d4d17883125fcd20b5901b1: *none*
- - Shape _:nc96db51e454d4d17883125fcd20b5901b3: *none*
+ - Shape _:n9c67d7f77324413fbea6b49608ad0ce9b3: *none*
+ - Shape _:n9c67d7f77324413fbea6b49608ad0ce9b1: *none*
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
@@ -847,10 +875,19 @@ On instance[&#x27;properties&#x27;][&#x27;parcelPurpose&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape toporules:testTopoDirectedReferencesExist: *none*
  - Shape toporules:testTopoLinesReferencePoints: *none*
- - Shape toporules:testTopoReferencesExist: &lt;http://www.example.com/features/8446455&gt;/geojson:topology,&lt;http://www.example.com/features/8446454&gt;/geojson:topology
  - Shape toporules:testTopoEdgesReferencePoints: *none*
+ - Shape toporules:testTopoDirectedReferencesExist: *none*
+ - Shape toporules:testTopoReferencesExist: &lt;http://www.example.com/features/8446455&gt;/geojson:topology,&lt;http://www.example.com/features/8446454&gt;/geojson:topology
+</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/compoundName/rules.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/compoundName/rules.shacl:
+ - Shape _:n95ef3e95e313406c88a2af6ee673eeaeb1: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -898,9 +935,9 @@ On instance[&#x27;properties&#x27;][&#x27;parcelPurpose&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:FeatureShape: &lt;http://www.example.com/features/8446456&gt;
  - Shape geojson:GeometryShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:FeatureShape: &lt;http://www.example.com/features/8446456&gt;
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
 </div>
@@ -911,21 +948,12 @@ On instance[&#x27;properties&#x27;][&#x27;parcelPurpose&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:GeometryShape: *none*
- - Shape geojson:FeatureShape: *none*
- - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureShape: *none*
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:FeatureCollectionShape: &lt;http://www.example.com/features/covenants&gt;
-</div>
-                                                                    
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/compoundName/rules.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/compoundName/rules.shacl:
- - Shape _:n05b643542f0b47c79e91dc3b89a4eeb4b1: *none*
+ - Shape geojson:LinkShape: *none*
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
@@ -934,8 +962,8 @@ On instance[&#x27;properties&#x27;][&#x27;parcelPurpose&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:nc96db51e454d4d17883125fcd20b5901b1: *none*
- - Shape _:nc96db51e454d4d17883125fcd20b5901b3: *none*
+ - Shape _:n9c67d7f77324413fbea6b49608ad0ce9b3: *none*
+ - Shape _:n9c67d7f77324413fbea6b49608ad0ce9b1: *none*
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
@@ -944,10 +972,19 @@ On instance[&#x27;properties&#x27;][&#x27;parcelPurpose&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape toporules:testTopoDirectedReferencesExist: *none*
  - Shape toporules:testTopoLinesReferencePoints: *none*
- - Shape toporules:testTopoReferencesExist: &lt;http://www.example.com/features/8446456&gt;/geojson:topology
  - Shape toporules:testTopoEdgesReferencePoints: *none*
+ - Shape toporules:testTopoDirectedReferencesExist: *none*
+ - Shape toporules:testTopoReferencesExist: &lt;http://www.example.com/features/8446456&gt;/geojson:topology
+</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/compoundName/rules.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/compoundName/rules.shacl:
+ - Shape _:n95ef3e95e313406c88a2af6ee673eeaeb1: *none*
 </div>
                                                     </div>
                                                 </div>

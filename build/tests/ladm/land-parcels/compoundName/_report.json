@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.ladm.land-parcels.compoundName - Compound Name",
   "bblockName": "Compound Name",
   "bblockId": "ogc.ladm.land-parcels.compoundName",
-  "generated": "2026-06-14T20:55:36.225054+00:00",
+  "generated": "2026-06-15T09:37:59.183754+00:00",
   "result": true,
   "items": [
     {
@@ -24,6 +24,25 @@
             {
               "isError": false,
               "message": "Using examples/strings.json from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_1_1.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_1_1.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_1_1.ttl",
+              "size": 7,
+              "isError": false,
+              "message": "Output Turtle example_1_1.ttl created"
             }
           ]
         },
@@ -36,6 +55,29 @@
               "result": true,
               "isError": false,
               "message": "Validation passed"
+            }
+          ]
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": [
+            {
+              "op": "shacl-report",
+              "shaclFile": "_sources/compoundName/rules.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/compoundName/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/compoundName/rules.shacl",
+              "focusNodes": {
+                "_:ndb1c3150e7a74a71a922ee4908cf8101b1": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/compoundName/rules.shacl:\n - Shape _:ndb1c3150e7a74a71a922ee4908cf8101b1: *none*\n"
             }
           ]
         }
@@ -60,6 +102,25 @@
             {
               "isError": false,
               "message": "Using examples/coderefs.json from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_2_1.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_2_1.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_2_1.ttl",
+              "size": 8,
+              "isError": false,
+              "message": "Output Turtle example_2_1.ttl created"
             }
           ]
         },
@@ -72,6 +133,29 @@
               "result": true,
               "isError": false,
               "message": "Validation passed"
+            }
+          ]
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": [
+            {
+              "op": "shacl-report",
+              "shaclFile": "_sources/compoundName/rules.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/compoundName/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/compoundName/rules.shacl",
+              "focusNodes": {
+                "_:ndb1c3150e7a74a71a922ee4908cf8101b1": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/compoundName/rules.shacl:\n - Shape _:ndb1c3150e7a74a71a922ee4908cf8101b1: *none*\n"
             }
           ]
         }

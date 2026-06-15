@@ -210,7 +210,20 @@
       "@id": "topo:edges",
       "@container": "@list"
     },
-    "appellation": "parcel:appellation",
+    "appellation": {
+      "@context": {
+        "name": "commonpatterns:name",
+        "label": "rdfs:label",
+        "hasPart": {
+          "@context": {
+            "ref": "commonpatterns:namePartRef",
+            "type": "commonpatterns:namePartType"
+          },
+          "@id": "dct:hasPart"
+        }
+      },
+      "@id": "parcel:appellation"
+    },
     "parcelType": {
       "@id": "parcel:type",
       "@type": "@id"
@@ -260,6 +273,7 @@
     "ref": "topo:ref",
     "orientation": "topo:orientation",
     "Edge": "topo:Edge",
+    "CompoundName": "commonpatterns:CompoundName",
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",
@@ -270,6 +284,7 @@
     "prof": "http://www.w3.org/ns/dx/prof/",
     "sdo": "https://schema.org/",
     "parcel": "https://w3id.org/ogc/ladm/parcels/",
+    "commonpatterns": "https://w3id.org/ogc/utils/label/",
     "@version": 1.1
   }
 }

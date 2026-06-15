@@ -193,12 +193,12 @@
   ],
   "name": "Building Blocks - Land parcels",
   "abstract": "This repository contains a JSON schema model for land parcels, semantically annotated and aligned with LADM conceptual model.\n\nThese schemas use a generalised 3D topology model to provide explicit definition of parcels required for survey record keeping. \n\nThe topology model supports transformations to well known geometry formats which may be used to visualise and validated geometry representations of  Parcel objects in 2 or 3D.\n",
-  "modified": "2026-06-14T20:55:33.288371",
+  "modified": "2026-06-15T09:37:55.861479",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"3d439a60dc207abd30b00f9035928160fab87110",
-      "shortCommitId": "\"3d439a",
-      "date": "2026-06-07T12:34:37+00:00\""
+      "commitId": "\"7748b690a0905f4a52da8257a84b3f6fe3743a9f",
+      "shortCommitId": "\"7748b6",
+      "date": "2026-06-15T09:34:38+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/bblocks-land-parcels",
@@ -249,7 +249,7 @@
       "itemClass": "model",
       "register": "ogc-incubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-06-14",
+      "dateOfLastChange": "2023-09-18",
       "dependsOn": null,
       "sources": [],
       "scope": "dev",
@@ -305,7 +305,7 @@
       "itemClass": "schema",
       "register": "icsm-csdm",
       "version": "0.1",
-      "dateOfLastChange": "2026-06-14",
+      "dateOfLastChange": "2023-05-24",
       "link": "https://github.com/icsm-au/3d-csdm-schema",
       "sources": [
         {
@@ -333,7 +333,7 @@
         "bblocks://ogc.ogc-utils.iri-or-curie"
       ],
       "ldContext": {
-        "prof:hasArtifact": "/github/workspace/_sources/compoundName/context.jsonld",
+        "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/compoundName/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
@@ -397,30 +397,21 @@
       "dateTimeAddition": "2024-06-03T00:00:00Z",
       "itemClass": "schema",
       "dependsOn": [
-        "bblocks://ogc.ogc-utils.iri-or-curie",
-        "bblocks://ogc.ladm.land-parcels.compoundName",
-        "bblocks://ogc.ladm.land-parcels.ontology",
-        "bblocks://ogc.geo.topo.features.topo-feature-multi-collection",
         "bblocks://ogc.geo.topo.features.topo-feature",
-        "bblocks://ogc.geo.json-fg.feature-lenient"
+        "bblocks://ogc.ogc-utils.iri-or-curie",
+        "bblocks://ogc.ladm.land-parcels.ontology",
+        "bblocks://ogc.geo.json-fg.feature-lenient",
+        "bblocks://ogc.geo.topo.features.topo-feature-multi-collection",
+        "bblocks://ogc.ladm.land-parcels.compoundName"
       ],
       "shaclClosures": [
         "examples/topoobjects.ttl"
       ],
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-06-14",
+      "dateOfLastChange": "2024-03-06",
       "link": "https://github.com/opengeospatial/bblock-template",
       "shaclShapes": [
-        {
-          "prof:hasArtifact": [
-            "https://ogcincubator.github.io/bblocks-land-parcels/_sources/compoundName/rules.shacl"
-          ],
-          "rdfs:seeAlso": "bblocks://ogc.ladm.land-parcels.compoundName",
-          "prof:hasRole": "role:validation",
-          "dct:format": "text/turtle",
-          "dct:conformsTo": "shacl:"
-        },
         {
           "prof:hasArtifact": [
             "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
@@ -455,6 +446,15 @@
             "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.geo.features.featureCollection",
+          "prof:hasRole": "role:validation",
+          "dct:format": "text/turtle",
+          "dct:conformsTo": "shacl:"
+        },
+        {
+          "prof:hasArtifact": [
+            "https://ogcincubator.github.io/bblocks-land-parcels/_sources/compoundName/rules.shacl"
+          ],
+          "rdfs:seeAlso": "bblocks://ogc.ladm.land-parcels.compoundName",
           "prof:hasRole": "role:validation",
           "dct:format": "text/turtle",
           "dct:conformsTo": "shacl:"
@@ -526,7 +526,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2026-06-14",
+      "dateOfLastChange": "2024-03-06",
       "link": "https://github.com/opengeospatial/bblock-template",
       "shaclShapes": [
         {
@@ -543,15 +543,6 @@
             "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.geo.features.featureCollection",
-          "prof:hasRole": "role:validation",
-          "dct:format": "text/turtle",
-          "dct:conformsTo": "shacl:"
-        },
-        {
-          "prof:hasArtifact": [
-            "https://ogcincubator.github.io/bblocks-land-parcels/_sources/compoundName/rules.shacl"
-          ],
-          "rdfs:seeAlso": "bblocks://ogc.ladm.land-parcels.compoundName",
           "prof:hasRole": "role:validation",
           "dct:format": "text/turtle",
           "dct:conformsTo": "shacl:"
@@ -575,12 +566,21 @@
           "prof:hasRole": "role:validation",
           "dct:format": "text/turtle",
           "dct:conformsTo": "shacl:"
+        },
+        {
+          "prof:hasArtifact": [
+            "https://ogcincubator.github.io/bblocks-land-parcels/_sources/compoundName/rules.shacl"
+          ],
+          "rdfs:seeAlso": "bblocks://ogc.ladm.land-parcels.compoundName",
+          "prof:hasRole": "role:validation",
+          "dct:format": "text/turtle",
+          "dct:conformsTo": "shacl:"
         }
       ],
       "dependsOn": [
         "bblocks://ogc.geo.json-fg.featureCollection-lenient",
-        "bblocks://ogc.ladm.land-parcels.parcel",
         "bblocks://ogc.geo.topo.features.topo-feature",
+        "bblocks://ogc.ladm.land-parcels.parcel",
         "bblocks://ogc.geo.topo.features.topo-feature-collection"
       ],
       "schema": [

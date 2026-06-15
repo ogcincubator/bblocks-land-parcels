@@ -31,6 +31,42 @@ A name with a label, but also a set of parts with roles that can be validated ag
 }
 ```
 
+#### jsonld
+```jsonld
+{
+  "@context": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/compoundName/context.jsonld",
+  "id": "CompoundNameExample",
+  "type": "CompoundName",
+  "label": "IS II - DP 3333",
+  "comment": "note: label may be absent or subject to rules regarding presence of parts",
+  "hasPart": [
+    {
+      "type": "Source",
+      "label": "DP 3333"
+    },
+    {
+      "type": "Stamp",
+      "label": "IS II"
+    }
+  ]
+}
+```
+
+#### ttl
+```ttl
+@prefix commonpatterns: <https://w3id.org/ogc/utils/label/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+[] rdfs:label "IS II - DP 3333" ;
+    dcterms:hasPart [ rdfs:label "IS II" ;
+            commonpatterns:namePartType "Stamp" ],
+        [ rdfs:label "DP 3333" ;
+            commonpatterns:namePartType "Source" ] .
+
+
+```
+
 
 ### Referenced Parts
 An example name where part of the name is a reference to a vocabulary source.  This can us used for validation and multi-linual applications
@@ -55,6 +91,44 @@ An example name where part of the name is a reference to a vocabulary source.  T
 }
 ```
 
+#### jsonld
+```jsonld
+{
+  "@context": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/compoundName/context.jsonld",
+  "id": "CompoundNameExample",
+  "type": "CompoundName",
+  "label": "IS II - DP 3333",
+  "comment": "the label of the part is optional - but can be cross checked",
+  "hasPart": [
+    {
+      "type": "wa-plan:planTypes",
+      "ref": "wa-plan-register:dp333",
+      "label": "DP 3333"
+    },
+    {
+      "type": "Stamp",
+      "label": "IS II"
+    }
+  ]
+}
+```
+
+#### ttl
+```ttl
+@prefix commonpatterns: <https://w3id.org/ogc/utils/label/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+[] rdfs:label "IS II - DP 3333" ;
+    dcterms:hasPart [ rdfs:label "DP 3333" ;
+            commonpatterns:namePartRef "wa-plan-register:dp333" ;
+            commonpatterns:namePartType "wa-plan:planTypes" ],
+        [ rdfs:label "IS II" ;
+            commonpatterns:namePartType "Stamp" ] .
+
+
+```
+
 ## Schema
 
 ```yaml
@@ -71,6 +145,7 @@ properties:
     anyOf:
     - type: 'null'
     - type: string
+    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label
   template:
     type: string
   hasPart:
@@ -81,15 +156,26 @@ properties:
       properties:
         label:
           type: string
+          x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label
         ref:
           $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml
+          x-jsonld-id: https://w3id.org/ogc/utils/label/namePartRef
         type:
           $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml
+          x-jsonld-id: https://w3id.org/ogc/utils/label/namePartType
       anyOf:
       - required:
         - label
       - required:
         - ref
+    x-jsonld-id: http://purl.org/dc/terms/hasPart
+x-jsonld-extra-terms:
+  name: https://w3id.org/ogc/utils/label/name
+  CompoundName: https://w3id.org/ogc/utils/label/CompoundName
+x-jsonld-prefixes:
+  commonpatterns: https://w3id.org/ogc/utils/label/
+  dct: http://purl.org/dc/terms/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
 
 ```
 
@@ -102,11 +188,28 @@ Links to the schema:
 # JSON-LD Context
 
 ```jsonld
-None
+{
+  "@context": {
+    "name": "commonpatterns:name",
+    "CompoundName": "commonpatterns:CompoundName",
+    "label": "rdfs:label",
+    "hasPart": {
+      "@context": {
+        "ref": "commonpatterns:namePartRef",
+        "type": "commonpatterns:namePartType"
+      },
+      "@id": "dct:hasPart"
+    },
+    "commonpatterns": "https://w3id.org/ogc/utils/label/",
+    "dct": "http://purl.org/dc/terms/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@version": 1.1
+  }
+}
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](/github/workspace/_sources/compoundName/context.jsonld)
+[context.jsonld](https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/compoundName/context.jsonld)
 
 ## Sources
 

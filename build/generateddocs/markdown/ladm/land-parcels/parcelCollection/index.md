@@ -269,9 +269,12 @@ Individual features may optionally contain geometric coordinates for visualisati
 
 #### ttl
 ```ttl
+@prefix commonpatterns: <https://w3id.org/ogc/utils/label/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix parcel: <https://w3id.org/ogc/ladm/parcels/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix topo: <https://purl.org/geojson/topo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -283,7 +286,15 @@ Individual features may optionally contain geometric coordinates for visualisati
 <http://www.example.com/features/8446454> a geojson:Feature ;
     geojson:topology [ a geojson:Polygon ;
             topo:relatedFeatures ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ) ] ;
-    parcel:appellation [ ] ;
+    parcel:appellation [ rdfs:label "Lot 1 DP 572532" ;
+            dcterms:hasPart [ rdfs:label "1" ;
+                    commonpatterns:namePartType "ParcelIdentifier" ],
+                [ rdfs:label "DP" ;
+                    commonpatterns:namePartType "PlanType" ],
+                [ rdfs:label "572532" ;
+                    commonpatterns:namePartType "PlanIdentifier" ],
+                [ rdfs:label "Lot" ;
+                    commonpatterns:namePartType "ParcelType" ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040074> ;
             parcel:interestType <eg-interest-type:fh> ] ;
     parcel:purpose <eg-parcel-purpose:fst> ;
@@ -294,7 +305,15 @@ Individual features may optionally contain geometric coordinates for visualisati
 <http://www.example.com/features/8446455> a geojson:Feature ;
     geojson:topology [ a geojson:Polygon ;
             topo:relatedFeatures ( ( <http://www.example.com/features/l746686> <http://www.example.com/features/l999724> <http://www.example.com/features/l591175> <http://www.example.com/features/l435861> <http://www.example.com/features/l874826> <http://www.example.com/features/l952702> <http://www.example.com/features/l985190> <http://www.example.com/features/l535759> <http://www.example.com/features/l535242> <http://www.example.com/features/l329256> ) ) ] ;
-    parcel:appellation [ ] ;
+    parcel:appellation [ rdfs:label "Lot 2 DP 572532" ;
+            dcterms:hasPart [ rdfs:label "572532" ;
+                    commonpatterns:namePartType "PlanIdentifier" ],
+                [ rdfs:label "Lot" ;
+                    commonpatterns:namePartType "ParcelType" ],
+                [ rdfs:label "2" ;
+                    commonpatterns:namePartType "ParcelIdentifier" ],
+                [ rdfs:label "DP" ;
+                    commonpatterns:namePartType "PlanType" ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040075> ;
             parcel:interestType <eg-interest-type:fh> ] ;
     parcel:purpose <eg-parcel-purpose:fst> ;
@@ -473,9 +492,12 @@ Individual features may optionally contain geometric coordinates for visualisati
 
 #### ttl
 ```ttl
+@prefix commonpatterns: <https://w3id.org/ogc/utils/label/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix parcel: <https://w3id.org/ogc/ladm/parcels/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix topo: <https://purl.org/geojson/topo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -487,7 +509,15 @@ Individual features may optionally contain geometric coordinates for visualisati
         parcel:SecondaryParcel ;
     geojson:topology [ a geojson:Polygon ;
             topo:relatedFeatures ( ( <http://www.example.com/features/l999724> <http://www.example.com/features/l591175> <http://www.example.com/features/l369793> <http://www.example.com/features/l435861> <http://www.example.com/features/l345344> <http://www.example.com/features/l685716> <http://www.example.com/features/l832940> <http://www.example.com/features/l715872> <http://www.example.com/features/l641327> <http://www.example.com/features/l852048> <http://www.example.com/features/l949729> <http://www.example.com/features/l951515> <http://www.example.com/features/l761760> <http://www.example.com/features/l580762> ) ) ] ;
-    parcel:appellation [ ] ;
+    parcel:appellation [ rdfs:label "Area Z DP 572532" ;
+            dcterms:hasPart [ rdfs:label "572532" ;
+                    commonpatterns:namePartType "PlanIdentifier" ],
+                [ rdfs:label "Area" ;
+                    commonpatterns:namePartType "ParcelType" ],
+                [ rdfs:label "DP" ;
+                    commonpatterns:namePartType "PlanType" ],
+                [ rdfs:label "Z" ;
+                    commonpatterns:namePartType "ParcelIdentifier" ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040075> ;
             parcel:interestType <eg-interest-type:fh> ] ;
     parcel:purpose <eg-parcel-purpose:c-l> ;
@@ -750,7 +780,20 @@ Links to the schema:
       "@id": "parcel:SecondaryParcel",
       "@type": "@id"
     },
-    "appellation": "parcel:appellation",
+    "appellation": {
+      "@id": "parcel:appellation",
+      "@context": {
+        "name": "commonpatterns:name",
+        "label": "rdfs:label",
+        "hasPart": {
+          "@context": {
+            "ref": "commonpatterns:namePartRef",
+            "type": "commonpatterns:namePartType"
+          },
+          "@id": "dct:hasPart"
+        }
+      }
+    },
     "parcelType": {
       "@id": "parcel:type",
       "@type": "@id"
@@ -830,6 +873,7 @@ Links to the schema:
     "ref": "topo:ref",
     "orientation": "topo:orientation",
     "Edge": "topo:Edge",
+    "CompoundName": "commonpatterns:CompoundName",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "geojson": "https://purl.org/geojson/vocab#",
     "oa": "http://www.w3.org/ns/oa#",
@@ -840,6 +884,7 @@ Links to the schema:
     "prof": "http://www.w3.org/ns/dx/prof/",
     "sdo": "https://schema.org/",
     "parcel": "https://w3id.org/ogc/ladm/parcels/",
+    "commonpatterns": "https://w3id.org/ogc/utils/label/",
     "@version": 1.1
   }
 }

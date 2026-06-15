@@ -1,9 +1,12 @@
+@prefix commonpatterns: <https://w3id.org/ogc/utils/label/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix eg-parcel-purpose: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-purpose/> .
 @prefix eg-parcel-state: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-state/> .
 @prefix eg-parcel-type: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-type/> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix parcel: <https://w3id.org/ogc/ladm/parcels/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix topo: <https://purl.org/geojson/topo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -11,7 +14,15 @@
         parcel:SecondaryParcel ;
     geojson:topology [ a geojson:Polygon ;
             topo:relatedFeatures ( ( <http://www.example.com/features/l999724> <http://www.example.com/features/l591175> <http://www.example.com/features/l369793> <http://www.example.com/features/l435861> <http://www.example.com/features/l345344> <http://www.example.com/features/l685716> <http://www.example.com/features/l832940> <http://www.example.com/features/l715872> <http://www.example.com/features/l641327> <http://www.example.com/features/l852048> <http://www.example.com/features/l949729> <http://www.example.com/features/l951515> <http://www.example.com/features/l761760> <http://www.example.com/features/l580762> ) ) ] ;
-    parcel:appellation [ ] ;
+    parcel:appellation [ rdfs:label "Area Z DP 572532" ;
+            dcterms:hasPart [ rdfs:label "DP" ;
+                    commonpatterns:namePartType "PlanType" ],
+                [ rdfs:label "572532" ;
+                    commonpatterns:namePartType "PlanIdentifier" ],
+                [ rdfs:label "Z" ;
+                    commonpatterns:namePartType "ParcelIdentifier" ],
+                [ rdfs:label "Area" ;
+                    commonpatterns:namePartType "ParcelType" ] ] ;
     parcel:interest [ ] ;
     parcel:purpose eg-parcel-purpose:c-l ;
     parcel:state eg-parcel-state:created ;

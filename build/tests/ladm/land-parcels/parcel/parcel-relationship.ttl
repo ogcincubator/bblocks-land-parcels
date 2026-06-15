@@ -1,3 +1,5 @@
+@prefix commonpatterns: <https://w3id.org/ogc/utils/label/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix eg-parcel-purpose: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-purpose/> .
 @prefix eg-parcel-state: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-state/> .
 @prefix eg-parcel-type: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-type/> .
@@ -7,17 +9,26 @@
 @prefix parcel: <https://w3id.org/ogc/ladm/parcels/> .
 @prefix prof: <http://www.w3.org/ns/dx/prof/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix topo: <https://purl.org/geojson/topo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.example.com/features/8446454> a geojson:Feature ;
     geojson:topology [ a geojson:Polygon ;
-            topo:relatedFeatures ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ),
-                ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;
+            topo:relatedFeatures ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;
                         prof:hasRole topo:within,
                             parcel:containingParentParcel ;
-                        oa:hasTarget <myParcels:1234> ] ) ] ;
-    parcel:appellation [ ] ;
+                        oa:hasTarget <myParcels:1234> ] ),
+                ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ) ] ;
+    parcel:appellation [ rdfs:label "Lot 1 DP 572532" ;
+            dcterms:hasPart [ rdfs:label "Lot" ;
+                    commonpatterns:namePartType "ParcelType" ],
+                [ rdfs:label "572532" ;
+                    commonpatterns:namePartType "PlanIdentifier" ],
+                [ rdfs:label "1" ;
+                    commonpatterns:namePartType "ParcelIdentifier" ],
+                [ rdfs:label "DP" ;
+                    commonpatterns:namePartType "PlanType" ] ] ;
     parcel:interest [ ] ;
     parcel:purpose eg-parcel-purpose:fst ;
     parcel:state eg-parcel-state:created ;

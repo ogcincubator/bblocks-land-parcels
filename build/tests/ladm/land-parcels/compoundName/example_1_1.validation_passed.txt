@@ -1,10 +1,23 @@
 Validation report for ogc.ladm.land-parcels.compoundName - Compound Name
-Generated 2026-06-14T20:55:36.224222+00:00
+Generated 2026-06-15T09:37:59.179314+00:00
 === Files ===
 Using examples/strings.json from examples
+JSON-LD context is present - uplifting
+Output JSON-LD example_1_1.jsonld created
+Output Turtle example_1_1.ttl created
 === End Files ===
 
 === JSON Schema ===
 Validation passed
 === End JSON Schema ===
+
+=== SHACL ===
+Validation result for _sources/compoundName/rules.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/compoundName/rules.shacl:
+ - Shape _:ndb1c3150e7a74a71a922ee4908cf8101b1: *none*
+
+=== End SHACL ===
 

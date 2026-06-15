@@ -265,19 +265,19 @@ path	@id	schema
 /properties/zmin	https://w3id.org/ogc/ladm/parcels/zmin	/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
 /properties/zmax	https://w3id.org/ogc/ladm/parcels/zmax	/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
 /properties/interests	https://w3id.org/ogc/ladm/parcels/interest	/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/properties/interests/interestLink		/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/properties/interests/interestName		/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/properties/interests/interestType		/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/properties/interests/dateInForce		/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/properties/interests/dateExpires		/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/properties/interests/statuteLink		/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/properties/interests/statuteName		/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/properties/interests/benefitedPartyName		/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/properties/interests/benefitedPartyLink		/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/properties/interests/originalSurveyLink		/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/properties/interests/referencedParcel		/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/properties/interests/burdenedParcels		/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/properties/interests/benefitedParcels		/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/properties/interests/description		/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/properties/interests/entitlementPortion		/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/properties/interests/liabilityPortion		/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/properties/interests/interestLink	https://w3id.org/ogc/ladm/parcels/interestLink	/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/properties/interests/interestName	https://w3id.org/ogc/ladm/parcels/interestName	/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/properties/interests/interestType	https://w3id.org/ogc/ladm/parcels/interestType	/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/properties/interests/dateInForce	https://w3id.org/ogc/ladm/parcels/interestDateInForce	/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/properties/interests/dateExpires	https://w3id.org/ogc/ladm/parcels/interestDateExpires	/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/properties/interests/statuteLink	https://w3id.org/ogc/ladm/parcels/statuteLink	/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/properties/interests/statuteName	https://w3id.org/ogc/ladm/parcels/statuteName	/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/properties/interests/benefitedPartyName	https://w3id.org/ogc/ladm/parcels/benefitedPartyName	/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/properties/interests/benefitedPartyLink	https://w3id.org/ogc/ladm/parcels/benefitedPartyLink	/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/properties/interests/originalSurveyLink	https://w3id.org/ogc/ladm/parcels/originalSurveyLink	/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/properties/interests/referencedParcel	https://w3id.org/ogc/ladm/parcels/referencedParcel	/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/properties/interests/burdenedParcels	https://w3id.org/ogc/ladm/parcels/burdened	/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/properties/interests/benefitedParcels	https://w3id.org/ogc/ladm/parcels/benefited	/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/properties/interests/description	https://w3id.org/ogc/ladm/parcels/interestDescription	/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/properties/interests/entitlementPortion	https://w3id.org/ogc/ladm/parcels/entitlementPortion	/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/properties/interests/liabilityPortion	https://w3id.org/ogc/ladm/parcels/liabilityPortion	/github/workspace/build/annotated/ladm/land-parcels/parcel/schema.yaml

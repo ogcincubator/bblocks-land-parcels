@@ -16,36 +16,60 @@ $defs:
     properties:
       interestLink:
         $ref: '#/$defs/coderef'
+        x-jsonld-type: '@id'
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/interestLink
       interestName:
         type: string
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/interestName
       interestType:
         $ref: '#/$defs/coderef'
+        x-jsonld-type: '@id'
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/interestType
       dateInForce:
         $ref: '#/$defs/dateTime'
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/interestDateInForce
       dateExpires:
         $ref: '#/$defs/dateTime'
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/interestDateExpires
       statuteLink:
         $ref: '#/$defs/coderef'
+        x-jsonld-type: '@id'
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/statuteLink
       statuteName:
         type: string
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/statuteName
       benefitedPartyName:
         type: string
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/benefitedPartyName
       benefitedPartyLink:
         $ref: '#/$defs/coderef'
+        x-jsonld-type: '@id'
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/benefitedPartyLink
       originalSurveyLink:
         $ref: '#/$defs/coderef'
+        x-jsonld-type: '@id'
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/originalSurveyLink
       referencedParcel:
         $ref: '#/$defs/coderef'
+        x-jsonld-type: '@id'
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/referencedParcel
       burdenedParcels:
         $ref: '#/$defs/coderefList'
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/burdened
+        x-jsonld-container: '@set'
       benefitedParcels:
         $ref: '#/$defs/coderefList'
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/benefited
+        x-jsonld-container: '@set'
       description:
         type: string
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/interestDescription
       entitlementPortion:
         type: string
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/entitlementPortion
       liabilityPortion:
         type: string
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/liabilityPortion
     required:
     - interestLink
     - interestType
@@ -103,7 +127,6 @@ allOf:
       $ref: '#parcelProperties'
 x-jsonld-extra-terms:
   name: rdfs:label
-  address: https://schema.org/address
   bearingRotation: https://w3id.org/ogc/ladm/parcels/bearingRotation
   parcels: https://w3id.org/ogc/ladm/parcels/parcels
   PrimaryParcel:
@@ -112,60 +135,10 @@ x-jsonld-extra-terms:
   SecondaryParcel:
     x-jsonld-id: https://w3id.org/ogc/ladm/parcels/SecondaryParcel
     x-jsonld-type: '@id'
-  appellation: https://w3id.org/ogc/ladm/parcels/appellation
-  parcelType:
-    x-jsonld-id: https://w3id.org/ogc/ladm/parcels/type
-    x-jsonld-type: '@id'
-  parcelPurpose:
-    x-jsonld-id: https://w3id.org/ogc/ladm/parcels/purpose
-    x-jsonld-type: '@id'
   parcelQualityClass:
     x-jsonld-id: https://w3id.org/ogc/ladm/parcels/qualityClass
     x-jsonld-type: '@id'
-  area: https://w3id.org/ogc/ladm/parcels/surfaceArea
-  floor: https://w3id.org/ogc/ladm/parcels/floor
-  zmin: https://w3id.org/ogc/ladm/parcels/zmin
-  zmax: https://w3id.org/ogc/ladm/parcels/zmax
   terrainIntersectionCurve: https://w3id.org/ogc/ladm/parcels/terrainIntersectionCurve
-  interests:
-    x-jsonld-id: https://w3id.org/ogc/ladm/parcels/interest
-    x-jsonld-container: '@set'
-    x-jsonld-context:
-      interestLink:
-        '@type': '@id'
-        '@id': https://w3id.org/ogc/ladm/parcels/interestLink
-      interestName: https://w3id.org/ogc/ladm/parcels/interestName
-      interestType:
-        '@type': '@id'
-        '@id': https://w3id.org/ogc/ladm/parcels/interestType
-      dateInForce: https://w3id.org/ogc/ladm/parcels/interestDateInForce
-      dateExpires: https://w3id.org/ogc/ladm/parcels/interestDateExpires
-      statuteLink:
-        '@type': '@id'
-        '@id': https://w3id.org/ogc/ladm/parcels/statuteLink
-      statuteName: https://w3id.org/ogc/ladm/parcels/statuteName
-      benefitedPartyLink:
-        '@type': '@id'
-        '@id': https://w3id.org/ogc/ladm/parcels/benefitedPartyLink
-      benefitedPartyName: https://w3id.org/ogc/ladm/parcels/benefitedPartyName
-      referencedParcel:
-        '@type': '@id'
-        '@id': https://w3id.org/ogc/ladm/parcels/referencedParcel
-      originalSurveyLink:
-        '@type': '@id'
-        '@id': https://w3id.org/ogc/ladm/parcels/originalSurveyLink
-      burdenedParcels:
-        '@id': https://w3id.org/ogc/ladm/parcels/burdened
-        '@container': '@set'
-      benefitedParcels:
-        '@id': https://w3id.org/ogc/ladm/parcels/benefited
-        '@container': '@set'
-      entitlementPortion: https://w3id.org/ogc/ladm/parcels/entitlementPortion
-      liabilityPortion: https://w3id.org/ogc/ladm/parcels/liabilityPortion
-      description: https://w3id.org/ogc/ladm/parcels/interestDescription
-  parcelState:
-    x-jsonld-id: https://w3id.org/ogc/ladm/parcels/state
-    x-jsonld-type: '@id'
 x-jsonld-prefixes:
   sdo: https://schema.org/
   parcel: https://w3id.org/ogc/ladm/parcels/

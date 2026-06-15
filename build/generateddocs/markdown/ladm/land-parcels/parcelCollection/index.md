@@ -289,12 +289,12 @@ Individual features may optionally contain geometric coordinates for visualisati
     parcel:appellation [ rdfs:label "Lot 1 DP 572532" ;
             dcterms:hasPart [ rdfs:label "1" ;
                     commonpatterns:namePartType "ParcelIdentifier" ],
-                [ rdfs:label "DP" ;
-                    commonpatterns:namePartType "PlanType" ],
+                [ rdfs:label "Lot" ;
+                    commonpatterns:namePartType "ParcelType" ],
                 [ rdfs:label "572532" ;
                     commonpatterns:namePartType "PlanIdentifier" ],
-                [ rdfs:label "Lot" ;
-                    commonpatterns:namePartType "ParcelType" ] ] ;
+                [ rdfs:label "DP" ;
+                    commonpatterns:namePartType "PlanType" ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040074> ;
             parcel:interestType <eg-interest-type:fh> ] ;
     parcel:purpose <eg-parcel-purpose:fst> ;
@@ -306,14 +306,14 @@ Individual features may optionally contain geometric coordinates for visualisati
     geojson:topology [ a geojson:Polygon ;
             topo:relatedFeatures ( ( <http://www.example.com/features/l746686> <http://www.example.com/features/l999724> <http://www.example.com/features/l591175> <http://www.example.com/features/l435861> <http://www.example.com/features/l874826> <http://www.example.com/features/l952702> <http://www.example.com/features/l985190> <http://www.example.com/features/l535759> <http://www.example.com/features/l535242> <http://www.example.com/features/l329256> ) ) ] ;
     parcel:appellation [ rdfs:label "Lot 2 DP 572532" ;
-            dcterms:hasPart [ rdfs:label "572532" ;
-                    commonpatterns:namePartType "PlanIdentifier" ],
-                [ rdfs:label "Lot" ;
+            dcterms:hasPart [ rdfs:label "Lot" ;
                     commonpatterns:namePartType "ParcelType" ],
-                [ rdfs:label "2" ;
-                    commonpatterns:namePartType "ParcelIdentifier" ],
                 [ rdfs:label "DP" ;
-                    commonpatterns:namePartType "PlanType" ] ] ;
+                    commonpatterns:namePartType "PlanType" ],
+                [ rdfs:label "572532" ;
+                    commonpatterns:namePartType "PlanIdentifier" ],
+                [ rdfs:label "2" ;
+                    commonpatterns:namePartType "ParcelIdentifier" ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040075> ;
             parcel:interestType <eg-interest-type:fh> ] ;
     parcel:purpose <eg-parcel-purpose:fst> ;
@@ -510,14 +510,14 @@ Individual features may optionally contain geometric coordinates for visualisati
     geojson:topology [ a geojson:Polygon ;
             topo:relatedFeatures ( ( <http://www.example.com/features/l999724> <http://www.example.com/features/l591175> <http://www.example.com/features/l369793> <http://www.example.com/features/l435861> <http://www.example.com/features/l345344> <http://www.example.com/features/l685716> <http://www.example.com/features/l832940> <http://www.example.com/features/l715872> <http://www.example.com/features/l641327> <http://www.example.com/features/l852048> <http://www.example.com/features/l949729> <http://www.example.com/features/l951515> <http://www.example.com/features/l761760> <http://www.example.com/features/l580762> ) ) ] ;
     parcel:appellation [ rdfs:label "Area Z DP 572532" ;
-            dcterms:hasPart [ rdfs:label "572532" ;
-                    commonpatterns:namePartType "PlanIdentifier" ],
-                [ rdfs:label "Area" ;
+            dcterms:hasPart [ rdfs:label "Area" ;
                     commonpatterns:namePartType "ParcelType" ],
-                [ rdfs:label "DP" ;
-                    commonpatterns:namePartType "PlanType" ],
                 [ rdfs:label "Z" ;
-                    commonpatterns:namePartType "ParcelIdentifier" ] ] ;
+                    commonpatterns:namePartType "ParcelIdentifier" ],
+                [ rdfs:label "572532" ;
+                    commonpatterns:namePartType "PlanIdentifier" ],
+                [ rdfs:label "DP" ;
+                    commonpatterns:namePartType "PlanType" ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040075> ;
             parcel:interestType <eg-interest-type:fh> ] ;
     parcel:purpose <eg-parcel-purpose:c-l> ;
@@ -769,7 +769,6 @@ Links to the schema:
       "@container": "@list"
     },
     "name": "rdfs:label",
-    "address": "sdo:address",
     "bearingRotation": "parcel:bearingRotation",
     "parcels": "parcel:parcels",
     "PrimaryParcel": {
@@ -780,87 +779,11 @@ Links to the schema:
       "@id": "parcel:SecondaryParcel",
       "@type": "@id"
     },
-    "appellation": {
-      "@id": "parcel:appellation",
-      "@context": {
-        "name": "commonpatterns:name",
-        "label": "rdfs:label",
-        "hasPart": {
-          "@context": {
-            "ref": "commonpatterns:namePartRef",
-            "type": "commonpatterns:namePartType"
-          },
-          "@id": "dct:hasPart"
-        }
-      }
-    },
-    "parcelType": {
-      "@id": "parcel:type",
-      "@type": "@id"
-    },
-    "parcelPurpose": {
-      "@id": "parcel:purpose",
-      "@type": "@id"
-    },
     "parcelQualityClass": {
       "@id": "parcel:qualityClass",
       "@type": "@id"
     },
-    "area": "parcel:surfaceArea",
-    "floor": "parcel:floor",
-    "zmin": "parcel:zmin",
-    "zmax": "parcel:zmax",
     "terrainIntersectionCurve": "parcel:terrainIntersectionCurve",
-    "interests": {
-      "@id": "parcel:interest",
-      "@container": "@set",
-      "@context": {
-        "interestLink": {
-          "@type": "@id",
-          "@id": "parcel:interestLink"
-        },
-        "interestName": "parcel:interestName",
-        "interestType": {
-          "@type": "@id",
-          "@id": "parcel:interestType"
-        },
-        "dateInForce": "parcel:interestDateInForce",
-        "dateExpires": "parcel:interestDateExpires",
-        "statuteLink": {
-          "@type": "@id",
-          "@id": "parcel:statuteLink"
-        },
-        "statuteName": "parcel:statuteName",
-        "benefitedPartyLink": {
-          "@type": "@id",
-          "@id": "parcel:benefitedPartyLink"
-        },
-        "benefitedPartyName": "parcel:benefitedPartyName",
-        "referencedParcel": {
-          "@type": "@id",
-          "@id": "parcel:referencedParcel"
-        },
-        "originalSurveyLink": {
-          "@type": "@id",
-          "@id": "parcel:originalSurveyLink"
-        },
-        "burdenedParcels": {
-          "@id": "parcel:burdened",
-          "@container": "@set"
-        },
-        "benefitedParcels": {
-          "@id": "parcel:benefited",
-          "@container": "@set"
-        },
-        "entitlementPortion": "parcel:entitlementPortion",
-        "liabilityPortion": "parcel:liabilityPortion",
-        "description": "parcel:interestDescription"
-      }
-    },
-    "parcelState": {
-      "@id": "parcel:state",
-      "@type": "@id"
-    },
     "Arc": "geojson:Arc",
     "ArcWithCenter": "geojson:ArcWithCenter",
     "ArcByChord": "geojson:ArcByChord",
@@ -885,6 +808,83 @@ Links to the schema:
     "sdo": "https://schema.org/",
     "parcel": "https://w3id.org/ogc/ladm/parcels/",
     "commonpatterns": "https://w3id.org/ogc/utils/label/",
+    "appellation": {
+      "@context": {
+        "name": "commonpatterns:name",
+        "label": "rdfs:label",
+        "hasPart": {
+          "@context": {
+            "ref": "commonpatterns:namePartRef",
+            "type": "commonpatterns:namePartType"
+          },
+          "@id": "dct:hasPart"
+        }
+      },
+      "@id": "parcel:appellation"
+    },
+    "parcelType": {
+      "@id": "parcel:type",
+      "@type": "@id"
+    },
+    "parcelState": {
+      "@id": "parcel:state",
+      "@type": "@id"
+    },
+    "address": "sdo:address",
+    "parcelPurpose": {
+      "@id": "parcel:purpose",
+      "@type": "@id"
+    },
+    "area": "parcel:surfaceArea",
+    "floor": "parcel:floor",
+    "zmin": "parcel:zmin",
+    "zmax": "parcel:zmax",
+    "interests": {
+      "@context": {
+        "interestLink": {
+          "@type": "@id",
+          "@id": "parcel:interestLink"
+        },
+        "interestName": "parcel:interestName",
+        "interestType": {
+          "@type": "@id",
+          "@id": "parcel:interestType"
+        },
+        "dateInForce": "parcel:interestDateInForce",
+        "dateExpires": "parcel:interestDateExpires",
+        "statuteLink": {
+          "@type": "@id",
+          "@id": "parcel:statuteLink"
+        },
+        "statuteName": "parcel:statuteName",
+        "benefitedPartyName": "parcel:benefitedPartyName",
+        "benefitedPartyLink": {
+          "@type": "@id",
+          "@id": "parcel:benefitedPartyLink"
+        },
+        "originalSurveyLink": {
+          "@type": "@id",
+          "@id": "parcel:originalSurveyLink"
+        },
+        "referencedParcel": {
+          "@type": "@id",
+          "@id": "parcel:referencedParcel"
+        },
+        "burdenedParcels": {
+          "@id": "parcel:burdened",
+          "@container": "@set"
+        },
+        "benefitedParcels": {
+          "@id": "parcel:benefited",
+          "@container": "@set"
+        },
+        "description": "parcel:interestDescription",
+        "entitlementPortion": "parcel:entitlementPortion",
+        "liabilityPortion": "parcel:liabilityPortion"
+      },
+      "@id": "parcel:interest",
+      "@container": "@set"
+    },
     "@version": 1.1
   }
 }

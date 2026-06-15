@@ -242,6 +242,48 @@
     "zmin": "parcel:zmin",
     "zmax": "parcel:zmax",
     "interests": {
+      "@context": {
+        "interestLink": {
+          "@type": "@id",
+          "@id": "parcel:interestLink"
+        },
+        "interestName": "parcel:interestName",
+        "interestType": {
+          "@type": "@id",
+          "@id": "parcel:interestType"
+        },
+        "dateInForce": "parcel:interestDateInForce",
+        "dateExpires": "parcel:interestDateExpires",
+        "statuteLink": {
+          "@type": "@id",
+          "@id": "parcel:statuteLink"
+        },
+        "statuteName": "parcel:statuteName",
+        "benefitedPartyName": "parcel:benefitedPartyName",
+        "benefitedPartyLink": {
+          "@type": "@id",
+          "@id": "parcel:benefitedPartyLink"
+        },
+        "originalSurveyLink": {
+          "@type": "@id",
+          "@id": "parcel:originalSurveyLink"
+        },
+        "referencedParcel": {
+          "@type": "@id",
+          "@id": "parcel:referencedParcel"
+        },
+        "burdenedParcels": {
+          "@id": "parcel:burdened",
+          "@container": "@set"
+        },
+        "benefitedParcels": {
+          "@id": "parcel:benefited",
+          "@container": "@set"
+        },
+        "description": "parcel:interestDescription",
+        "entitlementPortion": "parcel:entitlementPortion",
+        "liabilityPortion": "parcel:liabilityPortion"
+      },
       "@id": "parcel:interest",
       "@container": "@set"
     },

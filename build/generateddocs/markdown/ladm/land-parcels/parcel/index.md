@@ -153,15 +153,16 @@ LADM ....
     geojson:topology [ a geojson:Polygon ;
             topo:relatedFeatures ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ) ] ;
     parcel:appellation [ rdfs:label "Lot 1 DP 572532" ;
-            dcterms:hasPart [ rdfs:label "DP" ;
-                    commonpatterns:namePartType "PlanType" ],
-                [ rdfs:label "Lot" ;
+            dcterms:hasPart [ rdfs:label "Lot" ;
                     commonpatterns:namePartType "ParcelType" ],
-                [ rdfs:label "572532" ;
-                    commonpatterns:namePartType "PlanIdentifier" ],
                 [ rdfs:label "1" ;
-                    commonpatterns:namePartType "ParcelIdentifier" ] ] ;
-    parcel:interest [ ] ;
+                    commonpatterns:namePartType "ParcelIdentifier" ],
+                [ rdfs:label "DP" ;
+                    commonpatterns:namePartType "PlanType" ],
+                [ rdfs:label "572532" ;
+                    commonpatterns:namePartType "PlanIdentifier" ] ] ;
+    parcel:interest [ parcel:interestLink <http://www.example.com/features/1040074> ;
+            parcel:interestType <eg-interest-type:fh> ] ;
     parcel:purpose eg-parcel-purpose:fst ;
     parcel:state eg-parcel-state:created ;
     parcel:surfaceArea 484 ;
@@ -342,13 +343,14 @@ LADM ....
     parcel:appellation [ rdfs:label "Area Z DP 572532" ;
             dcterms:hasPart [ rdfs:label "DP" ;
                     commonpatterns:namePartType "PlanType" ],
-                [ rdfs:label "572532" ;
-                    commonpatterns:namePartType "PlanIdentifier" ],
                 [ rdfs:label "Z" ;
                     commonpatterns:namePartType "ParcelIdentifier" ],
                 [ rdfs:label "Area" ;
-                    commonpatterns:namePartType "ParcelType" ] ] ;
-    parcel:interest [ ] ;
+                    commonpatterns:namePartType "ParcelType" ],
+                [ rdfs:label "572532" ;
+                    commonpatterns:namePartType "PlanIdentifier" ] ] ;
+    parcel:interest [ parcel:interestLink <http://www.example.com/features/1040075> ;
+            parcel:interestType <eg-interest-type:fh> ] ;
     parcel:purpose eg-parcel-purpose:c-l ;
     parcel:state eg-parcel-state:created ;
     parcel:surfaceArea 1196 ;
@@ -524,21 +526,22 @@ Note, the topology constraint "within" for a 3D Parcel, referencing a Parent Par
 
 <http://www.example.com/features/8446454> a geojson:Feature ;
     geojson:topology [ a geojson:Polygon ;
-            topo:relatedFeatures ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;
+            topo:relatedFeatures ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ),
+                ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;
                         prof:hasRole topo:within,
                             parcel:containingParentParcel ;
-                        oa:hasTarget <myParcels:1234> ] ),
-                ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ) ] ;
+                        oa:hasTarget <myParcels:1234> ] ) ] ;
     parcel:appellation [ rdfs:label "Lot 1 DP 572532" ;
-            dcterms:hasPart [ rdfs:label "Lot" ;
-                    commonpatterns:namePartType "ParcelType" ],
-                [ rdfs:label "572532" ;
-                    commonpatterns:namePartType "PlanIdentifier" ],
-                [ rdfs:label "1" ;
+            dcterms:hasPart [ rdfs:label "1" ;
                     commonpatterns:namePartType "ParcelIdentifier" ],
                 [ rdfs:label "DP" ;
-                    commonpatterns:namePartType "PlanType" ] ] ;
-    parcel:interest [ ] ;
+                    commonpatterns:namePartType "PlanType" ],
+                [ rdfs:label "572532" ;
+                    commonpatterns:namePartType "PlanIdentifier" ],
+                [ rdfs:label "Lot" ;
+                    commonpatterns:namePartType "ParcelType" ] ] ;
+    parcel:interest [ parcel:interestLink <http://www.example.com/features/1040074> ;
+            parcel:interestType <eg-interest-type:fh> ] ;
     parcel:purpose eg-parcel-purpose:fst ;
     parcel:state eg-parcel-state:created ;
     parcel:surfaceArea 484 ;
@@ -568,36 +571,60 @@ $defs:
     properties:
       interestLink:
         $ref: '#/$defs/coderef'
+        x-jsonld-type: '@id'
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/interestLink
       interestName:
         type: string
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/interestName
       interestType:
         $ref: '#/$defs/coderef'
+        x-jsonld-type: '@id'
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/interestType
       dateInForce:
         $ref: '#/$defs/dateTime'
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/interestDateInForce
       dateExpires:
         $ref: '#/$defs/dateTime'
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/interestDateExpires
       statuteLink:
         $ref: '#/$defs/coderef'
+        x-jsonld-type: '@id'
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/statuteLink
       statuteName:
         type: string
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/statuteName
       benefitedPartyName:
         type: string
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/benefitedPartyName
       benefitedPartyLink:
         $ref: '#/$defs/coderef'
+        x-jsonld-type: '@id'
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/benefitedPartyLink
       originalSurveyLink:
         $ref: '#/$defs/coderef'
+        x-jsonld-type: '@id'
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/originalSurveyLink
       referencedParcel:
         $ref: '#/$defs/coderef'
+        x-jsonld-type: '@id'
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/referencedParcel
       burdenedParcels:
         $ref: '#/$defs/coderefList'
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/burdened
+        x-jsonld-container: '@set'
       benefitedParcels:
         $ref: '#/$defs/coderefList'
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/benefited
+        x-jsonld-container: '@set'
       description:
         type: string
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/interestDescription
       entitlementPortion:
         type: string
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/entitlementPortion
       liabilityPortion:
         type: string
+        x-jsonld-id: https://w3id.org/ogc/ladm/parcels/liabilityPortion
     required:
     - interestLink
     - interestType
@@ -655,7 +682,6 @@ allOf:
       $ref: '#parcelProperties'
 x-jsonld-extra-terms:
   name: rdfs:label
-  address: https://schema.org/address
   bearingRotation: https://w3id.org/ogc/ladm/parcels/bearingRotation
   parcels: https://w3id.org/ogc/ladm/parcels/parcels
   PrimaryParcel:
@@ -664,60 +690,10 @@ x-jsonld-extra-terms:
   SecondaryParcel:
     x-jsonld-id: https://w3id.org/ogc/ladm/parcels/SecondaryParcel
     x-jsonld-type: '@id'
-  appellation: https://w3id.org/ogc/ladm/parcels/appellation
-  parcelType:
-    x-jsonld-id: https://w3id.org/ogc/ladm/parcels/type
-    x-jsonld-type: '@id'
-  parcelPurpose:
-    x-jsonld-id: https://w3id.org/ogc/ladm/parcels/purpose
-    x-jsonld-type: '@id'
   parcelQualityClass:
     x-jsonld-id: https://w3id.org/ogc/ladm/parcels/qualityClass
     x-jsonld-type: '@id'
-  area: https://w3id.org/ogc/ladm/parcels/surfaceArea
-  floor: https://w3id.org/ogc/ladm/parcels/floor
-  zmin: https://w3id.org/ogc/ladm/parcels/zmin
-  zmax: https://w3id.org/ogc/ladm/parcels/zmax
   terrainIntersectionCurve: https://w3id.org/ogc/ladm/parcels/terrainIntersectionCurve
-  interests:
-    x-jsonld-id: https://w3id.org/ogc/ladm/parcels/interest
-    x-jsonld-container: '@set'
-    x-jsonld-context:
-      interestLink:
-        '@type': '@id'
-        '@id': https://w3id.org/ogc/ladm/parcels/interestLink
-      interestName: https://w3id.org/ogc/ladm/parcels/interestName
-      interestType:
-        '@type': '@id'
-        '@id': https://w3id.org/ogc/ladm/parcels/interestType
-      dateInForce: https://w3id.org/ogc/ladm/parcels/interestDateInForce
-      dateExpires: https://w3id.org/ogc/ladm/parcels/interestDateExpires
-      statuteLink:
-        '@type': '@id'
-        '@id': https://w3id.org/ogc/ladm/parcels/statuteLink
-      statuteName: https://w3id.org/ogc/ladm/parcels/statuteName
-      benefitedPartyLink:
-        '@type': '@id'
-        '@id': https://w3id.org/ogc/ladm/parcels/benefitedPartyLink
-      benefitedPartyName: https://w3id.org/ogc/ladm/parcels/benefitedPartyName
-      referencedParcel:
-        '@type': '@id'
-        '@id': https://w3id.org/ogc/ladm/parcels/referencedParcel
-      originalSurveyLink:
-        '@type': '@id'
-        '@id': https://w3id.org/ogc/ladm/parcels/originalSurveyLink
-      burdenedParcels:
-        '@id': https://w3id.org/ogc/ladm/parcels/burdened
-        '@container': '@set'
-      benefitedParcels:
-        '@id': https://w3id.org/ogc/ladm/parcels/benefited
-        '@container': '@set'
-      entitlementPortion: https://w3id.org/ogc/ladm/parcels/entitlementPortion
-      liabilityPortion: https://w3id.org/ogc/ladm/parcels/liabilityPortion
-      description: https://w3id.org/ogc/ladm/parcels/interestDescription
-  parcelState:
-    x-jsonld-id: https://w3id.org/ogc/ladm/parcels/state
-    x-jsonld-type: '@id'
 x-jsonld-prefixes:
   sdo: https://schema.org/
   parcel: https://w3id.org/ogc/ladm/parcels/
@@ -977,6 +953,48 @@ Links to the schema:
     "zmin": "parcel:zmin",
     "zmax": "parcel:zmax",
     "interests": {
+      "@context": {
+        "interestLink": {
+          "@type": "@id",
+          "@id": "parcel:interestLink"
+        },
+        "interestName": "parcel:interestName",
+        "interestType": {
+          "@type": "@id",
+          "@id": "parcel:interestType"
+        },
+        "dateInForce": "parcel:interestDateInForce",
+        "dateExpires": "parcel:interestDateExpires",
+        "statuteLink": {
+          "@type": "@id",
+          "@id": "parcel:statuteLink"
+        },
+        "statuteName": "parcel:statuteName",
+        "benefitedPartyName": "parcel:benefitedPartyName",
+        "benefitedPartyLink": {
+          "@type": "@id",
+          "@id": "parcel:benefitedPartyLink"
+        },
+        "originalSurveyLink": {
+          "@type": "@id",
+          "@id": "parcel:originalSurveyLink"
+        },
+        "referencedParcel": {
+          "@type": "@id",
+          "@id": "parcel:referencedParcel"
+        },
+        "burdenedParcels": {
+          "@id": "parcel:burdened",
+          "@container": "@set"
+        },
+        "benefitedParcels": {
+          "@id": "parcel:benefited",
+          "@container": "@set"
+        },
+        "description": "parcel:interestDescription",
+        "entitlementPortion": "parcel:entitlementPortion",
+        "liabilityPortion": "parcel:liabilityPortion"
+      },
       "@id": "parcel:interest",
       "@container": "@set"
     },

@@ -45,7 +45,7 @@ eg2:8446454 a geojson:Feature ;
     parcel:purpose <eg-parcel-purpose:fst> ;
     parcel:state <eg-parcel-state:created> ;
     parcel:surfaceArea 484 ;
-    parcel:type <eg-parcel-type:fee-simple-title> .
+    parcel:type <eg-parcel-type:l> .
 
 eg2:8446455 a geojson:Feature ;
     geojson:topology [ a geojson:Polygon ;
@@ -56,7 +56,7 @@ eg2:8446455 a geojson:Feature ;
     parcel:purpose <eg-parcel-purpose:fst> ;
     parcel:state <eg-parcel-state:created> ;
     parcel:surfaceArea 1196 ;
-    parcel:type <eg-parcel-type:fee-simple-title> .
+    parcel:type <eg-parcel-type:l> .
 
 eg2:8446456 a geojson:Feature,
         parcel:SecondaryParcel ;
@@ -68,7 +68,7 @@ eg2:8446456 a geojson:Feature,
     parcel:purpose <eg-parcel-purpose:c-l> ;
     parcel:state <eg-parcel-state:created> ;
     parcel:surfaceArea 1196 ;
-    parcel:type <eg-parcel-type:covenant-land> .
+    parcel:type <eg-parcel-type:au> .
 
 eg2:BoundaryMarks a geojson:FeatureCollection ;
     geojson:collectionFeatureType "SurveyPoint" ;

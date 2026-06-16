@@ -53,7 +53,7 @@
           ]
         },
         "area": 1196,
-        "parcelType": "eg-parcel-type:covenant-land",
+        "parcelType": "eg-parcel-type:au",
         "parcelPurpose": "eg-parcel-purpose:c-l",
         "parcelState": "eg-parcel-state:created",
         "interests": [

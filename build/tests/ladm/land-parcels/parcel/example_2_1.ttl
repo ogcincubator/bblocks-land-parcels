@@ -12,21 +12,23 @@
 
 <http://www.example.com/features/8446456> a geojson:Feature,
         parcel:SecondaryParcel ;
+    geojson:geometry [ a geojson:Polygon ;
+            geojson:coordinates ( ( ( 1.747508e+02 -3.693103e+01 ) ( 1.747507e+02 -3.693102e+01 ) ( 1.747505e+02 -3.693106e+01 ) ( 1.747508e+02 -3.693125e+01 ) ( 1.74751e+02 -3.69312e+01 ) ( 1.74751e+02 -3.693118e+01 ) ( 1.747508e+02 -3.693103e+01 ) ) ) ] ;
     geojson:topology [ a geojson:Polygon ;
             topo:relatedFeatures ( ( <http://www.example.com/features/l999724> <http://www.example.com/features/l591175> <http://www.example.com/features/l369793> <http://www.example.com/features/l435861> <http://www.example.com/features/l345344> <http://www.example.com/features/l685716> <http://www.example.com/features/l832940> <http://www.example.com/features/l715872> <http://www.example.com/features/l641327> <http://www.example.com/features/l852048> <http://www.example.com/features/l949729> <http://www.example.com/features/l951515> <http://www.example.com/features/l761760> <http://www.example.com/features/l580762> ) ) ] ;
     parcel:appellation [ rdfs:label "Area Z DP 572532" ;
-            dcterms:hasPart [ rdfs:label "Z" ;
-                    commonpatterns:namePartType "ParcelIdentifier" ],
-                [ rdfs:label "Area" ;
+            dcterms:hasPart [ rdfs:label "Area" ;
                     commonpatterns:namePartType "ParcelType" ],
+                [ rdfs:label "DP" ;
+                    commonpatterns:namePartType "PlanType" ],
                 [ rdfs:label "572532" ;
                     commonpatterns:namePartType "PlanIdentifier" ],
-                [ rdfs:label "DP" ;
-                    commonpatterns:namePartType "PlanType" ] ] ;
+                [ rdfs:label "Z" ;
+                    commonpatterns:namePartType "ParcelIdentifier" ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040075> ;
             parcel:interestType <eg-interest-type:fh> ] ;
     parcel:purpose eg-parcel-purpose:c-l ;
     parcel:state eg-parcel-state:created ;
     parcel:surfaceArea 1196 ;
-    parcel:type eg-parcel-type:covenant-land .
+    parcel:type eg-parcel-type:au .
 

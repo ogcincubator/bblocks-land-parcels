@@ -1,7 +1,41 @@
 {
   "type": "Feature",
   "id": "8446454",
-  "geometry": null,
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          174.75076068885278,
+          -36.93102914553119
+        ],
+        [
+          174.75072255725163,
+          -36.931021544248715
+        ],
+        [
+          174.75054006892805,
+          -36.93106104934007
+        ],
+        [
+          174.75079103780536,
+          -36.93124895649441
+        ],
+        [
+          174.75099188136608,
+          -36.93120233371059
+        ],
+        [
+          174.75096726702185,
+          -36.931183910797834
+        ],
+        [
+          174.75076068885278,
+          -36.93102914553119
+        ]
+      ]
+    ]
+  },
   "topology": {
     "type": "Polygon",
     "references": [
@@ -38,7 +72,7 @@
       ]
     },
     "area": 484,
-    "parcelType": "eg-parcel-type:fee-simple-title",
+    "parcelType": "eg-parcel-type:l",
     "parcelPurpose": "eg-parcel-purpose:fst",
     "parcelState": "eg-parcel-state:created",
     "class": "eg-parcel-class:allotment",

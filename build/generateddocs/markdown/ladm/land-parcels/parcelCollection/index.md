@@ -67,7 +67,7 @@ Individual features may optionally contain geometric coordinates for visualisati
           ]
         },
         "area": 484,
-        "parcelType": "eg-parcel-type:fee-simple-title",
+        "parcelType": "eg-parcel-type:l",
         "parcelPurpose": "eg-parcel-purpose:fst",
         "parcelState": "eg-parcel-state:created",
         "class": "eg-parcel-class:allotment",
@@ -123,7 +123,7 @@ Individual features may optionally contain geometric coordinates for visualisati
           ]
         },
         "area": 1196,
-        "parcelType": "eg-parcel-type:fee-simple-title",
+        "parcelType": "eg-parcel-type:l",
         "parcelPurpose": "eg-parcel-purpose:fst",
         "parcelState": "eg-parcel-state:created",
         "class": "eg-parcel-class:allotment",
@@ -195,7 +195,7 @@ Individual features may optionally contain geometric coordinates for visualisati
           ]
         },
         "area": 484,
-        "parcelType": "eg-parcel-type:fee-simple-title",
+        "parcelType": "eg-parcel-type:l",
         "parcelPurpose": "eg-parcel-purpose:fst",
         "parcelState": "eg-parcel-state:created",
         "class": "eg-parcel-class:allotment",
@@ -251,7 +251,7 @@ Individual features may optionally contain geometric coordinates for visualisati
           ]
         },
         "area": 1196,
-        "parcelType": "eg-parcel-type:fee-simple-title",
+        "parcelType": "eg-parcel-type:l",
         "parcelPurpose": "eg-parcel-purpose:fst",
         "parcelState": "eg-parcel-state:created",
         "class": "eg-parcel-class:allotment",
@@ -289,29 +289,29 @@ Individual features may optionally contain geometric coordinates for visualisati
     parcel:appellation [ rdfs:label "Lot 1 DP 572532" ;
             dcterms:hasPart [ rdfs:label "Lot" ;
                     commonpatterns:namePartType "ParcelType" ],
-                [ rdfs:label "572532" ;
-                    commonpatterns:namePartType "PlanIdentifier" ],
                 [ rdfs:label "1" ;
                     commonpatterns:namePartType "ParcelIdentifier" ],
                 [ rdfs:label "DP" ;
-                    commonpatterns:namePartType "PlanType" ] ] ;
+                    commonpatterns:namePartType "PlanType" ],
+                [ rdfs:label "572532" ;
+                    commonpatterns:namePartType "PlanIdentifier" ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040074> ;
             parcel:interestType <eg-interest-type:fh> ] ;
     parcel:purpose <eg-parcel-purpose:fst> ;
     parcel:state <eg-parcel-state:created> ;
     parcel:surfaceArea 484 ;
-    parcel:type <eg-parcel-type:fee-simple-title> .
+    parcel:type <eg-parcel-type:l> .
 
 <http://www.example.com/features/8446455> a geojson:Feature ;
     geojson:topology [ a geojson:Polygon ;
             topo:relatedFeatures ( ( <http://www.example.com/features/l746686> <http://www.example.com/features/l999724> <http://www.example.com/features/l591175> <http://www.example.com/features/l435861> <http://www.example.com/features/l874826> <http://www.example.com/features/l952702> <http://www.example.com/features/l985190> <http://www.example.com/features/l535759> <http://www.example.com/features/l535242> <http://www.example.com/features/l329256> ) ) ] ;
     parcel:appellation [ rdfs:label "Lot 2 DP 572532" ;
-            dcterms:hasPart [ rdfs:label "572532" ;
-                    commonpatterns:namePartType "PlanIdentifier" ],
+            dcterms:hasPart [ rdfs:label "2" ;
+                    commonpatterns:namePartType "ParcelIdentifier" ],
                 [ rdfs:label "Lot" ;
                     commonpatterns:namePartType "ParcelType" ],
-                [ rdfs:label "2" ;
-                    commonpatterns:namePartType "ParcelIdentifier" ],
+                [ rdfs:label "572532" ;
+                    commonpatterns:namePartType "PlanIdentifier" ],
                 [ rdfs:label "DP" ;
                     commonpatterns:namePartType "PlanType" ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040075> ;
@@ -319,7 +319,7 @@ Individual features may optionally contain geometric coordinates for visualisati
     parcel:purpose <eg-parcel-purpose:fst> ;
     parcel:state <eg-parcel-state:created> ;
     parcel:surfaceArea 1196 ;
-    parcel:type <eg-parcel-type:fee-simple-title> .
+    parcel:type <eg-parcel-type:l> .
 
 
 ```
@@ -383,7 +383,7 @@ Individual features may optionally contain geometric coordinates for visualisati
           ]
         },
         "area": 1196,
-        "parcelType": "eg-parcel-type:covenant-land",
+        "parcelType": "eg-parcel-type:au",
         "parcelPurpose": "eg-parcel-purpose:c-l",
         "parcelState": "eg-parcel-state:created",
         "interests": [
@@ -469,7 +469,7 @@ Individual features may optionally contain geometric coordinates for visualisati
           ]
         },
         "area": 1196,
-        "parcelType": "eg-parcel-type:covenant-land",
+        "parcelType": "eg-parcel-type:au",
         "parcelPurpose": "eg-parcel-purpose:c-l",
         "parcelState": "eg-parcel-state:created",
         "interests": [
@@ -510,12 +510,12 @@ Individual features may optionally contain geometric coordinates for visualisati
     geojson:topology [ a geojson:Polygon ;
             topo:relatedFeatures ( ( <http://www.example.com/features/l999724> <http://www.example.com/features/l591175> <http://www.example.com/features/l369793> <http://www.example.com/features/l435861> <http://www.example.com/features/l345344> <http://www.example.com/features/l685716> <http://www.example.com/features/l832940> <http://www.example.com/features/l715872> <http://www.example.com/features/l641327> <http://www.example.com/features/l852048> <http://www.example.com/features/l949729> <http://www.example.com/features/l951515> <http://www.example.com/features/l761760> <http://www.example.com/features/l580762> ) ) ] ;
     parcel:appellation [ rdfs:label "Area Z DP 572532" ;
-            dcterms:hasPart [ rdfs:label "DP" ;
-                    commonpatterns:namePartType "PlanType" ],
-                [ rdfs:label "Z" ;
+            dcterms:hasPart [ rdfs:label "Z" ;
                     commonpatterns:namePartType "ParcelIdentifier" ],
                 [ rdfs:label "Area" ;
                     commonpatterns:namePartType "ParcelType" ],
+                [ rdfs:label "DP" ;
+                    commonpatterns:namePartType "PlanType" ],
                 [ rdfs:label "572532" ;
                     commonpatterns:namePartType "PlanIdentifier" ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040075> ;
@@ -523,7 +523,7 @@ Individual features may optionally contain geometric coordinates for visualisati
     parcel:purpose <eg-parcel-purpose:c-l> ;
     parcel:state <eg-parcel-state:created> ;
     parcel:surfaceArea 1196 ;
-    parcel:type <eg-parcel-type:covenant-land> .
+    parcel:type <eg-parcel-type:au> .
 
 
 ```

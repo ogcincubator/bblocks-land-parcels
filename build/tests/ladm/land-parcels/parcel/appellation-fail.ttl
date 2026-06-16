@@ -13,14 +13,14 @@
     parcel:appellation [ rdfs:label "Lot 1 DP 572532" ;
             dct:hasPart [ rdfs:label "572532" ;
                     commonpatterns:namePartType "PlanIdentifier" ],
+                [ rdfs:label "1" ;
+                    commonpatterns:namePartType "ParcelIdentifier" ],
                 [ rdfs:label "Lot" ;
                     commonpatterns:namePartType "ParcelType" ],
                 [ commonpatterns:name "DP" ;
-                    commonpatterns:namePartType "PlanType" ],
-                [ rdfs:label "1" ;
-                    commonpatterns:namePartType "ParcelIdentifier" ] ] ;
+                    commonpatterns:namePartType "PlanType" ] ] ;
     parcel:purpose <eg-parcel-purpose:fst> ;
     parcel:state <eg-parcel-state:created> ;
     parcel:surfaceArea 484 ;
-    parcel:type <eg-parcel-type:fee-simple-title> .
+    parcel:type <eg-parcel-type:l> .
 

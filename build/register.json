@@ -2,7 +2,7 @@
   "name": "Land parcels",
   "abstract": "This repository contains a JSON schema model for land parcels, semantically annotated and aligned with LADM conceptual model.\n\nThese schemas use a generalised 3D topology model to provide explicit definition of parcels required for survey record keeping. \n\nThe topology model supports transformations to well known geometry formats which may be used to visualise and validated geometry representations of  Parcel objects in 2 or 3D.\n",
   "sparqlEndpoint": "https://defs-dev.opengis.net/fuseki/query",
-  "modified": "2026-06-16T17:00:44.638851",
+  "modified": "2026-06-16T19:39:37.057572",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"89c04825320d476cbe210a33c6f4a1b40078df17",
@@ -22,6 +22,42 @@
     "https://ogcincubator.github.io/bblocks-utility/build/register.json"
   ],
   "bblocks": [
+    {
+      "itemIdentifier": "ogc.ladm.land-parcels.codelists.examples.parcel-purpose",
+      "name": "Example Vocab: Parcel Purpose",
+      "highlighted": false,
+      "abstract": "An example vocab - used in examples for parcel purpose codelist",
+      "status": "under-development",
+      "dateTimeAddition": "2023-09-18T00:00:00Z",
+      "itemClass": "model",
+      "register": "ogc-incubator",
+      "version": "0.1",
+      "dateOfLastChange": "2026-06-16",
+      "dependsOn": [],
+      "sources": [],
+      "scope": "dev",
+      "tags": [
+        "LADM"
+      ],
+      "shaclShapes": {},
+      "ontology": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/codelists/examples/parcel-purpose/ontology.ttl",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-land-parcels/_sources/codelists/examples/parcel-purpose/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-land-parcels/build/generateddocs/markdown/ladm/land-parcels/codelists/examples/parcel-purpose/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-land-parcels/build/generateddocs/json-full/ladm/land-parcels/codelists/examples/parcel-purpose/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-land-parcels/bblock/ogc.ladm.land-parcels.codelists.examples.parcel-purpose"
+        }
+      }
+    },
     {
       "itemIdentifier": "ogc.ladm.land-parcels.codelists.examples.parcel-type",
       "name": "Example Vocab: Parcel Types",
@@ -103,12 +139,12 @@
       "dateTimeAddition": "2024-06-03T00:00:00Z",
       "itemClass": "schema",
       "dependsOn": [
-        "bblocks://ogc.ladm.land-parcels.ontology",
+        "bblocks://ogc.geo.json-fg.feature-lenient",
+        "bblocks://ogc.geo.topo.features.topo-feature-multi-collection",
         "bblocks://ogc.geo.topo.features.topo-feature",
         "bblocks://ogc.ogc-utils.iri-or-curie",
-        "bblocks://ogc.geo.json-fg.feature-lenient",
         "bblocks://ogc.bbr.utils.compoundName",
-        "bblocks://ogc.geo.topo.features.topo-feature-multi-collection"
+        "bblocks://ogc.ladm.land-parcels.ontology"
       ],
       "shaclClosures": [
         "examples/topoobjects.ttl"
@@ -118,6 +154,9 @@
       "dateOfLastChange": "2026-06-16",
       "link": "https://github.com/opengeospatial/bblock-template",
       "shaclShapes": {
+        "ogc.geo.features.feature": [
+          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+        ],
         "ogc.geo.topo.features.topo-feature": [
           "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
           "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
@@ -125,9 +164,6 @@
         "ogc.geo.topo.features.topo-feature-collection": [
           "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
           "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
-        ],
-        "ogc.geo.features.feature": [
-          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
         ],
         "ogc.geo.features.featureCollection": [
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"

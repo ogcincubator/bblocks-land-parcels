@@ -12,5 +12,5 @@
     parcel:purpose <file:///github/workspace/> ;
     parcel:state <eg-parcel-state:created> ;
     parcel:surfaceArea 484 ;
-    parcel:type <eg-parcel-type:fee-simple-title> .
+    parcel:type <eg-parcel-type:l> .
 

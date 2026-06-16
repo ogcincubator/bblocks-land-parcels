@@ -1,5 +1,5 @@
 Validation report for ogc.ladm.land-parcels.parcelCollection - Land Parcel Collection
-Generated 2026-06-16T17:01:10.396355+00:00
+Generated 2026-06-16T19:39:54.373891+00:00
 === Files ===
 Using examples/parcel2.json from examples
 JSON-LD context is present - uplifting
@@ -17,48 +17,48 @@ Validation result for https://surroundaustralia.github.io/topo-feature/_sources/
   Conforms: True
   
 Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape toporules:testTopoReferencesExist: <http://www.example.com/features/8446456>/geojson:topology
- - Shape toporules:testTopoDirectedReferencesExist: *none*
  - Shape toporules:testTopoEdgesReferencePoints: *none*
  - Shape toporules:testTopoLinesReferencePoints: *none*
+ - Shape toporules:testTopoDirectedReferencesExist: *none*
+ - Shape toporules:testTopoReferencesExist: <http://www.example.com/features/8446456>/geojson:topology
 
 Validation result for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:nbef8aa92724a4a4986ac800dadce3f21b3: *none*
- - Shape _:nbef8aa92724a4a4986ac800dadce3f21b1: *none*
+ - Shape _:n2a17fc3b38864eb3ae9d6bfd1da6e49bb3: *none*
+ - Shape _:n2a17fc3b38864eb3ae9d6bfd1da6e49bb1: *none*
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:GeometryShape: *none*
- - Shape geojson:FeatureShape: <http://www.example.com/features/8446456>
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
+ - Shape geojson:FeatureShape: <http://www.example.com/features/8446456>
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
- - Shape geojson:GeometryShape: *none*
- - Shape geojson:FeatureShape: *none*
  - Shape geojson:FeatureCollectionShape: <http://www.example.com/features/covenants>
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:GeometryShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
+ - Shape geojson:FeatureShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
 
 Validation result for https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl:
- - Shape _:n44496f887c2d4ea9a841af14e9b3705bb1: *none*
+ - Shape _:nffad08e6328445efb569a629bb27ac38b1: *none*
 
 === End SHACL ===
 

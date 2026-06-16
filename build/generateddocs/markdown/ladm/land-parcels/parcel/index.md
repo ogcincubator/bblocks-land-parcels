@@ -20,7 +20,41 @@ LADM ....
 {
   "type": "Feature",
   "id": "8446454",
-  "geometry": null,
+"geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            174.75076068885278,
+                            -36.93102914553119
+                        ],
+                        [
+                            174.75072255725163,
+                            -36.931021544248715
+                        ],
+                        [
+                            174.75054006892805,
+                            -36.93106104934007
+                        ],
+                        [
+                            174.75079103780536,
+                            -36.93124895649441
+                        ],
+                        [
+                            174.75099188136608,
+                            -36.93120233371059
+                        ],
+                        [
+                            174.75096726702185,
+                            -36.931183910797834
+                        ],
+                        [
+                            174.75076068885278,
+                            -36.93102914553119
+                        ]
+                    ]
+                ]
+            },
   "topology": {
     "type": "Polygon",
     "references": [
@@ -57,7 +91,7 @@ LADM ....
       ]
     },
     "area": 484,
-    "parcelType": "eg-parcel-type:fee-simple-title",
+    "parcelType": "eg-parcel-type:l",
     "parcelPurpose": "eg-parcel-purpose:fst",
     "parcelState": "eg-parcel-state:created",
     "class": "eg-parcel-class:allotment",
@@ -84,7 +118,41 @@ LADM ....
   ],
   "type": "Feature",
   "id": "8446454",
-  "geometry": null,
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          174.75076068885278,
+          -36.93102914553119
+        ],
+        [
+          174.75072255725163,
+          -36.931021544248715
+        ],
+        [
+          174.75054006892805,
+          -36.93106104934007
+        ],
+        [
+          174.75079103780536,
+          -36.93124895649441
+        ],
+        [
+          174.75099188136608,
+          -36.93120233371059
+        ],
+        [
+          174.75096726702185,
+          -36.931183910797834
+        ],
+        [
+          174.75076068885278,
+          -36.93102914553119
+        ]
+      ]
+    ]
+  },
   "topology": {
     "type": "Polygon",
     "references": [
@@ -121,7 +189,7 @@ LADM ....
       ]
     },
     "area": 484,
-    "parcelType": "eg-parcel-type:fee-simple-title",
+    "parcelType": "eg-parcel-type:l",
     "parcelPurpose": "eg-parcel-purpose:fst",
     "parcelState": "eg-parcel-state:created",
     "class": "eg-parcel-class:allotment",
@@ -150,23 +218,25 @@ LADM ....
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.example.com/features/8446454> a geojson:Feature ;
+    geojson:geometry [ a geojson:Polygon ;
+            geojson:coordinates ( ( ( 1.747508e+02 -3.693103e+01 ) ( 1.747507e+02 -3.693102e+01 ) ( 1.747505e+02 -3.693106e+01 ) ( 1.747508e+02 -3.693125e+01 ) ( 1.74751e+02 -3.69312e+01 ) ( 1.74751e+02 -3.693118e+01 ) ( 1.747508e+02 -3.693103e+01 ) ) ) ] ;
     geojson:topology [ a geojson:Polygon ;
             topo:relatedFeatures ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ) ] ;
     parcel:appellation [ rdfs:label "Lot 1 DP 572532" ;
-            dcterms:hasPart [ rdfs:label "1" ;
-                    commonpatterns:namePartType "ParcelIdentifier" ],
-                [ rdfs:label "572532" ;
+            dcterms:hasPart [ rdfs:label "572532" ;
                     commonpatterns:namePartType "PlanIdentifier" ],
                 [ rdfs:label "Lot" ;
                     commonpatterns:namePartType "ParcelType" ],
                 [ rdfs:label "DP" ;
-                    commonpatterns:namePartType "PlanType" ] ] ;
+                    commonpatterns:namePartType "PlanType" ],
+                [ rdfs:label "1" ;
+                    commonpatterns:namePartType "ParcelIdentifier" ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040074> ;
             parcel:interestType <eg-interest-type:fh> ] ;
     parcel:purpose eg-parcel-purpose:fst ;
     parcel:state eg-parcel-state:created ;
     parcel:surfaceArea 484 ;
-    parcel:type eg-parcel-type:fee-simple-title .
+    parcel:type eg-parcel-type:l .
 
 
 ```
@@ -179,7 +249,41 @@ LADM ....
   "type": "Feature",
   "id": "8446456",
   "featureType": "SecondaryParcel",
-  "geometry": null,
+"geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            174.75076068885278,
+                            -36.93102914553119
+                        ],
+                        [
+                            174.75072255725163,
+                            -36.931021544248715
+                        ],
+                        [
+                            174.75054006892805,
+                            -36.93106104934007
+                        ],
+                        [
+                            174.75079103780536,
+                            -36.93124895649441
+                        ],
+                        [
+                            174.75099188136608,
+                            -36.93120233371059
+                        ],
+                        [
+                            174.75096726702185,
+                            -36.931183910797834
+                        ],
+                        [
+                            174.75076068885278,
+                            -36.93102914553119
+                        ]
+                    ]
+                ]
+            },
   "topology": {
     "type": "Polygon",
     "references": [
@@ -224,7 +328,7 @@ LADM ....
       ]
     },
     "area": 1196,
-    "parcelType": "eg-parcel-type:covenant-land",
+    "parcelType": "eg-parcel-type:au",
     "parcelPurpose": "eg-parcel-purpose:c-l",
     "parcelState": "eg-parcel-state:created",
     "interests": [
@@ -258,7 +362,41 @@ LADM ....
   "type": "Feature",
   "id": "8446456",
   "featureType": "SecondaryParcel",
-  "geometry": null,
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          174.75076068885278,
+          -36.93102914553119
+        ],
+        [
+          174.75072255725163,
+          -36.931021544248715
+        ],
+        [
+          174.75054006892805,
+          -36.93106104934007
+        ],
+        [
+          174.75079103780536,
+          -36.93124895649441
+        ],
+        [
+          174.75099188136608,
+          -36.93120233371059
+        ],
+        [
+          174.75096726702185,
+          -36.931183910797834
+        ],
+        [
+          174.75076068885278,
+          -36.93102914553119
+        ]
+      ]
+    ]
+  },
   "topology": {
     "type": "Polygon",
     "references": [
@@ -303,7 +441,7 @@ LADM ....
       ]
     },
     "area": 1196,
-    "parcelType": "eg-parcel-type:covenant-land",
+    "parcelType": "eg-parcel-type:au",
     "parcelPurpose": "eg-parcel-purpose:c-l",
     "parcelState": "eg-parcel-state:created",
     "interests": [
@@ -338,23 +476,25 @@ LADM ....
 
 <http://www.example.com/features/8446456> a geojson:Feature,
         parcel:SecondaryParcel ;
+    geojson:geometry [ a geojson:Polygon ;
+            geojson:coordinates ( ( ( 1.747508e+02 -3.693103e+01 ) ( 1.747507e+02 -3.693102e+01 ) ( 1.747505e+02 -3.693106e+01 ) ( 1.747508e+02 -3.693125e+01 ) ( 1.74751e+02 -3.69312e+01 ) ( 1.74751e+02 -3.693118e+01 ) ( 1.747508e+02 -3.693103e+01 ) ) ) ] ;
     geojson:topology [ a geojson:Polygon ;
             topo:relatedFeatures ( ( <http://www.example.com/features/l999724> <http://www.example.com/features/l591175> <http://www.example.com/features/l369793> <http://www.example.com/features/l435861> <http://www.example.com/features/l345344> <http://www.example.com/features/l685716> <http://www.example.com/features/l832940> <http://www.example.com/features/l715872> <http://www.example.com/features/l641327> <http://www.example.com/features/l852048> <http://www.example.com/features/l949729> <http://www.example.com/features/l951515> <http://www.example.com/features/l761760> <http://www.example.com/features/l580762> ) ) ] ;
     parcel:appellation [ rdfs:label "Area Z DP 572532" ;
-            dcterms:hasPart [ rdfs:label "Z" ;
-                    commonpatterns:namePartType "ParcelIdentifier" ],
-                [ rdfs:label "Area" ;
+            dcterms:hasPart [ rdfs:label "Area" ;
                     commonpatterns:namePartType "ParcelType" ],
+                [ rdfs:label "DP" ;
+                    commonpatterns:namePartType "PlanType" ],
                 [ rdfs:label "572532" ;
                     commonpatterns:namePartType "PlanIdentifier" ],
-                [ rdfs:label "DP" ;
-                    commonpatterns:namePartType "PlanType" ] ] ;
+                [ rdfs:label "Z" ;
+                    commonpatterns:namePartType "ParcelIdentifier" ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040075> ;
             parcel:interestType <eg-interest-type:fh> ] ;
     parcel:purpose eg-parcel-purpose:c-l ;
     parcel:state eg-parcel-state:created ;
     parcel:surfaceArea 1196 ;
-    parcel:type eg-parcel-type:covenant-land .
+    parcel:type eg-parcel-type:au .
 
 
 ```
@@ -370,7 +510,41 @@ Note, the topology constraint "within" for a 3D Parcel, referencing a Parent Par
 {
   "type": "Feature",
   "id": "8446454",
-  "geometry": null,
+"geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            174.75076068885278,
+                            -36.93102914553119
+                        ],
+                        [
+                            174.75072255725163,
+                            -36.931021544248715
+                        ],
+                        [
+                            174.75054006892805,
+                            -36.93106104934007
+                        ],
+                        [
+                            174.75079103780536,
+                            -36.93124895649441
+                        ],
+                        [
+                            174.75099188136608,
+                            -36.93120233371059
+                        ],
+                        [
+                            174.75096726702185,
+                            -36.931183910797834
+                        ],
+                        [
+                            174.75076068885278,
+                            -36.93102914553119
+                        ]
+                    ]
+                ]
+            },
   "topology": {
     "type": "Polygon",
     "references": [
@@ -418,7 +592,7 @@ Note, the topology constraint "within" for a 3D Parcel, referencing a Parent Par
       ]
     },
     "area": 484,
-    "parcelType": "eg-parcel-type:fee-simple-title",
+    "parcelType": "eg-parcel-type:l",
     "parcelPurpose": "eg-parcel-purpose:fst",
     "parcelState": "eg-parcel-state:created",
     "class": "eg-parcel-class:allotment",
@@ -445,7 +619,41 @@ Note, the topology constraint "within" for a 3D Parcel, referencing a Parent Par
   ],
   "type": "Feature",
   "id": "8446454",
-  "geometry": null,
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          174.75076068885278,
+          -36.93102914553119
+        ],
+        [
+          174.75072255725163,
+          -36.931021544248715
+        ],
+        [
+          174.75054006892805,
+          -36.93106104934007
+        ],
+        [
+          174.75079103780536,
+          -36.93124895649441
+        ],
+        [
+          174.75099188136608,
+          -36.93120233371059
+        ],
+        [
+          174.75096726702185,
+          -36.931183910797834
+        ],
+        [
+          174.75076068885278,
+          -36.93102914553119
+        ]
+      ]
+    ]
+  },
   "topology": {
     "type": "Polygon",
     "references": [
@@ -493,7 +701,7 @@ Note, the topology constraint "within" for a 3D Parcel, referencing a Parent Par
       ]
     },
     "area": 484,
-    "parcelType": "eg-parcel-type:fee-simple-title",
+    "parcelType": "eg-parcel-type:l",
     "parcelPurpose": "eg-parcel-purpose:fst",
     "parcelState": "eg-parcel-state:created",
     "class": "eg-parcel-class:allotment",
@@ -525,6 +733,8 @@ Note, the topology constraint "within" for a 3D Parcel, referencing a Parent Par
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.example.com/features/8446454> a geojson:Feature ;
+    geojson:geometry [ a geojson:Polygon ;
+            geojson:coordinates ( ( ( 1.747508e+02 -3.693103e+01 ) ( 1.747507e+02 -3.693102e+01 ) ( 1.747505e+02 -3.693106e+01 ) ( 1.747508e+02 -3.693125e+01 ) ( 1.74751e+02 -3.69312e+01 ) ( 1.74751e+02 -3.693118e+01 ) ( 1.747508e+02 -3.693103e+01 ) ) ) ] ;
     geojson:topology [ a geojson:Polygon ;
             topo:relatedFeatures ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;
                         prof:hasRole topo:within,
@@ -532,12 +742,12 @@ Note, the topology constraint "within" for a 3D Parcel, referencing a Parent Par
                         oa:hasTarget <myParcels:1234> ] ),
                 ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ) ] ;
     parcel:appellation [ rdfs:label "Lot 1 DP 572532" ;
-            dcterms:hasPart [ rdfs:label "Lot" ;
+            dcterms:hasPart [ rdfs:label "1" ;
+                    commonpatterns:namePartType "ParcelIdentifier" ],
+                [ rdfs:label "Lot" ;
                     commonpatterns:namePartType "ParcelType" ],
                 [ rdfs:label "DP" ;
                     commonpatterns:namePartType "PlanType" ],
-                [ rdfs:label "1" ;
-                    commonpatterns:namePartType "ParcelIdentifier" ],
                 [ rdfs:label "572532" ;
                     commonpatterns:namePartType "PlanIdentifier" ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040074> ;
@@ -545,7 +755,7 @@ Note, the topology constraint "within" for a 3D Parcel, referencing a Parent Par
     parcel:purpose eg-parcel-purpose:fst ;
     parcel:state eg-parcel-state:created ;
     parcel:surfaceArea 484 ;
-    parcel:type eg-parcel-type:fee-simple-title .
+    parcel:type eg-parcel-type:l .
 
 
 ```

@@ -52,7 +52,7 @@
           ]
         },
         "area": 484,
-        "parcelType": "eg-parcel-type:fee-simple-title",
+        "parcelType": "eg-parcel-type:l",
         "parcelPurpose": "eg-parcel-purpose:fst",
         "parcelState": "eg-parcel-state:created",
         "class": "eg-parcel-class:allotment",
@@ -108,7 +108,7 @@
           ]
         },
         "area": 1196,
-        "parcelType": "eg-parcel-type:fee-simple-title",
+        "parcelType": "eg-parcel-type:l",
         "parcelPurpose": "eg-parcel-purpose:fst",
         "parcelState": "eg-parcel-state:created",
         "class": "eg-parcel-class:allotment",

@@ -77,7 +77,7 @@ $defs:
     $anchor: parcelProperties
     properties:
       appellation:
-        $ref: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/compoundName/schema.yaml
+        $ref: https://ogcincubator.github.io/bblocks-utility/build/annotated/bbr/utils/compoundName/schema.yaml
         x-jsonld-id: https://w3id.org/ogc/ladm/parcels/appellation
       parcelType:
         $ref: '#/$defs/coderef'

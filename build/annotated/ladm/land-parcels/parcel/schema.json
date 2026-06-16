@@ -101,7 +101,7 @@
       "$anchor": "parcelProperties",
       "properties": {
         "appellation": {
-          "$ref": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/compoundName/schema.json",
+          "$ref": "https://ogcincubator.github.io/bblocks-utility/build/annotated/bbr/utils/compoundName/schema.json",
           "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/appellation"
         },
         "parcelType": {

@@ -1,6 +1,6 @@
 {
   "name": "Example Vocab: Parcel Types",
-  "highlighted": true,
+  "highlighted": false,
   "abstract": "An example vocab - used in examples for parcel type codelist",
   "status": "under-development",
   "dateTimeAddition": "2023-09-18T00:00:00Z",

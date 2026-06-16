@@ -16,6 +16,7 @@ identifier-prefix: ogc.ladm.land-parcels.
 imports:
   - default
   - https://surroundaustralia.github.io/topo-feature
+  - https://ogcincubator.github.io/bblocks-utility
 
 sparql:
    push: https://defs-dev.opengis.net/fuseki/data

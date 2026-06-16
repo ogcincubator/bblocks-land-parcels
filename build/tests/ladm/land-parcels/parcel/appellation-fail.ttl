@@ -15,10 +15,10 @@
                     commonpatterns:namePartType "PlanIdentifier" ],
                 [ commonpatterns:name "DP" ;
                     commonpatterns:namePartType "PlanType" ],
-                [ rdfs:label "Lot" ;
-                    commonpatterns:namePartType "ParcelType" ],
                 [ rdfs:label "1" ;
-                    commonpatterns:namePartType "ParcelIdentifier" ] ] ;
+                    commonpatterns:namePartType "ParcelIdentifier" ],
+                [ rdfs:label "Lot" ;
+                    commonpatterns:namePartType "ParcelType" ] ] ;
     parcel:purpose <eg-parcel-purpose:fst> ;
     parcel:state <eg-parcel-state:created> ;
     parcel:surfaceArea 484 ;

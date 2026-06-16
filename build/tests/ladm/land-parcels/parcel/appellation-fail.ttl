@@ -11,14 +11,14 @@
     geojson:topology [ a geojson:Polygon ;
             topo:relatedFeatures ( ( <file:///github/workspace/l535242> <file:///github/workspace/l535759> <file:///github/workspace/l985190> <file:///github/workspace/l952702> <file:///github/workspace/l965727> <file:///github/workspace/l589282> ) ) ] ;
     parcel:appellation [ rdfs:label "Lot 1 DP 572532" ;
-            dct:hasPart [ commonpatterns:name "DP" ;
-                    commonpatterns:namePartType "PlanType" ],
-                [ rdfs:label "1" ;
+            dct:hasPart [ rdfs:label "1" ;
                     commonpatterns:namePartType "ParcelIdentifier" ],
+                [ rdfs:label "Lot" ;
+                    commonpatterns:namePartType "ParcelType" ],
                 [ rdfs:label "572532" ;
                     commonpatterns:namePartType "PlanIdentifier" ],
-                [ rdfs:label "Lot" ;
-                    commonpatterns:namePartType "ParcelType" ] ] ;
+                [ commonpatterns:name "DP" ;
+                    commonpatterns:namePartType "PlanType" ] ] ;
     parcel:purpose <eg-parcel-purpose:fst> ;
     parcel:state <eg-parcel-state:created> ;
     parcel:surfaceArea 484 ;

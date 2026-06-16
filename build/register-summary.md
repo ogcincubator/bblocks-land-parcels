@@ -9,6 +9,12 @@ The topology model supports transformations to well known geometry formats which
 
 ## Building Blocks
 
+### `ogc.ladm.land-parcels.codelists.examples.parcel-type` — Example Vocab: Parcel Types
+
+**Type:** model
+
+An example vocab - used in examples for parcel type codelist
+
 ### `ogc.ladm.land-parcels.ontology` — Land Parcels Ontology
 
 **Type:** model

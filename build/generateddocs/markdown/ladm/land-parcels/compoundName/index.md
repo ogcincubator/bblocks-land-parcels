@@ -120,11 +120,11 @@ An example name where part of the name is a reference to a vocabulary source.  T
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 [] rdfs:label "IS II - DP 3333" ;
-    dcterms:hasPart [ rdfs:label "IS II" ;
-            commonpatterns:namePartType "Stamp" ],
-        [ rdfs:label "DP 3333" ;
+    dcterms:hasPart [ rdfs:label "DP 3333" ;
             commonpatterns:namePartRef "wa-plan-register:dp333" ;
-            commonpatterns:namePartType "wa-plan:planTypes" ] .
+            commonpatterns:namePartType "wa-plan:planTypes" ],
+        [ rdfs:label "IS II" ;
+            commonpatterns:namePartType "Stamp" ] .
 
 
 ```

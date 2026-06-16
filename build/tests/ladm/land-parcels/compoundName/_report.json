@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.ladm.land-parcels.compoundName - Compound Name",
   "bblockName": "Compound Name",
   "bblockId": "ogc.ladm.land-parcels.compoundName",
-  "generated": "2026-06-16T13:40:50.141919+00:00",
+  "generated": "2026-06-16T13:51:13.822978+00:00",
   "result": true,
   "items": [
     {
@@ -72,12 +72,12 @@
             {
               "shaclFile": "_sources/compoundName/rules.shacl",
               "focusNodes": {
-                "_:n2719b0bcc4db414abe30d65db610f82fb1": {
+                "_:n0817c986346d4fd1b25ab64e822c9506b1": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/compoundName/rules.shacl:\n - Shape _:n2719b0bcc4db414abe30d65db610f82fb1: *none*\n"
+              "message": "Focus nodes for _sources/compoundName/rules.shacl:\n - Shape _:n0817c986346d4fd1b25ab64e822c9506b1: *none*\n"
             }
           ]
         }
@@ -150,12 +150,12 @@
             {
               "shaclFile": "_sources/compoundName/rules.shacl",
               "focusNodes": {
-                "_:n2719b0bcc4db414abe30d65db610f82fb1": {
+                "_:n0817c986346d4fd1b25ab64e822c9506b1": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/compoundName/rules.shacl:\n - Shape _:n2719b0bcc4db414abe30d65db610f82fb1: *none*\n"
+              "message": "Focus nodes for _sources/compoundName/rules.shacl:\n - Shape _:n0817c986346d4fd1b25ab64e822c9506b1: *none*\n"
             }
           ]
         }

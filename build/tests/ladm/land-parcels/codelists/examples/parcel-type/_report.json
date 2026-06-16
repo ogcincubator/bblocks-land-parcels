@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for ogc.ladm.land-parcels.codelists.examples.parcel-type - Example Vocab: Parcel Types",
+  "bblockName": "Example Vocab: Parcel Types",
+  "bblockId": "ogc.ladm.land-parcels.codelists.examples.parcel-type",
+  "generated": "2026-06-16T13:51:13.758125+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

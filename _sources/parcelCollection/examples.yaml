@@ -1,9 +1,17 @@
-- title: Primary parcel
-  snippets:
-    - language: json
-      ref: examples/parcel1.json
+prefixes:
+  eg-parcel-purpose: https://w3id.org/ogc/ladm/vocabs/eg/parcel-purpose
+  eg-parcel-type: https://w3id.org/ogc/ladm/vocabs/eg/parcel-type
+  eg-parcel-state: https://w3id.org/ogc/ladm/vocabs/eg/parcel-state
 
-- title: Secondary parcel
-  snippets:
-    - language: json
-      ref: examples/parcel2.json
+examples:
+  - title: Primary parcel
+    snippets:
+      - language: json
+        ref: examples/parcel1.json
+        base-uri: http://www.example.com/features/
+
+  - title: Secondary parcel
+    snippets:
+      - language: json
+        ref: examples/parcel2.json
+        base-uri: http://www.example.com/features/

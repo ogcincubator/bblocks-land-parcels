@@ -1,0 +1,31 @@
+{
+  "@context": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/context.jsonld",
+  "type": "Feature",
+  "id": "8446454",
+  "comment": "should fail because purpose is not a code reference form - this generally ensures all properties are being successfully validated",
+  "geometry": null,
+  "topology": {
+    "type": "Polygon",
+    "references": [
+      [
+        "l535242",
+        "l535759",
+        "l985190",
+        "l952702",
+        "l965727",
+        "l589282"
+      ]
+    ]
+  },
+  "properties": {
+    "appellation": {
+      "label": "Lot 1 DP 572532"
+    },
+    "area": 484,
+    "parcelType": "eg-parcel-type:l",
+    "parcelPurpose": "Cant remember",
+    "parcelState": "eg-parcel-state:created",
+    "class": "eg-parcel-class:allotment",
+    "interests": []
+  }
+}

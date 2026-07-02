@@ -1,0 +1,20 @@
+{
+  "name": "Example Vocab: Parcel Purpose",
+  "highlighted": false,
+  "abstract": "An example vocab - used in examples for parcel purpose codelist",
+  "status": "under-development",
+  "dateTimeAddition": "2023-09-18T00:00:00Z",
+  "itemClass": "model",
+  "register": "ogc-incubator",
+  "version": "0.1",
+  "dateOfLastChange": "2023-09-18",
+  "ontology": "eg-parcel-purpose.ttl",
+  "dependsOn": [
+  ],
+  "sources": [
+  ],
+  "scope": "dev",
+  "tags": [
+    "LADM"
+  ]
+}

@@ -1,0 +1,80 @@
+Validation report for ogc.ladm.land-parcels.parcel - Land Parcel
+Generated 2026-06-16T19:39:46.317554+00:00
+=== General ===
+Test was expected to fail and it did.
+=== End General ===
+
+=== Files ===
+Using purpose-code-fail.json from test resources
+JSON-LD context is present - uplifting
+Output JSON-LD purpose-code-fail.jsonld created
+Output Turtle purpose-code-fail.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: 'Cant remember' is not valid under any of the given schemas
+
+Failed validating 'anyOf' in schema['allOf'][1]['properties']['properties']['properties']['parcelPurpose']:
+    {'anyOf': [{'$ref': '#/$defs/IRI'},
+               {'$ref': '#/$defs/CURIE'},
+               {'$ref': '#/$defs/LocalPart'}]}
+
+On instance['properties']['parcelPurpose']:
+    'Cant remember'
+=== End JSON Schema ===
+
+=== SHACL ===
+Using building block SHACL closures:
+ - examples/topoobjects.ttl
+Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:FeatureShape: <file:///github/workspace/8446454>
+
+Validation result for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
+ - Shape toporules:testTopoEdgesReferencePoints: *none*
+ - Shape toporules:testTopoLinesReferencePoints: *none*
+ - Shape toporules:testTopoDirectedReferencesExist: *none*
+ - Shape toporules:testTopoReferencesExist: <file:///github/workspace/8446454>/geojson:topology
+
+Validation result for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:nef266904a6bf4161ae0222713b3c745ab1: *none*
+ - Shape _:nef266904a6bf4161ae0222713b3c745ab3: *none*
+
+Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
+ - Shape geojson:FeatureCollectionShape: *none*
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:FeatureShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+
+Validation result for https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl:
+ - Shape _:n74ee77089b154d4b983a4fb9d0bdf349b1: *none*
+
+=== End SHACL ===
+

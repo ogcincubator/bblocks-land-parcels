@@ -1,0 +1,115 @@
+
+
+{
+  "itemIdentifier": "ogc.ladm.land-parcels.parcelCollection",
+  "name": "Land Parcel Collection",
+  "highlighted": true,
+  "abstract": "corresponds to LA_SpatialUnitGroup from LADM (ISO 19162)",
+  "status": "under-development",
+  "dateTimeAddition": "2024-06-03T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-register",
+  "version": "0.1",
+  "dateOfLastChange": "2026-06-16",
+  "link": "https://github.com/opengeospatial/bblock-template",
+  "shaclShapes": {
+    "ogc.geo.topo.features.topo-feature-collection": [
+      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+    ],
+    "ogc.geo.features.feature": [
+      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+    ],
+    "ogc.geo.features.featureCollection": [
+      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
+    ],
+    "ogc.geo.topo.features.topo-feature": [
+      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+      "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+    ],
+    "ogc.bbr.utils.compoundName": [
+      "https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl"
+    ]
+  },
+  "dependsOn": [
+    "ogc.geo.topo.features.topo-feature-collection",
+    "ogc.geo.json-fg.featureCollection-lenient",
+    "ogc.ladm.land-parcels.parcel",
+    "ogc.geo.topo.features.topo-feature"
+  ],
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcelCollection/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcelCollection/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-land-parcels/_sources/parcelCollection/schema.yaml",
+  "ldContext": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcelCollection/context.jsonld",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcelCollection/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-land-parcels/_sources/parcelCollection/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-land-parcels/blob/master/build/tests/ladm/land-parcels/parcelCollection/",
+  "description": "## Land Parcel Collection\n\nA schema for validating a bundle of Land Parcels contained in a Feature Collection.\n\nThe Feature Collection may contain the referenced topological boundaries and survey marks that define the extents.  \n\nIndividual features may optionally contain geometric coordinates for visualisation, or as a record in the event of no survey data available to define boundaries using topological references to surveyed features.",
+  "examples": [
+    {
+      "title": "Primary parcel",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-land-parcels/_sources/parcelCollection/examples/parcel1.json",
+          "base-uri": "http://www.example.com/features/",
+          "url": "https://ogcincubator.github.io/bblocks-land-parcels/build/tests/ladm/land-parcels/parcelCollection/example_1_1.json",
+          "code": "{\n  \"id\": \"primaryparcels\",\n  \"type\": \"FeatureCollection\",\n  \"featureType\": \"PrimaryParcel\",\n  \"properties\": null,\n  \"features\": [\n    {\n      \"type\": \"Feature\",\n      \"id\": \"8446454\",\n      \"geometry\": null,\n      \"topology\": {\n        \"type\": \"Polygon\",\n        \"references\": [\n          [\n            \"l535242\",\n            \"l535759\",\n            \"l985190\",\n            \"l952702\",\n            \"l965727\",\n            \"l589282\"\n          ]\n        ]\n      },\n      \"properties\": {\n        \"appellation\": {\n          \"label\": \"Lot 1 DP 572532\",\n          \"hasPart\": [\n            {\n              \"type\": \"PlanType\",\n              \"label\": \"DP\"\n            },\n            {\n              \"type\": \"PlanIdentifier\",\n              \"label\": \"572532\"\n            },\n            {\n              \"type\": \"ParcelType\",\n              \"label\": \"Lot\"\n            },\n            {\n              \"type\": \"ParcelIdentifier\",\n              \"label\": \"1\"\n            }\n          ]\n        },\n        \"area\": 484,\n        \"parcelType\": \"eg-parcel-type:l\",\n        \"parcelPurpose\": \"eg-parcel-purpose:fst\",\n        \"parcelState\": \"eg-parcel-state:created\",\n        \"class\": \"eg-parcel-class:allotment\",\n        \"interests\": [\n          {\n            \"interestLink\": \"1040074\",\n            \"interestType\": \"eg-interest-type:fh\"\n          }\n        ]\n      }\n    },\n    {\n      \"type\": \"Feature\",\n      \"id\": \"8446455\",\n      \"geometry\": null,\n      \"topology\": {\n        \"type\": \"Polygon\",\n        \"references\": [\n          [\n            \"l746686\",\n            \"l999724\",\n            \"l591175\",\n            \"l435861\",\n            \"l874826\",\n            \"l952702\",\n            \"l985190\",\n            \"l535759\",\n            \"l535242\",\n            \"l329256\"\n          ]\n        ]\n      },\n      \"properties\": {\n        \"appellation\": {\n          \"label\": \"Lot 2 DP 572532\",\n          \"hasPart\": [\n            {\n              \"type\": \"PlanType\",\n              \"label\": \"DP\"\n            },\n            {\n              \"type\": \"PlanIdentifier\",\n              \"label\": \"572532\"\n            },\n            {\n              \"type\": \"ParcelType\",\n              \"label\": \"Lot\"\n            },\n            {\n              \"type\": \"ParcelIdentifier\",\n              \"label\": \"2\"\n            }\n          ]\n        },\n        \"area\": 1196,\n        \"parcelType\": \"eg-parcel-type:l\",\n        \"parcelPurpose\": \"eg-parcel-purpose:fst\",\n        \"parcelState\": \"eg-parcel-state:created\",\n        \"class\": \"eg-parcel-class:allotment\",\n        \"interests\": [\n          {\n            \"interestLink\": \"1040075\",\n            \"interestType\": \"eg-interest-type:fh\"\n          }\n        ]\n      }\n    }\n  ]\n}"
+        },
+        {
+          "language": "jsonld",
+          "url": "https://ogcincubator.github.io/bblocks-land-parcels/build/tests/ladm/land-parcels/parcelCollection/example_1_1.jsonld",
+          "code": "{\n  \"@context\": [\n    {\n      \"eg-parcel-purpose\": \"https://w3id.org/ogc/ladm/vocabs/eg/parcel-purpose\",\n      \"eg-parcel-type\": \"https://w3id.org/ogc/ladm/vocabs/eg/parcel-type\",\n      \"eg-parcel-state\": \"https://w3id.org/ogc/ladm/vocabs/eg/parcel-state\"\n    },\n    \"https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcelCollection/context.jsonld\"\n  ],\n  \"id\": \"primaryparcels\",\n  \"type\": \"FeatureCollection\",\n  \"featureType\": \"PrimaryParcel\",\n  \"properties\": null,\n  \"features\": [\n    {\n      \"type\": \"Feature\",\n      \"id\": \"8446454\",\n      \"geometry\": null,\n      \"topology\": {\n        \"type\": \"Polygon\",\n        \"references\": [\n          [\n            \"l535242\",\n            \"l535759\",\n            \"l985190\",\n            \"l952702\",\n            \"l965727\",\n            \"l589282\"\n          ]\n        ]\n      },\n      \"properties\": {\n        \"appellation\": {\n          \"label\": \"Lot 1 DP 572532\",\n          \"hasPart\": [\n            {\n              \"type\": \"PlanType\",\n              \"label\": \"DP\"\n            },\n            {\n              \"type\": \"PlanIdentifier\",\n              \"label\": \"572532\"\n            },\n            {\n              \"type\": \"ParcelType\",\n              \"label\": \"Lot\"\n            },\n            {\n              \"type\": \"ParcelIdentifier\",\n              \"label\": \"1\"\n            }\n          ]\n        },\n        \"area\": 484,\n        \"parcelType\": \"eg-parcel-type:l\",\n        \"parcelPurpose\": \"eg-parcel-purpose:fst\",\n        \"parcelState\": \"eg-parcel-state:created\",\n        \"class\": \"eg-parcel-class:allotment\",\n        \"interests\": [\n          {\n            \"interestLink\": \"1040074\",\n            \"interestType\": \"eg-interest-type:fh\"\n          }\n        ]\n      }\n    },\n    {\n      \"type\": \"Feature\",\n      \"id\": \"8446455\",\n      \"geometry\": null,\n      \"topology\": {\n        \"type\": \"Polygon\",\n        \"references\": [\n          [\n            \"l746686\",\n            \"l999724\",\n            \"l591175\",\n            \"l435861\",\n            \"l874826\",\n            \"l952702\",\n            \"l985190\",\n            \"l535759\",\n            \"l535242\",\n            \"l329256\"\n          ]\n        ]\n      },\n      \"properties\": {\n        \"appellation\": {\n          \"label\": \"Lot 2 DP 572532\",\n          \"hasPart\": [\n            {\n              \"type\": \"PlanType\",\n              \"label\": \"DP\"\n            },\n            {\n              \"type\": \"PlanIdentifier\",\n              \"label\": \"572532\"\n            },\n            {\n              \"type\": \"ParcelType\",\n              \"label\": \"Lot\"\n            },\n            {\n              \"type\": \"ParcelIdentifier\",\n              \"label\": \"2\"\n            }\n          ]\n        },\n        \"area\": 1196,\n        \"parcelType\": \"eg-parcel-type:l\",\n        \"parcelPurpose\": \"eg-parcel-purpose:fst\",\n        \"parcelState\": \"eg-parcel-state:created\",\n        \"class\": \"eg-parcel-class:allotment\",\n        \"interests\": [\n          {\n            \"interestLink\": \"1040075\",\n            \"interestType\": \"eg-interest-type:fh\"\n          }\n        ]\n      }\n    }\n  ]\n}"
+        },
+        {
+          "language": "ttl",
+          "url": "https://ogcincubator.github.io/bblocks-land-parcels/build/tests/ladm/land-parcels/parcelCollection/example_1_1.ttl",
+          "code": "@prefix commonpatterns: <https://w3id.org/ogc/utils/label/> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix parcel: <https://w3id.org/ogc/ladm/parcels/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix topo: <https://purl.org/geojson/topo#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://www.example.com/features/primaryparcels> a geojson:FeatureCollection,\n        parcel:PrimaryParcel ;\n    geojson:features <http://www.example.com/features/8446454>,\n        <http://www.example.com/features/8446455> .\n\n<http://www.example.com/features/8446454> a geojson:Feature ;\n    geojson:topology [ a geojson:Polygon ;\n            topo:relatedFeatures ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ) ] ;\n    parcel:appellation [ rdfs:label \"Lot 1 DP 572532\" ;\n            dcterms:hasPart [ rdfs:label \"Lot\" ;\n                    commonpatterns:namePartType \"ParcelType\" ],\n                [ rdfs:label \"1\" ;\n                    commonpatterns:namePartType \"ParcelIdentifier\" ],\n                [ rdfs:label \"DP\" ;\n                    commonpatterns:namePartType \"PlanType\" ],\n                [ rdfs:label \"572532\" ;\n                    commonpatterns:namePartType \"PlanIdentifier\" ] ] ;\n    parcel:interest [ parcel:interestLink <http://www.example.com/features/1040074> ;\n            parcel:interestType <eg-interest-type:fh> ] ;\n    parcel:purpose <eg-parcel-purpose:fst> ;\n    parcel:state <eg-parcel-state:created> ;\n    parcel:surfaceArea 484 ;\n    parcel:type <eg-parcel-type:l> .\n\n<http://www.example.com/features/8446455> a geojson:Feature ;\n    geojson:topology [ a geojson:Polygon ;\n            topo:relatedFeatures ( ( <http://www.example.com/features/l746686> <http://www.example.com/features/l999724> <http://www.example.com/features/l591175> <http://www.example.com/features/l435861> <http://www.example.com/features/l874826> <http://www.example.com/features/l952702> <http://www.example.com/features/l985190> <http://www.example.com/features/l535759> <http://www.example.com/features/l535242> <http://www.example.com/features/l329256> ) ) ] ;\n    parcel:appellation [ rdfs:label \"Lot 2 DP 572532\" ;\n            dcterms:hasPart [ rdfs:label \"2\" ;\n                    commonpatterns:namePartType \"ParcelIdentifier\" ],\n                [ rdfs:label \"Lot\" ;\n                    commonpatterns:namePartType \"ParcelType\" ],\n                [ rdfs:label \"572532\" ;\n                    commonpatterns:namePartType \"PlanIdentifier\" ],\n                [ rdfs:label \"DP\" ;\n                    commonpatterns:namePartType \"PlanType\" ] ] ;\n    parcel:interest [ parcel:interestLink <http://www.example.com/features/1040075> ;\n            parcel:interestType <eg-interest-type:fh> ] ;\n    parcel:purpose <eg-parcel-purpose:fst> ;\n    parcel:state <eg-parcel-state:created> ;\n    parcel:surfaceArea 1196 ;\n    parcel:type <eg-parcel-type:l> .\n\n"
+        }
+      ],
+      "prefixes": {
+        "eg-parcel-purpose": "https://w3id.org/ogc/ladm/vocabs/eg/parcel-purpose",
+        "eg-parcel-type": "https://w3id.org/ogc/ladm/vocabs/eg/parcel-type",
+        "eg-parcel-state": "https://w3id.org/ogc/ladm/vocabs/eg/parcel-state"
+      }
+    },
+    {
+      "title": "Secondary parcel",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-land-parcels/_sources/parcelCollection/examples/parcel2.json",
+          "base-uri": "http://www.example.com/features/",
+          "url": "https://ogcincubator.github.io/bblocks-land-parcels/build/tests/ladm/land-parcels/parcelCollection/example_2_1.json",
+          "code": "{\n  \"id\": \"covenants\",\n  \"type\": \"FeatureCollection\",\n  \"featureType\": \"SecondaryParcel\",\n  \"properties\": null,\n  \"features\": [\n    {\n      \"type\": \"Feature\",\n      \"id\": \"8446456\",\n      \"featureType\": \"SecondaryParcel\",\n      \"geometry\": null,\n      \"topology\": {\n        \"type\": \"Polygon\",\n        \"references\": [\n          [\n            \"l999724\",\n            \"l591175\",\n            \"l369793\",\n            \"l435861\",\n            \"l345344\",\n            \"l685716\",\n            \"l832940\",\n            \"l715872\",\n            \"l641327\",\n            \"l852048\",\n            \"l949729\",\n            \"l951515\",\n            \"l761760\",\n            \"l580762\"\n          ]\n        ]\n      },\n      \"properties\": {\n        \"appellation\": {\n          \"label\": \"Area Z DP 572532\",\n          \"hasPart\": [\n            {\n              \"type\": \"PlanType\",\n              \"label\": \"DP\"\n            },\n            {\n              \"type\": \"PlanIdentifier\",\n              \"label\": \"572532\"\n            },\n            {\n              \"type\": \"ParcelType\",\n              \"label\": \"Area\"\n            },\n            {\n              \"type\": \"ParcelIdentifier\",\n              \"label\": \"Z\"\n            }\n          ]\n        },\n        \"area\": 1196,\n        \"parcelType\": \"eg-parcel-type:au\",\n        \"parcelPurpose\": \"eg-parcel-purpose:c-l\",\n        \"parcelState\": \"eg-parcel-state:created\",\n        \"interests\": [\n          {\n            \"interestLink\": \"1040075\",\n            \"interestType\": \"eg-interest-type:fh\"\n          }\n        ],\n        \"burdened\": {\n          \"x-comment\": \"References the parcel ID of the burdened primary parcel.\",\n          \"references\": [\n            \"8446455\"\n          ]\n        }\n      }\n    }\n  ]\n}"
+        },
+        {
+          "language": "jsonld",
+          "url": "https://ogcincubator.github.io/bblocks-land-parcels/build/tests/ladm/land-parcels/parcelCollection/example_2_1.jsonld",
+          "code": "{\n  \"@context\": [\n    {\n      \"eg-parcel-purpose\": \"https://w3id.org/ogc/ladm/vocabs/eg/parcel-purpose\",\n      \"eg-parcel-type\": \"https://w3id.org/ogc/ladm/vocabs/eg/parcel-type\",\n      \"eg-parcel-state\": \"https://w3id.org/ogc/ladm/vocabs/eg/parcel-state\"\n    },\n    \"https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcelCollection/context.jsonld\"\n  ],\n  \"id\": \"covenants\",\n  \"type\": \"FeatureCollection\",\n  \"featureType\": \"SecondaryParcel\",\n  \"properties\": null,\n  \"features\": [\n    {\n      \"type\": \"Feature\",\n      \"id\": \"8446456\",\n      \"featureType\": \"SecondaryParcel\",\n      \"geometry\": null,\n      \"topology\": {\n        \"type\": \"Polygon\",\n        \"references\": [\n          [\n            \"l999724\",\n            \"l591175\",\n            \"l369793\",\n            \"l435861\",\n            \"l345344\",\n            \"l685716\",\n            \"l832940\",\n            \"l715872\",\n            \"l641327\",\n            \"l852048\",\n            \"l949729\",\n            \"l951515\",\n            \"l761760\",\n            \"l580762\"\n          ]\n        ]\n      },\n      \"properties\": {\n        \"appellation\": {\n          \"label\": \"Area Z DP 572532\",\n          \"hasPart\": [\n            {\n              \"type\": \"PlanType\",\n              \"label\": \"DP\"\n            },\n            {\n              \"type\": \"PlanIdentifier\",\n              \"label\": \"572532\"\n            },\n            {\n              \"type\": \"ParcelType\",\n              \"label\": \"Area\"\n            },\n            {\n              \"type\": \"ParcelIdentifier\",\n              \"label\": \"Z\"\n            }\n          ]\n        },\n        \"area\": 1196,\n        \"parcelType\": \"eg-parcel-type:au\",\n        \"parcelPurpose\": \"eg-parcel-purpose:c-l\",\n        \"parcelState\": \"eg-parcel-state:created\",\n        \"interests\": [\n          {\n            \"interestLink\": \"1040075\",\n            \"interestType\": \"eg-interest-type:fh\"\n          }\n        ],\n        \"burdened\": {\n          \"x-comment\": \"References the parcel ID of the burdened primary parcel.\",\n          \"references\": [\n            \"8446455\"\n          ]\n        }\n      }\n    }\n  ]\n}"
+        },
+        {
+          "language": "ttl",
+          "url": "https://ogcincubator.github.io/bblocks-land-parcels/build/tests/ladm/land-parcels/parcelCollection/example_2_1.ttl",
+          "code": "@prefix commonpatterns: <https://w3id.org/ogc/utils/label/> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix parcel: <https://w3id.org/ogc/ladm/parcels/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix topo: <https://purl.org/geojson/topo#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://www.example.com/features/covenants> a geojson:FeatureCollection,\n        parcel:SecondaryParcel ;\n    geojson:features <http://www.example.com/features/8446456> .\n\n<http://www.example.com/features/8446456> a geojson:Feature,\n        parcel:SecondaryParcel ;\n    geojson:topology [ a geojson:Polygon ;\n            topo:relatedFeatures ( ( <http://www.example.com/features/l999724> <http://www.example.com/features/l591175> <http://www.example.com/features/l369793> <http://www.example.com/features/l435861> <http://www.example.com/features/l345344> <http://www.example.com/features/l685716> <http://www.example.com/features/l832940> <http://www.example.com/features/l715872> <http://www.example.com/features/l641327> <http://www.example.com/features/l852048> <http://www.example.com/features/l949729> <http://www.example.com/features/l951515> <http://www.example.com/features/l761760> <http://www.example.com/features/l580762> ) ) ] ;\n    parcel:appellation [ rdfs:label \"Area Z DP 572532\" ;\n            dcterms:hasPart [ rdfs:label \"Z\" ;\n                    commonpatterns:namePartType \"ParcelIdentifier\" ],\n                [ rdfs:label \"Area\" ;\n                    commonpatterns:namePartType \"ParcelType\" ],\n                [ rdfs:label \"DP\" ;\n                    commonpatterns:namePartType \"PlanType\" ],\n                [ rdfs:label \"572532\" ;\n                    commonpatterns:namePartType \"PlanIdentifier\" ] ] ;\n    parcel:interest [ parcel:interestLink <http://www.example.com/features/1040075> ;\n            parcel:interestType <eg-interest-type:fh> ] ;\n    parcel:purpose <eg-parcel-purpose:c-l> ;\n    parcel:state <eg-parcel-state:created> ;\n    parcel:surfaceArea 1196 ;\n    parcel:type <eg-parcel-type:au> .\n\n"
+        }
+      ],
+      "prefixes": {
+        "eg-parcel-purpose": "https://w3id.org/ogc/ladm/vocabs/eg/parcel-purpose",
+        "eg-parcel-type": "https://w3id.org/ogc/ladm/vocabs/eg/parcel-type",
+        "eg-parcel-state": "https://w3id.org/ogc/ladm/vocabs/eg/parcel-state"
+      }
+    }
+  ],
+  "examplePrefixes": {
+    "eg-parcel-purpose": "https://w3id.org/ogc/ladm/vocabs/eg/parcel-purpose",
+    "eg-parcel-type": "https://w3id.org/ogc/ladm/vocabs/eg/parcel-type",
+    "eg-parcel-state": "https://w3id.org/ogc/ladm/vocabs/eg/parcel-state"
+  },
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntype: object\nallOf:\n- ref: bblocks://ogc.geo.json-fg.featureCollection-lenient\n- anyOf:\n  - $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml\n  - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.yaml\n- properties:\n    features:\n      items:\n        anyOf:\n        - $ref: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml\n        - $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-land-parcels",
+  "gitPath": "_sources/parcelCollection"
+}

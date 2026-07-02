@@ -1,94 +1,474 @@
 {
   "summary": {
-    "total": 3,
-    "passed": 3,
+    "total": 5,
+    "passed": 5,
     "failed": 0,
     "result": true
   },
   "bblocks": {
-    "ogc.land-parcels.compound-name": {
-      "title": "Validation report for ogc.land-parcels.compound-name - Compound name",
-      "bblockName": "Compound name",
-      "bblockId": "ogc.land-parcels.compound-name",
-      "generated": "2026-05-15T07:19:42.344955+00:00",
+    "ogc.ladm.land-parcels.codelists.examples.parcel-purpose": {
+      "title": "Validation report for ogc.ladm.land-parcels.codelists.examples.parcel-purpose - Example Vocab: Parcel Purpose",
+      "bblockName": "Example Vocab: Parcel Purpose",
+      "bblockId": "ogc.ladm.land-parcels.codelists.examples.parcel-purpose",
+      "generated": "2026-06-16T19:39:40.821814+00:00",
       "result": true,
-      "items": [
-        {
-          "source": {
-            "type": "EXAMPLE",
-            "requireFail": false,
-            "filename": "build/tests/land-parcels/compound-name/example_1_1.json",
-            "url": "https://ogcincubator.github.io/bblocks-land-parcels/build/tests/land-parcels/compound-name/example_1_1.json",
-            "exampleIndex": 1,
-            "snippetIndex": 1,
-            "language": "application/json"
-          },
-          "result": true,
-          "sections": [
-            {
-              "name": "FILES",
-              "title": "Files",
-              "entries": [
-                {
-                  "isError": false,
-                  "message": "Using example_1_1.json from examples"
-                },
-                {
-                  "op": "jsonld-uplift",
-                  "isError": false,
-                  "message": "JSON-LD context is present - uplifting"
-                },
-                {
-                  "op": "jsonld-create",
-                  "filename": "example_1_1.jsonld",
-                  "isError": false,
-                  "message": "Output JSON-LD example_1_1.jsonld created"
-                },
-                {
-                  "op": "ttl-create",
-                  "empty": false,
-                  "filename": "example_1_1.ttl",
-                  "size": 7,
-                  "isError": false,
-                  "message": "Output Turtle example_1_1.ttl created"
-                }
-              ]
-            },
-            {
-              "name": "JSON_SCHEMA",
-              "title": "JSON Schema",
-              "entries": [
-                {
-                  "op": "validation",
-                  "result": true,
-                  "isError": false,
-                  "message": "Validation passed"
-                }
-              ]
-            }
-          ]
-        }
-      ],
+      "items": [],
       "globalErrors": {},
       "counts": {
-        "total": 1,
-        "passed": 1,
+        "total": 0,
+        "passed": 0,
         "failed": 0
       }
     },
-    "ogc.land-parcels.parcel": {
-      "title": "Validation report for ogc.land-parcels.parcel - Land Parcel",
+    "ogc.ladm.land-parcels.codelists.examples.parcel-type": {
+      "title": "Validation report for ogc.ladm.land-parcels.codelists.examples.parcel-type - Example Vocab: Parcel Types",
+      "bblockName": "Example Vocab: Parcel Types",
+      "bblockId": "ogc.ladm.land-parcels.codelists.examples.parcel-type",
+      "generated": "2026-06-16T19:39:40.824908+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.ladm.land-parcels.ontology": {
+      "title": "Validation report for ogc.ladm.land-parcels.ontology - Land Parcels Ontology",
+      "bblockName": "Land Parcels Ontology",
+      "bblockId": "ogc.ladm.land-parcels.ontology",
+      "generated": "2026-06-16T19:39:40.827744+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.ladm.land-parcels.parcel": {
+      "title": "Validation report for ogc.ladm.land-parcels.parcel - Land Parcel",
       "bblockName": "Land Parcel",
-      "bblockId": "ogc.land-parcels.parcel",
-      "generated": "2026-05-15T07:19:47.103420+00:00",
+      "bblockId": "ogc.ladm.land-parcels.parcel",
+      "generated": "2026-06-16T19:39:51.450697+00:00",
       "result": true,
       "items": [
         {
           "source": {
+            "type": "TEST_RESOURCE",
+            "requireFail": true,
+            "filename": "_sources/parcel/tests/appellation-fail.json",
+            "url": "https://ogcincubator.github.io/bblocks-land-parcels/_sources/parcel/tests/appellation-fail.json",
+            "language": "json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "GENERAL",
+              "title": "General",
+              "entries": [
+                {
+                  "op": "require-fail",
+                  "isError": false,
+                  "message": "Test was expected to fail and it did."
+                }
+              ]
+            },
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using appellation-fail.json from test resources"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "appellation-fail.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD appellation-fail.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "appellation-fail.ttl",
+                  "size": 36,
+                  "isError": false,
+                  "message": "Output Turtle appellation-fail.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": false,
+                  "exception": "ValidationError",
+                  "errorMessage": "Additional properties are not allowed ('name' was unexpected)",
+                  "isError": true,
+                  "message": "ValidationError: Additional properties are not allowed ('name' was unexpected)\n\nFailed validating 'additionalProperties' in schema['allOf'][1]['properties']['properties']['properties']['appellation']['properties']['hasPart']['items']:\n    {'additionalProperties': False,\n     'anyOf': [{'required': ['label']}, {'required': ['ref']}],\n     'properties': {'label': {'type': 'string',\n                              'x-jsonld-id': 'http://www.w3.org/2000/01/rdf-schema#label'},\n                    'ref': {'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml',\n                            'x-jsonld-id': 'https://w3id.org/ogc/utils/label/namePartRef'},\n                    'type': {'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml',\n                             'x-jsonld-id': 'https://w3id.org/ogc/utils/label/namePartType'}},\n     'type': 'object'}\n\nOn instance['properties']['appellation']['hasPart'][0]:\n    {'name': 'DP', 'type': 'PlanType'}"
+                }
+              ]
+            },
+            {
+              "name": "SHACL",
+              "title": "SHACL",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using building block SHACL closures:\n - examples/topoobjects.ttl"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+                  "focusNodes": {
+                    "geojson:GeometryShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:first": {
+                      "nodes": []
+                    },
+                    "geojson:LinkShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                      "nodes": []
+                    },
+                    "geojson:FeatureShape": {
+                      "nodes": [
+                        "<file:///github/workspace/8446454>"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:FeatureShape: <file:///github/workspace/8446454>\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "focusNodes": {
+                    "toporules:testTopoEdgesReferencePoints": {
+                      "nodes": []
+                    },
+                    "toporules:testTopoLinesReferencePoints": {
+                      "nodes": []
+                    },
+                    "toporules:testTopoDirectedReferencesExist": {
+                      "nodes": []
+                    },
+                    "toporules:testTopoReferencesExist": {
+                      "nodes": [
+                        "<file:///github/workspace/8446454>/geojson:topology"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape toporules:testTopoEdgesReferencePoints: *none*\n - Shape toporules:testTopoLinesReferencePoints: *none*\n - Shape toporules:testTopoDirectedReferencesExist: *none*\n - Shape toporules:testTopoReferencesExist: <file:///github/workspace/8446454>/geojson:topology\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+                  "focusNodes": {
+                    "_:nef266904a6bf4161ae0222713b3c745ab1": {
+                      "nodes": []
+                    },
+                    "_:nef266904a6bf4161ae0222713b3c745ab3": {
+                      "nodes": []
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:nef266904a6bf4161ae0222713b3c745ab1: *none*\n - Shape _:nef266904a6bf4161ae0222713b3c745ab3: *none*\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl",
+                  "focusNodes": {
+                    "geojson:FeatureCollectionShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:first": {
+                      "nodes": []
+                    },
+                    "geojson:LinkShape": {
+                      "nodes": []
+                    },
+                    "geojson:FeatureShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                      "nodes": []
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:\n - Shape geojson:FeatureCollectionShape: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl",
+                  "focusNodes": {
+                    "_:n74ee77089b154d4b983a4fb9d0bdf349b1": {
+                      "nodes": []
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl:\n - Shape _:n74ee77089b154d4b983a4fb9d0bdf349b1: *none*\n"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "TEST_RESOURCE",
+            "requireFail": true,
+            "filename": "_sources/parcel/tests/purpose-code-fail.json",
+            "url": "https://ogcincubator.github.io/bblocks-land-parcels/_sources/parcel/tests/purpose-code-fail.json",
+            "language": "json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "GENERAL",
+              "title": "General",
+              "entries": [
+                {
+                  "op": "require-fail",
+                  "isError": false,
+                  "message": "Test was expected to fail and it did."
+                }
+              ]
+            },
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using purpose-code-fail.json from test resources"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "purpose-code-fail.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD purpose-code-fail.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "purpose-code-fail.ttl",
+                  "size": 24,
+                  "isError": false,
+                  "message": "Output Turtle purpose-code-fail.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": false,
+                  "exception": "ValidationError",
+                  "errorMessage": "'Cant remember' is not valid under any of the given schemas",
+                  "isError": true,
+                  "message": "ValidationError: 'Cant remember' is not valid under any of the given schemas\n\nFailed validating 'anyOf' in schema['allOf'][1]['properties']['properties']['properties']['parcelPurpose']:\n    {'anyOf': [{'$ref': '#/$defs/IRI'},\n               {'$ref': '#/$defs/CURIE'},\n               {'$ref': '#/$defs/LocalPart'}]}\n\nOn instance['properties']['parcelPurpose']:\n    'Cant remember'"
+                }
+              ]
+            },
+            {
+              "name": "SHACL",
+              "title": "SHACL",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using building block SHACL closures:\n - examples/topoobjects.ttl"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+                  "focusNodes": {
+                    "geojson:GeometryShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:first": {
+                      "nodes": []
+                    },
+                    "geojson:LinkShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                      "nodes": []
+                    },
+                    "geojson:FeatureShape": {
+                      "nodes": [
+                        "<file:///github/workspace/8446454>"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:FeatureShape: <file:///github/workspace/8446454>\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "focusNodes": {
+                    "toporules:testTopoEdgesReferencePoints": {
+                      "nodes": []
+                    },
+                    "toporules:testTopoLinesReferencePoints": {
+                      "nodes": []
+                    },
+                    "toporules:testTopoDirectedReferencesExist": {
+                      "nodes": []
+                    },
+                    "toporules:testTopoReferencesExist": {
+                      "nodes": [
+                        "<file:///github/workspace/8446454>/geojson:topology"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape toporules:testTopoEdgesReferencePoints: *none*\n - Shape toporules:testTopoLinesReferencePoints: *none*\n - Shape toporules:testTopoDirectedReferencesExist: *none*\n - Shape toporules:testTopoReferencesExist: <file:///github/workspace/8446454>/geojson:topology\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+                  "focusNodes": {
+                    "_:nef266904a6bf4161ae0222713b3c745ab1": {
+                      "nodes": []
+                    },
+                    "_:nef266904a6bf4161ae0222713b3c745ab3": {
+                      "nodes": []
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:nef266904a6bf4161ae0222713b3c745ab1: *none*\n - Shape _:nef266904a6bf4161ae0222713b3c745ab3: *none*\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl",
+                  "focusNodes": {
+                    "geojson:FeatureCollectionShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:first": {
+                      "nodes": []
+                    },
+                    "geojson:LinkShape": {
+                      "nodes": []
+                    },
+                    "geojson:FeatureShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                      "nodes": []
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:\n - Shape geojson:FeatureCollectionShape: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl",
+                  "focusNodes": {
+                    "_:n74ee77089b154d4b983a4fb9d0bdf349b1": {
+                      "nodes": []
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl:\n - Shape _:n74ee77089b154d4b983a4fb9d0bdf349b1: *none*\n"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
             "type": "EXAMPLE",
             "requireFail": false,
-            "filename": "build/tests/land-parcels/parcel/example_1_1.json",
-            "url": "https://ogcincubator.github.io/bblocks-land-parcels/build/tests/land-parcels/parcel/example_1_1.json",
+            "filename": "build/tests/ladm/land-parcels/parcel/parcel2.json",
+            "url": "https://ogcincubator.github.io/bblocks-land-parcels/build/tests/ladm/land-parcels/parcel/parcel2.json",
             "exampleIndex": 1,
             "snippetIndex": 1,
             "language": "application/json"
@@ -110,17 +490,17 @@
                 },
                 {
                   "op": "jsonld-create",
-                  "filename": "example_1_1.jsonld",
+                  "filename": "parcel2.jsonld",
                   "isError": false,
-                  "message": "Output JSON-LD example_1_1.jsonld created"
+                  "message": "Output JSON-LD parcel2.jsonld created"
                 },
                 {
                   "op": "ttl-create",
                   "empty": false,
-                  "filename": "example_1_1.ttl",
-                  "size": 26,
+                  "filename": "parcel2.ttl",
+                  "size": 86,
                   "isError": false,
-                  "message": "Output Turtle example_1_1.ttl created"
+                  "message": "Output Turtle parcel2.ttl created"
                 }
               ]
             },
@@ -141,6 +521,10 @@
               "title": "SHACL",
               "entries": [
                 {
+                  "isError": false,
+                  "message": "Using building block SHACL closures:\n - examples/topoobjects.ttl"
+                },
+                {
                   "op": "shacl-report",
                   "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
                   "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
@@ -150,26 +534,26 @@
                 {
                   "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
                   "focusNodes": {
+                    "geojson:GeometryShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:first": {
+                      "nodes": []
+                    },
                     "geojson:LinkShape": {
                       "nodes": []
                     },
                     "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
                       "nodes": []
                     },
-                    "geojson:GeometryShape/sh:or/rdf:first": {
-                      "nodes": []
-                    },
                     "geojson:FeatureShape": {
                       "nodes": [
-                        "<file:///github/workspace/8446454>"
+                        "<http://www.example.com/features/8446454>"
                       ]
-                    },
-                    "geojson:GeometryShape": {
-                      "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:FeatureShape: <file:///github/workspace/8446454>\n - Shape geojson:GeometryShape: *none*\n"
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:FeatureShape: <http://www.example.com/features/8446454>\n"
                 },
                 {
                   "op": "shacl-report",
@@ -181,17 +565,23 @@
                 {
                   "shaclFile": "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
                   "focusNodes": {
-                    "topo:testTopoLinesReferencePoints": {
+                    "toporules:testTopoEdgesReferencePoints": {
                       "nodes": []
                     },
-                    "topo:testTopoReferencesExist": {
+                    "toporules:testTopoLinesReferencePoints": {
+                      "nodes": []
+                    },
+                    "toporules:testTopoDirectedReferencesExist": {
+                      "nodes": []
+                    },
+                    "toporules:testTopoReferencesExist": {
                       "nodes": [
-                        "<file:///github/workspace/8446454>/geojson:topology"
+                        "<http://www.example.com/features/8446454>/geojson:topology"
                       ]
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <file:///github/workspace/8446454>/geojson:topology\n"
+                  "message": "Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape toporules:testTopoEdgesReferencePoints: *none*\n - Shape toporules:testTopoLinesReferencePoints: *none*\n - Shape toporules:testTopoDirectedReferencesExist: *none*\n - Shape toporules:testTopoReferencesExist: <http://www.example.com/features/8446454>/geojson:topology\n"
                 },
                 {
                   "op": "shacl-report",
@@ -203,15 +593,17 @@
                 {
                   "shaclFile": "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "focusNodes": {
-                    "_:nd23643f8bc2a4d67b894924c270f9527b3": {
+                    "_:nef266904a6bf4161ae0222713b3c745ab1": {
                       "nodes": []
                     },
-                    "_:nd23643f8bc2a4d67b894924c270f9527b1": {
-                      "nodes": []
+                    "_:nef266904a6bf4161ae0222713b3c745ab3": {
+                      "nodes": [
+                        "<http://www.example.com/features/8446454>/geojson:geometry"
+                      ]
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:nd23643f8bc2a4d67b894924c270f9527b3: *none*\n - Shape _:nd23643f8bc2a4d67b894924c270f9527b1: *none*\n"
+                  "message": "Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:nef266904a6bf4161ae0222713b3c745ab1: *none*\n - Shape _:nef266904a6bf4161ae0222713b3c745ab3: <http://www.example.com/features/8446454>/geojson:geometry\n"
                 },
                 {
                   "op": "shacl-report",
@@ -223,27 +615,44 @@
                 {
                   "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl",
                   "focusNodes": {
-                    "geojson:LinkShape": {
+                    "geojson:FeatureCollectionShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape": {
                       "nodes": []
                     },
                     "geojson:GeometryShape/sh:or/rdf:first": {
                       "nodes": []
                     },
-                    "geojson:FeatureCollectionShape": {
-                      "nodes": []
-                    },
-                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                    "geojson:LinkShape": {
                       "nodes": []
                     },
                     "geojson:FeatureShape": {
                       "nodes": []
                     },
-                    "geojson:GeometryShape": {
+                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:FeatureCollectionShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:FeatureShape: *none*\n - Shape geojson:GeometryShape: *none*\n"
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:\n - Shape geojson:FeatureCollectionShape: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl",
+                  "focusNodes": {
+                    "_:n74ee77089b154d4b983a4fb9d0bdf349b1": {
+                      "nodes": []
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl:\n - Shape _:n74ee77089b154d4b983a4fb9d0bdf349b1: *none*\n"
                 }
               ]
             }
@@ -253,8 +662,8 @@
           "source": {
             "type": "EXAMPLE",
             "requireFail": false,
-            "filename": "build/tests/land-parcels/parcel/example_2_1.json",
-            "url": "https://ogcincubator.github.io/bblocks-land-parcels/build/tests/land-parcels/parcel/example_2_1.json",
+            "filename": "build/tests/ladm/land-parcels/parcel/example_2_1.json",
+            "url": "https://ogcincubator.github.io/bblocks-land-parcels/build/tests/ladm/land-parcels/parcel/example_2_1.json",
             "exampleIndex": 2,
             "snippetIndex": 1,
             "language": "application/json"
@@ -284,7 +693,7 @@
                   "op": "ttl-create",
                   "empty": false,
                   "filename": "example_2_1.ttl",
-                  "size": 43,
+                  "size": 103,
                   "isError": false,
                   "message": "Output Turtle example_2_1.ttl created"
                 }
@@ -307,6 +716,10 @@
               "title": "SHACL",
               "entries": [
                 {
+                  "isError": false,
+                  "message": "Using building block SHACL closures:\n - examples/topoobjects.ttl"
+                },
+                {
                   "op": "shacl-report",
                   "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
                   "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
@@ -316,26 +729,26 @@
                 {
                   "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
                   "focusNodes": {
+                    "geojson:GeometryShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:first": {
+                      "nodes": []
+                    },
                     "geojson:LinkShape": {
                       "nodes": []
                     },
                     "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
                       "nodes": []
                     },
-                    "geojson:GeometryShape/sh:or/rdf:first": {
-                      "nodes": []
-                    },
                     "geojson:FeatureShape": {
                       "nodes": [
-                        "<file:///github/workspace/8446456>"
+                        "<http://www.example.com/features/8446456>"
                       ]
-                    },
-                    "geojson:GeometryShape": {
-                      "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:FeatureShape: <file:///github/workspace/8446456>\n - Shape geojson:GeometryShape: *none*\n"
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:FeatureShape: <http://www.example.com/features/8446456>\n"
                 },
                 {
                   "op": "shacl-report",
@@ -347,17 +760,23 @@
                 {
                   "shaclFile": "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
                   "focusNodes": {
-                    "topo:testTopoLinesReferencePoints": {
+                    "toporules:testTopoEdgesReferencePoints": {
                       "nodes": []
                     },
-                    "topo:testTopoReferencesExist": {
+                    "toporules:testTopoLinesReferencePoints": {
+                      "nodes": []
+                    },
+                    "toporules:testTopoDirectedReferencesExist": {
+                      "nodes": []
+                    },
+                    "toporules:testTopoReferencesExist": {
                       "nodes": [
-                        "<file:///github/workspace/8446456>/geojson:topology"
+                        "<http://www.example.com/features/8446456>/geojson:topology"
                       ]
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <file:///github/workspace/8446456>/geojson:topology\n"
+                  "message": "Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape toporules:testTopoEdgesReferencePoints: *none*\n - Shape toporules:testTopoLinesReferencePoints: *none*\n - Shape toporules:testTopoDirectedReferencesExist: *none*\n - Shape toporules:testTopoReferencesExist: <http://www.example.com/features/8446456>/geojson:topology\n"
                 },
                 {
                   "op": "shacl-report",
@@ -369,15 +788,17 @@
                 {
                   "shaclFile": "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "focusNodes": {
-                    "_:nd23643f8bc2a4d67b894924c270f9527b3": {
+                    "_:nef266904a6bf4161ae0222713b3c745ab1": {
                       "nodes": []
                     },
-                    "_:nd23643f8bc2a4d67b894924c270f9527b1": {
-                      "nodes": []
+                    "_:nef266904a6bf4161ae0222713b3c745ab3": {
+                      "nodes": [
+                        "<http://www.example.com/features/8446456>/geojson:geometry"
+                      ]
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:nd23643f8bc2a4d67b894924c270f9527b3: *none*\n - Shape _:nd23643f8bc2a4d67b894924c270f9527b1: *none*\n"
+                  "message": "Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:nef266904a6bf4161ae0222713b3c745ab1: *none*\n - Shape _:nef266904a6bf4161ae0222713b3c745ab3: <http://www.example.com/features/8446456>/geojson:geometry\n"
                 },
                 {
                   "op": "shacl-report",
@@ -389,27 +810,239 @@
                 {
                   "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl",
                   "focusNodes": {
-                    "geojson:LinkShape": {
+                    "geojson:FeatureCollectionShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape": {
                       "nodes": []
                     },
                     "geojson:GeometryShape/sh:or/rdf:first": {
                       "nodes": []
                     },
-                    "geojson:FeatureCollectionShape": {
+                    "geojson:LinkShape": {
+                      "nodes": []
+                    },
+                    "geojson:FeatureShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                      "nodes": []
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:\n - Shape geojson:FeatureCollectionShape: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl",
+                  "focusNodes": {
+                    "_:n74ee77089b154d4b983a4fb9d0bdf349b1": {
+                      "nodes": []
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl:\n - Shape _:n74ee77089b154d4b983a4fb9d0bdf349b1: *none*\n"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/ladm/land-parcels/parcel/parcel-relationship.json",
+            "url": "https://ogcincubator.github.io/bblocks-land-parcels/build/tests/ladm/land-parcels/parcel/parcel-relationship.json",
+            "exampleIndex": 3,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using examples/parcel-relationship.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "parcel-relationship.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD parcel-relationship.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "parcel-relationship.ttl",
+                  "size": 93,
+                  "isError": false,
+                  "message": "Output Turtle parcel-relationship.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            },
+            {
+              "name": "SHACL",
+              "title": "SHACL",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using building block SHACL closures:\n - examples/topoobjects.ttl"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+                  "focusNodes": {
+                    "geojson:GeometryShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:first": {
+                      "nodes": []
+                    },
+                    "geojson:LinkShape": {
                       "nodes": []
                     },
                     "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
                       "nodes": []
                     },
                     "geojson:FeatureShape": {
+                      "nodes": [
+                        "<http://www.example.com/features/8446454>"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:FeatureShape: <http://www.example.com/features/8446454>\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+                  "focusNodes": {
+                    "toporules:testTopoEdgesReferencePoints": {
+                      "nodes": []
+                    },
+                    "toporules:testTopoLinesReferencePoints": {
+                      "nodes": []
+                    },
+                    "toporules:testTopoDirectedReferencesExist": {
+                      "nodes": []
+                    },
+                    "toporules:testTopoReferencesExist": {
+                      "nodes": [
+                        "<http://www.example.com/features/8446454>/geojson:topology"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape toporules:testTopoEdgesReferencePoints: *none*\n - Shape toporules:testTopoLinesReferencePoints: *none*\n - Shape toporules:testTopoDirectedReferencesExist: *none*\n - Shape toporules:testTopoReferencesExist: <http://www.example.com/features/8446454>/geojson:topology\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+                  "focusNodes": {
+                    "_:nef266904a6bf4161ae0222713b3c745ab1": {
+                      "nodes": []
+                    },
+                    "_:nef266904a6bf4161ae0222713b3c745ab3": {
+                      "nodes": [
+                        "<http://www.example.com/features/8446454>/geojson:geometry"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:nef266904a6bf4161ae0222713b3c745ab1: *none*\n - Shape _:nef266904a6bf4161ae0222713b3c745ab3: <http://www.example.com/features/8446454>/geojson:geometry\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl",
+                  "focusNodes": {
+                    "geojson:FeatureCollectionShape": {
                       "nodes": []
                     },
                     "geojson:GeometryShape": {
                       "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:first": {
+                      "nodes": []
+                    },
+                    "geojson:LinkShape": {
+                      "nodes": []
+                    },
+                    "geojson:FeatureShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                      "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:FeatureCollectionShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:FeatureShape: *none*\n - Shape geojson:GeometryShape: *none*\n"
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:\n - Shape geojson:FeatureCollectionShape: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl",
+                  "focusNodes": {
+                    "_:n74ee77089b154d4b983a4fb9d0bdf349b1": {
+                      "nodes": []
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl:\n - Shape _:n74ee77089b154d4b983a4fb9d0bdf349b1: *none*\n"
                 }
               ]
             }
@@ -418,24 +1051,24 @@
       ],
       "globalErrors": {},
       "counts": {
-        "total": 2,
-        "passed": 2,
+        "total": 5,
+        "passed": 5,
         "failed": 0
       }
     },
-    "ogc.land-parcels.parcelCollection": {
-      "title": "Validation report for ogc.land-parcels.parcelCollection - Land Parcel Collection",
+    "ogc.ladm.land-parcels.parcelCollection": {
+      "title": "Validation report for ogc.ladm.land-parcels.parcelCollection - Land Parcel Collection",
       "bblockName": "Land Parcel Collection",
-      "bblockId": "ogc.land-parcels.parcelCollection",
-      "generated": "2026-05-15T07:19:50.726305+00:00",
+      "bblockId": "ogc.ladm.land-parcels.parcelCollection",
+      "generated": "2026-06-16T19:39:54.373992+00:00",
       "result": true,
       "items": [
         {
           "source": {
             "type": "EXAMPLE",
             "requireFail": false,
-            "filename": "build/tests/land-parcels/parcelCollection/example_1_1.json",
-            "url": "https://ogcincubator.github.io/bblocks-land-parcels/build/tests/land-parcels/parcelCollection/example_1_1.json",
+            "filename": "build/tests/ladm/land-parcels/parcelCollection/example_1_1.json",
+            "url": "https://ogcincubator.github.io/bblocks-land-parcels/build/tests/ladm/land-parcels/parcelCollection/example_1_1.json",
             "exampleIndex": 1,
             "snippetIndex": 1,
             "language": "application/json"
@@ -465,7 +1098,7 @@
                   "op": "ttl-create",
                   "empty": false,
                   "filename": "example_1_1.ttl",
-                  "size": 64,
+                  "size": 90,
                   "isError": false,
                   "message": "Output Turtle example_1_1.ttl created"
                 }
@@ -497,18 +1130,24 @@
                 {
                   "shaclFile": "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
                   "focusNodes": {
-                    "topo:testTopoLinesReferencePoints": {
+                    "toporules:testTopoEdgesReferencePoints": {
                       "nodes": []
                     },
-                    "topo:testTopoReferencesExist": {
+                    "toporules:testTopoLinesReferencePoints": {
+                      "nodes": []
+                    },
+                    "toporules:testTopoDirectedReferencesExist": {
+                      "nodes": []
+                    },
+                    "toporules:testTopoReferencesExist": {
                       "nodes": [
-                        "<file:///github/workspace/8446455>/geojson:topology",
-                        "<file:///github/workspace/8446454>/geojson:topology"
+                        "<http://www.example.com/features/8446455>/geojson:topology",
+                        "<http://www.example.com/features/8446454>/geojson:topology"
                       ]
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <file:///github/workspace/8446455>/geojson:topology,<file:///github/workspace/8446454>/geojson:topology\n"
+                  "message": "Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape toporules:testTopoEdgesReferencePoints: *none*\n - Shape toporules:testTopoLinesReferencePoints: *none*\n - Shape toporules:testTopoDirectedReferencesExist: *none*\n - Shape toporules:testTopoReferencesExist: <http://www.example.com/features/8446455>/geojson:topology,<http://www.example.com/features/8446454>/geojson:topology\n"
                 },
                 {
                   "op": "shacl-report",
@@ -520,49 +1159,15 @@
                 {
                   "shaclFile": "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "focusNodes": {
-                    "_:ndbccb20cbeb0476b82ab3e4f944ff181b1": {
+                    "_:n2a17fc3b38864eb3ae9d6bfd1da6e49bb3": {
                       "nodes": []
                     },
-                    "_:ndbccb20cbeb0476b82ab3e4f944ff181b3": {
+                    "_:n2a17fc3b38864eb3ae9d6bfd1da6e49bb1": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:ndbccb20cbeb0476b82ab3e4f944ff181b1: *none*\n - Shape _:ndbccb20cbeb0476b82ab3e4f944ff181b3: *none*\n"
-                },
-                {
-                  "op": "shacl-report",
-                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl",
-                  "focusNodes": {
-                    "geojson:LinkShape": {
-                      "nodes": []
-                    },
-                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
-                      "nodes": []
-                    },
-                    "geojson:FeatureCollectionShape": {
-                      "nodes": [
-                        "<file:///github/workspace/primaryparcels>"
-                      ]
-                    },
-                    "geojson:GeometryShape/sh:or/rdf:first": {
-                      "nodes": []
-                    },
-                    "geojson:FeatureShape": {
-                      "nodes": []
-                    },
-                    "geojson:GeometryShape": {
-                      "nodes": []
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:FeatureCollectionShape: <file:///github/workspace/primaryparcels>\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:FeatureShape: *none*\n - Shape geojson:GeometryShape: *none*\n"
+                  "message": "Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n2a17fc3b38864eb3ae9d6bfd1da6e49bb3: *none*\n - Shape _:n2a17fc3b38864eb3ae9d6bfd1da6e49bb1: *none*\n"
                 },
                 {
                   "op": "shacl-report",
@@ -574,27 +1179,78 @@
                 {
                   "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
                   "focusNodes": {
+                    "geojson:GeometryShape": {
+                      "nodes": []
+                    },
                     "geojson:LinkShape": {
                       "nodes": []
                     },
+                    "geojson:FeatureShape": {
+                      "nodes": [
+                        "<http://www.example.com/features/8446455>",
+                        "<http://www.example.com/features/8446454>"
+                      ]
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                      "nodes": []
+                    },
                     "geojson:GeometryShape/sh:or/rdf:first": {
+                      "nodes": []
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: <http://www.example.com/features/8446455>,<http://www.example.com/features/8446454>\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl",
+                  "focusNodes": {
+                    "geojson:FeatureCollectionShape": {
+                      "nodes": [
+                        "<http://www.example.com/features/primaryparcels>"
+                      ]
+                    },
+                    "geojson:GeometryShape": {
                       "nodes": []
                     },
                     "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
                       "nodes": []
                     },
-                    "geojson:FeatureShape": {
-                      "nodes": [
-                        "<file:///github/workspace/8446455>",
-                        "<file:///github/workspace/8446454>"
-                      ]
+                    "geojson:LinkShape": {
+                      "nodes": []
                     },
-                    "geojson:GeometryShape": {
+                    "geojson:FeatureShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:first": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:FeatureShape: <file:///github/workspace/8446455>,<file:///github/workspace/8446454>\n - Shape geojson:GeometryShape: *none*\n"
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:\n - Shape geojson:FeatureCollectionShape: <http://www.example.com/features/primaryparcels>\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl",
+                  "focusNodes": {
+                    "_:nffad08e6328445efb569a629bb27ac38b1": {
+                      "nodes": []
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl:\n - Shape _:nffad08e6328445efb569a629bb27ac38b1: *none*\n"
                 }
               ]
             }
@@ -604,8 +1260,8 @@
           "source": {
             "type": "EXAMPLE",
             "requireFail": false,
-            "filename": "build/tests/land-parcels/parcelCollection/example_2_1.json",
-            "url": "https://ogcincubator.github.io/bblocks-land-parcels/build/tests/land-parcels/parcelCollection/example_2_1.json",
+            "filename": "build/tests/ladm/land-parcels/parcelCollection/example_2_1.json",
+            "url": "https://ogcincubator.github.io/bblocks-land-parcels/build/tests/ladm/land-parcels/parcelCollection/example_2_1.json",
             "exampleIndex": 2,
             "snippetIndex": 1,
             "language": "application/json"
@@ -635,7 +1291,7 @@
                   "op": "ttl-create",
                   "empty": false,
                   "filename": "example_2_1.ttl",
-                  "size": 46,
+                  "size": 59,
                   "isError": false,
                   "message": "Output Turtle example_2_1.ttl created"
                 }
@@ -667,17 +1323,23 @@
                 {
                   "shaclFile": "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
                   "focusNodes": {
-                    "topo:testTopoLinesReferencePoints": {
+                    "toporules:testTopoEdgesReferencePoints": {
                       "nodes": []
                     },
-                    "topo:testTopoReferencesExist": {
+                    "toporules:testTopoLinesReferencePoints": {
+                      "nodes": []
+                    },
+                    "toporules:testTopoDirectedReferencesExist": {
+                      "nodes": []
+                    },
+                    "toporules:testTopoReferencesExist": {
                       "nodes": [
-                        "<file:///github/workspace/8446456>/geojson:topology"
+                        "<http://www.example.com/features/8446456>/geojson:topology"
                       ]
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <file:///github/workspace/8446456>/geojson:topology\n"
+                  "message": "Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape toporules:testTopoEdgesReferencePoints: *none*\n - Shape toporules:testTopoLinesReferencePoints: *none*\n - Shape toporules:testTopoDirectedReferencesExist: *none*\n - Shape toporules:testTopoReferencesExist: <http://www.example.com/features/8446456>/geojson:topology\n"
                 },
                 {
                   "op": "shacl-report",
@@ -689,49 +1351,15 @@
                 {
                   "shaclFile": "https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
                   "focusNodes": {
-                    "_:ndbccb20cbeb0476b82ab3e4f944ff181b1": {
+                    "_:n2a17fc3b38864eb3ae9d6bfd1da6e49bb3": {
                       "nodes": []
                     },
-                    "_:ndbccb20cbeb0476b82ab3e4f944ff181b3": {
+                    "_:n2a17fc3b38864eb3ae9d6bfd1da6e49bb1": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:ndbccb20cbeb0476b82ab3e4f944ff181b1: *none*\n - Shape _:ndbccb20cbeb0476b82ab3e4f944ff181b3: *none*\n"
-                },
-                {
-                  "op": "shacl-report",
-                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl",
-                  "focusNodes": {
-                    "geojson:LinkShape": {
-                      "nodes": []
-                    },
-                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
-                      "nodes": []
-                    },
-                    "geojson:FeatureCollectionShape": {
-                      "nodes": [
-                        "<file:///github/workspace/covenants>"
-                      ]
-                    },
-                    "geojson:GeometryShape/sh:or/rdf:first": {
-                      "nodes": []
-                    },
-                    "geojson:FeatureShape": {
-                      "nodes": []
-                    },
-                    "geojson:GeometryShape": {
-                      "nodes": []
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:FeatureCollectionShape: <file:///github/workspace/covenants>\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:FeatureShape: *none*\n - Shape geojson:GeometryShape: *none*\n"
+                  "message": "Focus nodes for https://surroundaustralia.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n2a17fc3b38864eb3ae9d6bfd1da6e49bb3: *none*\n - Shape _:n2a17fc3b38864eb3ae9d6bfd1da6e49bb1: *none*\n"
                 },
                 {
                   "op": "shacl-report",
@@ -743,26 +1371,77 @@
                 {
                   "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
                   "focusNodes": {
+                    "geojson:GeometryShape": {
+                      "nodes": []
+                    },
                     "geojson:LinkShape": {
                       "nodes": []
                     },
+                    "geojson:FeatureShape": {
+                      "nodes": [
+                        "<http://www.example.com/features/8446456>"
+                      ]
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                      "nodes": []
+                    },
                     "geojson:GeometryShape/sh:or/rdf:first": {
+                      "nodes": []
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: <http://www.example.com/features/8446456>\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl",
+                  "focusNodes": {
+                    "geojson:FeatureCollectionShape": {
+                      "nodes": [
+                        "<http://www.example.com/features/covenants>"
+                      ]
+                    },
+                    "geojson:GeometryShape": {
                       "nodes": []
                     },
                     "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
                       "nodes": []
                     },
-                    "geojson:FeatureShape": {
-                      "nodes": [
-                        "<file:///github/workspace/8446456>"
-                      ]
+                    "geojson:LinkShape": {
+                      "nodes": []
                     },
-                    "geojson:GeometryShape": {
+                    "geojson:FeatureShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:first": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:FeatureShape: <file:///github/workspace/8446456>\n - Shape geojson:GeometryShape: *none*\n"
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:\n - Shape geojson:FeatureCollectionShape: <http://www.example.com/features/covenants>\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl",
+                  "focusNodes": {
+                    "_:nffad08e6328445efb569a629bb27ac38b1": {
+                      "nodes": []
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl:\n - Shape _:nffad08e6328445efb569a629bb27ac38b1: *none*\n"
                 }
               ]
             }

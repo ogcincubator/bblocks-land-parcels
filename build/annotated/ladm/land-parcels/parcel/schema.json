@@ -1,0 +1,203 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "$defs": {
+    "coderef": {
+      "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.json"
+    },
+    "coderefList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/coderef"
+      }
+    },
+    "dateTime": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?(?:Z|[+-]\\d{2}:\\d{2})?$"
+    },
+    "interest": {
+      "$anchor": "interest",
+      "properties": {
+        "interestLink": {
+          "$ref": "#/$defs/coderef",
+          "x-jsonld-type": "@id",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/interestLink"
+        },
+        "interestName": {
+          "type": "string",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/interestName"
+        },
+        "interestType": {
+          "$ref": "#/$defs/coderef",
+          "x-jsonld-type": "@id",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/interestType"
+        },
+        "dateInForce": {
+          "$ref": "#/$defs/dateTime",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/interestDateInForce"
+        },
+        "dateExpires": {
+          "$ref": "#/$defs/dateTime",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/interestDateExpires"
+        },
+        "statuteLink": {
+          "$ref": "#/$defs/coderef",
+          "x-jsonld-type": "@id",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/statuteLink"
+        },
+        "statuteName": {
+          "type": "string",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/statuteName"
+        },
+        "benefitedPartyName": {
+          "type": "string",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/benefitedPartyName"
+        },
+        "benefitedPartyLink": {
+          "$ref": "#/$defs/coderef",
+          "x-jsonld-type": "@id",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/benefitedPartyLink"
+        },
+        "originalSurveyLink": {
+          "$ref": "#/$defs/coderef",
+          "x-jsonld-type": "@id",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/originalSurveyLink"
+        },
+        "referencedParcel": {
+          "$ref": "#/$defs/coderef",
+          "x-jsonld-type": "@id",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/referencedParcel"
+        },
+        "burdenedParcels": {
+          "$ref": "#/$defs/coderefList",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/burdened",
+          "x-jsonld-container": "@set"
+        },
+        "benefitedParcels": {
+          "$ref": "#/$defs/coderefList",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/benefited",
+          "x-jsonld-container": "@set"
+        },
+        "description": {
+          "type": "string",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/interestDescription"
+        },
+        "entitlementPortion": {
+          "type": "string",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/entitlementPortion"
+        },
+        "liabilityPortion": {
+          "type": "string",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/liabilityPortion"
+        }
+      },
+      "required": [
+        "interestLink",
+        "interestType"
+      ]
+    },
+    "parcelProperties": {
+      "$anchor": "parcelProperties",
+      "properties": {
+        "appellation": {
+          "$ref": "https://ogcincubator.github.io/bblocks-utility/build/annotated/bbr/utils/compoundName/schema.json",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/appellation"
+        },
+        "parcelType": {
+          "$ref": "#/$defs/coderef",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/type",
+          "x-jsonld-type": "@id"
+        },
+        "parcelState": {
+          "$ref": "#/$defs/coderef",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/state",
+          "x-jsonld-type": "@id"
+        },
+        "address": {
+          "type": "object",
+          "x-jsonld-id": "https://schema.org/address"
+        },
+        "parcelPurpose": {
+          "$ref": "#/$defs/coderef",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/purpose",
+          "x-jsonld-type": "@id"
+        },
+        "area": {
+          "type": "number",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/surfaceArea"
+        },
+        "floor": {
+          "type": "string",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/floor"
+        },
+        "zmin": {
+          "type": "number",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/zmin"
+        },
+        "zmax": {
+          "type": "number",
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/zmax"
+        },
+        "interests": {
+          "type": "array",
+          "items": {
+            "$ref": "#interest"
+          },
+          "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/interest",
+          "x-jsonld-container": "@set"
+        }
+      },
+      "required": [
+        "appellation",
+        "parcelType",
+        "parcelState",
+        "parcelPurpose"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "anyOf": [
+        {
+          "$ref": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.json"
+        },
+        {
+          "$ref": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.json"
+        },
+        {
+          "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.json"
+        }
+      ]
+    },
+    {
+      "properties": {
+        "properties": {
+          "$ref": "#parcelProperties"
+        }
+      }
+    }
+  ],
+  "x-jsonld-extra-terms": {
+    "name": "rdfs:label",
+    "bearingRotation": "https://w3id.org/ogc/ladm/parcels/bearingRotation",
+    "parcels": "https://w3id.org/ogc/ladm/parcels/parcels",
+    "PrimaryParcel": {
+      "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/PrimaryParcel",
+      "x-jsonld-type": "@id"
+    },
+    "SecondaryParcel": {
+      "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/SecondaryParcel",
+      "x-jsonld-type": "@id"
+    },
+    "parcelQualityClass": {
+      "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/qualityClass",
+      "x-jsonld-type": "@id"
+    },
+    "terrainIntersectionCurve": "https://w3id.org/ogc/ladm/parcels/terrainIntersectionCurve"
+  },
+  "x-jsonld-prefixes": {
+    "sdo": "https://schema.org/",
+    "parcel": "https://w3id.org/ogc/ladm/parcels/"
+  }
+}

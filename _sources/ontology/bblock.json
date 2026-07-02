@@ -8,6 +8,7 @@
   "register": "ogc-incubator",
   "version": "0.1",
   "dateOfLastChange": "2023-09-18",
+  "ontology": "parcels.ttl",
   "dependsOn": [
   ],
   "sources": [

@@ -16,3 +16,11 @@ identifier-prefix: ogc.ladm.land-parcels.
 imports:
   - default
   - https://surroundaustralia.github.io/topo-feature
+  - https://ogcincubator.github.io/bblocks-utility
+
+sparql:
+   push: https://defs-dev.opengis.net/fuseki/data
+   graph: https://w3id.org/ogc/bblocks-land-parcels
+   query: https://defs-dev.opengis.net/fuseki/query
+   resources:
+      ontologies: true

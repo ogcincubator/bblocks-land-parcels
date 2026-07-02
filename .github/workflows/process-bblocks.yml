@@ -15,6 +15,6 @@ jobs:
   validate-and-process:
     name: Validate and process
     uses: opengeospatial/bblocks-postprocess/.github/workflows/validate-and-process.yml@master
-    # with:
-    #   sparql_username: sparql
-    #   sparql_password: Secr3T
+    secrets:
+      sparql_username: ${{ secrets.sparql_username }}
+      sparql_password: ${{ secrets.sparql_password }}

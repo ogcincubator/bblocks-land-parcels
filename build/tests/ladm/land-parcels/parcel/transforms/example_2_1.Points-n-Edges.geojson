@@ -1,0 +1,428 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            174.7509,
+            -36.93096
+          ],
+          [
+            174.7512,
+            -36.93088
+          ]
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/l999724"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            174.7512,
+            -36.93088
+          ],
+          [
+            174.7513,
+            -36.93105
+          ]
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/l591175"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            174.7513,
+            -36.93105
+          ],
+          [
+            174.7513,
+            -36.93112
+          ]
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/l369793"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            174.7513,
+            -36.93112
+          ],
+          [
+            174.7511,
+            -36.93118
+          ]
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/l435861"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            174.751,
+            -36.93117
+          ],
+          [
+            174.7511,
+            -36.93118
+          ]
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/l345344"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            174.751,
+            -36.93111
+          ],
+          [
+            174.751,
+            -36.93117
+          ]
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/l685716"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            174.751,
+            -36.93109
+          ],
+          [
+            174.751,
+            -36.93111
+          ]
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/l832940"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            174.751,
+            -36.93107
+          ],
+          [
+            174.751,
+            -36.93109
+          ]
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/l715872"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            174.751,
+            -36.93105
+          ],
+          [
+            174.751,
+            -36.93107
+          ]
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/l641327"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            174.751,
+            -36.93103
+          ],
+          [
+            174.751,
+            -36.93105
+          ]
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/l852048"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            174.751,
+            -36.931
+          ],
+          [
+            174.751,
+            -36.93103
+          ]
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/l949729"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            174.751,
+            -36.93099
+          ],
+          [
+            174.751,
+            -36.931
+          ]
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/l951515"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            174.7509,
+            -36.93099
+          ],
+          [
+            174.751,
+            -36.93099
+          ]
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/l761760"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            174.7509,
+            -36.93096
+          ],
+          [
+            174.7509,
+            -36.93099
+          ]
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/l580762"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7509,
+          -36.93096
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/49655174"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7512,
+          -36.93088
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/29962820"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7513,
+          -36.93105
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/29963073"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7513,
+          -36.93112
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/29963182"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7511,
+          -36.93118
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/49655175"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.751,
+          -36.93117
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/49655184"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.751,
+          -36.93111
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/49655183"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.751,
+          -36.93109
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/49655182"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.751,
+          -36.93107
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/49655181"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.751,
+          -36.93105
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/49655180"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.751,
+          -36.93103
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/49655179"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.751,
+          -36.931
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/49655178"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.751,
+          -36.93099
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/49655177"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7509,
+          -36.93099
+        ]
+      },
+      "properties": {},
+      "id": "http://csdm-example-surveys/DP-572532/49655176"
+    }
+  ],
+  "@context": [
+    "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/context.jsonld"
+  ]
+}

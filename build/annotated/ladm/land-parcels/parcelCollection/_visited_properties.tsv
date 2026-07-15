@@ -175,69 +175,69 @@ path	@id	schema
 /_anyOf/0/_anyOf/1/features/place	http://purl.org/dc/terms/spatial	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.yaml
 /_anyOf/0/_anyOf/1/features/geometry	https://purl.org/geojson/vocab#geometry	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.yaml
 /_anyOf/0/_anyOf/1/features/properties	@nest	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.yaml
-/_anyOf/0/features		https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml
-/_anyOf/0/features/_anyOf/0/id		https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml
-/_anyOf/0/features/_anyOf/0/geometry		https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml
-/_anyOf/0/features/_anyOf/0/geometry/_oneOf/1/type		https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml
-/_anyOf/0/features/_anyOf/0/topology	https://purl.org/geojson/vocab#topology	https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml
-/_anyOf/0/features/_anyOf/0/topology/_oneOf/0/type	@type	https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml
-/_anyOf/0/features/_anyOf/0/topology/_oneOf/0/references	https://purl.org/geojson/topo#relatedFeatures	https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml
-/_anyOf/0/features/_anyOf/0/topology/_oneOf/1/type	@type	https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml
-/_anyOf/0/features/_anyOf/0/topology/_oneOf/1/references	https://purl.org/geojson/topo#relatedFeatures	https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml
-/_anyOf/0/features/_anyOf/0/topology/_oneOf/2/type	@type	https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml
-/_anyOf/0/features/_anyOf/0/topology/_oneOf/2/directed_references	https://purl.org/geojson/topo#directedReferences	https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml
-/_anyOf/0/features/_anyOf/0/topology/_oneOf/2/directed_references/ref	https://purl.org/geojson/topo#ref	https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/oriented-ref/schema.yaml
-/_anyOf/0/features/_anyOf/0/topology/_oneOf/2/directed_references/orientation	https://purl.org/geojson/topo#orientation	https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/oriented-ref/schema.yaml
-/_anyOf/0/features/_anyOf/0/topology/type	@type	https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml
-/_anyOf/0/features/_anyOf/0/topology/relationships	https://purl.org/geojson/topo#relatedFeatures	https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml
+/_anyOf/0/features		https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml
+/_anyOf/0/features/_anyOf/0/id		https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml
+/_anyOf/0/features/_anyOf/0/geometry		https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml
+/_anyOf/0/features/_anyOf/0/geometry/_oneOf/1/type		https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml
+/_anyOf/0/features/_anyOf/0/topology	https://purl.org/geojson/vocab#topology	https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml
+/_anyOf/0/features/_anyOf/0/topology/_oneOf/0/type	@type	https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml
+/_anyOf/0/features/_anyOf/0/topology/_oneOf/0/references	https://purl.org/geojson/topo#relatedFeatures	https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml
+/_anyOf/0/features/_anyOf/0/topology/_oneOf/1/type	@type	https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml
+/_anyOf/0/features/_anyOf/0/topology/_oneOf/1/references	https://purl.org/geojson/topo#relatedFeatures	https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml
+/_anyOf/0/features/_anyOf/0/topology/_oneOf/2/type	@type	https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml
+/_anyOf/0/features/_anyOf/0/topology/_oneOf/2/directed_references	https://purl.org/geojson/topo#directedReferences	https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml
+/_anyOf/0/features/_anyOf/0/topology/_oneOf/2/directed_references/ref	https://purl.org/geojson/topo#ref	https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/oriented-ref/schema.yaml
+/_anyOf/0/features/_anyOf/0/topology/_oneOf/2/directed_references/orientation	https://purl.org/geojson/topo#orientation	https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/oriented-ref/schema.yaml
+/_anyOf/0/features/_anyOf/0/topology/type	@type	https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml
+/_anyOf/0/features/_anyOf/0/topology/relationships	https://purl.org/geojson/topo#relatedFeatures	https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml
 /_anyOf/0/features/_anyOf/0/topology/relationships/role	http://www.w3.org/ns/dx/prof/hasRole	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/link-role/schema.yaml
 /_anyOf/0/features/_anyOf/0/topology/relationships/conformsTo	http://purl.org/dc/terms/conformsTo	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/link-role/schema.yaml
-/_anyOf/0/features/_anyOf/0/topology/relationships/rel		https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml
-/_anyOf/0/features/_anyOf/1/geometry		https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml
-/_anyOf/0/features/_anyOf/1/geometry/type		https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml
+/_anyOf/0/features/_anyOf/0/topology/relationships/rel		https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml
+/_anyOf/0/features/_anyOf/1/geometry		https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml
+/_anyOf/0/features/_anyOf/1/geometry/type		https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml
 /features		/github/workspace/build/annotated/ladm/land-parcels/parcelCollection/schema.yaml
-/features/_anyOf/0/_anyOf/1/type		https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml
-/features/_anyOf/0/_anyOf/1/metadata		https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml
-/features/_anyOf/0/_anyOf/1/points	https://purl.org/geojson/topo#points	https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml
-/features/_anyOf/0/_anyOf/1/points/_oneOf/0/geometry		https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml
-/features/_anyOf/0/_anyOf/1/points/_oneOf/0/geometry/type		https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml
-/features/_anyOf/0/_anyOf/1/points/_oneOf/0/geometry/coordinates		https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml
-/features/_anyOf/0/_anyOf/1/points/_oneOf/1/features		https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml
-/features/_anyOf/0/_anyOf/1/edges	https://purl.org/geojson/topo#edges	https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml
-/features/_anyOf/0/_anyOf/1/edges/_oneOf/0/topology		https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/schema.yaml
-/features/_anyOf/0/_anyOf/1/edges/_oneOf/0/topology/type		https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/schema.yaml
-/features/_anyOf/0/_anyOf/1/edges/_oneOf/0/topology/references		https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml
-/features/_anyOf/0/_anyOf/1/edges/_oneOf/1/features		https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml
-/features/_anyOf/0/properties		https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/features/_anyOf/0/properties/appellation	https://w3id.org/ogc/ladm/parcels/appellation	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/features/_anyOf/0/properties/appellation/label	http://www.w3.org/2000/01/rdf-schema#label	https://ogcincubator.github.io/bblocks-utility/build/annotated/bbr/utils/compoundName/schema.yaml
-/features/_anyOf/0/properties/appellation/template		https://ogcincubator.github.io/bblocks-utility/build/annotated/bbr/utils/compoundName/schema.yaml
-/features/_anyOf/0/properties/appellation/hasPart	http://purl.org/dc/terms/hasPart	https://ogcincubator.github.io/bblocks-utility/build/annotated/bbr/utils/compoundName/schema.yaml
-/features/_anyOf/0/properties/appellation/hasPart/label	http://www.w3.org/2000/01/rdf-schema#label	https://ogcincubator.github.io/bblocks-utility/build/annotated/bbr/utils/compoundName/schema.yaml
-/features/_anyOf/0/properties/appellation/hasPart/ref	https://w3id.org/ogc/utils/label/namePartRef	https://ogcincubator.github.io/bblocks-utility/build/annotated/bbr/utils/compoundName/schema.yaml
-/features/_anyOf/0/properties/appellation/hasPart/type	https://w3id.org/ogc/utils/label/namePartType	https://ogcincubator.github.io/bblocks-utility/build/annotated/bbr/utils/compoundName/schema.yaml
-/features/_anyOf/0/properties/parcelType	https://w3id.org/ogc/ladm/parcels/type	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/features/_anyOf/0/properties/parcelState	https://w3id.org/ogc/ladm/parcels/state	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/features/_anyOf/0/properties/address	https://schema.org/address	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/features/_anyOf/0/properties/parcelPurpose	https://w3id.org/ogc/ladm/parcels/purpose	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/features/_anyOf/0/properties/area	https://w3id.org/ogc/ladm/parcels/surfaceArea	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/features/_anyOf/0/properties/floor	https://w3id.org/ogc/ladm/parcels/floor	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/features/_anyOf/0/properties/zmin	https://w3id.org/ogc/ladm/parcels/zmin	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/features/_anyOf/0/properties/zmax	https://w3id.org/ogc/ladm/parcels/zmax	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/features/_anyOf/0/properties/interests	https://w3id.org/ogc/ladm/parcels/interest	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/features/_anyOf/0/properties/interests/interestLink	https://w3id.org/ogc/ladm/parcels/interestLink	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/features/_anyOf/0/properties/interests/interestName	https://w3id.org/ogc/ladm/parcels/interestName	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/features/_anyOf/0/properties/interests/interestType	https://w3id.org/ogc/ladm/parcels/interestType	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/features/_anyOf/0/properties/interests/dateInForce	https://w3id.org/ogc/ladm/parcels/interestDateInForce	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/features/_anyOf/0/properties/interests/dateExpires	https://w3id.org/ogc/ladm/parcels/interestDateExpires	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/features/_anyOf/0/properties/interests/statuteLink	https://w3id.org/ogc/ladm/parcels/statuteLink	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/features/_anyOf/0/properties/interests/statuteName	https://w3id.org/ogc/ladm/parcels/statuteName	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/features/_anyOf/0/properties/interests/benefitedPartyName	https://w3id.org/ogc/ladm/parcels/benefitedPartyName	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/features/_anyOf/0/properties/interests/benefitedPartyLink	https://w3id.org/ogc/ladm/parcels/benefitedPartyLink	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/features/_anyOf/0/properties/interests/originalSurveyLink	https://w3id.org/ogc/ladm/parcels/originalSurveyLink	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/features/_anyOf/0/properties/interests/referencedParcel	https://w3id.org/ogc/ladm/parcels/referencedParcel	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/features/_anyOf/0/properties/interests/burdenedParcels	https://w3id.org/ogc/ladm/parcels/burdened	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/features/_anyOf/0/properties/interests/benefitedParcels	https://w3id.org/ogc/ladm/parcels/benefited	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/features/_anyOf/0/properties/interests/description	https://w3id.org/ogc/ladm/parcels/interestDescription	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/features/_anyOf/0/properties/interests/entitlementPortion	https://w3id.org/ogc/ladm/parcels/entitlementPortion	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
-/features/_anyOf/0/properties/interests/liabilityPortion	https://w3id.org/ogc/ladm/parcels/liabilityPortion	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/features/_anyOf/1/type		https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml
+/features/_anyOf/1/metadata		https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml
+/features/_anyOf/1/points	https://purl.org/geojson/topo#points	https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml
+/features/_anyOf/1/points/_oneOf/0/geometry		https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml
+/features/_anyOf/1/points/_oneOf/0/geometry/type		https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml
+/features/_anyOf/1/points/_oneOf/0/geometry/coordinates		https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml
+/features/_anyOf/1/points/_oneOf/1/features		https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml
+/features/_anyOf/1/edges	https://purl.org/geojson/topo#edges	https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml
+/features/_anyOf/1/edges/_oneOf/0/topology		https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/schema.yaml
+/features/_anyOf/1/edges/_oneOf/0/topology/type		https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/schema.yaml
+/features/_anyOf/1/edges/_oneOf/0/topology/references		https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml
+/features/_anyOf/1/edges/_oneOf/1/features		https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml
+/features/properties		https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/features/properties/appellation	https://w3id.org/ogc/ladm/parcels/appellation	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/features/properties/appellation/label	http://www.w3.org/2000/01/rdf-schema#label	https://ogcincubator.github.io/bblocks-utility/build/annotated/bbr/utils/compoundName/schema.yaml
+/features/properties/appellation/template		https://ogcincubator.github.io/bblocks-utility/build/annotated/bbr/utils/compoundName/schema.yaml
+/features/properties/appellation/hasPart	http://purl.org/dc/terms/hasPart	https://ogcincubator.github.io/bblocks-utility/build/annotated/bbr/utils/compoundName/schema.yaml
+/features/properties/appellation/hasPart/label	http://www.w3.org/2000/01/rdf-schema#label	https://ogcincubator.github.io/bblocks-utility/build/annotated/bbr/utils/compoundName/schema.yaml
+/features/properties/appellation/hasPart/ref	https://w3id.org/ogc/utils/label/namePartRef	https://ogcincubator.github.io/bblocks-utility/build/annotated/bbr/utils/compoundName/schema.yaml
+/features/properties/appellation/hasPart/type	https://w3id.org/ogc/utils/label/namePartType	https://ogcincubator.github.io/bblocks-utility/build/annotated/bbr/utils/compoundName/schema.yaml
+/features/properties/parcelType	https://w3id.org/ogc/ladm/parcels/type	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/features/properties/parcelState	https://w3id.org/ogc/ladm/parcels/state	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/features/properties/address	https://schema.org/address	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/features/properties/parcelPurpose	https://w3id.org/ogc/ladm/parcels/purpose	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/features/properties/area	https://w3id.org/ogc/ladm/parcels/surfaceArea	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/features/properties/floor	https://w3id.org/ogc/ladm/parcels/floor	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/features/properties/zmin	https://w3id.org/ogc/ladm/parcels/zmin	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/features/properties/zmax	https://w3id.org/ogc/ladm/parcels/zmax	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/features/properties/interests	https://w3id.org/ogc/ladm/parcels/interest	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/features/properties/interests/interestLink	https://w3id.org/ogc/ladm/parcels/interestLink	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/features/properties/interests/interestName	https://w3id.org/ogc/ladm/parcels/interestName	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/features/properties/interests/interestType	https://w3id.org/ogc/ladm/parcels/interestType	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/features/properties/interests/dateInForce	https://w3id.org/ogc/ladm/parcels/interestDateInForce	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/features/properties/interests/dateExpires	https://w3id.org/ogc/ladm/parcels/interestDateExpires	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/features/properties/interests/statuteLink	https://w3id.org/ogc/ladm/parcels/statuteLink	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/features/properties/interests/statuteName	https://w3id.org/ogc/ladm/parcels/statuteName	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/features/properties/interests/benefitedPartyName	https://w3id.org/ogc/ladm/parcels/benefitedPartyName	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/features/properties/interests/benefitedPartyLink	https://w3id.org/ogc/ladm/parcels/benefitedPartyLink	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/features/properties/interests/originalSurveyLink	https://w3id.org/ogc/ladm/parcels/originalSurveyLink	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/features/properties/interests/referencedParcel	https://w3id.org/ogc/ladm/parcels/referencedParcel	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/features/properties/interests/burdenedParcels	https://w3id.org/ogc/ladm/parcels/burdened	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/features/properties/interests/benefitedParcels	https://w3id.org/ogc/ladm/parcels/benefited	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/features/properties/interests/description	https://w3id.org/ogc/ladm/parcels/interestDescription	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/features/properties/interests/entitlementPortion	https://w3id.org/ogc/ladm/parcels/entitlementPortion	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
+/features/properties/interests/liabilityPortion	https://w3id.org/ogc/ladm/parcels/liabilityPortion	https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml

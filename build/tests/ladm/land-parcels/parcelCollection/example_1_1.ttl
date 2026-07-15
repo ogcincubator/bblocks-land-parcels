@@ -9,21 +9,29 @@
 
 <http://www.example.com/features/primaryparcels> a geojson:FeatureCollection,
         parcel:PrimaryParcel ;
+    topo:edges ( <http://www.example.com/features/observedVectors> <http://www.example.com/features/adoptedVectors> ) ;
+    topo:points ( <http://www.example.com/features/BoundaryMarks> ) ;
     geojson:features <http://www.example.com/features/8446454>,
         <http://www.example.com/features/8446455> .
+
+<http://www.example.com/features/44396823> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "CadastralMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.747508e+02 -3.693141e+01 ) ] .
 
 <http://www.example.com/features/8446454> a geojson:Feature ;
     geojson:topology [ a geojson:Polygon ;
             topo:relatedFeatures ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ) ] ;
     parcel:appellation [ rdfs:label "Lot 1 DP 572532" ;
-            dcterms:hasPart [ rdfs:label "Lot" ;
-                    commonpatterns:namePartType "ParcelType" ],
-                [ rdfs:label "1" ;
-                    commonpatterns:namePartType "ParcelIdentifier" ],
-                [ rdfs:label "DP" ;
+            dcterms:hasPart [ rdfs:label "DP" ;
                     commonpatterns:namePartType "PlanType" ],
                 [ rdfs:label "572532" ;
-                    commonpatterns:namePartType "PlanIdentifier" ] ] ;
+                    commonpatterns:namePartType "PlanIdentifier" ],
+                [ rdfs:label "Lot" ;
+                    commonpatterns:namePartType "ParcelType" ],
+                [ rdfs:label "1" ;
+                    commonpatterns:namePartType "ParcelIdentifier" ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040074> ;
             parcel:interestType <eg-interest-type:fh> ] ;
     parcel:purpose <eg-parcel-purpose:fst> ;
@@ -35,18 +43,425 @@
     geojson:topology [ a geojson:Polygon ;
             topo:relatedFeatures ( ( <http://www.example.com/features/l746686> <http://www.example.com/features/l999724> <http://www.example.com/features/l591175> <http://www.example.com/features/l435861> <http://www.example.com/features/l874826> <http://www.example.com/features/l952702> <http://www.example.com/features/l985190> <http://www.example.com/features/l535759> <http://www.example.com/features/l535242> <http://www.example.com/features/l329256> ) ) ] ;
     parcel:appellation [ rdfs:label "Lot 2 DP 572532" ;
-            dcterms:hasPart [ rdfs:label "2" ;
-                    commonpatterns:namePartType "ParcelIdentifier" ],
-                [ rdfs:label "Lot" ;
-                    commonpatterns:namePartType "ParcelType" ],
+            dcterms:hasPart [ rdfs:label "DP" ;
+                    commonpatterns:namePartType "PlanType" ],
                 [ rdfs:label "572532" ;
                     commonpatterns:namePartType "PlanIdentifier" ],
-                [ rdfs:label "DP" ;
-                    commonpatterns:namePartType "PlanType" ] ] ;
+                [ rdfs:label "Lot" ;
+                    commonpatterns:namePartType "ParcelType" ],
+                [ rdfs:label "2" ;
+                    commonpatterns:namePartType "ParcelIdentifier" ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040075> ;
             parcel:interestType <eg-interest-type:fh> ] ;
     parcel:purpose <eg-parcel-purpose:fst> ;
     parcel:state <eg-parcel-state:created> ;
     parcel:surfaceArea 1196 ;
     parcel:type <eg-parcel-type:l> .
+
+<http://www.example.com/features/BoundaryMarks> a geojson:FeatureCollection ;
+    geojson:collectionFeatureType "SurveyPoint" ;
+    geojson:features <http://www.example.com/features/11745104>,
+        <http://www.example.com/features/11745160>,
+        <http://www.example.com/features/11745161>,
+        <http://www.example.com/features/1725787>,
+        <http://www.example.com/features/29959289>,
+        <http://www.example.com/features/29960715>,
+        <http://www.example.com/features/29962820>,
+        <http://www.example.com/features/29963073>,
+        <http://www.example.com/features/29963182>,
+        <http://www.example.com/features/44396823>,
+        <http://www.example.com/features/44438410>,
+        <http://www.example.com/features/44438418>,
+        <http://www.example.com/features/49655170>,
+        <http://www.example.com/features/49655171>,
+        <http://www.example.com/features/49655172>,
+        <http://www.example.com/features/49655173>,
+        <http://www.example.com/features/49655174>,
+        <http://www.example.com/features/49655175>,
+        <http://www.example.com/features/49655176>,
+        <http://www.example.com/features/49655177>,
+        <http://www.example.com/features/49655178>,
+        <http://www.example.com/features/49655179>,
+        <http://www.example.com/features/49655180>,
+        <http://www.example.com/features/49655181>,
+        <http://www.example.com/features/49655182>,
+        <http://www.example.com/features/49655183>,
+        <http://www.example.com/features/49655184>,
+        <http://www.example.com/features/49655185>,
+        <http://www.example.com/features/49655186>,
+        <http://www.example.com/features/49655187> .
+
+<http://www.example.com/features/adoptedVectors> a geojson:FeatureCollection ;
+    geojson:collectionFeatureType "AdoptedVector" ;
+    geojson:features <http://www.example.com/features/l329256>,
+        <http://www.example.com/features/l520719>,
+        <http://www.example.com/features/l589282>,
+        <http://www.example.com/features/l595769>,
+        <http://www.example.com/features/l622186>,
+        <http://www.example.com/features/l636624>,
+        <http://www.example.com/features/l947230> .
+
+<http://www.example.com/features/l345344> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/49655184> <http://www.example.com/features/49655175> ) ] .
+
+<http://www.example.com/features/l369793> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/29963073> <http://www.example.com/features/29963182> ) ] .
+
+<http://www.example.com/features/l388393> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/49655185> <http://www.example.com/features/49655172> ) ] .
+
+<http://www.example.com/features/l472486> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/11745160> <http://www.example.com/features/49655185> ) ] .
+
+<http://www.example.com/features/l520719> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/44438410> <http://www.example.com/features/49655186> ) ] .
+
+<http://www.example.com/features/l566592> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/11745160> <http://www.example.com/features/44438418> ) ] .
+
+<http://www.example.com/features/l580762> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/49655174> <http://www.example.com/features/49655176> ) ] .
+
+<http://www.example.com/features/l595769> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/44438410> <http://www.example.com/features/29960715> ) ],
+        [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/44438418> <http://www.example.com/features/29960715> ) ] .
+
+<http://www.example.com/features/l599462> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/49655185> <http://www.example.com/features/49655171> ) ] .
+
+<http://www.example.com/features/l622186> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/44438418> <http://www.example.com/features/29959289> ) ] .
+
+<http://www.example.com/features/l636624> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/11745104> <http://www.example.com/features/49655186> ) ] .
+
+<http://www.example.com/features/l641327> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/49655180> <http://www.example.com/features/49655181> ) ] .
+
+<http://www.example.com/features/l685716> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/49655183> <http://www.example.com/features/49655184> ) ] .
+
+<http://www.example.com/features/l715872> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/49655181> <http://www.example.com/features/49655182> ) ] .
+
+<http://www.example.com/features/l761760> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/49655176> <http://www.example.com/features/49655177> ) ] .
+
+<http://www.example.com/features/l773277> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/49655185> <http://www.example.com/features/44438410> ) ] .
+
+<http://www.example.com/features/l818068> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/49655185> <http://www.example.com/features/49655170> ) ] .
+
+<http://www.example.com/features/l832940> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/49655182> <http://www.example.com/features/49655183> ) ] .
+
+<http://www.example.com/features/l852048> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/49655179> <http://www.example.com/features/49655180> ) ] .
+
+<http://www.example.com/features/l910380> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/11745160> <http://www.example.com/features/11745161> ) ] .
+
+<http://www.example.com/features/l922788> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/49655185> <http://www.example.com/features/49655186> ) ] .
+
+<http://www.example.com/features/l941613> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/49655185> <http://www.example.com/features/49655187> ) ] .
+
+<http://www.example.com/features/l947230> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/11745104> <http://www.example.com/features/44438418> ) ] .
+
+<http://www.example.com/features/l949729> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/49655178> <http://www.example.com/features/49655179> ) ] .
+
+<http://www.example.com/features/l951515> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/49655177> <http://www.example.com/features/49655178> ) ] .
+
+<http://www.example.com/features/l973158> a geojson:Feature ;
+    geojson:geometry [ a geojson:LineString ;
+            geojson:coordinates ( ( 1.747502e+02 -3.693074e+01 ) ( 1.7475e+02 -3.69309e+01 ) ) ] ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/1725787> <http://www.example.com/features/11745104> ) ] .
+
+<http://www.example.com/features/observedVectors> a geojson:FeatureCollection ;
+    geojson:collectionFeatureType "ObservedVector" ;
+    geojson:features <http://www.example.com/features/l345344>,
+        <http://www.example.com/features/l369793>,
+        <http://www.example.com/features/l388393>,
+        <http://www.example.com/features/l435861>,
+        <http://www.example.com/features/l472486>,
+        <http://www.example.com/features/l535242>,
+        <http://www.example.com/features/l535759>,
+        <http://www.example.com/features/l566592>,
+        <http://www.example.com/features/l580762>,
+        <http://www.example.com/features/l591175>,
+        <http://www.example.com/features/l599462>,
+        <http://www.example.com/features/l641327>,
+        <http://www.example.com/features/l685716>,
+        <http://www.example.com/features/l715872>,
+        <http://www.example.com/features/l746686>,
+        <http://www.example.com/features/l761760>,
+        <http://www.example.com/features/l773277>,
+        <http://www.example.com/features/l818068>,
+        <http://www.example.com/features/l832940>,
+        <http://www.example.com/features/l852048>,
+        <http://www.example.com/features/l874826>,
+        <http://www.example.com/features/l910380>,
+        <http://www.example.com/features/l922788>,
+        <http://www.example.com/features/l941613>,
+        <http://www.example.com/features/l949729>,
+        <http://www.example.com/features/l951515>,
+        <http://www.example.com/features/l952702>,
+        <http://www.example.com/features/l965727>,
+        <http://www.example.com/features/l973158>,
+        <http://www.example.com/features/l985190>,
+        <http://www.example.com/features/l999724> .
+
+<http://www.example.com/features/11745161> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "CadastralMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.747504e+02 -3.693037e+01 ) ] .
+
+<http://www.example.com/features/1725787> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "BoundaryMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.747502e+02 -3.693074e+01 ) ] .
+
+<http://www.example.com/features/l329256> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/29959289> <http://www.example.com/features/49655171> ) ] .
+
+<http://www.example.com/features/l435861> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/29963182> <http://www.example.com/features/49655175> ) ] .
+
+<http://www.example.com/features/l589282> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/49655171> <http://www.example.com/features/29960715> ) ] .
+
+<http://www.example.com/features/l591175> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/29962820> <http://www.example.com/features/29963073> ) ] .
+
+<http://www.example.com/features/l746686> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/29959289> <http://www.example.com/features/49655174> ) ] .
+
+<http://www.example.com/features/l874826> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/49655175> <http://www.example.com/features/49655170> ) ] .
+
+<http://www.example.com/features/l965727> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/49655170> <http://www.example.com/features/29960715> ) ] .
+
+<http://www.example.com/features/l999724> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/49655174> <http://www.example.com/features/29962820> ) ] .
+
+<http://www.example.com/features/29962820> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "BoundaryMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.747512e+02 -3.693088e+01 ) ] .
+
+<http://www.example.com/features/29963073> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "BoundaryMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.747513e+02 -3.693105e+01 ) ] .
+
+<http://www.example.com/features/29963182> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "BoundaryMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.747513e+02 -3.693112e+01 ) ] .
+
+<http://www.example.com/features/49655173> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "BoundaryMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.747507e+02 -3.693102e+01 ) ] .
+
+<http://www.example.com/features/49655176> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "BoundaryMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.747509e+02 -3.693099e+01 ) ] .
+
+<http://www.example.com/features/49655177> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "BoundaryMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.74751e+02 -3.693099e+01 ) ] .
+
+<http://www.example.com/features/49655178> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "BoundaryMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.74751e+02 -3.6931e+01 ) ] .
+
+<http://www.example.com/features/49655179> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "BoundaryMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.74751e+02 -3.693103e+01 ) ] .
+
+<http://www.example.com/features/49655180> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "BoundaryMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.74751e+02 -3.693105e+01 ) ] .
+
+<http://www.example.com/features/49655181> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "BoundaryMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.74751e+02 -3.693107e+01 ) ] .
+
+<http://www.example.com/features/49655182> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "BoundaryMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.74751e+02 -3.693109e+01 ) ] .
+
+<http://www.example.com/features/49655183> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "BoundaryMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.74751e+02 -3.693111e+01 ) ] .
+
+<http://www.example.com/features/49655184> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "BoundaryMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.74751e+02 -3.693117e+01 ) ] .
+
+<http://www.example.com/features/l535242> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/49655171> <http://www.example.com/features/49655173> ) ] .
+
+<http://www.example.com/features/l535759> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/49655173> <http://www.example.com/features/49655172> ) ] .
+
+<http://www.example.com/features/l952702> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/49655187> <http://www.example.com/features/49655170> ) ] .
+
+<http://www.example.com/features/l985190> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            topo:relatedFeatures ( <http://www.example.com/features/49655172> <http://www.example.com/features/49655187> ) ] .
+
+<http://www.example.com/features/11745104> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "GeodeticReferenceMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.7475e+02 -3.69309e+01 ) ] .
+
+<http://www.example.com/features/11745160> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "CadastralMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.747502e+02 -3.693074e+01 ) ] .
+
+<http://www.example.com/features/29959289> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "BoundaryMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.747505e+02 -3.693104e+01 ) ] .
+
+<http://www.example.com/features/44438410> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "CadastralMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.747506e+02 -3.693119e+01 ) ] .
+
+<http://www.example.com/features/49655172> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "BoundaryMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.747508e+02 -3.693103e+01 ) ] .
+
+<http://www.example.com/features/49655174> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "BoundaryMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.747509e+02 -3.693096e+01 ) ] .
+
+<http://www.example.com/features/49655175> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "BoundaryMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.747511e+02 -3.693118e+01 ) ] .
+
+<http://www.example.com/features/49655186> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "CadastralMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.747502e+02 -3.693093e+01 ) ] .
+
+<http://www.example.com/features/49655187> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "BoundaryMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.74751e+02 -3.693118e+01 ) ] .
+
+<http://www.example.com/features/29960715> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "BoundaryMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.747508e+02 -3.693125e+01 ) ] .
+
+<http://www.example.com/features/44438418> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "CadastralMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.747508e+02 -3.693141e+01 ) ] .
+
+<http://www.example.com/features/49655170> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "BoundaryMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.74751e+02 -3.69312e+01 ) ] .
+
+<http://www.example.com/features/49655171> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "BoundaryMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.747505e+02 -3.693106e+01 ) ] .
+
+<http://www.example.com/features/49655185> a geojson:Feature ;
+    rdfs:label [ ] ;
+    geojson:collectionFeatureType "CadastralMark" ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.747504e+02 -3.693097e+01 ) ] .
 

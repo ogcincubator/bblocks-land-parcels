@@ -3,12 +3,9 @@
   "type": "object",
   "allOf": [
     {
-      "ref": "bblocks://ogc.geo.json-fg.featureCollection-lenient"
-    },
-    {
       "anyOf": [
         {
-          "$ref": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.json"
+          "$ref": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.json"
         },
         {
           "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.json"
@@ -19,14 +16,7 @@
       "properties": {
         "features": {
           "items": {
-            "anyOf": [
-              {
-                "$ref": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.json"
-              },
-              {
-                "$ref": "https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.json"
-              }
-            ]
+            "$ref": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.json"
           }
         }
       }

@@ -1,0 +1,113 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          174.7509,
+          -36.93096
+        ],
+        [
+          174.7512,
+          -36.93088
+        ],
+        [
+          174.7513,
+          -36.93105
+        ],
+        [
+          174.7513,
+          -36.93112
+        ],
+        [
+          174.7511,
+          -36.93118
+        ],
+        [
+          174.751,
+          -36.93117
+        ],
+        [
+          174.751,
+          -36.93111
+        ],
+        [
+          174.751,
+          -36.93109
+        ],
+        [
+          174.751,
+          -36.93107
+        ],
+        [
+          174.751,
+          -36.93105
+        ],
+        [
+          174.751,
+          -36.93103
+        ],
+        [
+          174.751,
+          -36.931
+        ],
+        [
+          174.751,
+          -36.93099
+        ],
+        [
+          174.7509,
+          -36.93099
+        ],
+        [
+          174.7509,
+          -36.93096
+        ]
+      ]
+    ]
+  },
+  "properties": {
+    "appellation": {
+      "label": "Area Z DP 572532",
+      "hasPart": [
+        {
+          "type": "PlanType",
+          "label": "DP"
+        },
+        {
+          "type": "PlanIdentifier",
+          "label": "572532"
+        },
+        {
+          "type": "ParcelType",
+          "label": "Area"
+        },
+        {
+          "type": "ParcelIdentifier",
+          "label": "Z"
+        }
+      ]
+    },
+    "area": 1196,
+    "parcelType": "eg-parcel-type:au",
+    "parcelPurpose": "eg-parcel-purpose:c-l",
+    "parcelState": "eg-parcel-state:created",
+    "interests": [
+      {
+        "interestLink": "1040075",
+        "interestType": "eg-interest-type:fh"
+      }
+    ],
+    "burdened": {
+      "x-comment": "References the parcel ID of the burdened primary parcel.",
+      "references": [
+        "8446455"
+      ]
+    }
+  },
+  "id": "8446456",
+  "@context": [
+    "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/context.jsonld"
+  ]
+}

@@ -20,41 +20,7 @@ LADM ....
 {
   "type": "Feature",
   "id": "8446454",
-"geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            174.75076068885278,
-                            -36.93102914553119
-                        ],
-                        [
-                            174.75072255725163,
-                            -36.931021544248715
-                        ],
-                        [
-                            174.75054006892805,
-                            -36.93106104934007
-                        ],
-                        [
-                            174.75079103780536,
-                            -36.93124895649441
-                        ],
-                        [
-                            174.75099188136608,
-                            -36.93120233371059
-                        ],
-                        [
-                            174.75096726702185,
-                            -36.931183910797834
-                        ],
-                        [
-                            174.75076068885278,
-                            -36.93102914553119
-                        ]
-                    ]
-                ]
-            },
+"geometry":  null,
   "topology": {
     "type": "Polygon",
     "references": [
@@ -118,41 +84,7 @@ LADM ....
   ],
   "type": "Feature",
   "id": "8446454",
-  "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-      [
-        [
-          174.75076068885278,
-          -36.93102914553119
-        ],
-        [
-          174.75072255725163,
-          -36.931021544248715
-        ],
-        [
-          174.75054006892805,
-          -36.93106104934007
-        ],
-        [
-          174.75079103780536,
-          -36.93124895649441
-        ],
-        [
-          174.75099188136608,
-          -36.93120233371059
-        ],
-        [
-          174.75096726702185,
-          -36.931183910797834
-        ],
-        [
-          174.75076068885278,
-          -36.93102914553119
-        ]
-      ]
-    ]
-  },
+  "geometry": null,
   "topology": {
     "type": "Polygon",
     "references": [
@@ -218,17 +150,15 @@ LADM ....
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.example.com/features/8446454> a geojson:Feature ;
-    geojson:geometry [ a geojson:Polygon ;
-            geojson:coordinates ( ( ( 1.747508e+02 -3.693103e+01 ) ( 1.747507e+02 -3.693102e+01 ) ( 1.747505e+02 -3.693106e+01 ) ( 1.747508e+02 -3.693125e+01 ) ( 1.74751e+02 -3.69312e+01 ) ( 1.74751e+02 -3.693118e+01 ) ( 1.747508e+02 -3.693103e+01 ) ) ) ] ;
     geojson:topology [ a geojson:Polygon ;
             topo:relatedFeatures ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ) ] ;
     parcel:appellation [ rdfs:label "Lot 1 DP 572532" ;
-            dcterms:hasPart [ rdfs:label "572532" ;
-                    commonpatterns:namePartType "PlanIdentifier" ],
-                [ rdfs:label "Lot" ;
+            dcterms:hasPart [ rdfs:label "Lot" ;
                     commonpatterns:namePartType "ParcelType" ],
                 [ rdfs:label "DP" ;
                     commonpatterns:namePartType "PlanType" ],
+                [ rdfs:label "572532" ;
+                    commonpatterns:namePartType "PlanIdentifier" ],
                 [ rdfs:label "1" ;
                     commonpatterns:namePartType "ParcelIdentifier" ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040074> ;
@@ -481,14 +411,14 @@ LADM ....
     geojson:topology [ a geojson:Polygon ;
             topo:relatedFeatures ( ( <http://www.example.com/features/l999724> <http://www.example.com/features/l591175> <http://www.example.com/features/l369793> <http://www.example.com/features/l435861> <http://www.example.com/features/l345344> <http://www.example.com/features/l685716> <http://www.example.com/features/l832940> <http://www.example.com/features/l715872> <http://www.example.com/features/l641327> <http://www.example.com/features/l852048> <http://www.example.com/features/l949729> <http://www.example.com/features/l951515> <http://www.example.com/features/l761760> <http://www.example.com/features/l580762> ) ) ] ;
     parcel:appellation [ rdfs:label "Area Z DP 572532" ;
-            dcterms:hasPart [ rdfs:label "Area" ;
-                    commonpatterns:namePartType "ParcelType" ],
-                [ rdfs:label "DP" ;
-                    commonpatterns:namePartType "PlanType" ],
-                [ rdfs:label "572532" ;
+            dcterms:hasPart [ rdfs:label "572532" ;
                     commonpatterns:namePartType "PlanIdentifier" ],
                 [ rdfs:label "Z" ;
-                    commonpatterns:namePartType "ParcelIdentifier" ] ] ;
+                    commonpatterns:namePartType "ParcelIdentifier" ],
+                [ rdfs:label "Area" ;
+                    commonpatterns:namePartType "ParcelType" ],
+                [ rdfs:label "DP" ;
+                    commonpatterns:namePartType "PlanType" ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040075> ;
             parcel:interestType <eg-interest-type:fh> ] ;
     parcel:purpose eg-parcel-purpose:c-l ;
@@ -736,20 +666,20 @@ Note, the topology constraint "within" for a 3D Parcel, referencing a Parent Par
     geojson:geometry [ a geojson:Polygon ;
             geojson:coordinates ( ( ( 1.747508e+02 -3.693103e+01 ) ( 1.747507e+02 -3.693102e+01 ) ( 1.747505e+02 -3.693106e+01 ) ( 1.747508e+02 -3.693125e+01 ) ( 1.74751e+02 -3.69312e+01 ) ( 1.74751e+02 -3.693118e+01 ) ( 1.747508e+02 -3.693103e+01 ) ) ) ] ;
     geojson:topology [ a geojson:Polygon ;
-            topo:relatedFeatures ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;
+            topo:relatedFeatures ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ),
+                ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;
                         prof:hasRole topo:within,
                             parcel:containingParentParcel ;
-                        oa:hasTarget <myParcels:1234> ] ),
-                ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ) ] ;
+                        oa:hasTarget <myParcels:1234> ] ) ] ;
     parcel:appellation [ rdfs:label "Lot 1 DP 572532" ;
-            dcterms:hasPart [ rdfs:label "1" ;
-                    commonpatterns:namePartType "ParcelIdentifier" ],
-                [ rdfs:label "Lot" ;
+            dcterms:hasPart [ rdfs:label "Lot" ;
                     commonpatterns:namePartType "ParcelType" ],
-                [ rdfs:label "DP" ;
-                    commonpatterns:namePartType "PlanType" ],
+                [ rdfs:label "1" ;
+                    commonpatterns:namePartType "ParcelIdentifier" ],
                 [ rdfs:label "572532" ;
-                    commonpatterns:namePartType "PlanIdentifier" ] ] ;
+                    commonpatterns:namePartType "PlanIdentifier" ],
+                [ rdfs:label "DP" ;
+                    commonpatterns:namePartType "PlanType" ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040074> ;
             parcel:interestType <eg-interest-type:fh> ] ;
     parcel:purpose eg-parcel-purpose:fst ;
@@ -884,8 +814,8 @@ $defs:
     - parcelPurpose
 allOf:
 - anyOf:
-  - $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml
-  - $ref: https://surroundaustralia.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml
+  - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml
+  - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-multi-collection/schema.yaml
   - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.yaml
 - properties:
     properties:

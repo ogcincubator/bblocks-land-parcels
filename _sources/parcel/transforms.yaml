@@ -1,0 +1,17 @@
+transforms:
+
+  - id: Points-n-Edges
+    description: GeoJSON points and Edges
+    type: topo2geojson
+    metadata:
+      mode: "edges,points"
+      ttl: _sources/parcel/examples/topoobjects.ttl
+    code: workaround
+
+  - id: Polygons
+    description: GeoJSON polygon of 2 or 3D parcel footprints
+    type: topo2geojson
+    metadata:
+      mode: faces
+      ttl: _sources/parcel/examples/topoobjects.ttl
+    code: workaround

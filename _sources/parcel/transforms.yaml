@@ -9,9 +9,9 @@ transforms:
     code: workaround
 
   - id: Polygons
-    description: GeoJSON polygon of 2 or 3D parcel footprints
+    description: GeoJSON polygon for 3D parcel faces
     type: topo2geojson
     metadata:
-      mode: faces
+      mode: "faces"
       ttl: _sources/parcel/examples/topoobjects.ttl
     code: workaround

@@ -131,30 +131,22 @@
           "@id": "topo:relatedFeatures",
           "@type": "@id",
           "@container": "@list"
+        },
+        "rings": {
+          "@id": "topo:rings",
+          "@container": "@list"
+        },
+        "shells": {
+          "@id": "topo:shells",
+          "@container": "@list"
+        },
+        "faces": {
+          "@id": "topo:faces",
+          "@container": "@list"
         }
       },
       "@type": "@id",
       "@id": "geojson:topology"
-    },
-    "Face": "topo:Face",
-    "Ring": "topo:Ring",
-    "Shell": "topo:Shell",
-    "Solid": "topo:Solid",
-    "faces": {
-      "@id": "topo:faces",
-      "@container": "@list"
-    },
-    "rings": {
-      "@id": "topo:rings",
-      "@container": "@list"
-    },
-    "shells": {
-      "@id": "topo:shells",
-      "@container": "@list"
-    },
-    "solids": {
-      "@id": "topo:shells",
-      "@container": "@list"
     },
     "points": {
       "@context": {
@@ -210,6 +202,33 @@
       "@id": "topo:edges",
       "@container": "@list"
     },
+    "solids": {
+      "@context": {
+        "links": {
+          "@context": {
+            "href": {
+              "@type": "@id",
+              "@id": "oa:hasTarget"
+            },
+            "rel": {
+              "@context": {
+                "@base": "http://www.iana.org/assignments/relation/"
+              },
+              "@id": "http://www.iana.org/assignments/relation",
+              "@type": "@id"
+            },
+            "type": "dct:type",
+            "hreflang": "dct:language",
+            "title": "rdfs:label",
+            "length": "dct:extent"
+          },
+          "@id": "rdfs:seeAlso"
+        },
+        "featureType": "geojson:collectionFeatureType"
+      },
+      "@id": "topo:solids",
+      "@container": "@list"
+    },
     "name": "rdfs:label",
     "bearingRotation": "parcel:bearingRotation",
     "parcels": "parcel:parcels",
@@ -238,6 +257,14 @@
     "ref": "topo:ref",
     "orientation": "topo:orientation",
     "Edge": "topo:Edge",
+    "Face": "topo:Face",
+    "Ring": "topo:Ring",
+    "Shell": "topo:Shell",
+    "Solid": "topo:Solid",
+    "directed_references": {
+      "@id": "topo:directedReferences",
+      "@container": "@list"
+    },
     "CompoundName": "commonpatterns:CompoundName",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "geojson": "https://purl.org/geojson/vocab#",

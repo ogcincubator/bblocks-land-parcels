@@ -9,27 +9,21 @@
   "dateTimeAddition": "2024-06-03T00:00:00Z",
   "itemClass": "schema",
   "dependsOn": [
-    "ogc.geo.json-fg.feature-lenient",
+    "ogc.geo.topo.features.topo-feature",
     "ogc.bbr.utils.compoundName",
     "ogc.ladm.land-parcels.ontology",
-    "ogc.geo.topo.features.topo-feature",
-    "ogc.geo.topo.features.topo-feature-multi-collection",
-    "ogc.ogc-utils.iri-or-curie"
+    "ogc.geo.json-fg.feature-lenient",
+    "ogc.ogc-utils.iri-or-curie",
+    "ogc.geo.topo.features.topo-feature-multi-collection"
   ],
   "shaclClosures": [
     "examples/topoobjects.ttl"
   ],
   "register": "ogcincubator",
   "version": "0.1",
-  "dateOfLastChange": "2026-07-22",
+  "dateOfLastChange": "2026-08-06",
   "link": "https://github.com/opengeospatial/bblock-template",
   "shaclShapes": {
-    "ogc.geo.features.feature": [
-      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
-    ],
-    "ogc.bbr.utils.compoundName": [
-      "https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl"
-    ],
     "ogc.geo.topo.features.topo-feature": [
       "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
       "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
@@ -40,6 +34,12 @@
     ],
     "ogc.geo.features.featureCollection": [
       "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
+    ],
+    "ogc.geo.features.feature": [
+      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+    ],
+    "ogc.bbr.utils.compoundName": [
+      "https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/rules.shacl"
     ]
   },
   "ldContext": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/context.jsonld",
@@ -89,7 +89,7 @@
     },
     {
       "id": "Polygons",
-      "description": "GeoJSON polygon of 2 or 3D parcel footprints",
+      "description": "GeoJSON polygon for 3D parcel faces",
       "type": "topo2geojson",
       "metadata": {
         "mode": "faces",
@@ -157,7 +157,7 @@
           "language": "ttl",
           "url": "https://ogcincubator.github.io/bblocks-land-parcels/build/tests/ladm/land-parcels/parcel/parcel2.ttl",
           "sizeBytes": 1854,
-          "code": "@prefix commonpatterns: <https://w3id.org/ogc/utils/label/> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix eg-parcel-purpose: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-purpose/> .\n@prefix eg-parcel-state: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-state/> .\n@prefix eg-parcel-type: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-type/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix parcel: <https://w3id.org/ogc/ladm/parcels/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix topo: <https://purl.org/geojson/topo#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://www.example.com/features/8446454> a geojson:Feature ;\n    geojson:topology [ a geojson:Polygon ;\n            topo:relatedFeatures ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ) ] ;\n    parcel:appellation [ rdfs:label \"Lot 1 DP 572532\" ;\n            dcterms:hasPart [ rdfs:label \"1\" ;\n                    commonpatterns:namePartType \"ParcelIdentifier\" ],\n                [ rdfs:label \"Lot\" ;\n                    commonpatterns:namePartType \"ParcelType\" ],\n                [ rdfs:label \"DP\" ;\n                    commonpatterns:namePartType \"PlanType\" ],\n                [ rdfs:label \"572532\" ;\n                    commonpatterns:namePartType \"PlanIdentifier\" ] ] ;\n    parcel:interest [ parcel:interestLink <http://www.example.com/features/1040074> ;\n            parcel:interestType <eg-interest-type:fh> ] ;\n    parcel:purpose eg-parcel-purpose:fst ;\n    parcel:state eg-parcel-state:created ;\n    parcel:surfaceArea 484 ;\n    parcel:type eg-parcel-type:l .\n\n"
+          "code": "@prefix commonpatterns: <https://w3id.org/ogc/utils/label/> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix eg-parcel-purpose: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-purpose/> .\n@prefix eg-parcel-state: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-state/> .\n@prefix eg-parcel-type: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-type/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix parcel: <https://w3id.org/ogc/ladm/parcels/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix topo: <https://purl.org/geojson/topo#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://www.example.com/features/8446454> a geojson:Feature ;\n    geojson:topology [ a geojson:Polygon ;\n            topo:relatedFeatures ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ) ] ;\n    parcel:appellation [ rdfs:label \"Lot 1 DP 572532\" ;\n            dcterms:hasPart [ rdfs:label \"Lot\" ;\n                    commonpatterns:namePartType \"ParcelType\" ],\n                [ rdfs:label \"572532\" ;\n                    commonpatterns:namePartType \"PlanIdentifier\" ],\n                [ rdfs:label \"DP\" ;\n                    commonpatterns:namePartType \"PlanType\" ],\n                [ rdfs:label \"1\" ;\n                    commonpatterns:namePartType \"ParcelIdentifier\" ] ] ;\n    parcel:interest [ parcel:interestLink <http://www.example.com/features/1040074> ;\n            parcel:interestType <eg-interest-type:fh> ] ;\n    parcel:purpose eg-parcel-purpose:fst ;\n    parcel:state eg-parcel-state:created ;\n    parcel:surfaceArea 484 ;\n    parcel:type eg-parcel-type:l .\n\n"
         }
       ],
       "prefixes": {
@@ -243,7 +243,7 @@
           "language": "ttl",
           "url": "https://ogcincubator.github.io/bblocks-land-parcels/build/tests/ladm/land-parcels/parcel/parcel-relationship.ttl",
           "sizeBytes": 2550,
-          "code": "@prefix commonpatterns: <https://w3id.org/ogc/utils/label/> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix eg-parcel-purpose: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-purpose/> .\n@prefix eg-parcel-state: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-state/> .\n@prefix eg-parcel-type: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-type/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <http://www.iana.org/assignments/> .\n@prefix oa: <http://www.w3.org/ns/oa#> .\n@prefix parcel: <https://w3id.org/ogc/ladm/parcels/> .\n@prefix prof: <http://www.w3.org/ns/dx/prof/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix topo: <https://purl.org/geojson/topo#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://www.example.com/features/8446454> a geojson:Feature ;\n    geojson:geometry [ a geojson:Polygon ;\n            geojson:coordinates ( ( ( 1.747508e+02 -3.693103e+01 ) ( 1.747507e+02 -3.693102e+01 ) ( 1.747505e+02 -3.693106e+01 ) ( 1.747508e+02 -3.693125e+01 ) ( 1.74751e+02 -3.69312e+01 ) ( 1.74751e+02 -3.693118e+01 ) ( 1.747508e+02 -3.693103e+01 ) ) ) ] ;\n    geojson:topology [ a geojson:Polygon ;\n            topo:relatedFeatures ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;\n                        prof:hasRole topo:within,\n                            parcel:containingParentParcel ;\n                        oa:hasTarget <myParcels:1234> ] ),\n                ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ) ] ;\n    parcel:appellation [ rdfs:label \"Lot 1 DP 572532\" ;\n            dcterms:hasPart [ rdfs:label \"DP\" ;\n                    commonpatterns:namePartType \"PlanType\" ],\n                [ rdfs:label \"1\" ;\n                    commonpatterns:namePartType \"ParcelIdentifier\" ],\n                [ rdfs:label \"Lot\" ;\n                    commonpatterns:namePartType \"ParcelType\" ],\n                [ rdfs:label \"572532\" ;\n                    commonpatterns:namePartType \"PlanIdentifier\" ] ] ;\n    parcel:interest [ parcel:interestLink <http://www.example.com/features/1040074> ;\n            parcel:interestType <eg-interest-type:fh> ] ;\n    parcel:purpose eg-parcel-purpose:fst ;\n    parcel:state eg-parcel-state:created ;\n    parcel:surfaceArea 484 ;\n    parcel:type eg-parcel-type:l .\n\n"
+          "code": "@prefix commonpatterns: <https://w3id.org/ogc/utils/label/> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix eg-parcel-purpose: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-purpose/> .\n@prefix eg-parcel-state: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-state/> .\n@prefix eg-parcel-type: <https://w3id.org/ogc/ladm/vocabs/eg/parcel-type/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <http://www.iana.org/assignments/> .\n@prefix oa: <http://www.w3.org/ns/oa#> .\n@prefix parcel: <https://w3id.org/ogc/ladm/parcels/> .\n@prefix prof: <http://www.w3.org/ns/dx/prof/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix topo: <https://purl.org/geojson/topo#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://www.example.com/features/8446454> a geojson:Feature ;\n    geojson:geometry [ a geojson:Polygon ;\n            geojson:coordinates ( ( ( 1.747508e+02 -3.693103e+01 ) ( 1.747507e+02 -3.693102e+01 ) ( 1.747505e+02 -3.693106e+01 ) ( 1.747508e+02 -3.693125e+01 ) ( 1.74751e+02 -3.69312e+01 ) ( 1.74751e+02 -3.693118e+01 ) ( 1.747508e+02 -3.693103e+01 ) ) ) ] ;\n    geojson:topology [ a geojson:Polygon ;\n            topo:relatedFeatures ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ),\n                ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;\n                        prof:hasRole topo:within,\n                            parcel:containingParentParcel ;\n                        oa:hasTarget <myParcels:1234> ] ) ] ;\n    parcel:appellation [ rdfs:label \"Lot 1 DP 572532\" ;\n            dcterms:hasPart [ rdfs:label \"Lot\" ;\n                    commonpatterns:namePartType \"ParcelType\" ],\n                [ rdfs:label \"572532\" ;\n                    commonpatterns:namePartType \"PlanIdentifier\" ],\n                [ rdfs:label \"DP\" ;\n                    commonpatterns:namePartType \"PlanType\" ],\n                [ rdfs:label \"1\" ;\n                    commonpatterns:namePartType \"ParcelIdentifier\" ] ] ;\n    parcel:interest [ parcel:interestLink <http://www.example.com/features/1040074> ;\n            parcel:interestType <eg-interest-type:fh> ] ;\n    parcel:purpose eg-parcel-purpose:fst ;\n    parcel:state eg-parcel-state:created ;\n    parcel:surfaceArea 484 ;\n    parcel:type eg-parcel-type:l .\n\n"
         }
       ],
       "prefixes": {

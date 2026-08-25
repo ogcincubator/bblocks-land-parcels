@@ -7,6 +7,8 @@ allOf:
     # Or simply features with geometry
       - $ref: bblocks://ogc.geo.json-fg.featureCollection-lenient
   - properties:
+      spatialRepresentationDefinitions:
+        $ref: bblocks://ogc.ladm.land-parcels.parcelSpatialRepresentationDefinition
       features:
         items:
           $ref: bblocks://ogc.ladm.land-parcels.parcel

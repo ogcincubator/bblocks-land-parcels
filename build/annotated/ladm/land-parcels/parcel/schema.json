@@ -146,6 +146,9 @@
           },
           "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/interest",
           "x-jsonld-container": "@set"
+        },
+        "spatialRepresentationDefinitions": {
+          "$ref": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcelSpatialRepresentationDefinition/schema.json"
         }
       },
       "required": [

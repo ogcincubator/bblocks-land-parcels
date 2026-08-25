@@ -235,8 +235,14 @@
         "label": "rdfs:label",
         "hasPart": {
           "@context": {
-            "ref": "commonpatterns:namePartRef",
-            "type": "commonpatterns:namePartType"
+            "ref": {
+              "@type": "@id",
+              "@id": "commonpatterns:namePartRef"
+            },
+            "type": {
+              "@type": "@id",
+              "@id": "commonpatterns:namePartType"
+            }
           },
           "@id": "dct:hasPart"
         }
@@ -343,6 +349,18 @@
       "@container": "@list"
     },
     "CompoundName": "commonpatterns:CompoundName",
+    "state": {
+      "@id": "sr:boundaryState",
+      "@type": "@vocab"
+    },
+    "definitionRef": {
+      "@id": "sr:definitionRef",
+      "@type": "@id"
+    },
+    "geometryRef": {
+      "@id": "sr:geometryRef",
+      "@type": "@id"
+    },
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",
@@ -354,6 +372,8 @@
     "sdo": "https://schema.org/",
     "parcel": "https://w3id.org/ogc/ladm/parcels/",
     "commonpatterns": "https://w3id.org/ogc/utils/label/",
+    "sr": "https://linked.data.gov.au/def/csdm/spatial-representation/",
+    "pvb": "https://linked.data.gov.au/def/csdm/parcel-vertical-boundary/",
     "@version": 1.1
   }
 }

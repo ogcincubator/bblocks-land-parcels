@@ -261,6 +261,18 @@
     "Ring": "topo:Ring",
     "Shell": "topo:Shell",
     "Solid": "topo:Solid",
+    "state": {
+      "@id": "sr:boundaryState",
+      "@type": "@vocab"
+    },
+    "definitionRef": {
+      "@id": "sr:definitionRef",
+      "@type": "@id"
+    },
+    "geometryRef": {
+      "@id": "sr:geometryRef",
+      "@type": "@id"
+    },
     "directed_references": {
       "@id": "topo:directedReferences",
       "@container": "@list"
@@ -274,6 +286,8 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "topo": "https://purl.org/geojson/topo#",
     "prof": "http://www.w3.org/ns/dx/prof/",
+    "sr": "https://linked.data.gov.au/def/csdm/spatial-representation/",
+    "pvb": "https://linked.data.gov.au/def/csdm/parcel-vertical-boundary/",
     "sdo": "https://schema.org/",
     "parcel": "https://w3id.org/ogc/ladm/parcels/",
     "commonpatterns": "https://w3id.org/ogc/utils/label/",
@@ -283,8 +297,14 @@
         "label": "rdfs:label",
         "hasPart": {
           "@context": {
-            "ref": "commonpatterns:namePartRef",
-            "type": "commonpatterns:namePartType"
+            "ref": {
+              "@type": "@id",
+              "@id": "commonpatterns:namePartRef"
+            },
+            "type": {
+              "@type": "@id",
+              "@id": "commonpatterns:namePartType"
+            }
           },
           "@id": "dct:hasPart"
         }

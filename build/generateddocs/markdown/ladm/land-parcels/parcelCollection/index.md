@@ -4179,14 +4179,14 @@ Individual features may optionally contain geometric coordinates for visualisati
     geojson:topology [ a geojson:Polygon ;
             topo:relatedFeatures ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ) ] ;
     parcel:appellation [ rdfs:label "Lot 1 DP 572532" ;
-            dcterms:hasPart [ rdfs:label "1" ;
-                    commonpatterns:namePartType "ParcelIdentifier" ],
-                [ rdfs:label "Lot" ;
-                    commonpatterns:namePartType "ParcelType" ],
+            dcterms:hasPart [ rdfs:label "572532" ;
+                    commonpatterns:namePartType <http://www.example.com/features/PlanIdentifier> ],
                 [ rdfs:label "DP" ;
-                    commonpatterns:namePartType "PlanType" ],
-                [ rdfs:label "572532" ;
-                    commonpatterns:namePartType "PlanIdentifier" ] ] ;
+                    commonpatterns:namePartType <http://www.example.com/features/PlanType> ],
+                [ rdfs:label "Lot" ;
+                    commonpatterns:namePartType <http://www.example.com/features/ParcelType> ],
+                [ rdfs:label "1" ;
+                    commonpatterns:namePartType <http://www.example.com/features/ParcelIdentifier> ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040074> ;
             parcel:interestType <eg-interest-type:fh> ] ;
     parcel:purpose <eg-parcel-purpose:fst> ;
@@ -4199,13 +4199,13 @@ Individual features may optionally contain geometric coordinates for visualisati
             topo:relatedFeatures ( ( <http://www.example.com/features/l746686> <http://www.example.com/features/l999724> <http://www.example.com/features/l591175> <http://www.example.com/features/l435861> <http://www.example.com/features/l874826> <http://www.example.com/features/l952702> <http://www.example.com/features/l985190> <http://www.example.com/features/l535759> <http://www.example.com/features/l535242> <http://www.example.com/features/l329256> ) ) ] ;
     parcel:appellation [ rdfs:label "Lot 2 DP 572532" ;
             dcterms:hasPart [ rdfs:label "2" ;
-                    commonpatterns:namePartType "ParcelIdentifier" ],
-                [ rdfs:label "Lot" ;
-                    commonpatterns:namePartType "ParcelType" ],
+                    commonpatterns:namePartType <http://www.example.com/features/ParcelIdentifier> ],
                 [ rdfs:label "572532" ;
-                    commonpatterns:namePartType "PlanIdentifier" ],
+                    commonpatterns:namePartType <http://www.example.com/features/PlanIdentifier> ],
+                [ rdfs:label "Lot" ;
+                    commonpatterns:namePartType <http://www.example.com/features/ParcelType> ],
                 [ rdfs:label "DP" ;
-                    commonpatterns:namePartType "PlanType" ] ] ;
+                    commonpatterns:namePartType <http://www.example.com/features/PlanType> ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040075> ;
             parcel:interestType <eg-interest-type:fh> ] ;
     parcel:purpose <eg-parcel-purpose:fst> ;
@@ -4286,9 +4286,9 @@ Individual features may optionally contain geometric coordinates for visualisati
 
 <http://www.example.com/features/l595769> a geojson:Feature ;
     geojson:topology [ a geojson:LineString ;
-            topo:relatedFeatures ( <http://www.example.com/features/44438418> <http://www.example.com/features/29960715> ) ],
+            topo:relatedFeatures ( <http://www.example.com/features/44438410> <http://www.example.com/features/29960715> ) ],
         [ a geojson:LineString ;
-            topo:relatedFeatures ( <http://www.example.com/features/44438410> <http://www.example.com/features/29960715> ) ] .
+            topo:relatedFeatures ( <http://www.example.com/features/44438418> <http://www.example.com/features/29960715> ) ] .
 
 <http://www.example.com/features/l599462> a geojson:Feature ;
     geojson:topology [ a geojson:LineString ;
@@ -4809,14 +4809,14 @@ Individual features may optionally contain geometric coordinates for visualisati
     geojson:topology [ a geojson:Polygon ;
             topo:relatedFeatures ( ( <http://www.example.com/features/l999724> <http://www.example.com/features/l591175> <http://www.example.com/features/l369793> <http://www.example.com/features/l435861> <http://www.example.com/features/l345344> <http://www.example.com/features/l685716> <http://www.example.com/features/l832940> <http://www.example.com/features/l715872> <http://www.example.com/features/l641327> <http://www.example.com/features/l852048> <http://www.example.com/features/l949729> <http://www.example.com/features/l951515> <http://www.example.com/features/l761760> <http://www.example.com/features/l580762> ) ) ] ;
     parcel:appellation [ rdfs:label "Area Z DP 572532" ;
-            dcterms:hasPart [ rdfs:label "DP" ;
-                    commonpatterns:namePartType "PlanType" ],
+            dcterms:hasPart [ rdfs:label "Z" ;
+                    commonpatterns:namePartType <http://www.example.com/features/ParcelIdentifier> ],
                 [ rdfs:label "Area" ;
-                    commonpatterns:namePartType "ParcelType" ],
+                    commonpatterns:namePartType <http://www.example.com/features/ParcelType> ],
+                [ rdfs:label "DP" ;
+                    commonpatterns:namePartType <http://www.example.com/features/PlanType> ],
                 [ rdfs:label "572532" ;
-                    commonpatterns:namePartType "PlanIdentifier" ],
-                [ rdfs:label "Z" ;
-                    commonpatterns:namePartType "ParcelIdentifier" ] ] ;
+                    commonpatterns:namePartType <http://www.example.com/features/PlanIdentifier> ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040075> ;
             parcel:interestType <eg-interest-type:fh> ] ;
     parcel:purpose <eg-parcel-purpose:c-l> ;
@@ -4837,6 +4837,8 @@ allOf:
   - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml
   - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.yaml
 - properties:
+    spatialRepresentationDefinitions:
+      $ref: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcelSpatialRepresentationDefinition/schema.yaml
     features:
       items:
         $ref: https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.yaml
@@ -5115,6 +5117,18 @@ Links to the schema:
     "Ring": "topo:Ring",
     "Shell": "topo:Shell",
     "Solid": "topo:Solid",
+    "state": {
+      "@id": "sr:boundaryState",
+      "@type": "@vocab"
+    },
+    "definitionRef": {
+      "@id": "sr:definitionRef",
+      "@type": "@id"
+    },
+    "geometryRef": {
+      "@id": "sr:geometryRef",
+      "@type": "@id"
+    },
     "directed_references": {
       "@id": "topo:directedReferences",
       "@container": "@list"
@@ -5128,6 +5142,8 @@ Links to the schema:
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "topo": "https://purl.org/geojson/topo#",
     "prof": "http://www.w3.org/ns/dx/prof/",
+    "sr": "https://linked.data.gov.au/def/csdm/spatial-representation/",
+    "pvb": "https://linked.data.gov.au/def/csdm/parcel-vertical-boundary/",
     "sdo": "https://schema.org/",
     "parcel": "https://w3id.org/ogc/ladm/parcels/",
     "commonpatterns": "https://w3id.org/ogc/utils/label/",
@@ -5137,8 +5153,14 @@ Links to the schema:
         "label": "rdfs:label",
         "hasPart": {
           "@context": {
-            "ref": "commonpatterns:namePartRef",
-            "type": "commonpatterns:namePartType"
+            "ref": {
+              "@type": "@id",
+              "@id": "commonpatterns:namePartRef"
+            },
+            "type": {
+              "@type": "@id",
+              "@id": "commonpatterns:namePartType"
+            }
           },
           "@id": "dct:hasPart"
         }

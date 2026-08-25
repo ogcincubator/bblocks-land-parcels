@@ -14,6 +14,9 @@
     },
     {
       "properties": {
+        "spatialRepresentationDefinitions": {
+          "$ref": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcelSpatialRepresentationDefinition/schema.json"
+        },
         "features": {
           "items": {
             "$ref": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/parcel/schema.json"

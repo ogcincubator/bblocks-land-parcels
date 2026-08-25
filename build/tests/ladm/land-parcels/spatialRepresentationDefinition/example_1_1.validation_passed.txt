@@ -1,0 +1,13 @@
+Validation report for ogc.ladm.land-parcels.spatialRepresentationDefinition - Spatial Representation Definition
+Generated 2026-08-25T00:31:37.210879+00:00
+=== Files ===
+Using examples/2d-footprint.json from examples
+JSON-LD context is present - uplifting
+Output JSON-LD example_1_1.jsonld created
+Output Turtle example_1_1.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+

@@ -1,5 +1,5 @@
 Validation report for ogc.ladm.land-parcels.spatialRepresentationDefinition - Spatial Representation Definition
-Generated 2026-08-25T00:31:37.214093+00:00
+Generated 2026-08-26T00:40:53.378928+00:00
 === Files ===
 Using examples/2-5d-reference-surface.json from examples
 JSON-LD context is present - uplifting

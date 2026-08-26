@@ -1,5 +1,5 @@
 Validation report for ogc.ladm.land-parcels.parcelSpatialRepresentationDefinition - Parcel Spatial Representation Definition
-Generated 2026-08-25T00:31:37.280914+00:00
+Generated 2026-08-26T00:40:53.467837+00:00
 === Files ===
 Using examples/jurisdictionally-bounded.json from examples
 JSON-LD context is present - uplifting

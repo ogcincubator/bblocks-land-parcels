@@ -17,20 +17,20 @@
     geojson:geometry [ a geojson:Polygon ;
             geojson:coordinates ( ( ( 1.747508e+02 -3.693103e+01 ) ( 1.747507e+02 -3.693102e+01 ) ( 1.747505e+02 -3.693106e+01 ) ( 1.747508e+02 -3.693125e+01 ) ( 1.74751e+02 -3.69312e+01 ) ( 1.74751e+02 -3.693118e+01 ) ( 1.747508e+02 -3.693103e+01 ) ) ) ] ;
     geojson:topology [ a geojson:Polygon ;
-            topo:relatedFeatures ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ),
-                ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;
+            topo:relatedFeatures ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;
                         prof:hasRole topo:within,
                             parcel:containingParentParcel ;
-                        oa:hasTarget <myParcels:1234> ] ) ] ;
+                        oa:hasTarget <myParcels:1234> ] ),
+                ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ) ] ;
     parcel:appellation [ rdfs:label "Lot 1 DP 572532" ;
-            dcterms:hasPart [ rdfs:label "DP" ;
-                    commonpatterns:namePartType <http://www.example.com/features/PlanType> ],
+            dcterms:hasPart [ rdfs:label "572532" ;
+                    commonpatterns:namePartType <http://www.example.com/features/PlanIdentifier> ],
                 [ rdfs:label "1" ;
                     commonpatterns:namePartType <http://www.example.com/features/ParcelIdentifier> ],
-                [ rdfs:label "572532" ;
-                    commonpatterns:namePartType <http://www.example.com/features/PlanIdentifier> ],
                 [ rdfs:label "Lot" ;
-                    commonpatterns:namePartType <http://www.example.com/features/ParcelType> ] ] ;
+                    commonpatterns:namePartType <http://www.example.com/features/ParcelType> ],
+                [ rdfs:label "DP" ;
+                    commonpatterns:namePartType <http://www.example.com/features/PlanType> ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040074> ;
             parcel:interestType <eg-interest-type:fh> ] ;
     parcel:purpose eg-parcel-purpose:fst ;

@@ -745,17 +745,7 @@ reference surface) has been converted into a closed 3D solid. The source definit
             sr:surfaceGeometryRef <uuid:ca9c4381-9422-4bbb-8f05-c8a835831933> ;
             sr:surfaceType <height-reference:gl> ] ;
     sr:representationStatus <representation-status:d3d> ;
-    sr:verticalBoundaryDefinitions [ dct:description "2 metres below ground level" ;
-            sr:definitionType <vertical-definition-type:rel> ;
-            sr:direction <vertical-direction:blw> ;
-            sr:heightReference <height-reference:gl> ;
-            sr:limitRole <vertical-limit-role:ll> ;
-            sr:provenanceRef <file:///github/workspace/derived-3d-solid-generation-1> ;
-            sr:resolutionStatus "resolved" ;
-            sr:sourceReference <file:///github/workspace/source-height-description-1> ;
-            sr:value 2.0 ;
-            sr:valueType <vertical-value-type:off> ],
-        [ dct:description "12 metres above ground level" ;
+    sr:verticalBoundaryDefinitions [ dct:description "12 metres above ground level" ;
             sr:definitionType <vertical-definition-type:rel> ;
             sr:direction <vertical-direction:abv> ;
             sr:heightReference <height-reference:gl> ;
@@ -764,6 +754,16 @@ reference surface) has been converted into a closed 3D solid. The source definit
             sr:resolutionStatus "resolved" ;
             sr:sourceReference <file:///github/workspace/source-height-description-2> ;
             sr:value 12.0 ;
+            sr:valueType <vertical-value-type:off> ],
+        [ dct:description "2 metres below ground level" ;
+            sr:definitionType <vertical-definition-type:rel> ;
+            sr:direction <vertical-direction:blw> ;
+            sr:heightReference <height-reference:gl> ;
+            sr:limitRole <vertical-limit-role:ll> ;
+            sr:provenanceRef <file:///github/workspace/derived-3d-solid-generation-1> ;
+            sr:resolutionStatus "resolved" ;
+            sr:sourceReference <file:///github/workspace/source-height-description-1> ;
+            sr:value 2.0 ;
             sr:valueType <vertical-value-type:off> ] ;
     sr:verticalExtent [ sr:lowerBoundary [ sr:boundaryState <vertical-boundary-state:drv> ;
                     sr:definitionRef <file:///github/workspace/relative-limit-lower-1> ;

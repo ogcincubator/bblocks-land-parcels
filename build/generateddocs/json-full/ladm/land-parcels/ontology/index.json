@@ -10,7 +10,7 @@
   "itemClass": "model",
   "register": "ogc-incubator",
   "version": "0.1",
-  "dateOfLastChange": "2026-08-25",
+  "dateOfLastChange": "2026-08-26",
   "dependsOn": [],
   "sources": [],
   "scope": "dev",

@@ -157,10 +157,10 @@ Future development of this building block may include rules for extracting LADM 
     geojson:topology [ a geojson:Polygon ;
             topo:relatedFeatures ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ) ] ;
     parcel:appellation [ rdfs:label "Lot 1 DP 572532" ;
-            dcterms:hasPart [ rdfs:label "DP" ;
-                    commonpatterns:namePartType <http://www.example.com/features/PlanType> ],
-                [ rdfs:label "1" ;
+            dcterms:hasPart [ rdfs:label "1" ;
                     commonpatterns:namePartType <http://www.example.com/features/ParcelIdentifier> ],
+                [ rdfs:label "DP" ;
+                    commonpatterns:namePartType <http://www.example.com/features/PlanType> ],
                 [ rdfs:label "Lot" ;
                     commonpatterns:namePartType <http://www.example.com/features/ParcelType> ],
                 [ rdfs:label "572532" ;
@@ -415,14 +415,14 @@ Future development of this building block may include rules for extracting LADM 
     geojson:topology [ a geojson:Polygon ;
             topo:relatedFeatures ( ( <http://www.example.com/features/l999724> <http://www.example.com/features/l591175> <http://www.example.com/features/l369793> <http://www.example.com/features/l435861> <http://www.example.com/features/l345344> <http://www.example.com/features/l685716> <http://www.example.com/features/l832940> <http://www.example.com/features/l715872> <http://www.example.com/features/l641327> <http://www.example.com/features/l852048> <http://www.example.com/features/l949729> <http://www.example.com/features/l951515> <http://www.example.com/features/l761760> <http://www.example.com/features/l580762> ) ) ] ;
     parcel:appellation [ rdfs:label "Area Z DP 572532" ;
-            dcterms:hasPart [ rdfs:label "Z" ;
+            dcterms:hasPart [ rdfs:label "DP" ;
+                    commonpatterns:namePartType <http://www.example.com/features/PlanType> ],
+                [ rdfs:label "Z" ;
                     commonpatterns:namePartType <http://www.example.com/features/ParcelIdentifier> ],
                 [ rdfs:label "Area" ;
                     commonpatterns:namePartType <http://www.example.com/features/ParcelType> ],
                 [ rdfs:label "572532" ;
-                    commonpatterns:namePartType <http://www.example.com/features/PlanIdentifier> ],
-                [ rdfs:label "DP" ;
-                    commonpatterns:namePartType <http://www.example.com/features/PlanType> ] ] ;
+                    commonpatterns:namePartType <http://www.example.com/features/PlanIdentifier> ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040075> ;
             parcel:interestType <eg-interest-type:fh> ] ;
     parcel:purpose eg-parcel-purpose:c-l ;
@@ -670,20 +670,20 @@ Note, the topology constraint "within" for a 3D Parcel, referencing a Parent Par
     geojson:geometry [ a geojson:Polygon ;
             geojson:coordinates ( ( ( 1.747508e+02 -3.693103e+01 ) ( 1.747507e+02 -3.693102e+01 ) ( 1.747505e+02 -3.693106e+01 ) ( 1.747508e+02 -3.693125e+01 ) ( 1.74751e+02 -3.69312e+01 ) ( 1.74751e+02 -3.693118e+01 ) ( 1.747508e+02 -3.693103e+01 ) ) ) ] ;
     geojson:topology [ a geojson:Polygon ;
-            topo:relatedFeatures ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ),
-                ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;
+            topo:relatedFeatures ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;
                         prof:hasRole topo:within,
                             parcel:containingParentParcel ;
-                        oa:hasTarget <myParcels:1234> ] ) ] ;
+                        oa:hasTarget <myParcels:1234> ] ),
+                ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ) ] ;
     parcel:appellation [ rdfs:label "Lot 1 DP 572532" ;
-            dcterms:hasPart [ rdfs:label "DP" ;
-                    commonpatterns:namePartType <http://www.example.com/features/PlanType> ],
+            dcterms:hasPart [ rdfs:label "572532" ;
+                    commonpatterns:namePartType <http://www.example.com/features/PlanIdentifier> ],
                 [ rdfs:label "1" ;
                     commonpatterns:namePartType <http://www.example.com/features/ParcelIdentifier> ],
-                [ rdfs:label "572532" ;
-                    commonpatterns:namePartType <http://www.example.com/features/PlanIdentifier> ],
                 [ rdfs:label "Lot" ;
-                    commonpatterns:namePartType <http://www.example.com/features/ParcelType> ] ] ;
+                    commonpatterns:namePartType <http://www.example.com/features/ParcelType> ],
+                [ rdfs:label "DP" ;
+                    commonpatterns:namePartType <http://www.example.com/features/PlanType> ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040074> ;
             parcel:interestType <eg-interest-type:fh> ] ;
     parcel:purpose eg-parcel-purpose:fst ;

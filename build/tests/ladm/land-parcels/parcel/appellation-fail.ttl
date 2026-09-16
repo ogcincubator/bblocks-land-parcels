@@ -13,12 +13,12 @@
     parcel:appellation [ rdfs:label "Lot 1 DP 572532" ;
             dct:hasPart [ commonpatterns:name "DP" ;
                     commonpatterns:namePartType <file:///github/workspace/PlanType> ],
+                [ rdfs:label "572532" ;
+                    commonpatterns:namePartType <file:///github/workspace/PlanIdentifier> ],
                 [ rdfs:label "Lot" ;
                     commonpatterns:namePartType <file:///github/workspace/ParcelType> ],
                 [ rdfs:label "1" ;
-                    commonpatterns:namePartType <file:///github/workspace/ParcelIdentifier> ],
-                [ rdfs:label "572532" ;
-                    commonpatterns:namePartType <file:///github/workspace/PlanIdentifier> ] ] ;
+                    commonpatterns:namePartType <file:///github/workspace/ParcelIdentifier> ] ] ;
     parcel:purpose <eg-parcel-purpose:fst> ;
     parcel:state <eg-parcel-state:created> ;
     parcel:surfaceArea 484 ;

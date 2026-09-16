@@ -8,16 +8,7 @@
     sr:derivedGeometry [ sr:derivedGeometryStatus "notGenerated" ] ;
     sr:geometryLegalStatus <geometry-legal-status:a2d> ;
     sr:representationStatus <representation-status:hd> ;
-    sr:verticalBoundaryDefinitions [ dct:description "limited in height to less than and equal to 35.00 AHD" ;
-            sr:comparisonOperator "lessThanOrEqual" ;
-            sr:definitionType <vertical-definition-type:ahd> ;
-            sr:limitRole <vertical-limit-role:ul> ;
-            sr:provenanceRef <file:///github/workspace/height-description-extraction-1> ;
-            sr:resolutionStatus "absoluteLimitAvailable" ;
-            sr:sourceReference <file:///github/workspace/source-height-description-1> ;
-            sr:value 35.0 ;
-            sr:valueType <vertical-value-type:ah> ],
-        [ dct:description "limited in height to more than and equal to 16.00 AHD" ;
+    sr:verticalBoundaryDefinitions [ dct:description "limited in height to more than and equal to 16.00 AHD" ;
             sr:comparisonOperator "greaterThanOrEqual" ;
             sr:definitionType <vertical-definition-type:ahd> ;
             sr:limitRole <vertical-limit-role:ll> ;
@@ -25,6 +16,15 @@
             sr:resolutionStatus "absoluteLimitAvailable" ;
             sr:sourceReference <file:///github/workspace/source-height-description-2> ;
             sr:value 16.0 ;
+            sr:valueType <vertical-value-type:ah> ],
+        [ dct:description "limited in height to less than and equal to 35.00 AHD" ;
+            sr:comparisonOperator "lessThanOrEqual" ;
+            sr:definitionType <vertical-definition-type:ahd> ;
+            sr:limitRole <vertical-limit-role:ul> ;
+            sr:provenanceRef <file:///github/workspace/height-description-extraction-1> ;
+            sr:resolutionStatus "absoluteLimitAvailable" ;
+            sr:sourceReference <file:///github/workspace/source-height-description-1> ;
+            sr:value 35.0 ;
             sr:valueType <vertical-value-type:ah> ] ;
     sr:verticalExtent [ sr:lowerBoundary [ sr:boundaryState <vertical-boundary-state:def> ;
                     sr:definitionRef <file:///github/workspace/absolute-limit-lower-1> ] ;

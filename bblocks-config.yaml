@@ -15,8 +15,8 @@ identifier-prefix: ogc.ladm.land-parcels.
 # List of imports ("default" is an alias for the main OGC Building Blocks Register)
 imports:
   - default
-  - https://ogcincubator.github.io/topo-feature
-  - https://ogcincubator.github.io/bblocks-utility
+  - '@ogc/topo-feature'
+  - '@ogc/utility'
 
 
 plugins:

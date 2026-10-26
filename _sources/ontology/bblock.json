@@ -10,6 +10,7 @@
   "dateOfLastChange": "2023-09-18",
   "ontology": "parcels.ttl",
   "dependsOn": [
+    "ogc.bbr.utils.compoundName.ontology"
   ],
   "sources": [
   ],

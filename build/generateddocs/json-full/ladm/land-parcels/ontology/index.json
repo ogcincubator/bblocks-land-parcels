@@ -10,14 +10,20 @@
   "itemClass": "model",
   "register": "ogc-incubator",
   "version": "0.1",
-  "dateOfLastChange": "2026-09-16",
-  "dependsOn": [],
+  "dateOfLastChange": "2026-10-26",
+  "dependsOn": [
+    "ogc.bbr.utils.compoundName.ontology"
+  ],
   "sources": [],
   "scope": "dev",
   "tags": [
     "OSPD"
   ],
-  "shaclShapes": {},
+  "shaclShapes": {
+    "ogc.bbr.utils.compoundName.ontology": [
+      "https://ogcincubator.github.io/bblocks-utility/_sources/compoundName/ontology/shapes.shacl"
+    ]
+  },
   "ontology": "https://ogcincubator.github.io/bblocks-land-parcels/build/annotated/ladm/land-parcels/ontology/ontology.ttl",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-land-parcels/_sources/ontology/",
   "validationPassed": true,

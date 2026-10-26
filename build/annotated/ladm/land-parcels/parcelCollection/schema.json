@@ -24,5 +24,11 @@
         }
       }
     }
-  ]
+  ],
+  "x-bblocks-metadata": {
+    "itemIdentifier": "ogc.ladm.land-parcels.parcelCollection",
+    "register": "https://ogcincubator.github.io/bblocks-land-parcels/build/register.json",
+    "version": "0.1",
+    "dateOfLastChange": "2026-10-26"
+  }
 }

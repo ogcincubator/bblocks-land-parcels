@@ -159,10 +159,10 @@ Future development of this building block may include rules for extracting LADM 
     parcel:appellation [ rdfs:label "Lot 1 DP 572532" ;
             dcterms:hasPart [ rdfs:label "572532" ;
                     commonpatterns:namePartType <http://www.example.com/features/PlanIdentifier> ],
-                [ rdfs:label "Lot" ;
-                    commonpatterns:namePartType <http://www.example.com/features/ParcelType> ],
                 [ rdfs:label "DP" ;
                     commonpatterns:namePartType <http://www.example.com/features/PlanType> ],
+                [ rdfs:label "Lot" ;
+                    commonpatterns:namePartType <http://www.example.com/features/ParcelType> ],
                 [ rdfs:label "1" ;
                     commonpatterns:namePartType <http://www.example.com/features/ParcelIdentifier> ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040074> ;
@@ -415,14 +415,14 @@ Future development of this building block may include rules for extracting LADM 
     geojson:topology [ a geojson:Polygon ;
             topo:relatedFeatures ( ( <http://www.example.com/features/l999724> <http://www.example.com/features/l591175> <http://www.example.com/features/l369793> <http://www.example.com/features/l435861> <http://www.example.com/features/l345344> <http://www.example.com/features/l685716> <http://www.example.com/features/l832940> <http://www.example.com/features/l715872> <http://www.example.com/features/l641327> <http://www.example.com/features/l852048> <http://www.example.com/features/l949729> <http://www.example.com/features/l951515> <http://www.example.com/features/l761760> <http://www.example.com/features/l580762> ) ) ] ;
     parcel:appellation [ rdfs:label "Area Z DP 572532" ;
-            dcterms:hasPart [ rdfs:label "Z" ;
-                    commonpatterns:namePartType <http://www.example.com/features/ParcelIdentifier> ],
-                [ rdfs:label "DP" ;
+            dcterms:hasPart [ rdfs:label "DP" ;
                     commonpatterns:namePartType <http://www.example.com/features/PlanType> ],
-                [ rdfs:label "572532" ;
-                    commonpatterns:namePartType <http://www.example.com/features/PlanIdentifier> ],
+                [ rdfs:label "Z" ;
+                    commonpatterns:namePartType <http://www.example.com/features/ParcelIdentifier> ],
                 [ rdfs:label "Area" ;
-                    commonpatterns:namePartType <http://www.example.com/features/ParcelType> ] ] ;
+                    commonpatterns:namePartType <http://www.example.com/features/ParcelType> ],
+                [ rdfs:label "572532" ;
+                    commonpatterns:namePartType <http://www.example.com/features/PlanIdentifier> ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040075> ;
             parcel:interestType <eg-interest-type:fh> ] ;
     parcel:purpose eg-parcel-purpose:c-l ;
@@ -670,20 +670,20 @@ Note, the topology constraint "within" for a 3D Parcel, referencing a Parent Par
     geojson:geometry [ a geojson:Polygon ;
             geojson:coordinates ( ( ( 1.747508e+02 -3.693103e+01 ) ( 1.747507e+02 -3.693102e+01 ) ( 1.747505e+02 -3.693106e+01 ) ( 1.747508e+02 -3.693125e+01 ) ( 1.74751e+02 -3.69312e+01 ) ( 1.74751e+02 -3.693118e+01 ) ( 1.747508e+02 -3.693103e+01 ) ) ) ] ;
     geojson:topology [ a geojson:Polygon ;
-            topo:relatedFeatures ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ),
-                ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;
+            topo:relatedFeatures ( [ ns1:relation <http://www.iana.org/assignments/relation/topology> ;
                         prof:hasRole topo:within,
                             parcel:containingParentParcel ;
-                        oa:hasTarget <myParcels:1234> ] ) ] ;
+                        oa:hasTarget <myParcels:1234> ] ),
+                ( ( <http://www.example.com/features/l535242> <http://www.example.com/features/l535759> <http://www.example.com/features/l985190> <http://www.example.com/features/l952702> <http://www.example.com/features/l965727> <http://www.example.com/features/l589282> ) ) ] ;
     parcel:appellation [ rdfs:label "Lot 1 DP 572532" ;
-            dcterms:hasPart [ rdfs:label "572532" ;
-                    commonpatterns:namePartType <http://www.example.com/features/PlanIdentifier> ],
-                [ rdfs:label "Lot" ;
+            dcterms:hasPart [ rdfs:label "Lot" ;
                     commonpatterns:namePartType <http://www.example.com/features/ParcelType> ],
+                [ rdfs:label "DP" ;
+                    commonpatterns:namePartType <http://www.example.com/features/PlanType> ],
                 [ rdfs:label "1" ;
                     commonpatterns:namePartType <http://www.example.com/features/ParcelIdentifier> ],
-                [ rdfs:label "DP" ;
-                    commonpatterns:namePartType <http://www.example.com/features/PlanType> ] ] ;
+                [ rdfs:label "572532" ;
+                    commonpatterns:namePartType <http://www.example.com/features/PlanIdentifier> ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040074> ;
             parcel:interestType <eg-interest-type:fh> ] ;
     parcel:purpose eg-parcel-purpose:fst ;
@@ -776,7 +776,7 @@ $defs:
     $anchor: parcelProperties
     properties:
       appellation:
-        $ref: https://ogcincubator.github.io/bblocks-utility/build/annotated/bbr/utils/compoundName/schema.yaml
+        $ref: https://ogcincubator.github.io/bblocks-utility/build/annotated/bbr/utils/compoundName/schema/schema.yaml
         x-jsonld-id: https://w3id.org/ogc/ladm/parcels/appellation
       parcelType:
         $ref: '#/$defs/coderef'
@@ -843,6 +843,11 @@ x-jsonld-extra-terms:
 x-jsonld-prefixes:
   sdo: https://schema.org/
   parcel: https://w3id.org/ogc/ladm/parcels/
+x-bblocks-metadata:
+  itemIdentifier: ogc.ladm.land-parcels.parcel
+  register: https://ogcincubator.github.io/bblocks-land-parcels/build/register.json
+  version: '0.1'
+  dateOfLastChange: '2026-10-26'
 
 ```
 
@@ -988,18 +993,6 @@ Links to the schema:
           "@id": "topo:relatedFeatures",
           "@type": "@id",
           "@container": "@list"
-        },
-        "rings": {
-          "@id": "topo:rings",
-          "@container": "@list"
-        },
-        "shells": {
-          "@id": "topo:shells",
-          "@container": "@list"
-        },
-        "faces": {
-          "@id": "topo:faces",
-          "@container": "@list"
         }
       },
       "@type": "@id",
@@ -1057,6 +1050,90 @@ Links to the schema:
         "featureType": "geojson:collectionFeatureType"
       },
       "@id": "topo:edges",
+      "@container": "@list"
+    },
+    "rings": {
+      "@context": {
+        "links": {
+          "@context": {
+            "href": {
+              "@type": "@id",
+              "@id": "oa:hasTarget"
+            },
+            "rel": {
+              "@context": {
+                "@base": "http://www.iana.org/assignments/relation/"
+              },
+              "@id": "http://www.iana.org/assignments/relation",
+              "@type": "@id"
+            },
+            "type": "dct:type",
+            "hreflang": "dct:language",
+            "title": "rdfs:label",
+            "length": "dct:extent"
+          },
+          "@id": "rdfs:seeAlso"
+        },
+        "featureType": "geojson:collectionFeatureType",
+        "circumference": "topo:circumference"
+      },
+      "@id": "topo:rings",
+      "@container": "@list"
+    },
+    "faces": {
+      "@context": {
+        "links": {
+          "@context": {
+            "href": {
+              "@type": "@id",
+              "@id": "oa:hasTarget"
+            },
+            "rel": {
+              "@context": {
+                "@base": "http://www.iana.org/assignments/relation/"
+              },
+              "@id": "http://www.iana.org/assignments/relation",
+              "@type": "@id"
+            },
+            "type": "dct:type",
+            "hreflang": "dct:language",
+            "title": "rdfs:label",
+            "length": "dct:extent"
+          },
+          "@id": "rdfs:seeAlso"
+        },
+        "featureType": "geojson:collectionFeatureType",
+        "ref": "@id"
+      },
+      "@id": "topo:faces",
+      "@container": "@list"
+    },
+    "shells": {
+      "@context": {
+        "links": {
+          "@context": {
+            "href": {
+              "@type": "@id",
+              "@id": "oa:hasTarget"
+            },
+            "rel": {
+              "@context": {
+                "@base": "http://www.iana.org/assignments/relation/"
+              },
+              "@id": "http://www.iana.org/assignments/relation",
+              "@type": "@id"
+            },
+            "type": "dct:type",
+            "hreflang": "dct:language",
+            "title": "rdfs:label",
+            "length": "dct:extent"
+          },
+          "@id": "rdfs:seeAlso"
+        },
+        "featureType": "geojson:collectionFeatureType",
+        "ref": "@id"
+      },
+      "@id": "topo:shells",
       "@container": "@list"
     },
     "solids": {
@@ -1201,6 +1278,7 @@ Links to the schema:
     "Ring": "topo:Ring",
     "Shell": "topo:Shell",
     "Solid": "topo:Solid",
+    "AggregateSolid": "topo:AggregateSolid",
     "directed_references": {
       "@id": "topo:directedReferences",
       "@container": "@list"

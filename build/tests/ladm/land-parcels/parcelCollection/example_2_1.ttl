@@ -20,10 +20,10 @@
                     commonpatterns:namePartType <http://www.example.com/features/PlanType> ],
                 [ rdfs:label "Z" ;
                     commonpatterns:namePartType <http://www.example.com/features/ParcelIdentifier> ],
-                [ rdfs:label "572532" ;
-                    commonpatterns:namePartType <http://www.example.com/features/PlanIdentifier> ],
                 [ rdfs:label "Area" ;
-                    commonpatterns:namePartType <http://www.example.com/features/ParcelType> ] ] ;
+                    commonpatterns:namePartType <http://www.example.com/features/ParcelType> ],
+                [ rdfs:label "572532" ;
+                    commonpatterns:namePartType <http://www.example.com/features/PlanIdentifier> ] ] ;
     parcel:interest [ parcel:interestLink <http://www.example.com/features/1040075> ;
             parcel:interestType <eg-interest-type:fh> ] ;
     parcel:purpose <eg-parcel-purpose:c-l> ;

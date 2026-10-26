@@ -231,6 +231,11 @@ $defs:
 x-jsonld-prefixes:
   pvb: https://linked.data.gov.au/def/csdm/parcel-vertical-boundary/
   xsd: http://www.w3.org/2001/XMLSchema#
+x-bblocks-metadata:
+  itemIdentifier: ogc.ladm.land-parcels.parcelSpatialRepresentationDefinition
+  register: https://ogcincubator.github.io/bblocks-land-parcels/build/register.json
+  version: '0.1'
+  dateOfLastChange: '2026-08-21'
 
 ```
 

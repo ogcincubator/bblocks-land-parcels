@@ -101,7 +101,7 @@
       "$anchor": "parcelProperties",
       "properties": {
         "appellation": {
-          "$ref": "https://ogcincubator.github.io/bblocks-utility/build/annotated/bbr/utils/compoundName/schema.json",
+          "$ref": "https://ogcincubator.github.io/bblocks-utility/build/annotated/bbr/utils/compoundName/schema/schema.json",
           "x-jsonld-id": "https://w3id.org/ogc/ladm/parcels/appellation"
         },
         "parcelType": {
@@ -202,5 +202,11 @@
   "x-jsonld-prefixes": {
     "sdo": "https://schema.org/",
     "parcel": "https://w3id.org/ogc/ladm/parcels/"
+  },
+  "x-bblocks-metadata": {
+    "itemIdentifier": "ogc.ladm.land-parcels.parcel",
+    "register": "https://ogcincubator.github.io/bblocks-land-parcels/build/register.json",
+    "version": "0.1",
+    "dateOfLastChange": "2026-10-26"
   }
 }

@@ -335,3 +335,8 @@ x-jsonld-prefixes:
   sr: https://linked.data.gov.au/def/csdm/spatial-representation/
   xsd: http://www.w3.org/2001/XMLSchema#
   dct: http://purl.org/dc/terms/
+x-bblocks-metadata:
+  itemIdentifier: ogc.ladm.land-parcels.spatialRepresentationDefinition
+  register: https://ogcincubator.github.io/bblocks-land-parcels/build/register.json
+  version: '0.1'
+  dateOfLastChange: '2026-08-21'

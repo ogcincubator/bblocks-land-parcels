@@ -367,17 +367,7 @@ absolute values, so `resolutionStatus` is `requiresReferenceSurface`.
     sr:derivedGeometry [ sr:derivedGeometryStatus "notGenerated" ] ;
     sr:geometryLegalStatus <geometry-legal-status:a2d> ;
     sr:representationStatus <representation-status:hd> ;
-    sr:verticalBoundaryDefinitions [ dct:description "12 metres above ground level" ;
-            sr:definitionType <vertical-definition-type:rel> ;
-            sr:direction <vertical-direction:abv> ;
-            sr:heightReference <height-reference:gl> ;
-            sr:limitRole <vertical-limit-role:ul> ;
-            sr:provenanceRef <file:///github/workspace/height-description-extraction-1> ;
-            sr:resolutionStatus "requiresReferenceSurface" ;
-            sr:sourceReference <file:///github/workspace/source-height-description-2> ;
-            sr:value 12.0 ;
-            sr:valueType <vertical-value-type:off> ],
-        [ dct:description "2 metres below ground level" ;
+    sr:verticalBoundaryDefinitions [ dct:description "2 metres below ground level" ;
             sr:definitionType <vertical-definition-type:rel> ;
             sr:direction <vertical-direction:blw> ;
             sr:heightReference <height-reference:gl> ;
@@ -386,6 +376,16 @@ absolute values, so `resolutionStatus` is `requiresReferenceSurface`.
             sr:resolutionStatus "requiresReferenceSurface" ;
             sr:sourceReference <file:///github/workspace/source-height-description-1> ;
             sr:value 2.0 ;
+            sr:valueType <vertical-value-type:off> ],
+        [ dct:description "12 metres above ground level" ;
+            sr:definitionType <vertical-definition-type:rel> ;
+            sr:direction <vertical-direction:abv> ;
+            sr:heightReference <height-reference:gl> ;
+            sr:limitRole <vertical-limit-role:ul> ;
+            sr:provenanceRef <file:///github/workspace/height-description-extraction-1> ;
+            sr:resolutionStatus "requiresReferenceSurface" ;
+            sr:sourceReference <file:///github/workspace/source-height-description-2> ;
+            sr:value 12.0 ;
             sr:valueType <vertical-value-type:off> ] ;
     sr:verticalExtent [ sr:lowerBoundary [ sr:boundaryState <vertical-boundary-state:dur> ;
                     sr:definitionRef <file:///github/workspace/relative-limit-lower-1> ] ;
@@ -523,16 +523,7 @@ Both vertical boundaries are supported absolute values referenced to the AHD ver
     sr:derivedGeometry [ sr:derivedGeometryStatus "notGenerated" ] ;
     sr:geometryLegalStatus <geometry-legal-status:a2d> ;
     sr:representationStatus <representation-status:hd> ;
-    sr:verticalBoundaryDefinitions [ dct:description "limited in height to more than and equal to 16.00 AHD" ;
-            sr:comparisonOperator "greaterThanOrEqual" ;
-            sr:definitionType <vertical-definition-type:ahd> ;
-            sr:limitRole <vertical-limit-role:ll> ;
-            sr:provenanceRef <file:///github/workspace/height-description-extraction-1> ;
-            sr:resolutionStatus "absoluteLimitAvailable" ;
-            sr:sourceReference <file:///github/workspace/source-height-description-2> ;
-            sr:value 16.0 ;
-            sr:valueType <vertical-value-type:ah> ],
-        [ dct:description "limited in height to less than and equal to 35.00 AHD" ;
+    sr:verticalBoundaryDefinitions [ dct:description "limited in height to less than and equal to 35.00 AHD" ;
             sr:comparisonOperator "lessThanOrEqual" ;
             sr:definitionType <vertical-definition-type:ahd> ;
             sr:limitRole <vertical-limit-role:ul> ;
@@ -540,6 +531,15 @@ Both vertical boundaries are supported absolute values referenced to the AHD ver
             sr:resolutionStatus "absoluteLimitAvailable" ;
             sr:sourceReference <file:///github/workspace/source-height-description-1> ;
             sr:value 35.0 ;
+            sr:valueType <vertical-value-type:ah> ],
+        [ dct:description "limited in height to more than and equal to 16.00 AHD" ;
+            sr:comparisonOperator "greaterThanOrEqual" ;
+            sr:definitionType <vertical-definition-type:ahd> ;
+            sr:limitRole <vertical-limit-role:ll> ;
+            sr:provenanceRef <file:///github/workspace/height-description-extraction-1> ;
+            sr:resolutionStatus "absoluteLimitAvailable" ;
+            sr:sourceReference <file:///github/workspace/source-height-description-2> ;
+            sr:value 16.0 ;
             sr:valueType <vertical-value-type:ah> ] ;
     sr:verticalExtent [ sr:lowerBoundary [ sr:boundaryState <vertical-boundary-state:def> ;
                     sr:definitionRef <file:///github/workspace/absolute-limit-lower-1> ] ;
@@ -745,17 +745,7 @@ reference surface) has been converted into a closed 3D solid. The source definit
             sr:surfaceGeometryRef <uuid:ca9c4381-9422-4bbb-8f05-c8a835831933> ;
             sr:surfaceType <height-reference:gl> ] ;
     sr:representationStatus <representation-status:d3d> ;
-    sr:verticalBoundaryDefinitions [ dct:description "12 metres above ground level" ;
-            sr:definitionType <vertical-definition-type:rel> ;
-            sr:direction <vertical-direction:abv> ;
-            sr:heightReference <height-reference:gl> ;
-            sr:limitRole <vertical-limit-role:ul> ;
-            sr:provenanceRef <file:///github/workspace/derived-3d-solid-generation-1> ;
-            sr:resolutionStatus "resolved" ;
-            sr:sourceReference <file:///github/workspace/source-height-description-2> ;
-            sr:value 12.0 ;
-            sr:valueType <vertical-value-type:off> ],
-        [ dct:description "2 metres below ground level" ;
+    sr:verticalBoundaryDefinitions [ dct:description "2 metres below ground level" ;
             sr:definitionType <vertical-definition-type:rel> ;
             sr:direction <vertical-direction:blw> ;
             sr:heightReference <height-reference:gl> ;
@@ -764,6 +754,16 @@ reference surface) has been converted into a closed 3D solid. The source definit
             sr:resolutionStatus "resolved" ;
             sr:sourceReference <file:///github/workspace/source-height-description-1> ;
             sr:value 2.0 ;
+            sr:valueType <vertical-value-type:off> ],
+        [ dct:description "12 metres above ground level" ;
+            sr:definitionType <vertical-definition-type:rel> ;
+            sr:direction <vertical-direction:abv> ;
+            sr:heightReference <height-reference:gl> ;
+            sr:limitRole <vertical-limit-role:ul> ;
+            sr:provenanceRef <file:///github/workspace/derived-3d-solid-generation-1> ;
+            sr:resolutionStatus "resolved" ;
+            sr:sourceReference <file:///github/workspace/source-height-description-2> ;
+            sr:value 12.0 ;
             sr:valueType <vertical-value-type:off> ] ;
     sr:verticalExtent [ sr:lowerBoundary [ sr:boundaryState <vertical-boundary-state:drv> ;
                     sr:definitionRef <file:///github/workspace/relative-limit-lower-1> ;
@@ -1116,6 +1116,11 @@ x-jsonld-prefixes:
   sr: https://linked.data.gov.au/def/csdm/spatial-representation/
   xsd: http://www.w3.org/2001/XMLSchema#
   dct: http://purl.org/dc/terms/
+x-bblocks-metadata:
+  itemIdentifier: ogc.ladm.land-parcels.spatialRepresentationDefinition
+  register: https://ogcincubator.github.io/bblocks-land-parcels/build/register.json
+  version: '0.1'
+  dateOfLastChange: '2026-08-21'
 
 ```
 

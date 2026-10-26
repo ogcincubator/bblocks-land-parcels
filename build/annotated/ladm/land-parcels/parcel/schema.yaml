@@ -77,7 +77,7 @@ $defs:
     $anchor: parcelProperties
     properties:
       appellation:
-        $ref: https://ogcincubator.github.io/bblocks-utility/build/annotated/bbr/utils/compoundName/schema.yaml
+        $ref: https://ogcincubator.github.io/bblocks-utility/build/annotated/bbr/utils/compoundName/schema/schema.yaml
         x-jsonld-id: https://w3id.org/ogc/ladm/parcels/appellation
       parcelType:
         $ref: '#/$defs/coderef'
@@ -144,3 +144,8 @@ x-jsonld-extra-terms:
 x-jsonld-prefixes:
   sdo: https://schema.org/
   parcel: https://w3id.org/ogc/ladm/parcels/
+x-bblocks-metadata:
+  itemIdentifier: ogc.ladm.land-parcels.parcel
+  register: https://ogcincubator.github.io/bblocks-land-parcels/build/register.json
+  version: '0.1'
+  dateOfLastChange: '2026-10-26'

@@ -131,18 +131,6 @@
           "@id": "topo:relatedFeatures",
           "@type": "@id",
           "@container": "@list"
-        },
-        "rings": {
-          "@id": "topo:rings",
-          "@container": "@list"
-        },
-        "shells": {
-          "@id": "topo:shells",
-          "@container": "@list"
-        },
-        "faces": {
-          "@id": "topo:faces",
-          "@container": "@list"
         }
       },
       "@type": "@id",
@@ -200,6 +188,90 @@
         "featureType": "geojson:collectionFeatureType"
       },
       "@id": "topo:edges",
+      "@container": "@list"
+    },
+    "rings": {
+      "@context": {
+        "links": {
+          "@context": {
+            "href": {
+              "@type": "@id",
+              "@id": "oa:hasTarget"
+            },
+            "rel": {
+              "@context": {
+                "@base": "http://www.iana.org/assignments/relation/"
+              },
+              "@id": "http://www.iana.org/assignments/relation",
+              "@type": "@id"
+            },
+            "type": "dct:type",
+            "hreflang": "dct:language",
+            "title": "rdfs:label",
+            "length": "dct:extent"
+          },
+          "@id": "rdfs:seeAlso"
+        },
+        "featureType": "geojson:collectionFeatureType",
+        "circumference": "topo:circumference"
+      },
+      "@id": "topo:rings",
+      "@container": "@list"
+    },
+    "faces": {
+      "@context": {
+        "links": {
+          "@context": {
+            "href": {
+              "@type": "@id",
+              "@id": "oa:hasTarget"
+            },
+            "rel": {
+              "@context": {
+                "@base": "http://www.iana.org/assignments/relation/"
+              },
+              "@id": "http://www.iana.org/assignments/relation",
+              "@type": "@id"
+            },
+            "type": "dct:type",
+            "hreflang": "dct:language",
+            "title": "rdfs:label",
+            "length": "dct:extent"
+          },
+          "@id": "rdfs:seeAlso"
+        },
+        "featureType": "geojson:collectionFeatureType",
+        "ref": "@id"
+      },
+      "@id": "topo:faces",
+      "@container": "@list"
+    },
+    "shells": {
+      "@context": {
+        "links": {
+          "@context": {
+            "href": {
+              "@type": "@id",
+              "@id": "oa:hasTarget"
+            },
+            "rel": {
+              "@context": {
+                "@base": "http://www.iana.org/assignments/relation/"
+              },
+              "@id": "http://www.iana.org/assignments/relation",
+              "@type": "@id"
+            },
+            "type": "dct:type",
+            "hreflang": "dct:language",
+            "title": "rdfs:label",
+            "length": "dct:extent"
+          },
+          "@id": "rdfs:seeAlso"
+        },
+        "featureType": "geojson:collectionFeatureType",
+        "ref": "@id"
+      },
+      "@id": "topo:shells",
       "@container": "@list"
     },
     "solids": {
@@ -261,6 +333,7 @@
     "Ring": "topo:Ring",
     "Shell": "topo:Shell",
     "Solid": "topo:Solid",
+    "AggregateSolid": "topo:AggregateSolid",
     "state": {
       "@id": "sr:boundaryState",
       "@type": "@vocab"

@@ -21,12 +21,6 @@ An example vocab - used in examples for parcel purpose codelist
 
 An example vocab - used in examples for parcel type codelist
 
-### `ogc.ladm.land-parcels.ontology` — Land Parcels Ontology
-
-**Type:** model
-
-Terms and definitions for the Land Parcels model.  This is aligned with LADM semantics and terminology and could be evolved or mapped to an authoritative LADM ontology component as required/
-
 ### `ogc.ladm.land-parcels.spatialRepresentationDefinition` — Spatial Representation Definition
 
 **Type:** schema
@@ -38,6 +32,12 @@ Generic, reusable properties that record how a 2D feature's geometry is being in
 **Type:** schema
 
 The WA cadastral parcel-specific extension of the generic spatial representation definition pattern. Adds the jurisdictional source basis (rule type, source authority type, and verbatim source statement) needed to trace a parcel's vertical boundary back to a title, plan, statute, Crown Grant, strata statement, or other approved jurisdictional rule.
+
+### `ogc.ladm.land-parcels.ontology` — Land Parcels Ontology
+
+**Type:** model
+
+Terms and definitions for the Land Parcels model.  This is aligned with LADM semantics and terminology and could be evolved or mapped to an authoritative LADM ontology component as required/
 
 ### `ogc.ladm.land-parcels.parcel` — Land Parcel
 

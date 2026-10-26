@@ -1,5 +1,5 @@
 Validation report for ogc.ladm.land-parcels.spatialRepresentationDefinition - Spatial Representation Definition
-Generated 2026-09-16T22:19:59.329000+00:00
+Generated 2026-10-26T10:51:56.664918+00:00
 === Files ===
 Using examples/height-described-ahd.json from examples
 JSON-LD context is present - uplifting
